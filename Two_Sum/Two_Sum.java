@@ -28,8 +28,8 @@ public class Two_Sum {
 		return new int[] {};
 	}
 	
-	private static int[] Two_sum_Hashmap(int nums[],int value) {
-		//O(n)
+	private static int[] Two_sum_OnePassHashmap(int nums[],int value) {
+		//One pass Hash Table:O(n)
 		Map<Integer,Integer> numMap=new HashMap<>();
 		for(int i=0;i<nums.length;i++) {
 			int complement=value-nums[i];
@@ -40,6 +40,21 @@ public class Two_Sum {
 		}
 		return new int[] {};
 	
+	}
+	
+	private static int[] Two_sum_TwoPassHashmap(int nums[],int value) {
+		//Two pass Hash Table:O(n) a little faster than above one
+		Map<Integer,Integer> numMap=new HashMap<>();
+		for(int i=0;i<nums.length;i++) {
+			numMap.put(nums[i],i);
+		}
+		for(int i=0;i<nums.length;i++) {
+			
+			int complement=value-nums[i];
+			//if complement exists
+			if(numMap.containsKey(complement)&& numMap.get(complement) != i)return new int[] {i,numMap.get(complement)};
+		}
+		return new int[] {};
 	}
 	
 	//driver program to test the result
@@ -53,7 +68,7 @@ public class Two_Sum {
 		
 		int[] nums=new int[n];
 		
-		System.out.println("Enter the "+ n +" elements you wanted");
+		System.out.println("Enter the "+ n +" elements you want");
 		for(int i=0;i<n;i++)
 			nums[i]=keyboard.nextInt();
 		
@@ -64,7 +79,7 @@ public class Two_Sum {
 		
 		
 		//call the function you want to use here
-		int indices[]=Two_sum_Hashmap(nums,value);
+		int indices[]=Two_sum_TwoPassHashmap(nums,value);
 		
 		
 		if(indices.length==2)
