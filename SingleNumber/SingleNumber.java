@@ -35,7 +35,7 @@ public class SingleNumber {
 	}
 	
 	public static void main(String[] args) {
-		int[] nums= {1,5,7,1,3,3,7};
+		int[] nums= {1,5,7,1,3,3,7,9,10,10,2,9,2};
 		System.out.println("Input array is "+Arrays.toString(nums));
 		System.out.println("Single number is "+SingleNumber(nums));
 	}
