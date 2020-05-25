@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 import java.util.Map;
 
-
+//Leetcode.1
 public class Two_Sum {
 	//return indices
 	private static int[] Two_sum_bruteforce(int[] nums,int value) {
