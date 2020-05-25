@@ -4,7 +4,7 @@
 package github.com.ErnestL1n;
 
 /**
- * @author github.com/ErnestL1n
+ * @author https://github.com/ErnestL1n
  * Goal:Just practice Java,cause I nearly forget this language  
  * reference(Main):https://www.callicoder.com/two-sum-problem/
  *
