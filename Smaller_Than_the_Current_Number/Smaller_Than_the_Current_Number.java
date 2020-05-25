@@ -3,13 +3,14 @@
  */
 package github.com.ErnestL1n;
 
-
 import java.util.*;
 
 /**
  * @author https://github.com/ErnestL1n
  *
  */
+
+//Leetcode.1365
 public class Smaller_Than_the_Current_Number {
 
 	/**
