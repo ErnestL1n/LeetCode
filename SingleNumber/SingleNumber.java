@@ -9,6 +9,8 @@ import java.util.Arrays;
  * @author https://github.com/ErnestL1n
  *
  */
+
+//Leetcode.136
 public class SingleNumber {
 
 	//Given a non-empty array of integers, every element appears twice except for one. Find that single one.
