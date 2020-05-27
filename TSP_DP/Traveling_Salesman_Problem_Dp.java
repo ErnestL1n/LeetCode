@@ -47,7 +47,7 @@ public class Traveling_Salesman_Problem_Dp {
 			g[i][0]=dist[i][0];
 				
 		//start from vertex 0
-		int result=tsp(0,(Npower-2));
+		int result=tsp(0,(Npower-1)-1);
 		outputArray.add(0);
 		System.out.print("Optimal Tour is:");
 		getPath(0,(Npower-1)-1);
@@ -71,7 +71,7 @@ public class Traveling_Salesman_Problem_Dp {
 		else {
 			for(int x=0;x<N;x++)
 			{
-				//npow - 1 means all cities are visited,minus (1<<i), 
+				//Npow - 1 means all cities are visited,minus (1<<i), 
 				//it means this is the state when all cities are visited, except city i
 				mask=(Npower-1)-(1<<x);
 				
@@ -122,9 +122,10 @@ public class Traveling_Salesman_Problem_Dp {
 	    	else if(i==outputArray.size()-2)
 	    		System.out.println(outputArray.get(i));
 	    	else {
-	    		System.out.print("Optimal Cost is:"+outputArray.get(i));
+	    		System.out.println("Optimal Cost is:"+outputArray.get(i));
 	    	}
 	    }
+	    System.out.println("Execution time is "+time+"£gs");
 	    	
 	}
 
