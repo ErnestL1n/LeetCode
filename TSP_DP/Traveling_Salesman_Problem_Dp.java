@@ -125,7 +125,7 @@ public class Traveling_Salesman_Problem_Dp {
 	    		System.out.println("Optimal Cost is:"+outputArray.get(i));
 	    	}
 	    }
-	    System.out.println("Execution time is "+time+"£gs");
+	    System.out.println("Execution time is "+time+"s");
 	    	
 	}
 
