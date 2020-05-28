@@ -110,7 +110,7 @@ public class Traveling_Salesman_Problem_Dp {
 	    Scanner keyboard=new Scanner(System.in);
 		int n=keyboard.nextInt();
 	    int npower=(int)Math.pow(2,n);//bit number required to represent all possible sets
-	    System.out.println("Enter the adjacency matrix");
+	    System.out.println("Enter the adjacency matrix(Bidirected graph required)");
 	    int[][] Adjmatrix=new int[n][npower];
 	    for(int i=0;i<n;i++)
 	        for(int j=0;j<n;j++)
@@ -125,7 +125,7 @@ public class Traveling_Salesman_Problem_Dp {
 	    		System.out.println("Optimal Cost is:"+outputArray.get(i));
 	    	}
 	    }
-	    System.out.println("Execution time is "+time+"us");
+	    System.out.println("Execution time is "+time+"£gs");
 	    	
 	}
 
