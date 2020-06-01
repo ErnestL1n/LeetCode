@@ -7,8 +7,8 @@ import java.util.*;
  * @author https://github.com/ErnestL1n
  *
  */
-//reference:https://leetcode.com/gthor10/
 
+//reference:https://leetcode.com/gthor10/
 //Leetcode.1302
 class TreeNode{
 	int value;
