@@ -9,7 +9,7 @@ import java.util.*;
  */
 //reference:https://leetcode.com/gthor10/
 
-//Leetcode 1302
+//Leetcode.1302
 class TreeNode{
 	int value;
 	TreeNode leftchild;
