@@ -43,9 +43,12 @@ public class Group_the_People_Given_the_Group_Size_They_Belong_To {
 		
 	}
 	public static void main(String[] args) {
-		int[] groupSizes=new int[] {3,3,3,3,3,1,3};
-		System.out.println("Input: groupSizes = "+Arrays.toString(groupSizes));
-		System.out.println("Output is "+groupThePeople(groupSizes));
+		int[] groupSizes1=new int[] {3,3,3,3,3,1,3};
+		int[] groupSizes2=new int[] {2,1,3,3,3,2};
+		System.out.println("Input: groupSizes = "+Arrays.toString(groupSizes1));
+		System.out.println("Output is "+groupThePeople(groupSizes1));
+		System.out.println("Input: groupSizes = "+Arrays.toString(groupSizes2));
+		System.out.println("Output is "+groupThePeople(groupSizes2));
 
 	}
 
