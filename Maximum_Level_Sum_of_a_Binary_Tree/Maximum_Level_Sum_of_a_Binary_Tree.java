@@ -68,7 +68,7 @@ public class Maximum_Level_Sum_of_a_Binary_Tree {
             integerQueue.offer(array[i]);
         }
 
-        TreeNode treeNode = new TreeNode(array[0]);
+        TreeNode root = new TreeNode(array[0]);
         treeNodeQueue.offer(treeNode);
 
         while (!integerQueue.isEmpty()){
@@ -87,7 +87,7 @@ public class Maximum_Level_Sum_of_a_Binary_Tree {
                     treeNodeQueue.offer(right);
             }
         }
-        return treeNode;
+        return root;
     }
 	
 	
