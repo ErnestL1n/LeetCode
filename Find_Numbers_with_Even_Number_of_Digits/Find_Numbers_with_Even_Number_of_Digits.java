@@ -19,6 +19,7 @@ public class Find_Numbers_with_Even_Number_of_Digits {
 	public static int findNumbers(int[] nums) {
         int answer=0;
         for(int number:nums){
+            //length() is a method on java.lang.String, which is just a thin wrapper on a char[] anyway.
             int length=String.valueOf(number).length();
             if(length%2==0)
                 answer++;
