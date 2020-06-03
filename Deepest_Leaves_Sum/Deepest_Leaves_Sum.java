@@ -35,7 +35,7 @@ public class Deepest_Leaves_Sum {
 		for(int i=1;i<nodes.length;i++)IntegerQueue.offer(nodes[i]);
 		
 		TreeNode root=new TreeNode(nodes[0]);
-		TreeNodeQueue.offer(treenode);
+		TreeNodeQueue.offer(root);
 		while(!IntegerQueue.isEmpty()) {
 			Integer leftvalue=IntegerQueue.isEmpty()?null:IntegerQueue.poll();
 			Integer rightvalue=IntegerQueue.isEmpty()?null:IntegerQueue.poll();
@@ -52,7 +52,7 @@ public class Deepest_Leaves_Sum {
 			}
 			
 		}
-		return root
+		return root;
 		
 	}
 	public static int deepestLeavesSum(TreeNode root) {
