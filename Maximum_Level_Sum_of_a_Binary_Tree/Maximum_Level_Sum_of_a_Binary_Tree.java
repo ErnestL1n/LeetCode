@@ -69,7 +69,7 @@ public class Maximum_Level_Sum_of_a_Binary_Tree {
         }
 
         TreeNode root = new TreeNode(array[0]);
-        treeNodeQueue.offer(treeNode);
+        treeNodeQueue.offer(root);
 
         while (!integerQueue.isEmpty()){
         	//Binary tree begins from left
