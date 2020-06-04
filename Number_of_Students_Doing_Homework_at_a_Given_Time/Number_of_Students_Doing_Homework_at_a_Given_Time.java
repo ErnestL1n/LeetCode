@@ -26,7 +26,7 @@ public class Number_of_Students_Doing_Homework_at_a_Given_Time {
 		int[] startTime=new int[]{1,2,3};
 		int[] endTime=new int[] {3,2,7};
 		int queryTime=4;
-		System.out.println("Given startTime array:"+Arrays.toString(startTime)+ ",endTime array:"+Arrays.toString(endTime));
+		System.out.println("Given startTime array:"+Arrays.toString(startTime)+ ", endTime array:"+Arrays.toString(endTime)+ " queryTime: "+queryTime);
 		System.out.println("Output is "+busyStudent(startTime,endTime,queryTime));
 	}
 }
