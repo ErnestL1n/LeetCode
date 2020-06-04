@@ -7,6 +7,9 @@ import java.util.*;
  * @author https://github.com/ErnestL1n
  *
  */
+
+//Leetcode.1290
+
 class ListNode{
 	int value;
 	ListNode next;
@@ -18,7 +21,6 @@ class ListNode{
 	}
 }
 
-//Leetcode.1290
 public class Convert_Binary_Number_in_a_Linked_List_to_Integer {
 
 	/**
