@@ -15,7 +15,7 @@ class TreeNode{
 	TreeNode rightchild;
 	TreeNode(){};
 	TreeNode(int value){this.value=value;};
-	TreeNode(TreeNode leftchild,TreeNode rightchild,int value){
+	TreeNode(int value,TreeNode leftchild,TreeNode rightchild){
 		this.leftchild=leftchild;
 		this.rightchild=rightchild;
 		this.value=value;
