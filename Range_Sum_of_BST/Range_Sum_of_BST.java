@@ -28,7 +28,7 @@ public class Range_Sum_of_BST {
 	 * @param args
 	 */
 	public static TreeNode BuildTree(Integer[] nodes) {
-		if(nodes==null||nodes.length!=0)return null;
+		if(nodes==null||nodes.length==0)return null;
 		Queue<TreeNode> treenodequeue=new LinkedList<>();
 		Queue<Integer> integerqueue=new LinkedList<>();
 		for(int i=1;i<nodes.length;i++)integerqueue.offer(nodes[i]);
@@ -61,7 +61,7 @@ public class Range_Sum_of_BST {
         else return rangeSumBST(root.left,L,R)+rangeSumBST(root.right,L,R);
     }
     */
-    //But with Bst,It can be more efficient
+    //But with BST,It can be more efficient
     public static int rangeSumBST(TreeNode root, int L, int R){
         if(root==null)return 0;
         if(root.value>=L&&root.value<=R)
@@ -71,9 +71,9 @@ public class Range_Sum_of_BST {
     }
 	
 	public static void main(String[] args) {
-		Integer[] nodes=new Integer[] {10,5,15,3,7,13,18,1,null,6};
-		int L=6;
-		int R=10;
+		Integer[] nodes=new Integer[] {10,5,15,3,7,null,18};
+		int L=7;
+		int R=15;
 		System.out.println("Input nodes = "+Arrays.toString(nodes)+", L = "+L+", R = "+R);
         System.out.println("Output is = "+rangeSumBST(BuildTree(nodes),L,R));
 	}
