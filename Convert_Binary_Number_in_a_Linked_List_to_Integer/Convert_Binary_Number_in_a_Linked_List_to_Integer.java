@@ -56,10 +56,21 @@ public class Convert_Binary_Number_in_a_Linked_List_to_Integer {
 			root=insertNode(root,values[i]);
 		return root;
 	}
+	public static void display(ListNode root) 
+	{ 
+	    while (root.next != null)  
+	    { 
+	        System.out.print(root.value + "-> "); 
+	        root = root.next; 
+	    } 
+	    System.out.print(root.value); 
+	} 
 	public static void main(String[] args) {
 		int[] values=new int[] {1,0,1};
-		System.out.println("Input values(head leading) "+Arrays.toString(values));
-		System.out.println("Output is "+getDecimalValue(Build(values)));
+		root=Build(values);
+		display(root);
+		System.out.println();
+		System.out.println("Output is "+getDecimalValue(root)+" (DecimalValue)");
 		
 	}
 
