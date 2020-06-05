@@ -7,7 +7,6 @@ import java.util.*;
  * @author https://github.com/ErnestL1n
  *
  */
-
 //Leetcode.1389
 public class Create_Target_Array_in_the_Given_Order {
 
