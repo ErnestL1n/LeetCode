@@ -7,7 +7,6 @@ package github.com.ErnestL1n;
  * @author https://github.com/ErnestL1n
  *
  */
-
 //Leetcode.1221
 public class Split_a_String_in_Balanced_Strings {
 
