@@ -7,7 +7,6 @@ package github.com.ErnestL1n;
  * @author https://github.com/ErnestL1n
  *
  */
-
 //Leetcode.1323
 public class Maximum_69_Number {
 
