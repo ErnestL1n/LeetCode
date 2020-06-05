@@ -8,7 +8,6 @@ package github.com.ErnestL1n;
  *
  */
 import java.util.Scanner;
-
 //Leetcode.476
 public class Number_Complement {
 
