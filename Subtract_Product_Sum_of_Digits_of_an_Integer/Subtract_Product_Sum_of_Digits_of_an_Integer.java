@@ -7,7 +7,6 @@ package github.com.ErnestL1n;
  * @author https://github.com/ErnestL1n
  *
  */
-
 //Leetcode.1281
 public class Subtract_Product_Sum_of_Digits_of_an_Integer {
 
