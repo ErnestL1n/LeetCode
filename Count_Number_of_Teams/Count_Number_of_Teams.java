@@ -9,7 +9,6 @@ import java.util.*;
  * @author https://github.com/ErnestL1n
  *
  */
-
 //Leetcode.1395
 public class Count_Number_of_Teams {
 
