@@ -7,7 +7,6 @@ package github.com.ErnestL1n;
  * @author https://github.com/ErnestL1n
  *
  */
-
 //Leetcode.1108
 public class Defanging_an_IP_Address {
 
