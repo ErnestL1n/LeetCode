@@ -7,7 +7,6 @@ import java.util.*;
  * @author https://github.com/ErnestL1n
  *
  */
-
 //Leetcode.1431
 public class Kids_With_the_Greatest_Number_of_Candies {
 
