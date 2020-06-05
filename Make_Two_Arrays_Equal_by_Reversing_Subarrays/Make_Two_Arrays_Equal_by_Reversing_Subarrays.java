@@ -10,7 +10,6 @@ import java.util.Arrays;
  * @author https://github.com/ErnestL1n
  *
  */
-
 //Leetcode.1460
 public class Make_Two_Arrays_Equal_by_Reversing_Subarrays {
 
