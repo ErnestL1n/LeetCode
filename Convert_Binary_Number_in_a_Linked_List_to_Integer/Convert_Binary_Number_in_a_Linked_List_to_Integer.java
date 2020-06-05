@@ -7,7 +7,6 @@ import java.util.*;
  * @author https://github.com/ErnestL1n
  *
  */
-
 //Leetcode.1290
 
 class ListNode{
