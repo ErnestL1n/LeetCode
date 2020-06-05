@@ -8,7 +8,6 @@ package github.com.ErnestL1n;
  *
  */
 import java.util.*;
-
 //Leetcode.771
 public class Jewels_and_Stones {
 
