@@ -9,7 +9,6 @@ package github.com.ErnestL1n;
  */
 import java.util.*;
 
-
 //reference:
 //NUS department of civil engineering
 //CE 6001 operations management and infrastructure system
