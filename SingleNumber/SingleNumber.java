@@ -9,7 +9,6 @@ import java.util.Arrays;
  * @author https://github.com/ErnestL1n
  *
  */
-
 //Leetcode.136
 public class SingleNumber {
 
