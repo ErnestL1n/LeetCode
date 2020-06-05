@@ -7,7 +7,6 @@ package github.com.ErnestL1n;
  * @author https://github.com/ErnestL1n
  *
  */
-
 //Leetcode.1342
 public class Number_of_Steps_to_Reduce_a_Number_to_Zero {
 
