@@ -12,7 +12,6 @@ import java.util.Queue;
  * @author https://github.com/ErnestL1n
  *
  */
-
 //Leetcode.1315
 
 class TreeNode{
