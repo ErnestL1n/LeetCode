@@ -9,7 +9,6 @@ import java.util.Arrays;
  * @author https://github.com/ErnestL1n
  *
  */
-
 //Leetcode.1450
 public class Number_of_Students_Doing_Homework_at_a_Given_Time {
 
