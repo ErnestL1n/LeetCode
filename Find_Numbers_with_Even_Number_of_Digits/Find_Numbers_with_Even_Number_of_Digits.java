@@ -9,7 +9,6 @@ import java.util.Arrays;
  * @author https://github.com/ErnestL1n
  *
  */
-
 //Leetcode.1295
 public class Find_Numbers_with_Even_Number_of_Digits {
 
