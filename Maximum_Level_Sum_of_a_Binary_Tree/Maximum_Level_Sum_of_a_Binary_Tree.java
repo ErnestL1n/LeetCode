@@ -8,7 +8,6 @@ package github.com.ErnestL1n;
  *
  */
 import java.util.*;
-
 //Leetcode.1161
 //reference:https://stackoverflow.com/users/11625748/steven   
 
