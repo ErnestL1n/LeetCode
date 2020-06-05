@@ -7,7 +7,6 @@ import java.util.*;
  * @author https://github.com/ErnestL1n
  *
  */
-
 //Leetcode.1282
 public class Group_the_People_Given_the_Group_Size_They_Belong_To {
 
