@@ -8,7 +8,7 @@ import java.util.*;
  *
  */
 //Leetcode.1380
-public class test {
+public class Lucky_Numbers_in_a_Matrix {
 
 	/**
 	 * @param args
