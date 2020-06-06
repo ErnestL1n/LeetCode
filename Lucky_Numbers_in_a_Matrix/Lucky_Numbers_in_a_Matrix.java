@@ -8,7 +8,7 @@ import java.util.*;
  *
  */
 //Leetcode.1380
-public class Lucky_Numbers_in_a_Matrix {
+public class test {
 
 	/**
 	 * @param args
@@ -42,11 +42,13 @@ public class Lucky_Numbers_in_a_Matrix {
 	public static void main(String[] args) {
 		int[][] array=new int[][] {{3,7,8}, {9,11,13}, {15,16,17}};
 		System.out.println("Input array is :");
-		for(int i=0;i<array.length;i++)
-			System.out.println(Arrays.toString(array[i]));
+		System.out.print("[");
+		for(int i=0;i<array.length-1;i++)
+			System.out.println(Arrays.toString(array[i])+",");
+		System.out.print(Arrays.toString(array[array.length-1]));
+		System.out.println("]");
 		System.out.println("Lucky numbers are "+luckyNumbers(array));
 		}
 
 	}
-
 
