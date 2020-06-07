@@ -48,6 +48,7 @@ public class Lucky_Numbers_in_a_Matrix {
 	public static void CountLuckyNumbers(int[][]matrix, int[] temp, List<Integer> answer) {
 		int minIndex=0;
 		int element=Integer.MAX_VALUE;
+
 		//first for loop, finding min in each row
 		for( int i =0; i < temp.length; i++ )
 		{
@@ -56,6 +57,7 @@ public class Lucky_Numbers_in_a_Matrix {
 			element=temp[i];
 			}
 		}
+
 
                 //second for loop, finding max in each column,if flag==false(not maximum in its column)=>not the lucky number
 		boolean flag=true;
