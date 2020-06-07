@@ -23,7 +23,7 @@ public class Flipping_an_Image {
 		return A;
 	}
 	public static void flip(int[] rows) {
-		int leftstart=0,rightstart=rows.length;
+		int leftstart=0,rightstart=rows.length-1;
 		while(leftstart<rightstart) {
 			int temp=rows[leftstart];
 			rows[leftstart]=rows[rightstart];
@@ -51,9 +51,9 @@ public class Flipping_an_Image {
 		int[][] Flipping_an_Image=flipAndInvertImage(matrix);
 		System.out.println("Output array is :");
 		System.out.print("[");
-		for(int i=0;i<matrix.length-1;i++)
-			System.out.println(Arrays.toString(matrix[i])+",");
-		System.out.print(Arrays.toString(matrix[matrix.length-1]));
+		for(int i=0;i<Flipping_an_Image.length-1;i++)
+			System.out.println(Arrays.toString(Flipping_an_Image[i])+",");
+		System.out.print(Arrays.toString(Flipping_an_Image[Flipping_an_Image.length-1]));
 		System.out.println("]");
 		}
 
