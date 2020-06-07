@@ -35,10 +35,39 @@ public class Lucky_Numbers_in_a_Matrix {
                 if(columns[j]==rows[i])
                     answer.add(rows[i]);
             }
-        return answer;
-        
-        
+        return answer;    
 	}
+	
+	//another version beats 100% time(0ms) and 84% space 
+	//reference:https://leetcode.com/yogeshrawat/
+	public static List<Integer> luckyNumbersBest (int[][] matrix){
+		List<Integer> answer=new ArrayList<>();
+		for(int temp[]:matrix)CountLuckyNumbers(matrix,temp,answer);
+		return answer;
+	}
+	public static void CountLuckyNumbers(int[][]matrix, int[] temp, List<Integer> answer) {
+		int minIndex=0;
+		int element=Integer.MAX_VALUE;
+		//first for loop, finding min in each column
+		for( int i =0; i < temp.length; i++ )
+		{
+		if(element>temp[i]) {
+			minIndex=i;
+			element=temp[i];
+			}
+		}
+		boolean flag=true;
+		for(int i=0;i<matrix.length;i++) {
+			if(element<matrix[i][minIndex]) {
+				flag=false;
+				break;
+			}
+		}
+		if(flag&&element!=Integer.MAX_VALUE)answer.add(element);
+	}
+	
+	
+	
 	public static void main(String[] args) {
 		int[][] array=new int[][] {{3,7,8}, {9,11,13}, {15,16,17}};
 		System.out.println("Input array is :");
@@ -47,8 +76,7 @@ public class Lucky_Numbers_in_a_Matrix {
 			System.out.println(Arrays.toString(array[i])+",");
 		System.out.print(Arrays.toString(array[array.length-1]));
 		System.out.println("]");
-		System.out.println("Lucky numbers are "+luckyNumbers(array));
+		System.out.println("Lucky numbers are "+luckyNumbersBest(array));
 		}
 
 	}
-
