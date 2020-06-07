@@ -2,7 +2,6 @@
  * 
  */
 package github.com.ErnestL1n;
-
 import java.util.Arrays;
 
 /**
