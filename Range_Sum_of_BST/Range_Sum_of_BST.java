@@ -33,7 +33,7 @@ public class Range_Sum_of_BST {
 		for(int i=1;i<nodes.length;i++)integerqueue.offer(nodes[i]);
 		TreeNode root=new TreeNode(nodes[0]);
 		treenodequeue.offer(root);
-		
+		System.out.println("I am root ,value is "+root.value);
 		while(!integerqueue.isEmpty()) {
 			Integer leftvalue=integerqueue.isEmpty()?null:integerqueue.poll();
 			Integer rightvalue=integerqueue.isEmpty()?null:integerqueue.poll();
@@ -42,11 +42,13 @@ public class Range_Sum_of_BST {
 				TreeNode left=new TreeNode(leftvalue);
 				current.leftchild=left;
 				treenodequeue.offer(left);
+				System.out.println("I am leftchild  of value "+current.value+" , my value is "+left.value);
 			}
 			if(rightvalue!=null) {
 				TreeNode right=new TreeNode(rightvalue);
 				current.rightchild=right;
 				treenodequeue.offer(right);
+				System.out.println("I am rightchild of value "+current.value+" , my value is "+right.value);
 			}
 		}
 		return root;
@@ -74,7 +76,7 @@ public class Range_Sum_of_BST {
 		int L=7;
 		int R=15;
 		System.out.println("Input nodes = "+Arrays.toString(nodes)+", L = "+L+", R = "+R);
-        System.out.println("Output is = "+rangeSumBST(BuildTree(nodes),L,R));
+        System.out.println("\nrangeSumBST is "+rangeSumBST(BuildTree(nodes),L,R));
 	}
 
 }
