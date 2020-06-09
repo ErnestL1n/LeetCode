@@ -35,6 +35,7 @@ public class Deepest_Leaves_Sum {
 		
 		TreeNode root=new TreeNode(nodes[0]);
 		TreeNodeQueue.offer(root);
+		System.out.println("I am root ,value is "+root.value);
 		while(!IntegerQueue.isEmpty()) {
 			Integer leftvalue=IntegerQueue.isEmpty()?null:IntegerQueue.poll();
 			Integer rightvalue=IntegerQueue.isEmpty()?null:IntegerQueue.poll();
@@ -43,11 +44,13 @@ public class Deepest_Leaves_Sum {
 				TreeNode left=new TreeNode(leftvalue);
 				current.leftchild=left;
 				TreeNodeQueue.offer(left);
+				System.out.println("I am leftchild  of value "+current.value+" , my value is "+left.value);
 			}
 			if(rightvalue!=null) {
 				TreeNode right=new TreeNode(rightvalue);
 				current.rightchild=right;
 				TreeNodeQueue.offer(right);
+				System.out.println("I am rightchild of value "+current.value+" , my value is "+right.value);
 			}
 			
 		}
@@ -87,8 +90,8 @@ public class Deepest_Leaves_Sum {
 	
 	public static void main(String[] args) {
 		Integer[] nodes=new Integer[] {1,2,3,4,5,null,6,7,null,null,null,null,8};
-		System.out.println("Input nodes = "+Arrays.toString(nodes));
-		System.out.println("Output is "+deepestLeavesSum(BuildTree(nodes)));
+		System.out.println("Input nodes = "+Arrays.toString(nodes)+"\n");
+		System.out.println("\nDeepestLeavesSum is "+deepestLeavesSum(BuildTree(nodes)));
 		
 
 	}
