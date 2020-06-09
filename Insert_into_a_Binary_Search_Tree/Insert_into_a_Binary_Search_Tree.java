@@ -27,12 +27,12 @@ public class Insert_into_a_Binary_Search_Tree {
 	/**
 	 * @param args
 	 */
-	public static void BuildTree(Integer[] nodes,TreeNode root) {
-		if(nodes==null||nodes.length==0)return;
+	public static TreeNode BuildTree(Integer[] nodes) {
+		if(nodes==null||nodes.length==0)return null;
 		Queue<TreeNode> treenodequeue=new LinkedList<>();
 		Queue<Integer> integerqueue=new LinkedList<>();
 		for(int i=1;i<nodes.length;i++)integerqueue.offer(nodes[i]);
-		root=new TreeNode(nodes[0]);
+		TreeNode root=new TreeNode(nodes[0]);
 		treenodequeue.offer(root);
 		System.out.println("I am root ,value is "+root.value);
 		while(!integerqueue.isEmpty()) {
@@ -52,6 +52,7 @@ public class Insert_into_a_Binary_Search_Tree {
 				System.out.println("I am rightchild of value "+current.value+" , my value is "+right.value);
 			}
 		}
+		return root;
 	}
 	
 	public static int TreeSize(TreeNode root) {
@@ -71,10 +72,12 @@ public class Insert_into_a_Binary_Search_Tree {
 			if(current.leftchild!=null) {
 				treenodequeue.offer(current.leftchild);
 				System.out.println("I am leftchild  of value "+current.value+" , my value is "+current.leftchild.value);
+				getTreeSize--;
 			}
 			if(current.rightchild!=null) {
-				treenodequeue.offer(current.leftchild);
+				treenodequeue.offer(current.rightchild);
 				System.out.println("I am rightchild of value "+current.value+" , my value is "+current.rightchild.value);
+				getTreeSize--;
 			}
 		}
 		
@@ -95,12 +98,11 @@ public class Insert_into_a_Binary_Search_Tree {
 	
 	
 	public static void main(String[] args) {
-		Integer[] nodes=new Integer[] {10,5,15,3,7,null,18};
-		System.out.println("We are distinct nodes with different values ");
-		TreeNode root=new TreeNode();
-		BuildTree(nodes,root);
-		TreeNode newroot=insertIntoBST(root,20);
-		System.out.println();
+		Integer[] nodes=new Integer[] {4,2,7,1,3,null,null};
+		System.out.println("We are distinct nodes with different values (Original Tree)");
+		TreeNode root=BuildTree(nodes);
+		TreeNode newroot=insertIntoBST(root,5);
+		System.out.println("\nTree after insertion ");
 		PrintRebuildTree(newroot);
 	
 	}
