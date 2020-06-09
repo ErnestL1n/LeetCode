@@ -12,13 +12,13 @@ import java.util.*;
 //reference:https://stackoverflow.com/users/11625748/steven   
 
 class TreeNode{
-    int val;
+    int value;
     TreeNode left;
     TreeNode right;
     TreeNode() {}
-    TreeNode(int val) { this.val = val;}
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
+    TreeNode(int value) { this.value = value;}
+    TreeNode(int value, TreeNode left, TreeNode right) {
+        this.value = value;
         this.left = left;
         this.right = right;
      }
@@ -43,7 +43,7 @@ public class Maximum_Level_Sum_of_a_Binary_Tree {
             int size=queue.size();
             for(int i=0;i<size;i++){
                 TreeNode node=queue.poll();
-                sum+=node.val;
+                sum+=node.value;
                 if(node.left!=null)queue.offer(node.left);
                 if(node.right!=null)queue.offer(node.right);
             }
@@ -69,7 +69,7 @@ public class Maximum_Level_Sum_of_a_Binary_Tree {
 
         TreeNode root = new TreeNode(array[0]);
         treeNodeQueue.offer(root);
-
+        System.out.println("I am root ,value is "+root.value);
         while (!integerQueue.isEmpty()){
         	//Binary tree begins from left
             Integer leftVal  = integerQueue.isEmpty() ? null : integerQueue.poll();
@@ -79,11 +79,13 @@ public class Maximum_Level_Sum_of_a_Binary_Tree {
                     TreeNode left = new TreeNode(leftVal);
                     current.left = left;
                     treeNodeQueue.offer(left);
+                    System.out.println("I am leftchild  of value "+current.value+" , my value is "+left.value);
             }
             if (rightVal !=null){
                     TreeNode right = new TreeNode(rightVal);
                     current.right = right;
                     treeNodeQueue.offer(right);
+                    System.out.println("I am rightchild of value "+current.value+" , my value is "+right.value);
             }
         }
         return root;
@@ -92,12 +94,9 @@ public class Maximum_Level_Sum_of_a_Binary_Tree {
 	
 	
 	public static void main(String[] args) {
-		Integer[] array = new Integer[]{39608,null,-34332,84856,62101,98129,null,null,-26118,null,57785,-75141,null,null,-63491,-63367};
-		
-		
-		
-		System.out.println("Input  array is: "+Arrays.toString(array));
-		System.out.println("Output level is "+maxLevelSum(Build(array)));
+		Integer[] array = new Integer[]{1,7,0,7,-8,null,null};
+		System.out.println("Input  array is: \n"+Arrays.toString(array));
+		System.out.println("\nMaxSum level is "+maxLevelSum(Build(array)));
 
 	}
 
