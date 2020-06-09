@@ -99,10 +99,11 @@ public class Insert_into_a_Binary_Search_Tree {
 	
 	public static void main(String[] args) {
 		Integer[] nodes=new Integer[] {4,2,7,1,3,null,null};
+		int insertvalue=5;
 		System.out.println("We are distinct nodes with different values (Original Tree)");
 		TreeNode root=BuildTree(nodes);
-		TreeNode newroot=insertIntoBST(root,5);
-		System.out.println("\nTree after insertion ");
+		TreeNode newroot=insertIntoBST(root,insertvalue);
+		System.out.println("\nTree after insertion (insertvalue:"+insertvalue+")");
 		PrintRebuildTree(newroot);
 	
 	}
