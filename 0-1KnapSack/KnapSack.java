@@ -7,7 +7,6 @@ package github.com.ErnestL1n;
  * @author https://github.com/ErnestL1n
  *
  */
-
 import java.util.*;
 public class KnapSack {
 	//for 0-1 knapsack problem
