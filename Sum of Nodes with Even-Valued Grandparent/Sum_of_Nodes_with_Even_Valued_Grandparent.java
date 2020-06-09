@@ -15,13 +15,13 @@ import java.util.Queue;
 //Leetcode.1315
 
 class TreeNode{
-    int val;
+    int value;
     TreeNode left;
     TreeNode right;
     TreeNode() {}
-    TreeNode(int val) { this.val = val;}
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
+    TreeNode(int value) { this.value = value;}
+    TreeNode(int value, TreeNode left, TreeNode right) {
+        this.value = value;
         this.left = left;
         this.right = right;
      }
@@ -43,9 +43,9 @@ public class Sum_of_Nodes_with_Even_Valued_Grandparent {
             integerQueue.offer(array[i]);
         }
 
-        TreeNode treeNode = new TreeNode(array[0]);
-        treeNodeQueue.offer(treeNode);
-
+        TreeNode root = new TreeNode(array[0]);
+        treeNodeQueue.offer(root);
+        System.out.println("I am root ,value is "+root.value);
         while (!integerQueue.isEmpty()){
         	//Binary tree begins from left
             Integer leftVal  = integerQueue.isEmpty() ? null : integerQueue.poll();
@@ -55,14 +55,16 @@ public class Sum_of_Nodes_with_Even_Valued_Grandparent {
                     TreeNode left = new TreeNode(leftVal);
                     current.left = left;
                     treeNodeQueue.offer(left);
+                    System.out.println("I am leftchild  of value "+current.value+" , my value is "+left.value);
             }
             if (rightVal !=null){
                     TreeNode right = new TreeNode(rightVal);
                     current.right = right;
                     treeNodeQueue.offer(right);
+                    System.out.println("I am rightchild of value "+current.value+" , my value is "+right.value);
             }
         }
-        return treeNode;
+        return root;
     }
 	
 	public static int sumEvenGrandparent(TreeNode root) {
@@ -71,8 +73,8 @@ public class Sum_of_Nodes_with_Even_Valued_Grandparent {
     private static int find(TreeNode current,TreeNode parent,TreeNode grandparent){
         int sum=0;
         if(current==null)return 0;
-        if(grandparent!=null&&grandparent.val%2==0){
-            sum+=current.val;
+        if(grandparent!=null&&grandparent.value%2==0){
+            sum+=current.value;
         }
         sum+=find(current.left,current,parent);
         sum+=find(current.right,current,parent);
@@ -85,8 +87,8 @@ public class Sum_of_Nodes_with_Even_Valued_Grandparent {
 		
 		Integer[] nodes = new Integer[]{6,7,8,2,7,1,3,9,null,1,4,null,null,null,5};
 		
-		System.out.println("Input  array is: "+Arrays.toString(nodes));
-		System.out.println("Output is "+sumEvenGrandparent(Build(nodes)));
+		
+		System.out.println("\nsumEvenGrandparent is "+sumEvenGrandparent(Build(nodes)));
 		
 	}
 
