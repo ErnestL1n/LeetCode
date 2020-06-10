@@ -24,9 +24,9 @@ public class Group_the_People_Given_the_Group_Size_They_Belong_To {
 			
 			//[] for each group
 			List<Integer> temp=new ArrayList<>();
-			//get(current) => return List<Integer>,finding the set at temp[k]
+			//get(current) => return List<Integer>,finding the set at temp
 			if(map.containsKey(current))temp=map.get(current);
-			//add into new temp[k]
+			//add into new temp
 			temp.add(i);
 			
 			//update map
