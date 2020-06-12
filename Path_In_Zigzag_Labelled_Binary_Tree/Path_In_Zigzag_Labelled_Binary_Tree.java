@@ -35,7 +35,7 @@ public class Path_In_Zigzag_Labelled_Binary_Tree {
 	}
 	public static void main(String[] args) {
 		int label=26;
-		System.out.println("label = "+label);
+		System.out.println("Given label is :"+label);
 		System.out.println("The labels in the path from the root of the tree to the node with that label are :");
 		System.out.println(pathInZigZagTree(label));
 		}
