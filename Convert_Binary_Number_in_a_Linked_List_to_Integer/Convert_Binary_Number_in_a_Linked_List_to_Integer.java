@@ -38,22 +38,22 @@ public class Convert_Binary_Number_in_a_Linked_List_to_Integer {
     }
 	
 	//Build ListNode is contributed by Princi Singh 
-	static ListNode root;
-	public static ListNode insertNode(ListNode root,int value) {
+	static ListNode head;
+	public static ListNode insertNode(ListNode head,int value) {
 		ListNode temp=new ListNode();
 		temp.value=value;
 		//we let root be null initially
-		temp.next=root;
-		root=temp;
-		return root;
+		temp.next=head;
+		head=temp;
+		return head;
 	}
 	public static ListNode Build(int[] values) {
 		if(values.length==0)return null;
-        root=null;
+		head=null;
         //reversely set in Linked-List 
 		for(int i=values.length-1;i>=0;i--)
-			root=insertNode(root,values[i]);
-		return root;
+			head=insertNode(head,values[i]);
+		return head;
 	}
 	public static void display(ListNode root) 
 	{ 
@@ -65,11 +65,12 @@ public class Convert_Binary_Number_in_a_Linked_List_to_Integer {
 	    System.out.print(root.value); 
 	} 
 	public static void main(String[] args) {
-		int[] values=new int[] {1,0,1};
-		root=Build(values);
-		display(root);
+		int[] listValue=new int[] {1,0,1};
+		head=Build(listValue);
+		System.out.print("List is :");
+		display(head);
 		System.out.println();
-		System.out.println("Output is "+getDecimalValue(root)+" (DecimalValue)");
+		System.out.println("Decimal Value of the linked list is :"+getDecimalValue(head)+" (DecimalValue)");
 		
 	}
 
