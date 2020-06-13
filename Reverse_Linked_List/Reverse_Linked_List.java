@@ -82,12 +82,12 @@ public class Reverse_Linked_List {
 	public static void main(String[] args) {
 		int[] listValue=new int[] {1,2,3,4,5};
 		head=Build(listValue);
-		System.out.print("Original List is :");
+		System.out.print("       Original List is :");
 		display(head);
 		System.out.println();
-		reverseListIterative(head);
+		ListNode newhead=reverseListIterative(head);
 		System.out.print("List after Reversing is :");
-		display(head);
+		display(newhead);
 	}
 
 }
