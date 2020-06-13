@@ -25,32 +25,32 @@ public class Reverse_Linked_List {
 	 */
 	
 	//Build List with int[] array
-	static ListNode root;
-	public static ListNode insertNode(ListNode root,int value) {
+	static ListNode head;
+	public static ListNode insertNode(ListNode head,int value) {
 		ListNode temp=new ListNode();
 		temp.value=value;
 		//we let root be null initially
-		temp.next=root;
-		root=temp;
-		return root;
+		temp.next=head;
+		head=temp;
+		return head;
 	}
 	public static ListNode Build(int[] values) {
 		if(values.length==0)return null;
-        root=null;
+		head=null;
         //reversely set in Linked-List 
 		for(int i=values.length-1;i>=0;i--)
-			root=insertNode(root,values[i]);
-		return root;
+			head=insertNode(head,values[i]);
+		return head;
 	}
 	//display List
-	public static void display(ListNode root) 
+	public static void display(ListNode head) 
 	{ 
-	    while (root.next != null)  
+	    while (head.next != null)  
 	    { 
-	        System.out.print(root.value + "-> "); 
-	        root = root.next; 
+	        System.out.print(head.value + "-> "); 
+	        head = head.next; 
 	    } 
-	    System.out.print(root.value); 
+	    System.out.print(head.value); 
 	} 
 	public static ListNode reverseListRecursive(ListNode head) {
     	if(head == null) return head;
@@ -81,13 +81,13 @@ public class Reverse_Linked_List {
 	    }
 	public static void main(String[] args) {
 		int[] listValue=new int[] {1,2,3,4,5};
-		root=Build(listValue);
+		head=Build(listValue);
 		System.out.print("Original List is :");
-		display(root);
+		display(head);
 		System.out.println();
-		reverseListIterative(root);
+		reverseListIterative(head);
 		System.out.print("List after Reversing is :");
-		display(root);
+		display(head);
 	}
 
 }
