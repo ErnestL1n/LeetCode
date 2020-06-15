@@ -46,8 +46,8 @@ public class Increasing_Decreasing_String {
 	}
 	public static void main(String[] args) {
 		String Input="leetcode";
-		System.out.println(" Input String is "+Input);
-		System.out.println("Output String is "+sortString(Input));
+		System.out.println("            Original String is           :"+Input);
+		System.out.println("Increasing and Decreasing_String becomes :"+sortString(Input));
 
 	}
 
