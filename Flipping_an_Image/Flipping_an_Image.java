@@ -42,21 +42,19 @@ public class Flipping_an_Image {
 	}
 	public static void main(String[] args) {
 		int[][] matrix=new int[][] {{0,0,0}, {0,1,0}, {1,1,1}};
-		System.out.println("Input array is :");
-		System.out.print("[");
+		System.out.println("Input image is :");
 		for(int i=0;i<matrix.length-1;i++)
 			System.out.println(Arrays.toString(matrix[i])+",");
 		System.out.print(Arrays.toString(matrix[matrix.length-1]));
-		System.out.println("]");
 		int[][] Flipping_an_Image=flipAndInvertImage(matrix);
-		System.out.println("Output array is :");
-		System.out.print("[");
+		System.out.println();
+		System.out.println("Image becomes  :");
 		for(int i=0;i<Flipping_an_Image.length-1;i++)
 			System.out.println(Arrays.toString(Flipping_an_Image[i])+",");
 		System.out.print(Arrays.toString(Flipping_an_Image[Flipping_an_Image.length-1]));
-		System.out.println("]");
 		}
 
 	}
+
 
 
