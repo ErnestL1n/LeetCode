@@ -37,8 +37,8 @@ public class Binary_Search {
 			int mid=(left+right)/2;
 			if(nums2[mid]==target)return mid;
 			else if(target<nums2[mid]) //target is in the left part
-				left=mid+1;
-			else right=mid-1;
+				right=mid-1;
+			else left=mid+1;
 		}
 		//non of the above case
 		return -1;
@@ -47,11 +47,11 @@ public class Binary_Search {
 	public static void main(String[] args) {
 		//in ascending order
 		int[] nums=new int[] {-1, 0, 3, 5, 9, 12};
-		int target=2;
-		System.out.println("Input array is "+Arrays.toString(nums));
-        System.out.println("Output index is "+BinarySearch(nums,target));
-        System.out.println("Input array is "+Arrays.toString(nums));
-        System.out.println("Output index is "+search(nums,target));
+		int target=5;
+		System.out.println("Input numbers are "+Arrays.toString(nums));
+        System.out.println("Target index is (Recursive) "+BinarySearch(nums,target));
+        System.out.println("Input numbers are "+Arrays.toString(nums));
+        System.out.println("Target index is (Iterative) "+search(nums,target));
         
 	}
 
