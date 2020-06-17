@@ -32,8 +32,9 @@ public class Decompress_Run_Length_Encoded_List {
 
 	public static void main(String[] args) {
 		int[] nums=new int[] {1,2,3,4};
-		System.out.println(" Input array is "+Arrays.toString(nums));
-		System.out.println("Output array is "+Arrays.toString(decompressRLElist(nums)));
+		System.out.println("Input array is "+Arrays.toString(nums));
+		System.out.println("It means It has freq = 1 and val = 2 and pair to pair for continuing...");
+		System.out.println("Output array becomes "+Arrays.toString(decompressRLElist(nums)));
 	}
 
 }
