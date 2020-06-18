@@ -47,6 +47,7 @@ public class Construct_Binary_Search_Tree_from_Preorder_Traversal {
 		}
 		return root;
 	}*/
+
 	public static int getTreeSize(TreeNode root) {
 		if(root==null)return 0;
 		return 1+getTreeSize(root.leftchild)+getTreeSize(root.rightchild);
