@@ -2,18 +2,14 @@
  * 
  */
 package github.com.ErnestL1n;
-
+import java.util.*;
 /**
  * @author https://github.com/ErnestL1n
- * Goal:Just practice Java,cause I nearly forget this language  
- * reference(Main):https://www.callicoder.com/two-sum-problem/
  *
  */
-
-import java.util.HashMap;
-import java.util.Scanner;
-import java.util.Map;
 //Leetcode.1
+//The improved solution is provided by:https://leetcode.com/jiaming2/
+//Its idea is putting into HashMap not at the first time,but at the time when it doesn't find in the HashMap
 public class Two_Sum {
 	//return indices
 	private static int[] Two_sum_bruteforce(int[] nums,int value) {
@@ -41,50 +37,21 @@ public class Two_Sum {
 	
 	}
 	
-	private static int[] Two_sum_TwoPassHashmap(int nums[],int value) {
+	private static int[] Two_sum_TwoPassHashmap(int nums[],int target) {
 		//Two pass Hash Table:O(n) a little faster than above one
-		Map<Integer,Integer> numMap=new HashMap<>();
-		for(int i=0;i<nums.length;i++) {
-			numMap.put(nums[i],i);
+		//at first iteration,it must do into map
+		HashMap<Integer,Integer> map=new HashMap<>();
+		map.put(nums[0],0);
+		for(int i=1;i<nums.length;i++) {
+			if(map.containsKey(target-nums[i]))
+				return new int[] {i,map.get(target-nums[i])};
+			map.put(nums[i], i);
 		}
-		for(int i=0;i<nums.length;i++) {
-			
-			int complement=value-nums[i];
-			//if complement exists
-			if(numMap.containsKey(complement)&& numMap.get(complement) != i)return new int[] {i,numMap.get(complement)};
-		}
-		return new int[] {};
+		return null;
 	}
 	
-	//driver program to test the result
-	
-	public static void main(String[] args)
-	{
-		Scanner keyboard=new Scanner(System.in);
+	public static void main(String[] args) {
 		
-		System.out.println("Enter the element numbers");
-		int n=keyboard.nextInt();
-		
-		int[] nums=new int[n];
-		
-		System.out.println("Enter the "+ n +" elements you want");
-		for(int i=0;i<n;i++)
-			nums[i]=keyboard.nextInt();
-		
-		System.out.println("Enter the value you want to find");
-		int value=keyboard.nextInt();
-		
-		keyboard.close();
-		
-		
-		//call the function you want to use here
-		int indices[]=Two_sum_TwoPassHashmap(nums,value);
-		
-		
-		if(indices.length==2)
-			System.out.println(indices[0]+" "+indices[1]+" is the answer");
-		else
-			System.out.println("No solution found!");
 	}
 	
 }
