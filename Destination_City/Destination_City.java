@@ -14,6 +14,7 @@ public class Destination_City {
 	 * @param args
 	 */
 	//this is 2ms solution published by https://leetcode.com/hobiter/
+	/*
 	public static String destCity(List<List<String>> paths) {
 		HashMap<String,Boolean> map=new HashMap<>();
 		for(List<String> city:paths) {
@@ -23,6 +24,14 @@ public class Destination_City {
 		}
 		for(String city:map.keySet())
 			if(map.get(city))return city;
+		return null;
+	}*/
+	/*A more straightforeward method reduced this problem to 1 ms */
+	public static String destCity(List<List<String>> paths) {
+		HashMap<String,String> map=new HashMap<>();
+		for(List<String> city:paths)
+			map.put(city.get(0), city.get(1));
+		for(String dest:map.values())if(map.get(dest)==null)return dest;
 		return null;
 	}
 	public static void main(String[] args) {
