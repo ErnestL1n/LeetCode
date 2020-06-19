@@ -27,7 +27,7 @@ public class Reverse_String {
 		
 		char[] str = {'h','e','l','l','o'};
 		
-		System.out.println("String is " + Arrays.toString(str)); 
+		System.out.println("         String is        " + Arrays.toString(str)); 
 		reverseString(str);
 		System.out.println("String after reversing is " + Arrays.toString(str));
 
