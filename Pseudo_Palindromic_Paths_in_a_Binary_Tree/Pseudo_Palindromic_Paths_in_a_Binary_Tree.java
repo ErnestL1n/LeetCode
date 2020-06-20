@@ -107,6 +107,29 @@ public class Pseudo_Palindromic_Paths_in_a_Binary_Tree {
 		freq[root.val]--;
 	}
 	
+	
+	//Method 2:Use HashSet:It runs 64 ms, memory usage:55.9 MB in Leetcode,much slower
+	//Time O(N)
+	//Space O(K + H)
+    static int hashcount = 0;
+    public int pseudoPalindromicPaths (TreeNode root) {
+        dfs(root, new HashSet<>());
+        return hashcount;
+    }
+    private void dfs(TreeNode node, Set<Integer> set) {
+        if(node !=null) {
+            if(set.contains(node.val)) set.remove(node.val); else set.add(node.val);
+            if(node.left ==null && node.right == null) {
+                if(set.size() <=1) hashcount++;
+            } else {
+                dfs(node.left, new HashSet<>(set));
+                dfs(node.right, new HashSet<>(set));                
+            }
+        }
+    }
+    
+    
+	
 	//Method 3:Use an integer:It runs 2 ms, memory usage:57.8 MB in Leetcode
 	//Time O(N)
 	//Space O(K + H)
