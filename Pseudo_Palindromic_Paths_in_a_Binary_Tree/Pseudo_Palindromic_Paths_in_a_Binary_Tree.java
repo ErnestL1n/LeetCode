@@ -8,6 +8,8 @@ import java.util.*;
  *
  */
 //Leetcode.1457
+//reference:https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/discuss/648534/JavaC%2B%2BPython-At-most-one-odd-occurrence
+//provided by https://leetcode.com/lee215/
 class TreeNode{
 	int val;
 	TreeNode left;
@@ -81,6 +83,8 @@ public class Pseudo_Palindromic_Paths_in_a_Binary_Tree {
 	}
 	
 	//Method 1:Use Array :It runs 8ms, memory usage:57.9 MB in Leetcode
+	//Time O(NK) or O(N)
+	//Space O(K + H)
 	private static int count=0;
 	public static int pseudoPalindromicPathsMethod1 (TreeNode root) {
 		//constraint:digit:1~9
@@ -102,11 +106,26 @@ public class Pseudo_Palindromic_Paths_in_a_Binary_Tree {
 		//minus freq back to the branch node
 		freq[root.val]--;
 	}
+	
+	//Method 3:Use an integer:It runs 2 ms, memory usage:57.8 MB in Leetcode
+	//Time O(N)
+	//Space O(K + H)
+	public static int pseudoPalindromicPathsMethod3(TreeNode root) {
+		return dfs(root, 0);
+	}
+	private static int dfs(TreeNode root, int count) {
+        if (root == null) return 0;
+        count ^= 1 << (root.val - 1);
+        int res = dfs(root.left, count) + dfs(root.right, count);
+        if (root.left == root.right && (count & (count - 1)) == 0) res++;
+        return res;
+    }
+	
 	public static void main(String[] args) {
 		Integer[] nodes=new Integer[] {2,3,1,3,1,null,1};
 		TreeNode root=BuildTree(nodes);
 		printTree(root);
-		System.out.println("Number of pseudo-palindromic paths going from the root node to leaf nodes is "+pseudoPalindromicPathsMethod1(root));
+		System.out.println("Number of pseudo-palindromic paths going from the root node to leaf nodes is "+pseudoPalindromicPathsMethod3(root));
 		
 	}
 
