@@ -4,7 +4,6 @@
 package github.com.ErnestL1n;
 
 import java.util.Arrays;
-
 /**
  * @author https://github.com/ErnestL1n
  *
