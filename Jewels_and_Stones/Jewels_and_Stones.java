@@ -17,8 +17,8 @@ public class Jewels_and_Stones {
 	public static int numJewelsInStones(String J, String S) {
         Set<Character> JewSet=new HashSet<>();
         
-        for(int j=0;j<J.length();j++)
-            JewSet.add(J.charAt(j));
+        for(int i=0;i<J.length();i++)
+            JewSet.add(J.charAt(i));
         
         int output=0;
         
@@ -32,8 +32,8 @@ public class Jewels_and_Stones {
 	public static void main(String[] args) {
 		
 		String J="aA",S="aAAbbbb";
-		System.out.println("J is ["+J+"],S is ["+S+"]");
-		System.out.println("Number of Jewels In Stones is:"+numJewelsInStones(J,S));
+		System.out.println("Jewel set is ["+J+"],Stone set is ["+S+"]");
+		System.out.println("Number of Jewels In Stones set is :"+numJewelsInStones(J,S));
 
 	}
 
