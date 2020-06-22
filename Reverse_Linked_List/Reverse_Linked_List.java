@@ -29,13 +29,13 @@ public class Reverse_Linked_List {
 	public static ListNode insertNode(ListNode head,int value) {
 		ListNode temp=new ListNode();
 		temp.value=value;
-		//we let root be null initially
 		temp.next=head;
 		head=temp;
 		return head;
 	}
 	public static ListNode Build(int[] values) {
 		if(values.length==0)return null;
+		//we let head be null initially
 		head=null;
         //reversely set in Linked-List 
 		for(int i=values.length-1;i>=0;i--)
@@ -52,19 +52,27 @@ public class Reverse_Linked_List {
 	    } 
 	    System.out.print(head.value); 
 	} 
+	
+	//The recursive version is slightly trickier and the key is to work backwards. 
+	//Assume that the rest of the list had already been reversed,
+	//now how do I reverse the front part? Let's assume the list is: n1 ->...-> nk-1 -> nk -> nk+1 -> nm -> null
+	//Assume from node nk+1 to nm had been reversed and you are at node nk.
+	//n1 ->...-> nk-1 -> nk -> nk+1 ->...-> nm
+	//We want nk+1's next node to point to nk.
+	//So,
+	//nk.next.next = nk;
+	//Be very careful that n1's next must point to null. If you forget about this,
+	//your linked list has a cycle in it. 
+	//This bug could be caught if you test your code with a linked list of size 2.
+	
 	public static ListNode reverseListRecursive(ListNode head) {
-    	if(head == null) return head;
-    	ListNode next = head.next;
-    	head.next = null;
-    	
-    	return recursive(head,next);
-    }
-	private static ListNode recursive(ListNode head, ListNode next){
-    	if(next == null)	return head;
-    	ListNode temp = next.next;
-    	next.next = head;
-    	return recursive(next,temp);
-    }
+    	if(head == null||head.next==null) return head;
+    	ListNode p=reverseListRecursive(head.next);
+    	head.next.next=head;
+    	head.next=null;
+    	return p;
+  
+	}
 	 public static ListNode reverseListIterative(ListNode head) {
 	    	if(head == null) return head;
 	    	
@@ -85,7 +93,7 @@ public class Reverse_Linked_List {
 		System.out.print("       Original List is :");
 		display(head);
 		System.out.println();
-		ListNode newhead=reverseListIterative(head);
+		ListNode newhead=reverseListRecursive(head);
 		System.out.print("List after Reversing is :");
 		display(newhead);
 	}
