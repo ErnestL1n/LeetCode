@@ -111,6 +111,13 @@ public class Pseudo_Palindromic_Paths_in_a_Binary_Tree {
 	//Method 2:Use HashSet:It runs 64 ms, memory usage:55.9 MB in Leetcode,much slower
 	//Time O(N)
 	//Space O(K + H)
+	//Recursively iterate all paths from root to leaves,
+	//count the occurrence of each digits in an hashset.
+	//Whenever meet an element, toggle it in the set:
+	//If set contains it, remove it.
+	//If set donesn't contain it, add it.
+	//At the leaf node, check if the size of set <= 1.
+	
     static int hashcount = 0;
     public int pseudoPalindromicPaths (TreeNode root) {
         dfs(root, new HashSet<>());
@@ -138,8 +145,14 @@ public class Pseudo_Palindromic_Paths_in_a_Binary_Tree {
 	}
 	private static int dfs(TreeNode root, int count) {
         if (root == null) return 0;
+        //use XOR to toggle bit <=> (even times => turn to 0 ,odd times => turn to 1)
+        //only suitable for the constraint nodes val between 1~9, or it might be too large to store integer 
         count ^= 1 << (root.val - 1);
         int res = dfs(root.left, count) + dfs(root.right, count);
+        //At the leaf node,
+        //check if the count has only one bit that is 1.
+        //lower bit borrow 1 from higher <=> count-1
+        //if count contains only 1's 1 ,and results 0 (this means at most 1 node in the path different from others)
         if (root.left == root.right && (count & (count - 1)) == 0) res++;
         return res;
     }
