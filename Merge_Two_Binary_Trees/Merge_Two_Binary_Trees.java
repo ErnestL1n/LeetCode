@@ -76,12 +76,29 @@ public class Merge_Two_Binary_Trees {
 		}
 	}
 	
-	public static TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
+	public static TreeNode mergeTreesRecursive(TreeNode t1, TreeNode t2) {
 		if(t1==null)return t2==null?null:t2;
 		if(t2==null)return t1;
-		t1.left=mergeTrees(t1.left,t2.left);
-		t1.right=mergeTrees(t1.right,t2.right);
+		t1.left=mergeTreesRecursive(t1.left,t2.left);
+		t1.right=mergeTreesRecursive(t1.right,t2.right);
 		t1.val+=t2.val;
+		return t1;
+	}
+	
+	public static TreeNode mergemergeTreeStack(TreeNode t1, TreeNode t2) {
+		if(t1==null)return t2;
+		Stack<TreeNode[]> stack=new Stack<>();
+		stack.push(new TreeNode[] {t1,t2});
+		//TreeNode[0] for t1, TreeNode[1] for t2
+		while(!stack.isEmpty()) {
+			TreeNode[] current=stack.pop();
+			if(current[0]==null||current[1]==null)continue;
+			current[0].val+=current[1].val;
+	          if(current[0].left==null)current[0].left=current[1].left;
+	          else stack.push(new TreeNode[]{current[0].left,current[1].left});
+	          if(current[0].right==null)current[0].right=current[1].right;
+	          else stack.push(new TreeNode[]{current[0].right,current[1].right});
+		}
 		return t1;
 	}
 	public static void main(String[] args) {
@@ -93,7 +110,7 @@ public class Merge_Two_Binary_Trees {
 		printTree(t1);
 		System.out.println("T2 is :");
 		printTree(t2);
-		TreeNode MergeTree=mergeTrees(t1,t2);
+		TreeNode MergeTree=mergemergeTreeStack(t1,t2);
 		
 		System.out.println("Merging Two Binary Trees becomes ");
 		printTree(MergeTree);
