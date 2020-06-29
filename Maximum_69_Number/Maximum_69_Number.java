@@ -9,10 +9,6 @@ package github.com.ErnestL1n;
  */
 //Leetcode.1323
 public class Maximum_69_Number {
-
-	/**
-	 * @param args
-	 */
 	
 	
 	//constraint:1 <= num <= 10^4
@@ -31,8 +27,8 @@ public class Maximum_69_Number {
 	}
 	public static void main(String[] args) {
 		int num=66666996;
-		System.out.println("Input num "+num);
-		System.out.println("Ouput num becomes "+max69(num));
+		System.out.println("Given a positive integer num :"+num+" consisting only of digits 6 and 9 ");
+		System.out.println("Return the maximum number you can get by changing at most one digit (6 becomes 9, and 9 becomes 6) :"+max69(num));
 
 	}
 
