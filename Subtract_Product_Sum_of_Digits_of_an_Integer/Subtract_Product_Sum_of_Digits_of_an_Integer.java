@@ -9,7 +9,6 @@ package github.com.ErnestL1n;
  */
 //Leetcode.1281
 public class Subtract_Product_Sum_of_Digits_of_an_Integer {
-
 	/**
 	 * @param args
 	 */
@@ -27,8 +26,8 @@ public class Subtract_Product_Sum_of_Digits_of_an_Integer {
 	
 	public static void main(String[] args) {
 		int num=1000;
-		System.out.println("Input : n = "+num);
-		System.out.println("Output: = "+subProSum(num));
+		System.out.println("Given an integer number n = "+num);
+		System.out.println("return the difference between the product of its digits and the sum of its digits. "+subProSum(num));
 	}
 
 }
