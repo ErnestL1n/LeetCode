@@ -14,6 +14,8 @@ import java.util.*;
 //CE 6001 operations management and infrastructure system
 //https://stackoverflow.com/users/2741705/pham-trung
 
+
+//only for complete direct graph
 public class Traveling_Salesman_Problem_Dp {
 
 	/**
