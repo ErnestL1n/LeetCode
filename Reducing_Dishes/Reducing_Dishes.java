@@ -19,14 +19,14 @@ public class Reducing_Dishes {
 	public static int maxSatisfaction(int[] A) {
 		int res=0,temp=0;
 		Arrays.sort(A);
-		for(int i=A.length-1;i>=0&&A[i]>=temp;i--) {
+		for(int i=A.length-1;i>=0&&A[i]+temp>0;i--) {
 			temp+=A[i];
 			res+=temp;
 		}
 		return res;
 	}
 	public static void main(String[] args) {
-		int[] satisfaction = new int[]{-1,-8,0,5,-9};
+		int[] satisfaction = new int[]{-2,5,-1,0,3,-3};
 		System.out.println("satisfaction of dishes are " +Arrays.toString(satisfaction));
 		//Like-time coefficient of a dish is defined as the time taken to cook that dish 
 		//including previous dishes multiplied by its satisfaction level  i.e.  time[i]*satisfaction[i]
