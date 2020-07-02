@@ -10,6 +10,7 @@ import java.util.Arrays;
  *
  */
 //Leetcode.961
+//provide by https://leetcode.com/lee215/
 public class N_Repeated_Element_in_Size_2N_Array {
 
 	/**
@@ -30,6 +31,18 @@ public class N_Repeated_Element_in_Size_2N_Array {
         }
         return A[i];
     }
+    
+    
+    public int repeatedNTimes3ForFun(int[] A) {
+        int i = 0, j = 0, n = A.length;
+        while (i == j || A[i] != A[j]) {
+            i = (int)(Math.random() * n);
+            j = (int)(Math.random() * n);
+        }
+        return A[i];
+    }
+    
+    
 	public static void main(String[] args) {
 		int[] A=new int[] {1,2,3,3};
 		int sizeN=A.length/2;
