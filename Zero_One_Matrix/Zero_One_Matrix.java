@@ -64,7 +64,7 @@ public class Zero_One_Matrix {
         return dp;
     }
 	
-	
+	//BFS approach
     public static int[][] updateMatrixQueue(int[][] matrix) {
         Queue<int[]> queue = new LinkedList<>();
         int m = matrix.length, n = matrix[0].length;
