@@ -36,11 +36,22 @@ public class Make_Two_Arrays_Equal_by_Reversing_Subarrays {
         }
         return true;
     }
+    public static boolean canBeEqualSimplify(int[] target, int[] arr) {
+        int[] record=new int[1001];
+        for(int a:arr)++record[a];
+        for(int t:target)
+        	if(--record[t]<0)
+        		return false;
+        return true;
+    }
+    
+    
+    
 	public static void main(String[] args) {
 		int[] target=new int[] {1,2,3,4};
 		int[] arr=new int[] {2,4,1,3};
-		System.out.println("Input: target = "+Arrays.toString(target)+" , arr = "+Arrays.toString(arr));
-		System.out.println("Output :"+canBeEqual(target,arr));
+		System.out.println("Given two integer arrays of equal length target : "+Arrays.toString(target)+" , arr : "+Arrays.toString(arr));
+		System.out.println("Return True if you can make arr equal to target , or False otherwise : "+canBeEqual(target,arr));
 	}
 
 }
