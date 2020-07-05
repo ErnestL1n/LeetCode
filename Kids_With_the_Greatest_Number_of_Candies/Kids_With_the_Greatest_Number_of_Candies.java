@@ -26,8 +26,9 @@ public class Kids_With_the_Greatest_Number_of_Candies {
 	public static void main(String[] args) {
 		int[] candies=new int[] {2,3,5,1,3};
 		int extraCandies=3;
-		System.out.println("Input: candies = "+Arrays.toString(candies)+", extraCandies = "+ extraCandies); 
-		System.out.println("Output: "+kidsWithCandies(candies,extraCandies));
+		System.out.println("Candies array for ith kid : "+Arrays.toString(candies)+", extraCandies are : "+ extraCandies); 
+		System.out.println("For each kid check if there is a way to distribute extraCandies among the kids such that he can have the greatest number of candies among them. ");
+		System.out.println(kidsWithCandies(candies,extraCandies));
 
 	}
 	
