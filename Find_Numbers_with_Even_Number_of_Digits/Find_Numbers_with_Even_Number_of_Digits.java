@@ -26,10 +26,21 @@ public class Find_Numbers_with_Even_Number_of_Digits {
         }
         return answer;
     }
+	
+	public static int findNumbersWithConstraints(int[] nums) {
+        int res=0;
+        for(int a:nums){
+            if((9<a&&a<100)||(999<a&&a<10000)||a==100000)
+                res++;
+        }
+        return res;
+    }
+	
+	
 	public static void main(String[] args) {
 		int[] nums=new int[] {12,345,2,6,7896};
-		System.out.println("Input: nums = "+Arrays.toString(nums));
-		System.out.println("Output is "+findNumbers(nums));
+		System.out.println("Given an array of integers : "+Arrays.toString(nums));
+		System.out.println("return how many of them contain an even number of digits : "+findNumbersWithConstraints(nums));
 	}
 
 }
