@@ -36,6 +36,10 @@ public class Find_Numbers_with_Even_Number_of_Digits {
         return res;
     }
 	
+	public static int findNumbersOneLine(int[] nums) {
+		return (int) Arrays.stream(nums).filter(num -> String.valueOf(num).length() % 2 == 0).count();
+    }
+	
 	
 	public static void main(String[] args) {
 		int[] nums=new int[] {12,345,2,6,7896};
