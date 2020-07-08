@@ -17,35 +17,32 @@ public class Maximum_Product_of_Two_Elements_in_an_Array {
 	 */
 	//straight forward,but efficient
 	 public static int maxProduct(int[] nums) {
-	        int big1,big2;
-	        if(nums[0]>nums[1]){
-	            big1=nums[0];
-	            big2=nums[1];
-	            }
-	        else if(nums[0]<nums[1]){
-	            big1=nums[1];
-	            big2=nums[0];
+		    //store the first and second largest ones of the array
+	        int first=Integer.MIN_VALUE;
+	        int second=first;
+	        for(int num:nums) {
+	        	if(num>=first) {
+	        		second=first;
+	        		first=num;
+	        	}
+	        	else if(num>second)
+	        		second=num;
 	        }
-	        else{
-	            big1=nums[0];
-	            big2=nums[1];
-	        }
-	        for(int i=2;i<nums.length;i++){
-	            if(nums[i]>big1){
-	                big2=big1;
-	                big1=nums[i];
-	            }
-	            else if(nums[i]==big1&&big1>big2)
-	                big2=nums[i];
-	            else if(nums[i]>big2)
-	                big2=nums[i];
-	        }
-	        return (big1-1)*(big2-1);
+	        return (first-1)*(second-1);
 	    }
+	 
+	 //sorting is much slower
+	 public int maxProductSort(int[] nums) {
+	        Arrays.sort(nums);
+	        return (nums[nums.length-1]-1)*(nums[nums.length-2]-1);
+	    }
+	 
+	 
 	public static void main(String[] args) {
 		int[] nums=new int[] {1,5,4,5};
-		System.out.println("Input: nums = "+Arrays.toString(nums));
-		System.out.println("Output: "+maxProduct(nums));
+		System.out.println("Given the array of integers nums : "+Arrays.toString(nums)+" you will choose two different indices i and j of that array ");
+		System.out.println("Return the maximum value of (nums[i]-1)*(nums[j]-1) ");
+		System.out.println("=> "+maxProduct(nums));
 	}
 
 }
