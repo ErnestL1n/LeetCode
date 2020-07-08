@@ -7,6 +7,7 @@ package github.com.ErnestL1n;
  * @author https://github.com/ErnestL1n
  *
  */
+//Leetcode.1486
 public class XOR_Operation_in_an_Array {
 
 	/**
