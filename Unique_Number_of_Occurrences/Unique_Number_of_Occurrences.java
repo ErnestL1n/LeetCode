@@ -46,8 +46,10 @@ public class Unique_Number_of_Occurrences {
 	 
 	 
 	public static void main(String[] args) {
-		
-
+		int[] arr=new int[] {-3,0,1,-3,1,1,1,-3,10,0};
+		System.out.println("Given an array of integers "+Arrays.toString(arr));
+		System.out.println("returns true if and only if the number of occurrences of each value in the array is unique.");
+		System.out.println("=> "+uniqueOccurrencesreadable(arr));
 	}
 
 }
