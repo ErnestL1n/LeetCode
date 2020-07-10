@@ -50,12 +50,54 @@ public class Binary_Tree_Pruning {
 		return root;
 	}
 	
+	
+	
+	public static int TreeSize(TreeNode root) {
+		if(root==null)return 0;
+		return 1+TreeSize(root.left)+TreeSize(root.right);
+	}
+	
+	public static void PrintTree(TreeNode root) {
+		if(root==null)return;
+		Queue<TreeNode> treenodequeue=new LinkedList<>();
+		int getTreeSize=TreeSize(root);
+		treenodequeue.offer(root);
+		System.out.println("I am root ,value is "+root.val);
+		getTreeSize--;
+		while(getTreeSize!=0) {
+			TreeNode current=treenodequeue.poll();
+			if(current.left!=null) {
+				treenodequeue.offer(current.left);
+				System.out.println("I am leftchild  of value "+current.val+" , my value is "+current.left.val);
+				getTreeSize--;
+			}
+			if(current.right!=null) {
+				treenodequeue.offer(current.right);
+				System.out.println("I am rightchild of value "+current.val+" , my value is "+current.right.val);
+				getTreeSize--;
+			}
+		}
+		
+	}
+	
+	public static TreeNode pruneTree(TreeNode root) {
+        if(root==null)return null;
+        root.left=pruneTree(root.left);
+        root.right=pruneTree(root.right);
+        //leave node && val==0
+        if(root.val==0&&root.left==null&&root.right==null)root=null;
+        return root;
+    }
+	
 	public static void main(String[] args) {
 		Integer[] nodes=new Integer[] {1,null,0,0,1};
 		System.out.println("We are given the head node root of a binary tree, where additionally every node's value is either a 0 or a 1 ");
 		System.out.println(Arrays.toString(nodes));
 		TreeNode root=BuildTree(nodes);
-
+		PrintTree(root);
+		System.out.println("Tree after pruning becomes ");
+		TreeNode newroot=pruneTree(root);
+		PrintTree(newroot);
 	}
 
 }
