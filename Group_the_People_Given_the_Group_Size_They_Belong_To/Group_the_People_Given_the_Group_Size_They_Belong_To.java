@@ -42,6 +42,7 @@ public class Group_the_People_Given_the_Group_Size_They_Belong_To {
 		
 	}
 	
+
     public static List<List<Integer>> groupThePeopleHash2(int[] groupSizes) {
         List<List<Integer>> res=new ArrayList<>();
         Map<Integer,List<Integer>> map=new HashMap<>();
