@@ -108,6 +108,36 @@ public class Univalued_Binary_Tree {
         return isUnivalTree(root.left)&&isUnivalTree(root.right);
     }
 	
+	//DFS method thanks to:https://leetcode.com/rock/
+	public static boolean isUnivalTreeDFS(TreeNode root) {
+        return dfs(root,root.val);
+    }
+	private static boolean dfs(TreeNode node,int value) {
+		if(node==null)return true;
+		if(node.val!=value)return false;
+		return dfs(node.left,value)&&dfs(node.right,value);
+	}
+	
+	//DFS with list
+	 private static List<Integer> vals;
+	 public static boolean isUnivalTreeDfsList(TreeNode root) {
+	        vals=new ArrayList();
+	        //put all node's values into vals
+	        dfs(root);
+	        for(int v:vals)
+	            if(v!=vals.get(0))
+	                return false;
+	        return true;
+	    }
+	 private static void dfs(TreeNode node){
+	        if(node!=null){
+	        vals.add(node.val);
+	        dfs(node.left);
+	        dfs(node.right);
+	        }
+	    }
+	
+	
 	
 	public static void main(String[] args) {
 		Integer[] nodes=new Integer[] {2,2,2,5,2};
@@ -115,7 +145,7 @@ public class Univalued_Binary_Tree {
 		TreeNode root=BuildTree(nodes);
 		printTree(root);
 		System.out.println("Return true if and only if the given tree is univalued.");
-		System.out.println("=>"+isUnivalTreeBFS(root));
+		System.out.println("=>"+isUnivalTreeDfsList(root));
 	}
 
 }
