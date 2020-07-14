@@ -27,6 +27,7 @@ public class Kids_With_the_Greatest_Number_of_Candies {
 	
 	//streaming implementation is provided by:https://leetcode.com/rock
 	public static List<Boolean> kidsWithCandiesStream(int[] candies, int extraCandies) {
+        //turn into java stream
         int max = Arrays.stream(candies).max().getAsInt();
         return Arrays.stream(candies).mapToObj(candy -> candy + extraCandies >= max).collect(Collectors.toList());
     }
