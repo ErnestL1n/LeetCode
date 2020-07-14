@@ -42,36 +42,32 @@ public class XOR_Operation_in_an_Array {
 	 * start, start+1, ..., start+(n-1) and start is even!!!!!. Every consecutive pair gives 1 and we have n/2 pairs. 
 	 * All (n/2) pairs contribute 1 to the result and we have to take into account the last unpaired number if it exists.*/
 	
-	//find pairs
-	private static int xorOperationB(int n, int start)
-    {
-        if (n % 2 == 0)
-            return (n / 2) & 1;
-        //take into account the last unpaired number if it exists,last one which is start+n-1
-        else
-            return ((n / 2) & 1) ^ (start + n - 1);
-    }
-	
-	//make new start value to be even,making it handy
+    //make new start value to be even,making it handy
 	//(start-1) ^ (start-1) where is 0 (trick is here)  ^  start ^ (start+1)^...^(start+(n-1))  => becomes itself
-    private static int xorOperationA(int n, int start)
-    {
-    	//odd,making it to be even 
-        if ((start & 1)==1)
-            return (start - 1) ^ xorOperationB(n + 1, start - 1);
+    private static int makenewstartvalue(int n,int start){
+        //odd,making it to be even 
+        if((start&1)==1)
+            return (start-1)^makepairs(n+1,start-1);
         else
-            return xorOperationB(n, start);
-    }    
+            return makepairs(n,start);
+    }
     
-    public static int xorOperationTrick(int n, int start)
-    {
-    	
-        int ret = 2 * xorOperationA(n, start / 2);
+    //find pairs
+    private static int makepairs(int n,int start){    
+        if(n%2==0)
+            return (n/2)&1;
+         //take into account the last unpaired number if it exists,last one which is start+n-1
+        else
+            return (n+start-1)^(n/2)&1;
+    }
+    
+    public static int xorOperationTrick(int n, int start) {
+        int res=2*makenewstartvalue(n,start/2);
         //Last bit in all numbers is the same.
         //If it is "0 or n is even" then last bit of the result is 0 too, otherwise it is 1.
         //All (n/2) pairs contribute 1 to the result and we have to take into account the last unpaired number if it exists.
-        if ((n & start & 1)==1) ret++;
-        return ret;
+        if((n&start&1)==1)res+=1;
+        return res;
     }
     
 	
