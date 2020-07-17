@@ -100,18 +100,14 @@ public class Zero_One_Matrix {
 	public static void main(String[] args) {
 		int[][] matrix=new int[][] {{0,0,0}, {0,1,0}, {1,1,1}};
 		System.out.println("Input array is :");
-		System.out.print("[");
 		for(int i=0;i<matrix.length-1;i++)
 			System.out.println(Arrays.toString(matrix[i])+",");
 		System.out.print(Arrays.toString(matrix[matrix.length-1]));
-		System.out.println("]");
 		int[][] zero_one_array=updateMatrix(matrix);
-		System.out.println("Output array is :");
-		System.out.print("[");
+		System.out.println("\nOutput array is :");
 		for(int i=0;i<zero_one_array.length-1;i++)
 			System.out.println(Arrays.toString(zero_one_array[i])+",");
 		System.out.print(Arrays.toString(zero_one_array[zero_one_array.length-1]));
-		System.out.println("]");
 		}
 
 
