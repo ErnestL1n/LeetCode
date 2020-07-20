@@ -14,6 +14,33 @@ public class Zero_One_Matrix {
 	/**
 	 * @param args
 	 */
+	
+	//Time Limit Exceeded on leetcode compiler
+	public static int[][] updateMatrixBruteForce(int[][] matrix){
+		int row=matrix.length,column=matrix[0].length;
+        if(matrix==null||row==0||column==0) return matrix;
+        int[][] res=new int[row][column];
+        for(int[] rows:res)
+            Arrays.fill(rows,Integer.MAX_VALUE);
+        for(int i=0;i<row;++i)
+            for(int j=0;j<column;++j){
+                if(matrix[i][j]==0)
+                    res[i][j]=0;
+                else{
+                    for(int k=0;k<row;++k)
+                        for(int l=0;l<column;++l)
+                            if(matrix[k][l]==0){
+                                int temp=Math.abs(i-k)+Math.abs(j-l);
+                                res[i][j]=Math.min(temp,res[i][j]);
+                            }
+                }
+            }
+        return res;
+	}
+	
+	
+	
+	
 	public static int[][] updateMatrix(int[][] matrix) {   
         int rows = matrix.length;
         if (rows == 0)
