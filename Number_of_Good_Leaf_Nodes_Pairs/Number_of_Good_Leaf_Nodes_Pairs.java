@@ -52,6 +52,31 @@ public class Number_of_Good_Leaf_Nodes_Pairs {
 		left.addAll(right);
 		return left;
 	}
+private static int result=0;
+    public static int countPairsDFS(TreeNode root, int distance) {
+        help(root,distance);
+        return result;
+    }
+    private static int[] help(TreeNode root,int distance){
+        if(root==null)return new int[distance+1];
+        if(root.left==null&&root.right==null){
+            int[] res=new int[distance+1];
+            ++res[1];
+            return res;
+        }
+        int[] left=help(root.left,distance);
+        int[] right=help(root.right,distance);
+        for(int l=0;l<left.length;++l)
+            for(int r=0;r<right.length;++r){
+                if(l+r<=distance)
+                    res+=left[l]*right[r];
+            }
+        int[] res=new int[distance+1];
+        for(int i=res.length-2;i>=1;i--){
+            res[i+1] = left[i]+right[i];
+        }
+        return res;
+    }
 	public static void main(String[] args) {
 	}
 
