@@ -13,3 +13,17 @@ public:
         return ""; // Note1:
     }
 };
+/* above one is better
+class Solution {
+public:
+    string destCity(vector<vector<string>>& paths) {
+        unordered_map<string,string> seen;
+        for(auto& pa:paths)
+            seen[pa[0]]=pa[1];
+        for(auto& [k,v]:seen)
+            if(seen[v]=="")
+                return v;
+        return "";
+    }
+};
+*/
