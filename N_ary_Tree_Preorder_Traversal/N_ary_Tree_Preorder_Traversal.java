@@ -104,22 +104,18 @@ public class N_ary_Tree_Preorder_Traversal {
 	//Iterative version is using stack
 	//preorder=>push rightmost child into stack first
 	public static List<Integer> preorderIterative(Node root){
-	    List<Integer> answer=new ArrayList<>();
-	    if(root==null)return answer;
-	    Stack<Node> stack=new Stack<>();
-	    stack.push(root);
-	    while(!stack.isEmpty()){
-	        Node current=stack.pop();
-	        answer.add(current.val);
-	        List<Node> childs = current.children;
-	        int size = childs.size() - 1;
-	        while (!childs.isEmpty()) {
-	            //push method will give them a clue that they're using the Stack
-	            stack.push(childs.remove(size));
-	            size--;
-	        }
-	    }
-	    return answer;
+        List<Integer> res=new ArrayList<>();
+        if(root==null)return res;
+        Stack<Node> stk=new Stack<>();
+        stk.push(root);
+        while(!stk.isEmpty()){
+            Node curr=stk.pop();
+            res.add(curr.val);
+            for(int i=curr.children.size()-1;i>=0;--i)
+                if(curr.children.get(i)!=null)
+                    stk.push(curr.children.get(i));
+        }
+        return res;
 	}
 
 	
