@@ -8,14 +8,9 @@ public:
 	int val;
 	vector<Node*> child;
 public:
-	Node() {};
-	Node(int value) {
-		val = value;
-	}
-	Node(int value, vector<Node*> children) {
-		val = value;
-		child = children;
-	}
+	Node() :val(0),child(vector<Node*>()){};
+	Node(int value) :val(value),child(vector<Node*>()){};
+	Node(int value, vector<Node*> children):val(value),child(children) {};
 };
 class N_ary_Tree_Preorder_Traversal {
 public:
@@ -26,8 +21,9 @@ public:
 		queue<int> intqueue;
 		Node* root = new Node(nodes[0]);
 		treenodequeue.push(root);
-		for (int i = 1;i != nodes.size();++i)
+		for (int i = 1;i != nodes.size();++i){
 			intqueue.push(nodes[i]);
+		}
 		while (!intqueue.empty()) {
 			Node* curr = treenodequeue.front();
 			treenodequeue.pop();
@@ -39,6 +35,7 @@ public:
 				Node* tempnode = new Node(temp);
 				curr->child.push_back(tempnode);
 				treenodequeue.push(tempnode);
+				if(intqueue.empty())break;
 			}
 		}
 		return root;
@@ -103,5 +100,9 @@ int main() {
 	vector<int> nodes = { 1,NULL,2,3,4,5,NULL,NULL,6,7,NULL,8,NULL,9,10,NULL,NULL,11,NULL,12,NULL,13,NULL,NULL,14 };
 	Node* root = c.BuildTree(nodes);
 	c.printTree(root);
+	cout << "The  preorder traversal is :" ;
+	vector<int> res=c.preorder(root);
+	for(auto i=res.begin();i!=res.end();++i)
+	cout<< *i << " ";
 	return 0;
 }
