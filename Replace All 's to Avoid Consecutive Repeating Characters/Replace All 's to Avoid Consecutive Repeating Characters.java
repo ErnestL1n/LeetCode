@@ -1,14 +1,11 @@
+class Solution {
     public String modifyString(String s) {
-        char[] arr = s.toCharArray();
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == '?') {
-                for (int j = 0; j < 3; j++) {
-                    if (i > 0 && arr[i - 1] - 'a' == j) continue;
-                    if (i + 1 < arr.length && arr[i + 1] - 'a' == j) continue;
-                    arr[i] = (char) ('a' + j);
-                    break;
-                }
-            }
-        }
-        return String.valueOf(arr);
+        char[] tmp=s.toCharArray();
+        for(int i=0;i<s.length();++i)
+            if(tmp[i]=='?')
+                for(tmp[i]='a';tmp[i]<='c';++tmp[i])
+                    if((i==0||tmp[i-1]!=tmp[i])&&(i==s.length()-1||tmp[i+1]!=tmp[i]))
+                        break;
+        return new String(tmp);
     }
+}
