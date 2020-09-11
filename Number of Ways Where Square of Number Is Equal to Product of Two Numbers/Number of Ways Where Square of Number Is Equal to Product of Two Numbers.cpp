@@ -10,7 +10,7 @@ public:
         for(int a:nums1){
             long target=(long)a*a;
             for(auto& [k,v]:m){
-                if(target%k!=0||!m[target/k])continue;
+                if(target%k!=0||!m.count(target/k))continue;
                 if(target/k==k)res+=v*(v-1);
                 else
                     res+=v*m[target/k];
