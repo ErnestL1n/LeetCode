@@ -10,7 +10,7 @@ public:
         for (auto& [k, v]: degreeMap)
             if (v == 0)
                 return k;
-        return ""; // Note1:
+        return ""; 
     }
 };
 /* above one is better
