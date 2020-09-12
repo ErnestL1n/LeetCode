@@ -34,6 +34,26 @@ public class Destination_City {
 		for(String dest:map.values())if(map.get(dest)==null)return dest;
 		return null;
 	}
+	
+	
+	/*
+	class Solution {
+    public String destCity(List<List<String>> paths) {
+        var map=new HashMap<String,Integer>();
+        for(List<String> pa:paths){
+            map.put(pa.get(0),1);
+            map.putIfAbsent(pa.get(1),0);
+        }
+        for(String s:map.keySet()){
+            if(map.get(s)==0)
+                return s;
+        }
+        return "";
+    }
+}
+	*/
+	
+	
 	public static void main(String[] args) {
 		String[] cities=new String[]{"London","New York","New York","Lima","Lima","Sao Paulo"};
 		List<List<String>> paths=new ArrayList<>();
