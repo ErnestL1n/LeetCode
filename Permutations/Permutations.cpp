@@ -1,3 +1,5 @@
+//recursive
+//idea:https://leetcode.wang/leetCode-46-Permutations.html
 //input:[1,2,3]
 
 class Solution {
@@ -46,3 +48,9 @@ public:
         return;
     }
 };
+
+
+
+
+
+
