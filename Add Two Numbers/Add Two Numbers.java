@@ -26,6 +26,7 @@ class Solution {
             extra/=10;
             p=p.next;
         }
+        p.next=null;
         return preHead.next;
     }
 }
