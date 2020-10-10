@@ -1,3 +1,45 @@
+//optimal version
+//Complexity Analysis
+
+//Time: O(m), where m is the number of edges. 
+//We go through all edges 3 times. The complexity of the find operation is O(𝛼(n)) as we use both rank and path compression. 
+//𝛼(n) can be considered a constant for all practical purposes.
+//Memory: O(n) for a disjoined set.
+
+class Solution {
+    private int find(int[] ds,int i){
+        if(ds[i]<0)
+            return i;
+        ds[i]=find(ds,ds[i]);
+        return ds[i];
+    }
+    public int maxNumEdgesToRemove(int n, int[][] edges) {
+        int[] ds_both=new int[n+1];
+        int used=0;
+        Arrays.fill(ds_both,-1);
+        for(int type=3;type>=1;--type){
+            int[] ds_one=new int[n+1];
+            for(int i=0;i<=n;++i)
+                ds_one[i]=ds_both[i];
+            int[] ds=type==3?ds_both:ds_one;
+            for(var e:edges){
+                if(e[0]==type){
+                    int i=find(ds,e[1]),j=find(ds,e[2]);
+                    if(i!=j){
+                        ++used;
+                        ds[i]+=ds[j];
+                        ds[j]=i;
+                    }
+                }
+            }
+            if(type!=3&&ds[find(ds,n)]!=-n)
+                return -1;
+        }
+        return edges.length-used;
+    }
+}
+
+
 class Solution {
     public int maxNumEdgesToRemove(int n, int[][] edges) {
         Arrays.sort(edges,(a,b)->b[0]-a[0]);
@@ -53,3 +95,4 @@ class Solution {
     
 }
 }
+

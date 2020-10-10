@@ -1,3 +1,41 @@
+//optimal version
+//Complexity Analysis
+
+//Time: O(m), where m is the number of edges. 
+//We go through all edges 3 times. The complexity of the find operation is O(𝛼(n)) as we use both rank and path compression. 
+//𝛼(n) can be considered a constant for all practical purposes.
+//Memory: O(n) for a disjoined set.
+
+class Solution {
+public:
+    int find(vector<int>& ds,int i){
+        return ds[i]<0?i:ds[i]=find(ds,ds[i]);
+    }
+    int maxNumEdgesToRemove(int n, vector<vector<int>>& edges) {
+        vector<int> ds_both(n+1,-1);
+        int used=0;
+		//note: vector with "=" just copy values,thus we use auto& as reference
+        for(int type=3;type>=1;--type){
+            auto ds_one=ds_both;
+            auto& ds=type==3?ds_both:ds_one;
+            for(auto& e:edges){
+                if(e[0]==type){
+                    int i=find(ds,e[1]),j=find(ds,e[2]);
+                    if(i!=j){
+                        ++used;
+                        ds[i]+=ds[j];
+                        ds[j]=i;
+                    }
+                }
+            }
+			//find(ds,1~n)!=-n is OK  ,since nodes are labeled 1~n,and finally should be connect together
+            if(type!=3&&ds[find(ds,n)]!=-n)
+                return -1;
+        }
+        return edges.size()-used;
+    }
+};
+
 class Union{
     vector<int> component;
     int distinctcomponents;
@@ -51,3 +89,4 @@ public:
         return (Bob.United()&&Alice.United())?edges.size()-addedEdges:-1;
     }
 };
+
