@@ -1,36 +1,62 @@
-int find(vector<int> &ds, int i) {
-    return ds[i] < 0 ? i : ds[i] = find(ds, ds[i]);
-}
-int minCostConnectPoints(vector<vector<int>>& ps) {
-    int n = ps.size(), res = 0;
-    vector<int> ds(n, -1);
-    vector<array<int, 3>> arr;
-    for (auto i = 0; i < n; ++i)
-        for (auto j = i + 1; j < n; ++j) {
-            arr.push_back({abs(ps[i][0] - ps[j][0]) + abs(ps[i][1] - ps[j][1]), i, j});
+// c++ Prim's with priority queue(min priority queue) implementation 
+typedef pair<int,int> pr;
+class Solution {
+public:
+    int minCostConnectPoints(vector<vector<int>>& points) {
+        int n=points.size(),res=0,i=0,connected=0;   //i can start from 0~n-1
+        vector<bool> visited(n);
+        priority_queue<pr,vector<pr>,greater<pr>> pq;  //sort by first element which is abs(......)=minDistance
+        while(++connected<n){
+            visited[i]=true;
+            for(int j=1;j<n;++j)
+                if(!visited[j])
+                    pq.push({abs(points[i][0]-points[j][0])+abs(points[i][1]-points[j][1]),j});
+            while(visited[pq.top().second])
+                pq.pop();
+            res+=pq.top().first;
+            i=pq.top().second;
+            pq.pop();
         }
-    make_heap(begin(arr), end(arr), greater<array<int, 3>>());
-    while (!arr.empty()) {
-        pop_heap(begin(arr), end(arr), greater<array<int, 3>>());
-        auto [dist, i, j] = arr.back();
-        arr.pop_back();
-        i = find(ds, i), j = find(ds, j);
-        if (i != j) {
-            res += dist;
-            ds[i] += ds[j];
-            ds[j] = i;
-            if (ds[i] == -n)
-                break;
-        }
+        return res;
     }
-    return res;
-}
+};
+
+//Kruskal  ,min heap implementation(fetch from back,compare to min priority queue fetch from top())
+typedef array<int,3> ar;
+class Solution {
+public:
+    int find(vector<int>& ds,int i){
+        return ds[i]<0?i:ds[i]=find(ds,ds[i]);
+    }
+    int minCostConnectPoints(vector<vector<int>>& pts) {
+        int res=0,n=pts.size();
+        vector<int> ds(n,-1);
+        vector<ar> arr;
+        for(auto i=0;i<n-1;++i)
+            for(auto j=i+1;j<n;++j)
+                arr.push_back({abs(pts[i][0]-pts[j][0])+abs(pts[i][1]-pts[j][1]),i,j});
+        make_heap(arr.begin(),arr.end(),greater<ar>());
+        while(!arr.empty()){
+            pop_heap(arr.begin(),arr.end(),greater<ar>());
+            auto [dist,i,j]=arr.back();
+            arr.pop_back();
+            i=find(ds,i),j=find(ds,j);
+            if(i!=j){
+                res+=dist;
+                ds[i]+=ds[j];
+                ds[j]=i;
+                if(ds[i]==-n)
+                    break;
+            }
+        }
+        return res;
+    }
+};
 
 
 
-
-
-/*
+//Kruskal v2 much slower,text book union
+typedef array<int,3> ar;
 class Union{
     int components;
     vector<int> component;
@@ -39,7 +65,7 @@ public:
         components=n;
         for(int i=0;i<=n;++i)
             component.push_back(i);
-    }
+    };
     int Find(int a){
         if(component[a]!=a)
             component[a]=Find(component[a]);
@@ -55,110 +81,69 @@ public:
     bool United(){
         return components==1;
     }
-    
 };
 class Solution {
 public:
     int minCostConnectPoints(vector<vector<int>>& points) {
-        int size=points.size();
-        vector<array<int,3>> edges;
-        for(int i=0;i<size-1;++i)
-            for(int j=i+1;j<size;++j){
-                int dist = abs(points[i][0]-points[j][0])+ abs(points[i][1]-points[j][1]); // Manhattan distance.
-                edges.push_back({dist, i, j}); // Add the edge.
-            }
-        make_heap(edges.begin(), edges.end(), greater<>());  // For heap sort.
-        Union uf(size);   // Very important to have this data structure ready.
-        int cost = 0;      // Stores the cost.
-        while(!edges.empty() && !uf.United()) { // Until the forest is not a single component.
-            pop_heap(edges.begin(), edges.end(), greater<>()); 
-            auto edge = edges.back(); // Minimum cost edge.
-            int p1 = edge[1];  // Point 1
-            int p2 = edge[2];  // Point 2
-            if (uf.Unite(p1, p2)) {  // Merge two components.
-                cost += edge[0];  // Add the cost if they were not already merged.
-            }
-            edges.pop_back();  // Remove the lowest cost edge.
-        }
-        return cost;   // Yay, solved.
-    }
-};
-*/
-
-/*Kruskal algorithm
-int find(vector<int> &ds, int i) {
-    return ds[i] < 0 ? i : ds[i] = find(ds, ds[i]);
-}
-int minCostConnectPoints(vector<vector<int>>& ps) {
-    int n = ps.size(), res = 0;
-    vector<int> ds(n, -1);
-    vector<array<int, 3>> arr;
-    for (auto i = 0; i < n; ++i)
-        for (auto j = i + 1; j < n; ++j) {
-            arr.push_back({abs(ps[i][0] - ps[j][0]) + abs(ps[i][1] - ps[j][1]), i, j});
-        }
-    make_heap(begin(arr), end(arr), greater<array<int, 3>>());
-    while (!arr.empty()) {
-        pop_heap(begin(arr), end(arr), greater<array<int, 3>>());
-        auto [dist, i, j] = arr.back();
-        arr.pop_back();
-        i = find(ds, i), j = find(ds, j);
-        if (i != j) {
-            res += dist;
-            ds[i] += ds[j];
-            ds[j] = i;
-            if (ds[i] == -n)
-                break;
-        }
-    }
-    return res;
-}
-*/
-
-/*
-class Solution {
-    public int minCostConnectPoints(int[][] points) {
-        int n=points.length;
-        PriorityQueue<int[]> pq=new PriorityQueue<>((a,b)->a[0]-b[0]);
+        int res=0,n=points.size();
+        vector<ar> arr;
         for(int i=0;i<n-1;++i)
-            for(int j=i+1;j<n;++j){
-                int dist=Math.abs(points[i][0]-points[j][0])+Math.abs(points[i][1]-points[j][1]);
-                pq.offer(new int[]{dist,i,j});
-            }
-        int res=0;
-        Union un=new Union(n);
-        while(!un.United()&&!pq.isEmpty()){
-            int[] edge=pq.poll();
-            int p1=edge[1];
-            int p2=edge[2];
-            if(un.Unite(p1,p2))
-                res+=edge[0];
+            for(int j=0;j<n;++j)
+                arr.push_back({abs(points[i][0]-points[j][0])+abs(points[i][1]-points[j][1]),i,j});
+        make_heap(arr.begin(),arr.end(),greater<ar>());
+        Union uf(n);
+        while(!arr.empty()&&!uf.United()){
+            pop_heap(arr.begin(),arr.end(),greater<ar>());
+            auto [dist,i,j]=arr.back();
+            arr.pop_back();
+            if(uf.Unite(i,j))
+                res+=dist;
         }
         return res;
     }
-    private class Union{
-        int components;
-        int[] component;
-        Union(){};
-        Union(int n){
-            components=n;
-            component=new int[n+1];
-            for(int i=0;i<=n;++i)
-                component[i]=i;
+};
+
+
+
+
+
+
+
+
+
+//optimal Prim's for Complete Graph
+class Solution {
+public:
+    int minCostConnectPoints(vector<vector<int>>& points) {
+        int n=points.size(),res=0,i=0,connected=0;
+        vector<int> min_d(n,10000000);          //constraint:-10^6 <= xi, yi <= 10^6  thus initialization must larger than abs(2*10^6)
+        while(++connected<n){
+            min_d[i]=INT_MAX;
+            int min_j=i;
+            for(int j=0;j<n;++j){
+                if(min_d[j]!=INT_MAX){
+                min_d[j]=min(min_d[j],abs(points[i][0] - points[j][0]) + abs(points[i][1] - points[j][1]));
+                min_j = min_d[j] < min_d[min_j] ? j : min_j;
+				}
+            }
+            res+=min_d[min_j];
+            i=min_j;
         }
-        int Find(int a){
-            if(component[a]!=a)
-                component[a]=Find(component[a]);
-            return component[a];
-        }
-        boolean Unite(int a,int b){
-            if(Find(a)==Find(b))
-                return false;
-            --components;
-            component[Find(a)]=b;
-            return true;
-        }
-        boolean United(){return components==1;}
+        return res;
     }
-}
-*/
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
