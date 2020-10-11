@@ -1,5 +1,5 @@
-#define SIZE 1000000
-
+#define SIZE 100000
+//size>10000
 
 typedef struct {
     int* table;

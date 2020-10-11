@@ -1,4 +1,5 @@
 //simple solution ,c base ,so in c++ it is faster
+//size>10000
 #define SIZE 100000
 class MyHashMap {
 public:
