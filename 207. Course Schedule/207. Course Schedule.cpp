@@ -48,3 +48,45 @@ public:
         return cnt == N;
     }
 };
+
+
+
+
+
+
+
+
+
+
+
+class Solution {
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+        int[][] graph=buildGraph(prerequisites,numCourses);
+        int[] degree=countInDegree(graph);
+        for(int i=0;i<prerequisites.length;++i){
+            int j=0;
+            for(;j<prerequisites.length;++j)
+                if(degree[j]==0)
+                    break;
+            if(j==prerequisites.length)
+                return false;
+            degree[j]=-1;
+            for(int d:graph[j])
+                --degree[d];
+        }
+        return true;       
+    }
+    private int[][] buildGraph(int[][] prerequisites,int numCourses){
+        int[][] g=new int[numCourses][];
+        for(int i=0;i<prerequisites.length;++i)
+            g[prerequisites[i][1]]=prerequisites[i][0];
+        return g;
+    }
+    private int[] countInDegree(int[][] graph){
+        int[] degree=new int[graph.length];
+        for(int[] adj:graph)
+            for(int d:adj)
+                ++degree[d];
+        return degree;
+    }
+}
