@@ -68,3 +68,72 @@ class Solution {
         return true;
     }
 }
+
+
+
+
+
+
+
+
+
+
+//simple version bfs,faster
+class Solution {
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+        List<List<Integer>> G=new ArrayList<>();
+        int[] degree=new int[numCourses];
+        for(int i=0;i<numCourses;++i)
+            G.add(new ArrayList());
+        for(var k:prerequisites){
+            G.get(k[1]).add(k[0]);
+            ++degree[k[0]];
+        }  
+        Queue<Integer> q=new LinkedList<>();
+        for(int i=0;i<numCourses;++i)
+            if(degree[i]==0)
+                q.offer(i);
+        int cnt=0;
+        while(!q.isEmpty()){
+            int k=q.poll();
+            ++cnt;
+            for(int d:G.get(k))
+                if(--degree[d]==0)
+                    q.offer(d);
+        }
+        return cnt==numCourses;
+    }
+}
+
+
+
+
+//simple version dfs,faster
+class Solution {
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+        state=new int[numCourses];
+        List<List<Integer>> G=new ArrayList<>();
+        for(int i=0;i<numCourses;++i){
+            G.add(new ArrayList());
+            state[i]=-1;
+        }
+        for(var p:prerequisites)
+            G.get(p[1]).add(p[0]);
+        for(int i=0;i<numCourses;++i)
+            if(dfs(G,i)==false)
+                return false;
+        return true;
+    }
+    private int[] state;
+    //-1:unvisited,0:visiting,1:visited
+    private boolean dfs(List<List<Integer>> p,int u){
+        if(state[u]!=-1)
+            return state[u]==1;
+        state[u]=0;
+        for(int k:p.get(u))
+            if(dfs(p,k)==false)
+                return false;
+        state[u]=1;
+        return true;
+    }
+}
