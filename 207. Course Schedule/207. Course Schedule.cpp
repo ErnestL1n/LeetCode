@@ -58,35 +58,92 @@ public:
 
 
 
-
+//BFS
 class Solution {
-    public boolean canFinish(int numCourses, int[][] prerequisites) {
-        int[][] graph=buildGraph(prerequisites,numCourses);
-        int[] degree=countInDegree(graph);
-        for(int i=0;i<prerequisites.length;++i){
-            int j=0;
-            for(;j<prerequisites.length;++j)
-                if(degree[j]==0)
+public:
+    bool canFinish(int numCourses, vector<vector<int>>& p) {
+        vector<pair<int,int>> prerequisites;
+        for(int i=0;i<p.size();++i)
+            prerequisites.push_back(make_pair(p[i][0],p[i][1]));
+        graph g = buildGraph(numCourses, prerequisites);
+        vector<int> degrees = computeIndegrees(g);
+        for (int i = 0; i < numCourses; i++) {
+            int j = 0;
+            for (; j < numCourses; j++) {
+                if (!degrees[j]) {
                     break;
-            if(j==prerequisites.length)
+                }
+            }
+            if (j == numCourses) {
                 return false;
-            degree[j]=-1;
-            for(int d:graph[j])
-                --degree[d];
+            }
+            degrees[j]--;
+            for (int v : g[j]) {
+                degrees[v]--;
+            }
         }
-        return true;       
+        return true;
     }
-    private int[][] buildGraph(int[][] prerequisites,int numCourses){
-        int[][] g=new int[numCourses][];
-        for(int i=0;i<prerequisites.length;++i)
-            g[prerequisites[i][1]]=prerequisites[i][0];
+private:
+    typedef vector<vector<int>> graph;
+    
+    graph buildGraph(int numCourses, vector<pair<int, int>>& prerequisites) {
+        graph g(numCourses);
+        for (auto p : prerequisites) {
+            g[p.second].push_back(p.first);
+        }
         return g;
     }
-    private int[] countInDegree(int[][] graph){
-        int[] degree=new int[graph.length];
-        for(int[] adj:graph)
-            for(int d:adj)
-                ++degree[d];
-        return degree;
+    
+    vector<int> computeIndegrees(graph& g) {
+        vector<int> degrees(g.size(), 0);
+        for (auto adj : g) {
+            for (int v : adj) {
+                degrees[v]++;
+            }
+        }
+        return degrees;
     }
-}
+};
+
+
+
+
+
+//DFS
+typedef pair<int,int> pr;
+class Solution {
+public:
+    bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
+        vector<pr> p;
+        for(int i=0;i<prerequisites.size();++i)
+            p.push_back(make_pair(prerequisites[i][0],prerequisites[i][1]));
+        graph g=buildGraph(p,numCourses);
+        vector<bool> todo(numCourses,false),done(numCourses,false);
+        for(int i=0;i<numCourses;++i){
+            if(!done[i]&&!acyclic(g,todo,done,i))
+                return false;
+        }
+        return true;
+    }
+private:
+    typedef vector<vector<int>> graph;
+    graph buildGraph(vector<pr>& prerequisites,int numCourses){
+        graph g(numCourses);
+        for(auto&p:prerequisites)
+            g[p.second].push_back(p.first);
+        return g;
+    }
+    bool acyclic(graph& g,vector<bool>& todo,vector<bool>& done,int node){
+        if(todo[node])
+            return false;
+        if(done[node])
+            return true;
+        todo[node]=done[node]=true;
+        for(int v:g[node])
+            if(!acyclic(g,todo,done,v))
+                return false;
+        todo[node]=false;
+        return true;
+    }
+};
