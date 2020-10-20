@@ -16,15 +16,15 @@ public class Reducing_Dishes {
 	 * @param args
 	 */
 	//brilliant solution provided by https://leetcode.com/lee215/
-	public static int maxSatisfaction(int[] A) {
-		int res=0,temp=0;
-		Arrays.sort(A);
-		for(int i=A.length-1;i>=0&&A[i]+temp>0;i--) {
-			temp+=A[i];
-			res+=temp;
-		}
-		return res;
-	}
+	public int maxSatisfaction(int[] s) {
+        Arrays.sort(s);
+        int res=0,total=0;
+        for(int i=s.length-1;i>=0&&s[i]+total>0;--i){
+            total+=s[i];
+            res+=total;
+        }
+        return res;
+    }
 	public static void main(String[] args) {
 		int[] satisfaction = new int[]{-2,5,-1,0,3,-3};
 		System.out.println("satisfaction of dishes are " +Arrays.toString(satisfaction));
