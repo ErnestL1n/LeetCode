@@ -6,6 +6,7 @@
 //𝛼(n) can be considered a constant for all practical purposes.
 //Memory: O(n) for a disjoined set.
 
+
 class Solution {
 public:
     int find(vector<int>& ds,int i){
