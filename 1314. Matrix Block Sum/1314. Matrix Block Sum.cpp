@@ -11,7 +11,7 @@ public:
             for(int j=0;j<n;++j){
                 int r1=max(0,i-K),c1=max(0,j-K);
                 int r2=min(m,i+K+1),c2=min(n,j+K+1);
-                res[i][j]=dp[r2][c2]-dp[r2][c1]-dp[r1][c2]+dp[r2][c2];
+                res[i][j]=dp[r2][c2]-dp[r2][c1]-dp[r1][c2]+dp[r1][c1];
             }
         return res;
     }
