@@ -1,3 +1,48 @@
+/*
+@credit to rock (https://leetcode.com/rock/)
+
+Note: (key!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)
+    1.rangeSum[i + 1][j + 1] corresponds to cell (i, j);
+    2.rangeSum[0][j] and rangeSum[i][0] are all dummy values, which are used for the convenience of computation of DP state transmission formula.
+
+
+1.
+
+To calculate rangeSum, the ideas are as below - credit to @haoel
+
++-----+-+-------+     +--------+-----+     +-----+---------+     +-----+--------+
+|     | |       |     |        |     |     |     |         |     |     |        |
+|     | |       |     |        |     |     |     |         |     |     |        |
++-----+-+       |     +--------+     |     |     |         |     +-----+        |
+|     | |       |  =  |              |  +  |     |         |  -  |              | + mat[i][j]
++-----+-+       |     |              |     +-----+         |     |              |
+|               |     |              |     |               |     |              |
+|               |     |              |     |               |     |              |
++---------------+     +--------------+     +---------------+     +--------------+
+
+rangeSum[i+1][j+1] =  rangeSum[i][j+1] + rangeSum[i+1][j]    -   rangeSum[i][j]   + mat[i][j]
+
+2.
+
+So, we use the same idea to find the specific block's sum. - credit to @haoel
+
++---------------+   +--------------+   +---------------+   +--------------+   +--------------+
+|               |   |         |    |   |   |           |   |         |    |   |   |          |
+|   (r1,c1)     |   |         |    |   |   |           |   |         |    |   |   |          |
+|   +------+    |   |         |    |   |   |           |   +---------+    |   +---+          |
+|   |      |    | = |         |    | - |   |           | - |      (r1,c2) | + |   (r1,c1)    |
+|   |      |    |   |         |    |   |   |           |   |              |   |              |
+|   +------+    |   +---------+    |   +---+           |   |              |   |              |
+|        (r2,c2)|   |       (r2,c2)|   |   (r2,c1)     |   |              |   |              |
++---------------+   +--------------+   +---------------+   +--------------+   +--------------+
+
+
+
+Analysis:
+
+Time & space: O(m * n).
+
+*/
 class Solution {
 public:
     vector<vector<int>> matrixBlockSum(vector<vector<int>>& mat, int K) {
@@ -9,9 +54,8 @@ public:
         vector<vector<int>> res(m,vector<int>(n));
         for(int i=0;i<m;++i)
             for(int j=0;j<n;++j){
-                int r1=max(0,i-K),c1=max(0,j-K);
-                int r2=min(m,i+K+1),c2=min(n,j+K+1);
-                res[i][j]=dp[r2][c2]-dp[r2][c1]-dp[r1][c2]+dp[r1][c1];
+                int r_lo=max(0,i-K),c_lo=max(0,j-K),r_hi=min(m,i+K+1),c_hi=min(n,j+K+1);
+                res[i][j]=dp[r_hi][c_hi]-dp[r_hi][c_lo]-dp[r_lo][c_hi]+dp[r_lo][c_lo];
             }
         return res;
     }

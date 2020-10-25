@@ -1,53 +1,63 @@
-/**
- * 
- */
-package github.com.ErnestL1n;
+/*
+@credit to rock (https://leetcode.com/rock/)
 
-import java.util.Arrays;
+Note: (key!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)
+    1.rangeSum[i + 1][j + 1] corresponds to cell (i, j);
+    2.rangeSum[0][j] and rangeSum[i][0] are all dummy values, which are used for the convenience of computation of DP state transmission formula.
 
-/**
- * @author https://github.com/ErnestL1n
- *
- */
-//Leetcode.1314
-public class Matrix_Block_Sum {
 
-	/**
-	 * @param args
-	 */
-	//Thanks to https://leetcode.com/hiepit/ & https://leetcode.com/rock/
-	public static int[][] matrixBlockSum(int[][] mat, int K){
-		int row=mat.length,column=mat[0].length;
-		int[][] rangesum=new int[row+1][column+1];
-		//rangesum[i][j] is sum of all elements from rectangle (0,0,i,j) as left, top, right, bottom corresponding
-		for(int r=1;r<rangesum.length;++r)
-			for(int c=1;c<rangesum[0].length;++c)
-				rangesum[r][c]=mat[r-1][c-1]+rangesum[r-1][c]+rangesum[r][c-1]-rangesum[r-1][c-1];
-		int[][] res=new int[row][column];
-		for(int r=0;r<row;++r)
-			for(int c=0;c<column;++c) {
-				// Since "rangesum" start with 1 so we need to increase r1, c1, r2, c2 by 1
-				int r_lo=Math.max(0, r-K)+1,c_lo=Math.max(0, c-K)+1;
-				int r_hi=Math.min(row, r+K+1),c_hi=Math.min(column, c+K+1);
-				res[r][c]=rangesum[r_hi][c_hi]-rangesum[r_lo-1][c_hi]-rangesum[r_hi][c_lo-1]+rangesum[r_lo-1][c_lo-1];
-				}
-		return res;
-	}
-	
-	public static void main(String[] args) {
-		int[][] mat= {{1,2,3},{4,5,6},{7,8,9}};
-		int K=1;
-		System.out.println("Given a m * n matrix mat ");
-		for(int r=0;r<mat.length;++r)
-			System.out.println(Arrays.toString(mat[r]));
-		System.out.println("and an integer K="+K);
-		System.out.println("\nreturn a matrix answer where each answer[i][j] is the sum of all elements");
-		System.out.println("mat[r][c] for i - K <= r <= i + K, j - K <= c <= j + K, and (r, c) is a valid position in the matrix.");
-		
-		System.out.println("Matrix Block Sum => ");
-		mat=matrixBlockSum(mat,K);
-		for(int r=0;r<mat.length;++r)
-			System.out.println(Arrays.toString(mat[r]));
-	}
+1.
 
+To calculate rangeSum, the ideas are as below - credit to @haoel
+
++-----+-+-------+     +--------+-----+     +-----+---------+     +-----+--------+
+|     | |       |     |        |     |     |     |         |     |     |        |
+|     | |       |     |        |     |     |     |         |     |     |        |
++-----+-+       |     +--------+     |     |     |         |     +-----+        |
+|     | |       |  =  |              |  +  |     |         |  -  |              | + mat[i][j]
++-----+-+       |     |              |     +-----+         |     |              |
+|               |     |              |     |               |     |              |
+|               |     |              |     |               |     |              |
++---------------+     +--------------+     +---------------+     +--------------+
+
+rangeSum[i+1][j+1] =  rangeSum[i][j+1] + rangeSum[i+1][j]    -   rangeSum[i][j]   + mat[i][j]
+
+2.
+
+So, we use the same idea to find the specific block's sum. - credit to @haoel
+
++---------------+   +--------------+   +---------------+   +--------------+   +--------------+
+|               |   |         |    |   |   |           |   |         |    |   |   |          |
+|   (r1,c1)     |   |         |    |   |   |           |   |         |    |   |   |          |
+|   +------+    |   |         |    |   |   |           |   +---------+    |   +---+          |
+|   |      |    | = |         |    | - |   |           | - |      (r1,c2) | + |   (r1,c1)    |
+|   |      |    |   |         |    |   |   |           |   |              |   |              |
+|   +------+    |   +---------+    |   +---+           |   |              |   |              |
+|        (r2,c2)|   |       (r2,c2)|   |   (r2,c1)     |   |              |   |              |
++---------------+   +--------------+   +---------------+   +--------------+   +--------------+
+
+
+
+Analysis:
+
+Time & space: O(m * n).
+
+*/
+
+
+class Solution {
+    public int[][] matrixBlockSum(int[][] mat, int K) {
+        int m=mat.length,n=mat[0].length;
+        int[][] dp=new int[m+1][n+1];
+        for(int i=0;i<m;++i)
+            for(int j=0;j<n;++j)
+                dp[i+1][j+1]=dp[i+1][j]+dp[i][j+1]-dp[i][j]+mat[i][j];
+        int[][] res=new int[m][n];
+        for(int i=0;i<m;++i)
+            for(int j=0;j<n;++j){
+                int r_lo=Math.max(0,i-K),c_lo=Math.max(0,j-K),r_hi=Math.min(m,i+K+1),c_hi=Math.min(n,j+K+1);
+                res[i][j]=dp[r_hi][c_hi]-dp[r_hi][c_lo]-dp[r_lo][c_hi]+dp[r_lo][c_lo];
+            }
+        return res;
+    }
 }
