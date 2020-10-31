@@ -28,3 +28,31 @@ public:
         return matrix;
     }
 };
+
+
+
+//dp
+class Solution {
+public:
+    vector<vector<int>> updateMatrix(vector<vector<int>>& matrix) {
+        int m=matrix.size(),n=matrix[0].size();
+        for(int i=0;i<m;++i)
+            for(int j=0;j<n;++j){
+                if(matrix[i][j]!=0){
+                    matrix[i][j]=0x7fffffff;
+                    int upmin=i>0?matrix[i-1][j]+1:m*n;
+                    int leftmin=j>0?matrix[i][j-1]+1:m*n;
+                    matrix[i][j]=min(min(leftmin,upmin),matrix[i][j]);                  
+                    }
+            }
+        for(int i=m-1;i>=0;--i)
+            for(int j=n-1;j>=0;--j){
+                if(matrix[i][j]!=0){
+                    int downmin=i<m-1?matrix[i+1][j]+1:m*n;
+                    int rightmin=j<n-1?matrix[i][j+1]+1:m*n;
+                    matrix[i][j]=min(min(rightmin,downmin),matrix[i][j]);
+                    }
+            }
+        return matrix;
+    }
+};
