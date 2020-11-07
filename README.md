@@ -9,6 +9,7 @@
 312 | [Burst Balloons](https://leetcode.com/problems/burst-balloons/) | Hard | DP | [Solutions](Solutions/312.%20Burst%20Balloons)
 349 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | Easy | HashSet | [Solutions](Solutions/349.%20Intersection%20of%20Two%20Arrays)
 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/) | Medium | BFS、DP | [Solutions](Solutions/542.%2001%20Matrix)
+1547 | [Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/) | Hard | DP | [Solutions](Solutions/1547.%20Minimum%20Cost%20to%20Cut%20a%20Stick)
 1579 | [Remove Max Number of Edges to Keep Graph Fully Traversable](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/) | Hard | Union-Find | [Solutions](Solutions/1579.%20Remove%20Max%20Number%20of%20Edges%20to%20Keep%20Graph%20Fully%20Traversable)
 1598 | [Crawler Log Folder](https://leetcode.com/problems/crawler-log-folder/) | Easy |-| [Solutions](Solutions/1598.%20Crawler%20Log%20Folder)
 1630 | [Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/) | Medium | Sort、Math | [Solutions](Solutions/1630.%20Arithmetic%20Subarrays)
