@@ -44,6 +44,8 @@ public class Binary_Search {
 		return -1;
 	}
 	
+	
+	
 	public static void main(String[] args) {
 		//in ascending order
 		int[] nums=new int[] {-1, 0, 3, 5, 9, 12};
@@ -56,3 +58,22 @@ public class Binary_Search {
 	}
 
 }
+
+
+
+
+
+
+/*
+//hashmap version(not good in this case)
+class Solution {
+    public int search(int[] nums, int target) {
+        var map=new HashMap<Integer,Integer>();
+        for(int i=0;i<nums.length;++i)
+            map.put(nums[i],i);
+        if(map.containsKey(target))
+            return map.get(target);
+        return -1;
+    }
+}
+*/
