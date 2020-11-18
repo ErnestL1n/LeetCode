@@ -97,3 +97,69 @@ class All_Elements_in_Two_Binary_Search_Trees{
 		System.out.println("Return a list containing all the integers from both trees sorted in ascending order"+getAllElements(root1,root2));
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+//update add new implementation,credit to https://leetcode.com/votrubac/
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ 
+class Solution {
+    private void pushleft(Stack<TreeNode> s,TreeNode root){
+        while(root!=null){
+            s.push(root);
+            root=root.left;
+        }
+    }
+    public List<Integer> getAllElements(TreeNode root1, TreeNode root2) {
+        var res=new ArrayList<Integer>();
+        var s1=new Stack<TreeNode>();
+        var s2=new Stack<TreeNode>();
+        pushleft(s1,root1);
+        pushleft(s2,root2);
+        while(!s1.empty()||!s2.empty()){
+            var s=s1.empty()?s2:s2.empty()?s1:s1.peek().val<s2.peek().val?s1:s2;
+            var n=s.pop();
+            res.add(n.val);
+            if(n.right!=null)
+                pushleft(s,n.right);
+        }
+        return res;
+    }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
