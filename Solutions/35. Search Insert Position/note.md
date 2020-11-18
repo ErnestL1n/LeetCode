@@ -1,6 +1,6 @@
 From Leetcode discussion:
 
-Q:why return low rather than high?
+Q:why the final return low rather than high?
 
 A:Because when high = low+1, then mid = left.
 If the target > nums[mid], then low = mid +1 = high. The target position can be low or high, since they are the same.
