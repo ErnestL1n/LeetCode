@@ -1,0 +1,2 @@
+# credit to https://leetcode.com/votrubac/
+could use binary search (as your stack is naturally sorted) instead of popping elements one by one. When you find a larger element, you can use vector.resize() to quickly remove all smaller elements. rbegin() and rend() can simplify the logic a bit, as the stack will be sorted in the descending order.

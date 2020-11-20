@@ -81,3 +81,53 @@ public class Maximum_Binary_Tree {
 	}
 
 }
+
+
+
+// stack implementation
+/*
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ 
+class Solution {
+    public TreeNode constructMaximumBinaryTree(int[] nums) {
+        var stk=new Stack<TreeNode>();
+        for(var n:nums){
+            TreeNode curr=new TreeNode(n);
+            while(!stk.empty()&&stk.peek().val<curr.val)
+                curr.left=stk.pop();
+            if(!stk.empty())
+                stk.peek().right=curr;
+            stk.push(curr);
+        }
+        while(stk.size()>1)
+            stk.pop();
+        return stk.peek();
+    }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
