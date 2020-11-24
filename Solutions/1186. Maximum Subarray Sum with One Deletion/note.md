@@ -1,10 +1,11 @@
-# Ideas arecredit to [lzl124631x](https://github.com/lzl124631x/LeetCode)
+# Ideas are credited to [lzl124631x](https://github.com/lzl124631x/LeetCode)
 
 ## Solution 1. DP
 
 Let:
-	* dp[i][0] be the maximum sum of subarrays that end at A[i] and don't without deletion.
-	* dp[i][1] be the maximum sum of subarrays that end at A[i] and have one deletion.
+
+	1. dp[i][0] be the maximum sum of subarrays that end at A[i] and don't without deletion.
+	2. dp[i][1] be the maximum sum of subarrays that end at A[i] and have one deletion.
 	
 For dp[i][0], we have two options:
 
