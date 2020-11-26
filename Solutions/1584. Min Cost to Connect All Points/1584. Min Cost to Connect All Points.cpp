@@ -3,18 +3,18 @@ typedef pair<int,int> pr;
 class Solution {
 public:
     int minCostConnectPoints(vector<vector<int>>& points) {
-        int n=points.size(),res=0,i=0,connected=0;   //i can start from 0~n-1
+        int res=0,connected=0,n=points.size(),from=0;
         vector<bool> visited(n);
-        priority_queue<pr,vector<pr>,greater<pr>> pq;  //sort by first element which is abs(......)=minDistance
+        priority_queue<pr,vector<pr>,greater<pr>> pq;
         while(++connected<n){
-            visited[i]=true;
-            for(int j=1;j<n;++j)
+            visited[from]=true;
+            for(int j=0;j<n;++j)
                 if(!visited[j])
-                    pq.push({abs(points[i][0]-points[j][0])+abs(points[i][1]-points[j][1]),j});
+                    pq.push({abs(points[from][0]-points[j][0])+abs(points[from][1]-points[j][1]),j});
             while(visited[pq.top().second])
                 pq.pop();
             res+=pq.top().first;
-            i=pq.top().second;
+            from=pq.top().second;
             pq.pop();
         }
         return res;
