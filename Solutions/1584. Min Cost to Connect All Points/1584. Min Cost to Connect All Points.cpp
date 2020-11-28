@@ -116,7 +116,7 @@ class Solution {
 public:
     int minCostConnectPoints(vector<vector<int>>& points) {
         int n=points.size(),res=0,i=0,connected=0;
-        vector<int> min_d(n,10000000);          //constraint:-10^6 <= xi, yi <= 10^6  thus initialization must larger than abs(2*10^6)
+        vector<int> min_d(n,4000000);          //constraint:-10^6 <= xi, yi <= 10^6  thus initialization must >= 4*10^6
         while(++connected<n){
             min_d[i]=INT_MAX;
             int min_j=i;
