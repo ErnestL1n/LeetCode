@@ -7,7 +7,7 @@
 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | Medium | Linked List、Math | [Solutions](Solutions/2.%20Add%20Two%20Numbers) |
 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | Easy | Binary Search | [Solutions](Solutions/35.%20Search%20Insert%20Position) | [Note](Solutions/35.%20Search%20Insert%20Position/note.md)
 46 | [Permutations](https://leetcode.com/problems/permutations/) | Medium | D&C | [Solutions](Solutions/46.%20Permutations) | [Note](Solutions/46.%20Permutations/note.md)
-47 | [Permutations II](https://leetcode.com/problems/permutations-ii/) | Medium | D&C、HashSet | [Solutions](Solutions/47.%20Permutations II) | [Note](Solutions/47.%20Permutations II/note.md)
+47 | [Permutations II](https://leetcode.com/problems/permutations-ii/) | Medium | D&C、HashSet | [Solutions](Solutions/47.%20Permutations%20II) | [Note](Solutions/47.%20Permutations%20II/note.md)
 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Easy | DP、D&C | [Solutions](Solutions/53.%20Maximum%20Subarray) | 
 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Hard | HashSet(Set)、Union-Find| [Solutions](Solutions/128.%20Longest%20Consecutive%20Sequence) |
 207 | [Course Schedule](https://leetcode.com/problems/course-schedule/) | Medium | Topological Sort、DFS、BFS | [Solutions](Solutions/207.%20Course%20Schedule) |
