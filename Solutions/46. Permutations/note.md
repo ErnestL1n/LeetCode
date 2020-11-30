@@ -1,5 +1,5 @@
 # [idea is from here](https://leetcode.com/problems/permutations/discuss/18247/My-elegant-recursive-C++-solution-with-inline-explanation?orderBy=most_votes)
-	
+## [reference](https://leetcode.wang/leetCode-46-Permutations.html)	
 ```cpp
 // permute num[begin..end]
 // invariant: num[0..begin-1] have been fixed/permuted
