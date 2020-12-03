@@ -30,3 +30,4 @@
 1630 | [Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/) | Medium | Sort、Math | [Solutions](Solutions/1630.%20Arithmetic%20Subarrays)
 1641 | [Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings/) | Medium | Math、DP | [Solutions](Solutions/1641.%20Count%20Sorted%20Vowel%20Strings) |
 1664 | [Ways to Make a Fair Array](https://leetcode.com/problems/ways-to-make-a-fair-array/) | Medium | Array | [Solutions](Solutions/1664.%20Ways%20to%20Make%20a%20Fair%20Array) | [Note](Solutions/1664.%20Ways%20to%20Make%20a%20Fair%20Array/note.md)
+1669 | [Merge In Between Linked Lists](https://leetcode.com/problems/merge-in-between-linked-lists/) | Medium | Linked-List | [Solutions](Solutions/1669.%20Merge%20In%20Between%20Linked%20List) | [Note](Solutions/1669.%20Merge%20In%20Between%20Linked%20List/note.md)
