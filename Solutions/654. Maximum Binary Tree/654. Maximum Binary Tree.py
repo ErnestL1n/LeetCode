@@ -19,3 +19,18 @@ class Solution:
         root.left=self.BuildTree(nums,left,maxindex-1) 
         root.right=self.BuildTree(nums,maxindex+1,right) 
         return root
+        
+        
+# stack implementaion
+class Solution:
+    def constructMaximumBinaryTree(self, nums: List[int]) -> TreeNode:
+        stk=[]
+        for i in range(len(nums)):
+            curr=TreeNode(nums[i])
+            while stk and stk[-1].val<curr.val:
+                curr.left=stk[-1]
+                stk.pop()
+            if stk:
+                stk[-1].right=curr
+            stk.append(curr)
+        return stk[0]

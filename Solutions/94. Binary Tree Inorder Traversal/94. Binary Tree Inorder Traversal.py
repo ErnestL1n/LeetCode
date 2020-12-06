@@ -5,7 +5,7 @@
 #         self.left = left
 #         self.right = right
 
-//recursive
+#recursive
 class Solution:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
         def inorder(res:List[int],root:TreeNode):
@@ -15,4 +15,20 @@ class Solution:
                 inorder(res,root.right)
         res=[]
         inorder(res,root)
+        return res
+        
+
+#iteration stack
+
+class Solution:
+    def inorderTraversal(self, root: TreeNode) -> List[int]:
+        stk,res=[],[]
+        while stk or root:
+            while root:
+                stk.append(root)
+                root=root.left
+            root=stk[-1]
+            stk.pop()
+            res.append(root.val)
+            root=root.right
         return res
