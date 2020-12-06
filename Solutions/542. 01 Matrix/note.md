@@ -1,5 +1,4 @@
-#[dp idea is from](https://leetcode.com/problems/01-matrix/discuss/101051/Simple-Java-solution-beat-99-(use-DP))
-#[BFS idea is from](https://leetcode.com/problems/01-matrix/discuss/101021/Java-Solution-BFS)
+# [Dp idea](https://leetcode.com/problems/01-matrix/discuss/101051/Simple-Java-solution-beat-99-(use-DP)) & [BFS idea](https://leetcode.com/problems/01-matrix/discuss/101021/Java-Solution-BFS)
 
 ## keep in mind 
 1. In DP solution:
