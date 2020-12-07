@@ -25,7 +25,7 @@ public:
 };
 
 
-//output:
+//output reversed
 class Solution {
 public:
     vector<vector<int>> permute(vector<int>& nums) {
