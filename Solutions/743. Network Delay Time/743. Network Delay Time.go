@@ -16,10 +16,6 @@ func networkDelayTime(times [][]int, N int, K int) int {
     }
     res:=0
     for i:=1;i<=N;i+=1{
-        fmt.Println(dist[i])
-    }
-        
-    for i:=1;i<=N;i+=1{
         res=Max(dist[i],res)
     }
     
