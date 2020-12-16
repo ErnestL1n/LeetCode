@@ -26,3 +26,36 @@ func dfs(root *TreeNode,set map[int]bool,k int) bool{
 
 //binary search method
 
+func foo(root *TreeNode,Begin *TreeNode,k int) bool{
+    if Begin==nil{
+        Begin=root
+    }
+    if root==nil{
+        return false
+    }
+    if search(root,k-root.Val,Begin){
+        return true
+    }
+    return foo(root.Left,Begin,k) || foo(root.Right,Begin,k)
+}
+
+func findTarget(root *TreeNode, k int) bool {
+    var Begin *TreeNode=nil
+    return foo(root,Begin,k)
+}
+func search(root *TreeNode,complement int,Begin *TreeNode) bool{
+    var curr *TreeNode=Begin
+    for curr!=nil{
+        if(curr.Val>complement){
+            curr=curr.Left
+        }else if(curr.Val<complement){
+            curr=curr.Right
+        }else{
+            if curr==root{
+                return false
+            }
+            return true
+        }
+    }
+    return false
+}
