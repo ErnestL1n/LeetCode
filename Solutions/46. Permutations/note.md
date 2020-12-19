@@ -18,4 +18,4 @@ void permuteRecursive(vector<int> &num, int begin, vector<vector<int> > &result)
 }
 ```
 
-Basic note: there is only c++ take &(reference)variable as parameter, golang needs copy、java needs also、[python see this,but the same point](https://stackoverflow.com/questions/4081561/what-is-the-difference-between-list-and-list-in-python)
+Basic note: there is only c++ take &(reference)variable as parameter, golang needs copy、[python see this](https://stackoverflow.com/questions/4081561/what-is-the-difference-between-list-and-list-in-python)
