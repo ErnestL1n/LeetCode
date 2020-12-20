@@ -35,3 +35,5 @@
 1641 | [Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings/) | Medium | Math、DP | [Solutions](Solutions/1641.%20Count%20Sorted%20Vowel%20Strings) |
 1664 | [Ways to Make a Fair Array](https://leetcode.com/problems/ways-to-make-a-fair-array/) | Medium | Array | [Solutions](Solutions/1664.%20Ways%20to%20Make%20a%20Fair%20Array) | [Note](Solutions/1664.%20Ways%20to%20Make%20a%20Fair%20Array/note.md)
 1669 | [Merge In Between Linked Lists](https://leetcode.com/problems/merge-in-between-linked-lists/) | Medium | Linked-List | [Solutions](Solutions/1669.%20Merge%20In%20Between%20Linked%20Lists) | [Note](Solutions/1669.%20Merge%20In%20Between%20Linked%20Lists/note.md)
+1694 | [Reformat Phone Number](https://leetcode.com/problems/reformat-phone-number/) | Easy | String | [Solutions](Solutions/1694.%20Reformat%20Phone%20Number) | [Note](Solutions/1694.%20Reformat%20Phone%20Number/note.md)
+
