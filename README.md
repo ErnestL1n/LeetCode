@@ -36,4 +36,4 @@
 1664 | [Ways to Make a Fair Array](https://leetcode.com/problems/ways-to-make-a-fair-array/) | Medium | Array | [Solutions](Solutions/1664.%20Ways%20to%20Make%20a%20Fair%20Array) | [Note](Solutions/1664.%20Ways%20to%20Make%20a%20Fair%20Array/note.md)
 1669 | [Merge In Between Linked Lists](https://leetcode.com/problems/merge-in-between-linked-lists/) | Medium | Linked-List | [Solutions](Solutions/1669.%20Merge%20In%20Between%20Linked%20Lists) | [Note](Solutions/1669.%20Merge%20In%20Between%20Linked%20Lists/note.md)
 1694 | [Reformat Phone Number](https://leetcode.com/problems/reformat-phone-number/) | Easy | String | [Solutions](Solutions/1694.%20Reformat%20Phone%20Number) | [Note](Solutions/1694.%20Reformat%20Phone%20Number/note.md)
-
+1695 | [Maximum Erasure Value](https://leetcode.com/problems/maximum-erasure-value/) | Medium | Two Pointers、HashSet | [Solutions](Solutions/1695.%20Maximum%20Erasure%20Value) | [Note](Solutions/1695.%20Maximum%20Erasure%20Value/note.md)
