@@ -11,3 +11,27 @@ public:
         return res;
     }
 };
+
+
+
+
+// reduce (extra)space version
+class Solution {
+public:
+    vector<int> getSumAbsoluteDifferences(vector<int>& nums) {
+        int n=nums.size(),leftsum=0,rightsum=sum(nums);
+        vector<int> res;
+        for(int i=0;i<n;++i){   
+            res.push_back(i*nums[i]-leftsum+(rightsum-nums[i]*(n-i)));
+            leftsum+=nums[i];
+            rightsum-=nums[i];
+        }
+        return res;
+    }
+    int sum(vector<int>& nums){
+        int s=0;
+        for(int i=0;i<nums.size();++i)
+            s+=nums[i];
+        return s;
+    }
+};
