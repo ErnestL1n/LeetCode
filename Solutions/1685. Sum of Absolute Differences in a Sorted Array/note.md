@@ -15,3 +15,14 @@ that is:
 res[i] = i * nums[i] - prefixSum[i]
 prefixSum[n] - prefixSum[i] - (n - i) * nums[i]
 ```
+
+## usual definition of prefix[i]
+
+```cpp
+prefix[0]=0
+prefix[1]=nums[0]+prefix[0]
+prefix[2]=nums[1]+prefix[1]
+.
+..
+...
+```
