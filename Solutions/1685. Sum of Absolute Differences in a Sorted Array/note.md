@@ -2,7 +2,7 @@
 
 ```latex
 res[i] = (nums[i] - nums[0]) + (nums[i] - nums[1]) + ... + (nums[i] - nums[i - 1])        <--- absolute difference of nums[i] with first i numbers
-     + (nums[i + 1] - nums[i]) + (nums[i + 2] - nums[i]) + ... + (nums[n - 1] - nums[i])   <--- absolute difference of nums[i] with last n - i numbers
+     +   (nums[i + 1] - nums[i]) + (nums[i + 2] - nums[i]) + ... + (nums[n - 1] - nums[i])   <--- absolute difference of nums[i] with last n - i numbers
 ```
 after simplification:
 
