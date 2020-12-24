@@ -24,6 +24,7 @@
 1305 | [All Elements in Two Binary Search Trees](https://leetcode.com/problems/all-elements-in-two-binary-search-trees/) | Medium | BST、Stack | [Solutions](Solutions/1305.%20All%20Elements%20in%20Two%20Binary%20Search%20Trees) | [Note](Solutions/1305.%20All%20Elements%20in%20Two%20Binary%20Search%20Trees/note.md)
 1314 | [Matrix Block Sum](https://leetcode.com/problems/matrix-block-sum/) | Medium | DP | [Solutions](Solutions/1314.%20Matrix%20Block%20Sum) |
 1402 | [Reducing Dishes](https://leetcode.com/problems/reducing-dishes/) | Hard | DP | [Solutions](Solutions/1402.%20Reducing%20Dishes) |
+1448 | [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | Medium | D&C、Tree | [Solutions](Solutions/1448.%20Count%20Good%20Nodes%20in%20Binary%20Tree) |
 1535 | [Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game/) | Medium | Array | [Solutions](Solutions/1535.%20Find%20the%20Winner%20of%20an%20Array%20Game) |
 1537 | [Get the Maximum Score](https://leetcode.com/problems/get-the-maximum-score/) | Hard| Two Pointers、DP | [Solutions](Solutions/1537.%20Get%20the%20Maximum%20Score) |
 1547 | [Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/) | Hard | DP | [Solutions](Solutions/1547.%20Minimum%20Cost%20to%20Cut%20a%20Stick) | 
