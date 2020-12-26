@@ -6,21 +6,19 @@ func (h MinHeap) Less(i,j int) bool{return h[i]<h[j]}
 func (h MinHeap) Swap(i,j int){h[i],h[j]=h[j],h[i]}
 func (h MinHeap) Peek() int{return h[0]}
 //important behavior
-func (h *MinHeap) Push(x interface{}){
-    *h=append(*h,x.(int))
+func (h *MinHeap) Push(i interface{}){
+    *h=append(*h,i.(int))
 }
 func (h *MinHeap) Pop() interface{}{
-    old:=*h
-    n:=len(old)
-    x:=old[n-1]
-    *h=old[:n-1]
-    return x
+    v:=(*h)[len(*h)-1]
+    *h=(*h)[:len(*h)-1]
+    return v
 }
 
 //main
 func furthestBuilding(a []int, bricks int, ladders int) int {
     h:=&MinHeap{}
-    heap.Init(h)
+    heap.Init(h) //can init or not 
     
     for i:=0;i<len(a)-1;i+=1{
         dis:=a[i+1]-a[i]
