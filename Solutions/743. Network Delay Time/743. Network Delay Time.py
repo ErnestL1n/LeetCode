@@ -1,3 +1,37 @@
+#Dijkstra
+class Solution:
+    def networkDelayTime(self, times: List[List[int]], N: int, K: int) -> int:
+        vp,visited,d=[],[],[]
+        for i in range(N+1):
+            vp.append([])
+            visited.append(False)
+            d.append(sys.maxsize)
+        for _,t in enumerate(times):
+            vp[t[0]].append((t[1],t[2]))
+        d[0],d[K]=0,0
+        pq=[]
+        heapify(pq)
+        heappush(pq,(0,K))
+        while pq:
+            c,u=heappop(pq)
+            if visited[u]:
+                continue
+            for to in vp[u]:
+                v,w=to
+                if c+w<d[v]:
+                    d[v]=c+w
+                    heappush(pq,(d[v],v))
+            visited[u]=True
+        res=max(d)
+        return res if res!=sys.maxsize else -1
+
+
+
+
+
+
+
+#Bellman Ford
 class Solution:
     def networkDelayTime(self, times: List[List[int]], N: int, K: int) -> int:
         dist=[]
