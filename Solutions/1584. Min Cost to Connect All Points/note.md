@@ -1,3 +1,4 @@
+# Cpp:
 ## In Prim's implementation
 
 ```cpp
@@ -32,4 +33,19 @@ are both in ascending order
 pop_heap(arr.begin(),arr.end(),greater<ar>());  // top go to back
 auto [dist,i,j]=arr.back();                     // peek from back
 arr.pop_back();                                 // pop back
+```
+
+# Go:
+### [heap peek() reference : Go Playground](https://play.golang.org/p/IFbLvyF3wP)
+### [Package heap](https://golang.org/pkg/container/heap/)
+### example:
+```go
+func (h MinHeap) Peek() interface{} {
+    return h[0]
+}
+//then
+for visited[pq.Peek().([2]int)[1]]{
+            heap.Pop(pq)
+        }
+
 ```
