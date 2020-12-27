@@ -34,7 +34,7 @@ class Solution:
             for j in range(i+1,n):
                 d = manhattan(p[i], p[j])
                 pq.append((d,i,j))
-        heapq.heapify(pq)
+        heapify(pq)
         #print(pq)
         while(pq):
             val,i,j=heappop(pq)
