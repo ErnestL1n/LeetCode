@@ -6,7 +6,7 @@ class Solution:
             vp.append([])
             visited.append(False)
             d.append(sys.maxsize)
-        for _,t in enumerate(times):
+        for t in times:
             vp[t[0]].append((t[1],t[2]))
         d[0],d[K]=0,0
         pq=[]
