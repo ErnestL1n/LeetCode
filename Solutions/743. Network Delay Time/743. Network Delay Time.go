@@ -3,7 +3,7 @@
 type MinHeap [][2]int  //as pair
 func (h MinHeap) Len() int{return len(h)}
 //min priority_queue sort by first element(which is distance)
-//compare with second element is h[i][1]<h[j][1]
+//compare with second element : h[i][1]<h[j][1]
 func (h MinHeap) Less(i,j int) bool{return h[i][0]<h[j][0]}
 func (h MinHeap) Swap(i,j int){h[i],h[j]=h[j],h[i]}
 //important behavior
