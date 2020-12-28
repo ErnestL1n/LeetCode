@@ -1,4 +1,4 @@
-# LeetCode ![Travis](https://img.shields.io/badge/language-c%2B%2B-red) ![Travis](https://img.shields.io/badge/language-java-yellow) ![Travis](https://img.shields.io/badge/language-go-brightgreen) ![Travis](https://img.shields.io/badge/language-python-blue)
+# LeetCode ![Travis](https://img.shields.io/badge/language-C%2B%2B-red) ![Travis](https://img.shields.io/badge/language-Java-yellow) ![Travis](https://img.shields.io/badge/language-Go-brightgreen) ![Travis](https://img.shields.io/badge/language-Python-blue)
 ###### Clicking with ctrl makes you open in a new tab(Github does not include the target attribute ,even if you use plain HTML,to let a Link open in a new tab)
 
 \# | Title | Difficulty | Related Topics | Solution | Note
