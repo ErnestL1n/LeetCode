@@ -45,13 +45,7 @@ public class Best_Time_to_Buy_and_Sell_Stock {
         
         
         
-        
-        /*dynamic programming:*/
-        /*
-        assume that day[i] is the opt solution of the opt subproblem
-        opt[i]=max{soldonday[i],soldon day[i]-1}
-        */
-        
+ 
         
         
         int n = prices.length, maxProfitSoFar = 0;      
