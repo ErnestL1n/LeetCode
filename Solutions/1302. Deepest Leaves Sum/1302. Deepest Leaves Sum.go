@@ -28,16 +28,8 @@ func deep(root *TreeNode,level int,sum *int,maxlevel *int){
 
 
 
+//implemented by queue(BFS)
 
-
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
 func deepestLeavesSum(root *TreeNode) int {
     res:=0
     var q []*TreeNode

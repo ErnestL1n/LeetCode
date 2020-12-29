@@ -31,3 +31,24 @@ public:
         }
     }
 };
+
+
+//implemented by queue(BFS)
+class Solution {
+public:
+    int deepestLeavesSum(TreeNode* root) {
+        queue<TreeNode*> q;
+        int res=0,i;
+        q.push(root);
+        while (q.size()){
+            res=0;
+            for(i=q.size()-1;i>=0;--i){
+                auto node=q.front();q.pop();
+                res+=node->val;
+                if(node->left) q.push(node->left);
+                if(node->right) q.push(node->right);
+            }
+        }
+        return res;
+    }
+};

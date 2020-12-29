@@ -20,3 +20,27 @@ class Solution:
                         res+=root.val
         deep(root,0)
         return res
+        
+
+
+
+
+
+# implemented by queue(BFS)
+
+class Solution:
+    def deepestLeavesSum(self, root: TreeNode) -> int:
+        q,res=[],0
+        q.append(root)
+        while q:
+            res=0
+            size=len(q)
+            for i in range(size):
+                node=q[0]
+                q=q[1:]
+                res+=node.val
+                if node.left:
+                    q.append(node.left)
+                if node.right:
+                    q.append(node.right)
+        return res

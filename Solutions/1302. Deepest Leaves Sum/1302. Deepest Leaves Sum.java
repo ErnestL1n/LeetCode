@@ -97,3 +97,28 @@ public class Deepest_Leaves_Sum {
 	}
 
 }
+
+
+
+
+
+//implemented by queue(BFS)
+class Solution {
+    public int deepestLeavesSum(TreeNode root) {
+        int res=0,i;
+        Queue<TreeNode> q=new LinkedList<>();
+        q.offer(root);
+        while(q.size()>0){
+            res=0;
+            for (i=q.size()-1;i>=0;--i){
+                var node=q.poll();
+                res+=node.val;
+                if(node.left!=null)
+                    q.offer(node.left);
+                if(node.right!=null)
+                    q.offer(node.right);
+            }
+        }     
+        return res;
+    }
+}
