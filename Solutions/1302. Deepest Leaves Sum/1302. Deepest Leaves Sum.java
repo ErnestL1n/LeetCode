@@ -58,7 +58,7 @@ public class Deepest_Leaves_Sum {
 		
 	}
 	public static int deepestLeavesSum(TreeNode root) {
-        getsum(root,1);
+        getsum(root,0);
         return sum;
     }
 	public static void getsum(TreeNode node,int level) {
