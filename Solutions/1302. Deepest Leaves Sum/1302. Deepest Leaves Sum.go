@@ -25,3 +25,36 @@ func deep(root *TreeNode,level int,sum *int,maxlevel *int){
         }
     }
 }
+
+
+
+
+
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+func deepestLeavesSum(root *TreeNode) int {
+    res:=0
+    var q []*TreeNode
+    q=append(q,root)
+    for len(q)>0{
+        res=0
+        for i:=len(q)-1;i>=0;i-=1{
+            node:=q[0]
+            q=q[1:]
+            res+=node.Val
+            if node.Left!=nil{
+                q=append(q,node.Left)
+            }
+            if node.Right!=nil{
+                q=append(q,node.Right)
+            }
+        }
+    }
+    return res
+}
