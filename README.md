@@ -30,6 +30,7 @@
 1351 | [Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/) | Easy | Math、Array | [Solutions](Solutions/1351.%20Count%20Negative%20Numbers%20in%20a%20Sorted%20Matrix) | [Note](Solutions/1351.%20Count%20Negative%20Numbers%20in%20a%20Sorted%20Matrix/note.md)
 1402 | [Reducing Dishes](https://leetcode.com/problems/reducing-dishes/) | Hard | DP | [Solutions](Solutions/1402.%20Reducing%20Dishes) |
 1448 | [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | Medium | D&C、Tree | [Solutions](Solutions/1448.%20Count%20Good%20Nodes%20in%20Binary%20Tree) |
+1534 | [Count Good Triplets](https://leetcode.com/problems/count-good-triplets/) | Easy |-| [Solutions](Solutions/1534.%20Count%20Good%20Triplets) |
 1535 | [Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game/) | Medium | Array | [Solutions](Solutions/1535.%20Find%20the%20Winner%20of%20an%20Array%20Game) |
 1537 | [Get the Maximum Score](https://leetcode.com/problems/get-the-maximum-score/) | Hard| Two Pointers、DP | [Solutions](Solutions/1537.%20Get%20the%20Maximum%20Score) |
 1547 | [Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/) | Hard | DP | [Solutions](Solutions/1547.%20Minimum%20Cost%20to%20Cut%20a%20Stick) | 
