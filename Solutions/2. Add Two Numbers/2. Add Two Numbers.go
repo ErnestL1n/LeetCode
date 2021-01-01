@@ -4,16 +4,12 @@
  *     Val int
  *     Next *ListNode
  * }
- type ListNode struct {
-    Val int
-    Next* ListNode
- }
  */
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
     head:=&ListNode{Val:0}
-    var extra int=0
+    extra:=0
     curr:=head
-    for l1!=nil || l2!=nil || extra!=0 {
+    for l1!=nil || l2!=nil || extra!=0{
         if l1!=nil{
             extra+=l1.Val
             l1=l1.Next
