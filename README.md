@@ -4,7 +4,7 @@
 \# | Title | Difficulty | Related Topics | Solution | Note
 ---|---|---|---|---|---|
 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | HashMap | [Solutions](Solutions/1.%20Two%20Sum) |
-2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | Medium | Linked List、Math | [Solutions](Solutions/2.%20Add%20Two%20Numbers) |
+2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | Medium | Linked List、Math | [Solutions](Solutions/2.%20Add%20Two%20Numbers) | [Note](Solutions/2.%20Add%20Two%20Numbers/note.md)
 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | Easy | Binary Search | [Solutions](Solutions/35.%20Search%20Insert%20Position) | [Note](Solutions/35.%20Search%20Insert%20Position/note.md)
 46 | [Permutations](https://leetcode.com/problems/permutations/) | Medium | D&C | [Solutions](Solutions/46.%20Permutations) | [Note](Solutions/46.%20Permutations/note.md)
 47 | [Permutations II](https://leetcode.com/problems/permutations-ii/) | Medium | D&C、HashSet | [Solutions](Solutions/47.%20Permutations%20II) | [Note](Solutions/47.%20Permutations%20II/note.md)
@@ -23,6 +23,7 @@
 743 | [Network Delay Time](https://leetcode.com/problems/network-delay-time/) | Medium | Dijkstra(Priority_Queue)、Bellman-Ford | [Solutions](Solutions/743.%20Network%20Delay%20Time) | [Note](Solutions/743.%20Network%20Delay%20Time/note.md)
 797 | [All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/) | Medium | DAG | [Solutions](Solutions/797.%20All%20Paths%20From%20Source%20to%20Target) | [Note](Solutions/797.%20All%20Paths%20From%20Source%20to%20Target/note.md)
 814 | [Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/) | Medium | D&C | [Solutions](Solutions/814.%20Binary%20Tree%20Pruning) | [Note](Solutions/814.%20Binary%20Tree%20Pruning/note.md)
+1051 | [Height Checker](https://leetcode.com/problems/height-checker/) | Easy | Sort (Counting) | [Solutions](Solutions/1051.%20Height%20Checker) | 
 1186 | [Maximum Subarray Sum with One Deletion](https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/) | Medium| DP | [Solutions](Solutions/1186.%20Maximum%20Subarray%20Sum%20with%20One%20Deletion) | [Note](Solutions/1186.%20Maximum%20Subarray%20Sum%20with%20One%20Deletion/note.md)
 1302 | [Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum/) | Medium | D&C、BFS | [Solutions](Solutions/1302.%20Deepest%20Leaves%20Sum) | [Note](Solutions/1302.%20Deepest%20Leaves%20Sum/note.md)
 1305 | [All Elements in Two Binary Search Trees](https://leetcode.com/problems/all-elements-in-two-binary-search-trees/) | Medium | BST、Stack | [Solutions](Solutions/1305.%20All%20Elements%20in%20Two%20Binary%20Search%20Trees) | [Note](Solutions/1305.%20All%20Elements%20in%20Two%20Binary%20Search%20Trees/note.md)
