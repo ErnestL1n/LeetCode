@@ -8,4 +8,4 @@ But if the ```target < nums[mid]```, then ```high = mid - 1 = low-1```. The targ
 
 
 
-moreover,cause the insert position is expand to the right we choose the larger one (which the break condition of the while loop that is, ```low=high+1``` ) ,thus we choose ```low```
+Moreover,cause the insert position is expand to the right we choose the larger one (which the break condition of the while loop that is, ```low=high+1``` ) ,thus we choose ```low```
