@@ -23,7 +23,7 @@
 743 | [Network Delay Time](https://leetcode.com/problems/network-delay-time/) | Medium | Dijkstra(Priority_Queue)、Bellman-Ford | [Solutions](Solutions/743.%20Network%20Delay%20Time) | [Note](Solutions/743.%20Network%20Delay%20Time/note.md)
 797 | [All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/) | Medium | DAG | [Solutions](Solutions/797.%20All%20Paths%20From%20Source%20to%20Target) | [Note](Solutions/797.%20All%20Paths%20From%20Source%20to%20Target/note.md)
 814 | [Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/) | Medium | D&C | [Solutions](Solutions/814.%20Binary%20Tree%20Pruning) | [Note](Solutions/814.%20Binary%20Tree%20Pruning/note.md)
-832 | [Flipping an Image](https://leetcode.com/problems/flipping-an-image/) | Easy |-| [Solutions](Solutions/832.%20Flipping%20an%20Image) | 
+832 | [Flipping an Image](https://leetcode.com/problems/flipping-an-image/) | Easy | Operation | [Solutions](Solutions/832.%20Flipping%20an%20Image) | 
 1051 | [Height Checker](https://leetcode.com/problems/height-checker/) | Easy | Sort (Counting) | [Solutions](Solutions/1051.%20Height%20Checker) | 
 1186 | [Maximum Subarray Sum with One Deletion](https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/) | Medium| DP | [Solutions](Solutions/1186.%20Maximum%20Subarray%20Sum%20with%20One%20Deletion) | [Note](Solutions/1186.%20Maximum%20Subarray%20Sum%20with%20One%20Deletion/note.md)
 1302 | [Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum/) | Medium | D&C、BFS | [Solutions](Solutions/1302.%20Deepest%20Leaves%20Sum) | [Note](Solutions/1302.%20Deepest%20Leaves%20Sum/note.md)
@@ -32,14 +32,15 @@
 1351 | [Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/) | Easy | Math、Array | [Solutions](Solutions/1351.%20Count%20Negative%20Numbers%20in%20a%20Sorted%20Matrix) | [Note](Solutions/1351.%20Count%20Negative%20Numbers%20in%20a%20Sorted%20Matrix/note.md)
 1402 | [Reducing Dishes](https://leetcode.com/problems/reducing-dishes/) | Hard | DP | [Solutions](Solutions/1402.%20Reducing%20Dishes) |
 1448 | [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | Medium | D&C、Tree | [Solutions](Solutions/1448.%20Count%20Good%20Nodes%20in%20Binary%20Tree) |
-1534 | [Count Good Triplets](https://leetcode.com/problems/count-good-triplets/) | Easy |-| [Solutions](Solutions/1534.%20Count%20Good%20Triplets) |
+1534 | [Count Good Triplets](https://leetcode.com/problems/count-good-triplets/) | Easy | Operation | [Solutions](Solutions/1534.%20Count%20Good%20Triplets) |
 1535 | [Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game/) | Medium | Array | [Solutions](Solutions/1535.%20Find%20the%20Winner%20of%20an%20Array%20Game) |
 1537 | [Get the Maximum Score](https://leetcode.com/problems/get-the-maximum-score/) | Hard| Two Pointers、DP | [Solutions](Solutions/1537.%20Get%20the%20Maximum%20Score) |
 1547 | [Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/) | Hard | DP | [Solutions](Solutions/1547.%20Minimum%20Cost%20to%20Cut%20a%20Stick) | 
 1552 | [Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls/) | Medium(Hard...) | Binary Search | [Solutions](Solutions/1552.%20Magnetic%20Force%20Between%20Two%20Balls) | [Note](Solutions/1552.%20Magnetic%20Force%20Between%20Two%20Balls/note.md)
+1572 | [Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum/) | Easy | Operation | [Solutions](Solutions/1572.%20Matrix%20Diagonal%20Sum) | 
 1579 | [Remove Max Number of Edges to Keep Graph Fully Traversable](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/) | Hard | Union-Find | [Solutions](Solutions/1579.%20Remove%20Max%20Number%20of%20Edges%20to%20Keep%20Graph%20Fully%20Traversable) |
 1584 | [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/) | Medium | Kruskal(Union-Find)、Prim(Priority_Queue) | [Solutions](Solutions/1584.%20Min%20Cost%20to%20Connect%20All%20Points) | [Note](Solutions/1584.%20Min%20Cost%20to%20Connect%20All%20Points/note.md)
-1598 | [Crawler Log Folder](https://leetcode.com/problems/crawler-log-folder/) | Easy |-| [Solutions](Solutions/1598.%20Crawler%20Log%20Folder) |
+1598 | [Crawler Log Folder](https://leetcode.com/problems/crawler-log-folder/) | Easy | Operation | [Solutions](Solutions/1598.%20Crawler%20Log%20Folder) |
 1619 | [Mean of Array After Removing Some Elements](https://leetcode.com/problems/mean-of-array-after-removing-some-elements/) | Easy | Array | [Solutions](Solutions/1619.%20Mean%20of%20Array%20After%20Removing%20Some%20Elements) |
 1630 | [Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/) | Medium | Sort、Math | [Solutions](Solutions/1630.%20Arithmetic%20Subarrays)
 1641 | [Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings/) | Medium | Math、DP | [Solutions](Solutions/1641.%20Count%20Sorted%20Vowel%20Strings) | [Note](Solutions/1641.%20Count%20Sorted%20Vowel%20Strings/note.md)
