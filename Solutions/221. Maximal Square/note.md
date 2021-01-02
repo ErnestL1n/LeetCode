@@ -5,5 +5,9 @@
 ## Go converts Byte to Int :
   ```go
   dp[i][j]=int(m[i][j]-'0')  // m[i][j] stores bytes
+  
+  //creates 2-D array
+  dp:=make([][]int,len(m))
+  for i,_:=range(dp){dp[i]=make([]int,len(m[0]))}
   ```
   
