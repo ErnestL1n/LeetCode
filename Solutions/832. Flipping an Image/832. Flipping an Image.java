@@ -17,27 +17,27 @@ public class Flipping_an_Image {
 	 */
 	public static int[][] flipAndInvertImage(int[][] A){
 		for(int[] rows:A) {
-			flip(rows);
-			reversed(rows);
+			reverse(rows);
+			invert(rows);
 		}
 		return A;
 	}
-	public static void flip(int[] rows) {
-		int leftstart=0,rightstart=rows.length-1;
-		while(leftstart<rightstart) {
-			int temp=rows[leftstart];
-			rows[leftstart]=rows[rightstart];
-			rows[rightstart]=temp;
-			leftstart++;
-			rightstart--;
+	public static void reverse(int[] rows) {
+		int l=0,r=rows.length-1;
+		while(l<r) {
+			int temp=rows[l];
+			rows[l]=rows[r];
+			rows[r]=temp;
+			++l;
+			--r;
 		}
 	}
-	public static void reversed(int[] rows) {
+	public static void invert(int[] rows) {
 		int size=0;
         while(size !=rows.length){
             if(rows[size] == 1) rows[size] = 0;
             else rows[size] = 1;
-            size++;
+            ++size;
         }
 	}
 	public static void main(String[] args) {
