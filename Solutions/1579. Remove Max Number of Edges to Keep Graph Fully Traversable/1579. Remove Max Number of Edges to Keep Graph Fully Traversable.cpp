@@ -23,8 +23,8 @@ public:
                 if(e[0]==type){
                     int i=find(ds,e[1]),j=find(ds,e[2]);
                     if(i!=j){
-						if (ds[j] < ds[i])
-							swap(i, j);
+						//if (ds[j] < ds[i])
+						//	swap(i, j);
                         ++used;
                         ds[i]+=ds[j];
                         ds[j]=i;
