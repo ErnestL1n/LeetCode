@@ -1,20 +1,6 @@
-/**
- * 
- */
-package github.com.ErnestL1n;
-import java.util.*;
-/**
- * @author https://github.com/ErnestL1n
- *
- */
- //Leetcode.1547
-public class Minimum_Cost_to_Cut_a_Stick {
-
-	/**
-	 * @param args
-	 */
-	//Top Down
-    public int minCostTopDown(int n, int[] cuts) {
+//Top Down
+class Solution {
+    public int minCost(int n, int[] cuts) {
         var c = new ArrayList<Integer>();
         for (int cut : cuts)
             c.add(cut);
@@ -33,27 +19,24 @@ public class Minimum_Cost_to_Cut_a_Stick {
         }
         return dp[i][j];
     }
-	
-	//Bottom up
-	public int minCostBottomUp(int n, int[] cuts) {
-		var cutarray=new ArrayList<Integer>();
-		for(int cut:cuts)
-			cutarray.add(cut);
-		cutarray.addAll(Arrays.asList(0,n));
-		Collections.sort(cutarray);
-		int size=cutarray.size();
-		int[][] dp=new int[size][size];
-		//trick here is to move i backward
-		for(int i=size-1;i>=0;--i)
-			for(int j=i+1;j<size;++j)
-				for(int k=i+1;k<j;++k)
-					dp[i][j]=Math.min(dp[i][j]==0?Integer.MAX_VALUE:dp[i][j],
-							cutarray.get(j)-cutarray.get(i)+dp[i][k]+dp[k][j]);
-		return dp[0][size-1];
-	}
-	
-	public static void main(String[] args) {
-		
-	}
+}
 
+
+//Bottom Up
+class Solution {
+    public int minCost(int n, int[] cuts) {
+        var cutarray=new ArrayList<Integer>();
+        for(int cut:cuts)
+            cutarray.add(cut);
+        cutarray.addAll(Arrays.asList(0,n));
+        Collections.sort(cutarray);
+        int size=cutarray.size();
+        int[][] dp=new int[size][size];
+        for(int i=size-1;i>=0;--i)
+            for(int j=i+1;j<size;++j)
+                for(int k=i+1;k<j;++k)
+                    dp[i][j]=Math.min(dp[i][j]==0?Integer.MAX_VALUE:dp[i][j],
+                                     cutarray.get(j)-cutarray.get(i)+dp[i][k]+dp[k][j]);
+        return dp[0][size-1];
+    }
 }
