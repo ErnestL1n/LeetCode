@@ -59,3 +59,4 @@
 1694 | [Reformat Phone Number](https://leetcode.com/problems/reformat-phone-number/) | Easy | String | [Solutions](Solutions/1694.%20Reformat%20Phone%20Number) | [Note](Solutions/1694.%20Reformat%20Phone%20Number/note.md)
 1695 | [Maximum Erasure Value](https://leetcode.com/problems/maximum-erasure-value/) | Medium | Two Pointers、HashSet | [Solutions](Solutions/1695.%20Maximum%20Erasure%20Value) | [Note](Solutions/1695.%20Maximum%20Erasure%20Value/note.md)
 1706* | [Where Will the Ball Fall](https://leetcode.com/problems/where-will-the-ball-fall/) | Medium | Trick | [Solutions](Solutions/1706.%20Where%20Will%20the%20Ball%20Fall) | 
+1710* | [Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck/) | Easy | Sort(With customer comaprison) | [Solutions](Solutions/1710.%20Maximum%20Units%20on%20a%20Truck) | 
