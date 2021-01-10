@@ -68,5 +68,6 @@
 1706* | [Where Will the Ball Fall](https://leetcode.com/problems/where-will-the-ball-fall/) | Medium | Trick | [Solutions](Solutions/1706.%20Where%20Will%20the%20Ball%20Fall) | 
 1710* | [Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck/) | Easy | Sort(With custom comaprison) | [Solutions](Solutions/1710.%20Maximum%20Units%20on%20a%20Truck) | 
 1716* | [Calculate Money in Leetcode Bank](https://leetcode.com/problems/calculate-money-in-leetcode-bank/) | Easy | Math | [Solutions](Solutions/1716.%20Calculate%20Money%20in%20Leetcode%20Bank) | 
+1717* | [Maximum Score From Removing Substrings](https://leetcode.com/problems/maximum-score-from-removing-substrings/) | Medium | Stack | [Solutions](Solutions/1717.%20Maximum%20Score%20From%20Removing%20Substrings) | 
 1720* | [Decode XORed Array](https://leetcode.com/problems/decode-xored-array/) | Easy | Math(XOR) | [Solutions](Solutions/1720.%20Decode%20XORed%20Array) | 
 1721* | [Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/) | Medium | Linked-List | [Solutions](Solutions/1721.%20Swapping%20Nodes%20in%20a%20Linked%20List) | 
