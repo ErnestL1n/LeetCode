@@ -28,6 +28,7 @@
 654 | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) | Medium | Stack、Iterator | [Solutions](Solutions/654.%20Maximum%20Binary%20Tree) | [Note](Solutions/654.%20Maximum%20Binary%20Tree/note.md)
 704 | [Binary Search](https://leetcode.com/problems/binary-search/) | Easy | Binary Search | [Solutions](Solutions/704.%20Binary%20Search) |
 743 | [Network Delay Time](https://leetcode.com/problems/network-delay-time/) | Medium | Dijkstra(Priority_Queue)、Bellman-Ford | [Solutions](Solutions/743.%20Network%20Delay%20Time) | [Note](Solutions/743.%20Network%20Delay%20Time/note.md)
+780* | [Reaching Points](https://leetcode.com/problems/reaching-points/) | Hard | Modulo | [Solutions](Solutions/780.%20Reaching%20Points) | 
 797 | [All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/) | Medium | DAG | [Solutions](Solutions/797.%20All%20Paths%20From%20Source%20to%20Target) | [Note](Solutions/797.%20All%20Paths%20From%20Source%20to%20Target/note.md)
 814 | [Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/) | Medium | D&C | [Solutions](Solutions/814.%20Binary%20Tree%20Pruning) | [Note](Solutions/814.%20Binary%20Tree%20Pruning/note.md)
 832 | [Flipping an Image](https://leetcode.com/problems/flipping-an-image/) | Easy | Operation | [Solutions](Solutions/832.%20Flipping%20an%20Image) | 
