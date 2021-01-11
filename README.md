@@ -2,7 +2,7 @@
 ###### Clicking with ctrl makes you open in a new tab(Github does not include the target attribute ,even if you use plain HTML,to let a Link open in a new tab)
 
 ###### * marks as only c++
-
+###### 
 
 \# | Title | Difficulty | Related Topics | Solution | Note
 ---|---|---|---|---|---|
@@ -24,7 +24,8 @@
 221 | [Maximal Square](https://leetcode.com/problems/maximal-square/) | Medium | DP | [Solutions](Solutions/221.%20Maximal%20Square) | [Note](Solutions/221.%20Maximal%20Square/note.md)
 290* | [Word Pattern](https://leetcode.com/problems/word-pattern/) | Easy | HashMap | [Solutions](Solutions/290.%20Word%20Pattern) | 
 312 | [Burst Balloons](https://leetcode.com/problems/burst-balloons/) | Hard | DP | [Solutions](Solutions/312.%20Burst%20Balloons) | [Note](Solutions/312.%20Burst%20Balloons/note.md)
-454 | [4Sum II](https://leetcode.com/problems/4sum-ii/) | Medium | HashMap、Binary Search | [Solutions](Solutions/454.%204Sum%20II) |
+454* | [4Sum II](https://leetcode.com/problems/4sum-ii/) | Medium | HashMap、Binary Search | [Solutions](Solutions/454.%204Sum%20II) |
+500* | [Keyboard Row](https://leetcode.com/problems/keyboard-row/) | Easy | HashSet | [Solutions](Solutions/500.%20Keyboard%20Row) |
 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/) | Medium | BFS、DP | [Solutions](Solutions/542.%2001%20Matrix) | [Note](Solutions/542.%2001%20Matrix/note.md)
 653 | [Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) | Easy | HashSet、Binary Search | [Solutions](Solutions/653.%20Two%20Sum%20IV%20-%20Input%20is%20a%20BST) | [Note](Solutions/653.%20Two%20Sum%20IV%20-%20Input%20is%20a%20BST/note.md)
 654 | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) | Medium | Stack、Iterator | [Solutions](Solutions/654.%20Maximum%20Binary%20Tree) | [Note](Solutions/654.%20Maximum%20Binary%20Tree/note.md)
