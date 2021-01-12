@@ -68,6 +68,7 @@
 1689* | [Partitioning Into Minimum Number Of Deci-Binary Numbers](https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/) | Medium | Trick | [Solutions](Solutions/1689.%20Partitioning%20Into%20Minimum%20Number%20Of%20Deci-Binary%20Numbers)
 1694 | [Reformat Phone Number](https://leetcode.com/problems/reformat-phone-number/) | Easy | String | [Solutions](Solutions/1694.%20Reformat%20Phone%20Number) | [Note](Solutions/1694.%20Reformat%20Phone%20Number/note.md)
 1695 | [Maximum Erasure Value](https://leetcode.com/problems/maximum-erasure-value/) | Medium | Two Pointers、HashSet | [Solutions](Solutions/1695.%20Maximum%20Erasure%20Value) | [Note](Solutions/1695.%20Maximum%20Erasure%20Value/note.md)
+1700* | [Number of Students Unable to Eat Lunch](https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/) | Easy | Array | [Solutions](Solutions/1700.%20Number%20of%20Students%20Unable%20to%20Eat%20Lunch) |
 1702* | [Maximum Binary String After Change](https://leetcode.com/problems/maximum-binary-string-after-change/) | Medium | Trick | [Solutions](Solutions/1702.%20Maximum%20Binary%20String%20After%20Change) |
 1706* | [Where Will the Ball Fall](https://leetcode.com/problems/where-will-the-ball-fall/) | Medium | Trick | [Solutions](Solutions/1706.%20Where%20Will%20the%20Ball%20Fall) | 
 1710* | [Maximum Units on a Truck](https://leetcode.com/problems/maximum-units-on-a-truck/) | Easy | Sort(With custom comaprison) | [Solutions](Solutions/1710.%20Maximum%20Units%20on%20a%20Truck) | 
