@@ -40,7 +40,7 @@
 962* | [Maximum Width Ramp](https://leetcode.com/problems/maximum-width-ramp/) | Medium | Stack | [Solutions](Solutions/962.%20Maximum%20Width%20Ramp) | 
 1051 | [Height Checker](https://leetcode.com/problems/height-checker/) | Easy | Sort (Counting) | [Solutions](Solutions/1051.%20Height%20Checker) | 
 1186* | [Maximum Subarray Sum with One Deletion](https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/) | Medium| DP | [Solutions](Solutions/1186.%20Maximum%20Subarray%20Sum%20with%20One%20Deletion) | [Note](Solutions/1186.%20Maximum%20Subarray%20Sum%20with%20One%20Deletion/note.md)
-1202* | [Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps/) | Medium| Union-Find | [Solutions](Solutions/1202.%20Smallest%20String%20With%20Swaps) 
+1202* | [Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps/) | Medium | Union-Find | [Solutions](Solutions/1202.%20Smallest%20String%20With%20Swaps) 
 1302 | [Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum/) | Medium | D&C、BFS | [Solutions](Solutions/1302.%20Deepest%20Leaves%20Sum) | [Note](Solutions/1302.%20Deepest%20Leaves%20Sum/note.md)
 1305**** | [All Elements in Two Binary Search Trees](https://leetcode.com/problems/all-elements-in-two-binary-search-trees/) | Medium | BST、Stack | [Solutions](Solutions/1305.%20All%20Elements%20in%20Two%20Binary%20Search%20Trees) | [Note](Solutions/1305.%20All%20Elements%20in%20Two%20Binary%20Search%20Trees/note.md)
 1314**** | [Matrix Block Sum](https://leetcode.com/problems/matrix-block-sum/) | Medium | DP | [Solutions](Solutions/1314.%20Matrix%20Block%20Sum) |
@@ -75,3 +75,4 @@
 1717* | [Maximum Score From Removing Substrings](https://leetcode.com/problems/maximum-score-from-removing-substrings/) | Medium | Stack | [Solutions](Solutions/1717.%20Maximum%20Score%20From%20Removing%20Substrings) | 
 1720* | [Decode XORed Array](https://leetcode.com/problems/decode-xored-array/) | Easy | Math(XOR) | [Solutions](Solutions/1720.%20Decode%20XORed%20Array) | 
 1721* | [Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/) | Medium | Linked-List | [Solutions](Solutions/1721.%20Swapping%20Nodes%20in%20a%20Linked%20List) | 
+1722* | [Minimize Hamming Distance After Swap Operations](https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/) | Medium | Union-Find | [Solutions](Solutions/1722.%20Minimize%20Hamming%20Distance%20After%20Swap%20Operations) | 
