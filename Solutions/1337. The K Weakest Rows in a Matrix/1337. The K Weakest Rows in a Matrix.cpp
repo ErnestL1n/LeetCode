@@ -31,8 +31,7 @@ public:
             pq.push({numOnes(mat[i]),i});
         }
         while(k-->0){
-            res.push_back(pq.top().second);
-            pq.pop();
+            res.push_back(pq.top().second),pq.pop();
         }
         return res;
     }
