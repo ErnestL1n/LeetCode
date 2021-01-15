@@ -1,0 +1,3 @@
+# to change language of repo from Javascript to Python
+    *.java linguist-language=cpp
+    *.ipynb linguist-detectable=false
