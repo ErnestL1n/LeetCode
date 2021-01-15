@@ -4,7 +4,7 @@
 class Solution {
 public:
     int firstBadVersion(int n) {
-        unsigned l=1,r=n;
+        unsigned l=0,r=n;
         while(l<=r){
             unsigned m=(l+r)/2;
             if(isBadVersion(m))
