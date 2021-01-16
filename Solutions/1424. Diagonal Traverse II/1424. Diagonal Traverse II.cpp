@@ -2,7 +2,7 @@ class Solution {
 public:
     vector<int> findDiagonalOrder(vector<vector<int>>& nums) {
         vector<int> res;
-        map<int,vector<int>> m;
+        unordered_map<int,vector<int>> m;
         int diaN=0;
         for(int i=0;i<nums.size();++i)
             for(int j=0;j<nums[i].size();++j){
