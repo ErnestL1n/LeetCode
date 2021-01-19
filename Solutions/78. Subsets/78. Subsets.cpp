@@ -1,12 +1,14 @@
+typedef vector<vector<int>> VVI;
+typedef vector<int> VI;
 class Solution {
 public:
     vector<vector<int>> subsets(vector<int>& nums) {
-        vector<vector<int>> res;
-        vector<int> tmp;
+        VVI res;
+        VI tmp;
         foo(nums,res,tmp,0);
         return res;
     }
-    void foo(vector<int>& nums,vector<vector<int>>& res,vector<int>& tmp,int begin){
+    void foo(VI& nums,VVI& res,VI& tmp,int begin){
         res.push_back(tmp);
         for(int i=begin;i<nums.size();++i){
             tmp.push_back(nums[i]);
