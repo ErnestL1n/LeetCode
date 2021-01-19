@@ -1,13 +1,15 @@
+typedef vector<vector<int>> VVI;
+typedef vector<int> VI;
 class Solution {
 public:
     vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
         sort(candidates.begin(),candidates.end());
-        vector<vector<int>> res;
-        vector<int> path;
+        VVI res;
+        VI path;
         foo(candidates,target,res,path,0);
         return res;
     }
-    void foo(vector<int>& candidates,int target,vector<vector<int>>& res,vector<int>& path,int start){
+    void foo(VI& candidates,int target,VVI& res,VI& path,int start){
         if(!target){
             res.push_back(path);
             return;
