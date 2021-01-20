@@ -40,6 +40,7 @@
 704**** | [Binary Search](https://leetcode.com/problems/binary-search/) | Easy | Binary Search | [Solutions](Solutions/704.%20Binary%20Search) |
 740* | [Delete and Earn](https://leetcode.com/problems/delete-and-earn/) | Medium | DP | [Solutions](Solutions/740.%20Delete%20and%20Earn) |
 743 | [Network Delay Time](https://leetcode.com/problems/network-delay-time/) | Medium | Dijkstra(Priority_Queue)、Bellman-Ford | [Solutions](Solutions/743.%20Network%20Delay%20Time) | [Note](Solutions/743.%20Network%20Delay%20Time/note.md)
+771*** | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | Easy | HashSet | [Solutions](https://github.com/ErnestL1n/LeetCode/tree/main/Solutions/771.%20Jewels%20and%20Stones) | 
 780* | [Reaching Points](https://leetcode.com/problems/reaching-points/) | Hard | Modulo | [Solutions](Solutions/780.%20Reaching%20Points) | 
 797 | [All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/) | Medium | DAG | [Solutions](Solutions/797.%20All%20Paths%20From%20Source%20to%20Target) | [Note](Solutions/797.%20All%20Paths%20From%20Source%20to%20Target/note.md)
 814 | [Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/) | Medium | D&C | [Solutions](Solutions/814.%20Binary%20Tree%20Pruning) | [Note](Solutions/814.%20Binary%20Tree%20Pruning/note.md)
@@ -57,6 +58,7 @@
 1351 | [Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/) | Easy | Math、Array | [Solutions](Solutions/1351.%20Count%20Negative%20Numbers%20in%20a%20Sorted%20Matrix) | [Note](Solutions/1351.%20Count%20Negative%20Numbers%20in%20a%20Sorted%20Matrix/note.md)
 1402 | [Reducing Dishes](https://leetcode.com/problems/reducing-dishes/) | Hard | DP | [Solutions](Solutions/1402.%20Reducing%20Dishes) |
 1424* | [Diagonal Traverse II](https://leetcode.com/problems/diagonal-traverse-ii/) | Medium | Array、Iterator | [Solutions](Solutions/1424.%20Diagonal%20Traverse%20II) |
+1436*** | [Destination City](https://leetcode.com/problems/destination-city/) | Easy | HashMap | [Solutions](Solutions/1436.%20Destination%20City) |
 1437* | [Check If All 1's Are at Least Length K Places Away](https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/) | Medium(Easy) | Two Pointers | [Solutions](Solutions/1437.%20Check%20If%20All%201's%20Are%20at%20Least%20Length%20K%20Places%20Away) |
 1448 | [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | Medium | D&C、Tree | [Solutions](Solutions/1448.%20Count%20Good%20Nodes%20in%20Binary%20Tree) |
 1460* | [Make Two Arrays Equal by Reversing Sub-arrays](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays/) | Easy | HashSet(MultiSet) | [Solutions](Solutions/1460.%20Make%20Two%20Arrays%20Equal%20by%20Reversing%20Sub-arrays) |
