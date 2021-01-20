@@ -46,6 +46,7 @@
 962* | [Maximum Width Ramp](https://leetcode.com/problems/maximum-width-ramp/) | Medium | Stack | [Solutions](Solutions/962.%20Maximum%20Width%20Ramp) | 
 1010* | [Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/) | Medium | Hash(Memoried)、Math | [Solutions](Solutions/1010.%20Pairs%20of%20Songs%20With%20Total%20Durations%20Divisible%20by%2060) |
 1051 | [Height Checker](https://leetcode.com/problems/height-checker/) | Easy | Sort (Counting) | [Solutions](Solutions/1051.%20Height%20Checker) | 
+1071* | [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) | Easy | String | [Solutions](Solutions/1071.%20Greatest%20Common%20Divisor%20of%20Strings) |
 1186* | [Maximum Subarray Sum with One Deletion](https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/) | Medium| DP | [Solutions](Solutions/1186.%20Maximum%20Subarray%20Sum%20with%20One%20Deletion) | [Note](Solutions/1186.%20Maximum%20Subarray%20Sum%20with%20One%20Deletion/note.md)
 1202* | [Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps/) | Medium | Union-Find | [Solutions](Solutions/1202.%20Smallest%20String%20With%20Swaps) 
 1302 | [Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum/) | Medium | D&C、BFS | [Solutions](Solutions/1302.%20Deepest%20Leaves%20Sum) | [Note](Solutions/1302.%20Deepest%20Leaves%20Sum/note.md)
