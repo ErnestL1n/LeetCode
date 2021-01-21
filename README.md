@@ -31,6 +31,7 @@
 278* | [First Bad Version](https://leetcode.com/problems/first-bad-version/) | Easy | Binary Search | [Solutions](Solutions/278.%20First%20Bad%20Version) | 
 290* | [Word Pattern](https://leetcode.com/problems/word-pattern/) | Easy | HashMap | [Solutions](Solutions/290.%20Word%20Pattern) | 
 312 | [Burst Balloons](https://leetcode.com/problems/burst-balloons/) | Hard | DP | [Solutions](Solutions/312.%20Burst%20Balloons) | [Note](Solutions/312.%20Burst%20Balloons/note.md)
+435* | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | Medium | Greedy | [Solutions](Solutions/435.%20Non-overlapping%20Intervals)
 453* | [Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/) | Easy | Math | [Solutions](Solutions/453.%20Minimum%20Moves%20to%20Equal%20Array%20Elements) | [Note](Solutions/453.%20Minimum%20Moves%20to%20Equal%20Array%20Elements/note.md)
 454**** | [4Sum II](https://leetcode.com/problems/4sum-ii/) | Medium | HashMap、Binary Search | [Solutions](Solutions/454.%204Sum%20II) |
 500* | [Keyboard Row](https://leetcode.com/problems/keyboard-row/) | Easy | HashSet | [Solutions](Solutions/500.%20Keyboard%20Row) |
