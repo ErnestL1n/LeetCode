@@ -1,0 +1,1 @@
+##  In ```c++```, the comparison function should satisfy weak strict ordering. Using ```<=``` is undefined behavior. You can read more about it [here](https://stackoverflow.com/questions/979759/operator-and-strict-weak-ordering)
