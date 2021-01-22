@@ -70,7 +70,8 @@
 1460* | [Make Two Arrays Equal by Reversing Sub-arrays](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays/) | Easy | HashSet(MultiSet) | [Solutions](Solutions/1460.%20Make%20Two%20Arrays%20Equal%20by%20Reversing%20Sub-arrays) |
 1534 | [Count Good Triplets](https://leetcode.com/problems/count-good-triplets/) | Easy | Operation | [Solutions](Solutions/1534.%20Count%20Good%20Triplets) |
 1535*** | [Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game/) | Medium | Array | [Solutions](Solutions/1535.%20Find%20the%20Winner%20of%20an%20Array%20Game) |
-1537** | [Get the Maximum Score](https://leetcode.com/problems/get-the-maximum-score/) | Hard| Two Pointers、DP | [Solutions](Solutions/1537.%20Get%20the%20Maximum%20Score) |
+1537** | [Get the Maximum Score](https://leetcode.com/problems/get-the-maximum-score/) | Hard | Two Pointers、DP | [Solutions](Solutions/1537.%20Get%20the%20Maximum%20Score) |
+1539** | [Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/) | Easy | HashSet | [Solutions](Solutions/1539.%20Kth%20Missing%20Positive%20Number) |
 1547 | [Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/) | Hard | DP | [Solutions](Solutions/1547.%20Minimum%20Cost%20to%20Cut%20a%20Stick) | [Note](Solutions/1547.%20Minimum%20Cost%20to%20Cut%20a%20Stick/note.md)
 1552 | [Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls/) | Medium(Hard...) | Binary Search | [Solutions](Solutions/1552.%20Magnetic%20Force%20Between%20Two%20Balls) | [Note](Solutions/1552.%20Magnetic%20Force%20Between%20Two%20Balls/note.md)
 1572 | [Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum/) | Easy | Operation | [Solutions](Solutions/1572.%20Matrix%20Diagonal%20Sum) | 
