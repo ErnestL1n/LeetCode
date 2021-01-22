@@ -106,3 +106,21 @@ int main() {
 	cout<< *i << " ";
 	return 0;
 }
+
+
+
+/* recursive solution
+class Solution {
+public:
+    vector<int> res;
+    vector<int> preorder(Node* root) {
+        if(!root)return res;
+        res.push_back(root->val);
+        vector<Node*> children=root->children;
+        for(int i=0;i<children.size();++i){
+            preorder(children[i]);
+        }
+        return res;
+    }
+};
+*/ 
