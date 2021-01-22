@@ -32,11 +32,13 @@
 278* | [First Bad Version](https://leetcode.com/problems/first-bad-version/) | Easy | Binary Search | [Solutions](Solutions/278.%20First%20Bad%20Version) | 
 290* | [Word Pattern](https://leetcode.com/problems/word-pattern/) | Easy | HashMap | [Solutions](Solutions/290.%20Word%20Pattern) | 
 312 | [Burst Balloons](https://leetcode.com/problems/burst-balloons/) | Hard | DP | [Solutions](Solutions/312.%20Burst%20Balloons) | [Note](Solutions/312.%20Burst%20Balloons/note.md)
+344** | [Reverse String](https://leetcode.com/problems/reverse-string/) | Easy | Two Pointers | [Solutions](Solutions/344.%20Reverse%20String) | 
 435* | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | Medium | Greedy | [Solutions](Solutions/435.%20Non-overlapping%20Intervals)
 453* | [Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/) | Easy | Math | [Solutions](Solutions/453.%20Minimum%20Moves%20to%20Equal%20Array%20Elements) | [Note](Solutions/453.%20Minimum%20Moves%20to%20Equal%20Array%20Elements/note.md)
 454*** | [4Sum II](https://leetcode.com/problems/4sum-ii/) | Medium | HashMap、Binary Search | [Solutions](Solutions/454.%204Sum%20II) |
 500* | [Keyboard Row](https://leetcode.com/problems/keyboard-row/) | Easy | HashSet | [Solutions](Solutions/500.%20Keyboard%20Row) |
 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/) | Medium | BFS、DP | [Solutions](Solutions/542.%2001%20Matrix) | [Note](Solutions/542.%2001%20Matrix/note.md)
+589** | [N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/) | Easy | DFS、D&C、Stack | [Solutions](Solutions/589.%20N-ary%20Tree%20Preorder%20Traversal) |
 653 | [Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) | Easy | HashSet、Binary Search | [Solutions](Solutions/653.%20Two%20Sum%20IV%20-%20Input%20is%20a%20BST) | [Note](Solutions/653.%20Two%20Sum%20IV%20-%20Input%20is%20a%20BST/note.md)
 654*** | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) | Medium | Stack、Iterator | [Solutions](Solutions/654.%20Maximum%20Binary%20Tree) | [Note](Solutions/654.%20Maximum%20Binary%20Tree/note.md)
 704*** | [Binary Search](https://leetcode.com/problems/binary-search/) | Easy | Binary Search | [Solutions](Solutions/704.%20Binary%20Search) |
@@ -47,6 +49,8 @@
 797 | [All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/) | Medium | DAG | [Solutions](Solutions/797.%20All%20Paths%20From%20Source%20to%20Target) | [Note](Solutions/797.%20All%20Paths%20From%20Source%20to%20Target/note.md)
 814 | [Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/) | Medium | D&C | [Solutions](Solutions/814.%20Binary%20Tree%20Pruning) | [Note](Solutions/814.%20Binary%20Tree%20Pruning/note.md)
 832 | [Flipping an Image](https://leetcode.com/problems/flipping-an-image/) | Easy | Operation | [Solutions](Solutions/832.%20Flipping%20an%20Image) | 
+897** | [Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/) | Easy(Medium) | DFS、D&C、Stack | [Solutions](Solutions/897.%20Increasing%20Order%20Search%20Tree) |
+921** | [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) | Medium | Greedy | [Solutions](Solutions/921.%20Minimum%20Add%20to%20Make%20Parentheses%20Valid) |
 962* | [Maximum Width Ramp](https://leetcode.com/problems/maximum-width-ramp/) | Medium | Stack | [Solutions](Solutions/962.%20Maximum%20Width%20Ramp) | 
 1010* | [Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/) | Medium | Hash(Memoried)、Math | [Solutions](Solutions/1010.%20Pairs%20of%20Songs%20With%20Total%20Durations%20Divisible%20by%2060) |
 1051 | [Height Checker](https://leetcode.com/problems/height-checker/) | Easy | Sort (Counting) | [Solutions](Solutions/1051.%20Height%20Checker) | 
@@ -67,7 +71,8 @@
 1460* | [Make Two Arrays Equal by Reversing Sub-arrays](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays/) | Easy | HashSet(MultiSet) | [Solutions](Solutions/1460.%20Make%20Two%20Arrays%20Equal%20by%20Reversing%20Sub-arrays) |
 1534 | [Count Good Triplets](https://leetcode.com/problems/count-good-triplets/) | Easy | Operation | [Solutions](Solutions/1534.%20Count%20Good%20Triplets) |
 1535*** | [Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game/) | Medium | Array | [Solutions](Solutions/1535.%20Find%20the%20Winner%20of%20an%20Array%20Game) |
-1537** | [Get the Maximum Score](https://leetcode.com/problems/get-the-maximum-score/) | Hard| Two Pointers、DP | [Solutions](Solutions/1537.%20Get%20the%20Maximum%20Score) |
+1537** | [Get the Maximum Score](https://leetcode.com/problems/get-the-maximum-score/) | Hard | Two Pointers、DP | [Solutions](Solutions/1537.%20Get%20the%20Maximum%20Score) |
+1539** | [Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/) | Easy | HashSet | [Solutions](Solutions/1539.%20Kth%20Missing%20Positive%20Number) |
 1547 | [Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/) | Hard | DP | [Solutions](Solutions/1547.%20Minimum%20Cost%20to%20Cut%20a%20Stick) | [Note](Solutions/1547.%20Minimum%20Cost%20to%20Cut%20a%20Stick/note.md)
 1552 | [Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls/) | Medium(Hard...) | Binary Search | [Solutions](Solutions/1552.%20Magnetic%20Force%20Between%20Two%20Balls) | [Note](Solutions/1552.%20Magnetic%20Force%20Between%20Two%20Balls/note.md)
 1572 | [Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum/) | Easy | Operation | [Solutions](Solutions/1572.%20Matrix%20Diagonal%20Sum) | 
