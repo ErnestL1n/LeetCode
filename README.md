@@ -50,6 +50,7 @@
 814 | [Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/) | Medium | D&C | [Solutions](Solutions/814.%20Binary%20Tree%20Pruning) | [Note](Solutions/814.%20Binary%20Tree%20Pruning/note.md)
 832 | [Flipping an Image](https://leetcode.com/problems/flipping-an-image/) | Easy | Operation | [Solutions](Solutions/832.%20Flipping%20an%20Image) | 
 897** | [Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/) | Easy(Medium) | DFS、D&C、Stack | [Solutions](Solutions/897.%20Increasing%20Order%20Search%20Tree) |
+921** | [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) | Medium | Greedy | [Solutions](Solutions/921.%20Minimum%20Add%20to%20Make%20Parentheses%20Valid) |
 962* | [Maximum Width Ramp](https://leetcode.com/problems/maximum-width-ramp/) | Medium | Stack | [Solutions](Solutions/962.%20Maximum%20Width%20Ramp) | 
 1010* | [Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/) | Medium | Hash(Memoried)、Math | [Solutions](Solutions/1010.%20Pairs%20of%20Songs%20With%20Total%20Durations%20Divisible%20by%2060) |
 1051 | [Height Checker](https://leetcode.com/problems/height-checker/) | Easy | Sort (Counting) | [Solutions](Solutions/1051.%20Height%20Checker) | 
