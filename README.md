@@ -32,6 +32,7 @@
 207* | [Course Schedule](https://leetcode.com/problems/course-schedule/) | Medium | Topological Sort、DFS、BFS | [Solutions](Solutions/207.%20Course%20Schedule) |
 221 | [Maximal Square](https://leetcode.com/problems/maximal-square/) | Medium | DP | [Solutions](Solutions/221.%20Maximal%20Square) | [Note](Solutions/221.%20Maximal%20Square/note.md)
 278* | [First Bad Version](https://leetcode.com/problems/first-bad-version/) | Easy | Binary Search | [Solutions](Solutions/278.%20First%20Bad%20Version) | 
+283* | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | Easy | Two Pointers | [Solutions](Solutions/283.%20Move%20Zeroes) | 
 290* | [Word Pattern](https://leetcode.com/problems/word-pattern/) | Easy | HashMap | [Solutions](Solutions/290.%20Word%20Pattern) | 
 312 | [Burst Balloons](https://leetcode.com/problems/burst-balloons/) | Hard | DP | [Solutions](Solutions/312.%20Burst%20Balloons) | [Note](Solutions/312.%20Burst%20Balloons/note.md)
 344** | [Reverse String](https://leetcode.com/problems/reverse-string/) | Easy | Two Pointers | [Solutions](Solutions/344.%20Reverse%20String) | 
