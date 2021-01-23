@@ -23,6 +23,7 @@
 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Medium | D&C、Stack | [Solutions](Solutions/94.%20Binary%20Tree%20Inorder%20Traversal) | [Note](Solutions/94.%20Binary%20Tree%20Inorder%20Traversal/note.md)
 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | DP、Array | [Solutions](Solutions/121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock) |
 128*** | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Hard | HashSet(Set)、Union-Find | [Solutions](Solutions/128.%20Longest%20Consecutive%20Sequence) |
+129* | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | Medium | DFS、D&C | [Solutions](Solutions/129.%20Sum%20Root%20to%20Leaf%20Numbers)
 136 | [Single Number](https://leetcode.com/problems/single-number/) | Easy | Math | [Solutions](Solutions/136.%20Single%20Number) |
 152* | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | Medium | DP | [Solutions](Solutions/152.%20Maximum%20Product%20Subarray) |
 187** | [Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/) | Medium | HashSet | [Solutions](Solutions/187.%20Repeated%20DNA%20Sequences) |
