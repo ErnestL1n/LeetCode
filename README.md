@@ -105,3 +105,5 @@
 1725* | [Number Of Rectangles That Can Form The Largest Square](https://leetcode.com/problems/number-of-rectangles-that-can-form-the-largest-square/) | Easy | Array | [Solutions](Solutions/1725.%20Number%20Of%20Rectangles%20That%20Can%20Form%20The%20Largest%20Square) | 
 1726* | [Tuple with Same Product](https://leetcode.com/problems/tuple-with-same-product/) | Medium | HashMap、Trick | [Solutions](Solutions/1726.%20Tuple%20with%20Same%20Product) | 
 1727* | [Largest Submatrix With Rearrangements](https://leetcode.com/problems/largest-submatrix-with-rearrangements/) | Medium(Hard) | Trick | [Solutions](Solutions/1727.%20Largest%20Submatrix%20With%20Rearrangements) | [Note](Solutions/1727.%20Largest%20Submatrix%20With%20Rearrangements/note.md)
+1732* | [Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/) | Easy | Array | [Solutions](Solutions/1732.%20Find%20the%20Highest%20Altitude) | 
+1734* | [Decode XORed Permutation](https://leetcode.com/problems/decode-xored-permutation/) | Medium | Trick、XOR | [Solutions](Solutions/1734.%20Decode%20XORed%20Permutation) | [Note](Solutions/1734.%20Decode%20XORed%20Permutation/note.md)
