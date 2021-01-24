@@ -107,3 +107,4 @@
 1727* | [Largest Submatrix With Rearrangements](https://leetcode.com/problems/largest-submatrix-with-rearrangements/) | Medium(Hard) | Trick | [Solutions](Solutions/1727.%20Largest%20Submatrix%20With%20Rearrangements) | [Note](Solutions/1727.%20Largest%20Submatrix%20With%20Rearrangements/note.md)
 1732* | [Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/) | Easy | Array | [Solutions](Solutions/1732.%20Find%20the%20Highest%20Altitude) | 
 1734* | [Decode XORed Permutation](https://leetcode.com/problems/decode-xored-permutation/) | Medium | Trick、XOR | [Solutions](Solutions/1734.%20Decode%20XORed%20Permutation) | [Note](Solutions/1734.%20Decode%20XORed%20Permutation/note.md)
+1736* | [Latest Time by Replacing Hidden Digits](https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/) | Easy | String、Greedy | [Solutions](Solutions/1736.%20Latest%20Time%20by%20Replacing%20Hidden%20Digits) | 
