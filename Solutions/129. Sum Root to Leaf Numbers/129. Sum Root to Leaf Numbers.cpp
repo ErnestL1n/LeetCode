@@ -29,7 +29,7 @@ public:
     int sumNumbers(TreeNode* root) {
         queue<TreeNode*> q;
         int res=0;
-        if(!root)return 0;
+        if(!root)return res;
         q.push(root);
         while(q.size()){
             auto curr=q.front();q.pop();
