@@ -77,6 +77,7 @@
 1436** | [Destination City](https://leetcode.com/problems/destination-city/) | Easy | HashMap | [Solutions](Solutions/1436.%20Destination%20City) |
 1437* | [Check If All 1's Are at Least Length K Places Away](https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/) | Medium(Easy) | Two Pointers | [Solutions](Solutions/1437.%20Check%20If%20All%201's%20Are%20at%20Least%20Length%20K%20Places%20Away) |
 1448 | [Count Good Nodes in Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | Medium | D&C、Tree | [Solutions](Solutions/1448.%20Count%20Good%20Nodes%20in%20Binary%20Tree) |
+1458* | [Max Dot Product of Two Subsequences](https://leetcode.com/problems/max-dot-product-of-two-subsequences/) | Hard | DP | [Solutions](Solutions/1458.%20Max%20Dot%20Product%20of%20Two%20Subsequences) | [Note](Solutions/1458.%20Max%20Dot%20Product%20of%20Two%20Subsequences/note.md)
 1460* | [Make Two Arrays Equal by Reversing Sub-arrays](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays/) | Easy | HashSet(MultiSet) | [Solutions](Solutions/1460.%20Make%20Two%20Arrays%20Equal%20by%20Reversing%20Sub-arrays) |
 1534 | [Count Good Triplets](https://leetcode.com/problems/count-good-triplets/) | Easy | Operation | [Solutions](Solutions/1534.%20Count%20Good%20Triplets) |
 1535*** | [Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game/) | Medium | Array | [Solutions](Solutions/1535.%20Find%20the%20Winner%20of%20an%20Array%20Game) |
