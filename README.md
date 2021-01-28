@@ -2,8 +2,8 @@
 ###### Clicking with ctrl makes you open in a new tab(Github does not include the target attribute ,even if you use plain HTML,to let a Link open in a new tab)
 
 ###### * marks as only c++
-###### ** marks as no python、go
-###### *** marks as no go
+###### & marks as no python、go
+###### ! marks as no go
 
 \# | Title | Difficulty | Related Topics | Solution | Note
 ---|---|---|---|---|---|
@@ -24,7 +24,7 @@
 92* | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | Medium | Linked-List | [Solutions](Solutions/92.%20Reverse%20Linked%20List%20II) | [Note](Solutions/92.%20Reverse%20Linked%20List%20II/note.md)
 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Medium | D&C、Stack | [Solutions](Solutions/94.%20Binary%20Tree%20Inorder%20Traversal) | [Note](Solutions/94.%20Binary%20Tree%20Inorder%20Traversal/note.md)
 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | DP、Array | [Solutions](Solutions/121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock) |
-128*** | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Hard | HashSet(Set)、Union-Find | [Solutions](Solutions/128.%20Longest%20Consecutive%20Sequence) |
+128! | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Hard | HashSet(Set)、Union-Find | [Solutions](Solutions/128.%20Longest%20Consecutive%20Sequence) |
 129* | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | Medium | BFS、D&C | [Solutions](Solutions/129.%20Sum%20Root%20to%20Leaf%20Numbers)
 131* | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | Medium | DP、DFS | [Solutions](Solutions/131.%20Palindrome%20Partitioning)
 136 | [Single Number](https://leetcode.com/problems/single-number/) | Easy | Math | [Solutions](Solutions/136.%20Single%20Number) |
@@ -40,14 +40,14 @@
 344** | [Reverse String](https://leetcode.com/problems/reverse-string/) | Easy | Two Pointers | [Solutions](Solutions/344.%20Reverse%20String) | 
 435* | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | Medium | Greedy | [Solutions](Solutions/435.%20Non-overlapping%20Intervals)
 453* | [Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/) | Easy | Math | [Solutions](Solutions/453.%20Minimum%20Moves%20to%20Equal%20Array%20Elements) | [Note](Solutions/453.%20Minimum%20Moves%20to%20Equal%20Array%20Elements/note.md)
-454*** | [4Sum II](https://leetcode.com/problems/4sum-ii/) | Medium | HashMap、Binary Search | [Solutions](Solutions/454.%204Sum%20II) |
+454! | [4Sum II](https://leetcode.com/problems/4sum-ii/) | Medium | HashMap、Binary Search | [Solutions](Solutions/454.%204Sum%20II) |
 463* | [Island Perimeter](https://leetcode.com/problems/island-perimeter/) | Easy | Graph | [Solutions](Solutions/463.%20Island%20Perimeter) |
 500* | [Keyboard Row](https://leetcode.com/problems/keyboard-row/) | Easy | HashSet | [Solutions](Solutions/500.%20Keyboard%20Row) |
 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/) | Medium | BFS、DP | [Solutions](Solutions/542.%2001%20Matrix) | [Note](Solutions/542.%2001%20Matrix/note.md)
 589** | [N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/) | Easy | DFS、D&C、Stack | [Solutions](Solutions/589.%20N-ary%20Tree%20Preorder%20Traversal) |
 653 | [Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) | Easy | HashSet、Binary Search | [Solutions](Solutions/653.%20Two%20Sum%20IV%20-%20Input%20is%20a%20BST) | [Note](Solutions/653.%20Two%20Sum%20IV%20-%20Input%20is%20a%20BST/note.md)
-654*** | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) | Medium | Stack、Iterator | [Solutions](Solutions/654.%20Maximum%20Binary%20Tree) | [Note](Solutions/654.%20Maximum%20Binary%20Tree/note.md)
-704*** | [Binary Search](https://leetcode.com/problems/binary-search/) | Easy | Binary Search | [Solutions](Solutions/704.%20Binary%20Search) |
+654! | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) | Medium | Stack、Iterator | [Solutions](Solutions/654.%20Maximum%20Binary%20Tree) | [Note](Solutions/654.%20Maximum%20Binary%20Tree/note.md)
+704! | [Binary Search](https://leetcode.com/problems/binary-search/) | Easy | Binary Search | [Solutions](Solutions/704.%20Binary%20Search) |
 740* | [Delete and Earn](https://leetcode.com/problems/delete-and-earn/) | Medium | DP | [Solutions](Solutions/740.%20Delete%20and%20Earn) |
 743 | [Network Delay Time](https://leetcode.com/problems/network-delay-time/) | Medium | Dijkstra(Priority_Queue)、Bellman-Ford | [Solutions](Solutions/743.%20Network%20Delay%20Time) | [Note](Solutions/743.%20Network%20Delay%20Time/note.md)
 771** | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | Easy | HashSet | [Solutions](https://github.com/ErnestL1n/LeetCode/tree/main/Solutions/771.%20Jewels%20and%20Stones) | 
@@ -68,8 +68,8 @@
 1202* | [Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps/) | Medium | Union-Find | [Solutions](Solutions/1202.%20Smallest%20String%20With%20Swaps) 
 1267* | [Count Servers that Communicate](https://leetcode.com/problems/count-servers-that-communicate/) | Medium | Graph | [Solutions](Solutions/1267.%20Count%20Servers%20that%20Communicate) 
 1302 | [Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum/) | Medium | D&C、BFS | [Solutions](Solutions/1302.%20Deepest%20Leaves%20Sum) | [Note](Solutions/1302.%20Deepest%20Leaves%20Sum/note.md)
-1305*** | [All Elements in Two Binary Search Trees](https://leetcode.com/problems/all-elements-in-two-binary-search-trees/) | Medium | BST、Stack | [Solutions](Solutions/1305.%20All%20Elements%20in%20Two%20Binary%20Search%20Trees) | [Note](Solutions/1305.%20All%20Elements%20in%20Two%20Binary%20Search%20Trees/note.md)
-1314*** | [Matrix Block Sum](https://leetcode.com/problems/matrix-block-sum/) | Medium | DP(Range Sum) | [Solutions](Solutions/1314.%20Matrix%20Block%20Sum) | [Note](Solutions/1314.%20Matrix%20Block%20Sum/note.md)
+1305! | [All Elements in Two Binary Search Trees](https://leetcode.com/problems/all-elements-in-two-binary-search-trees/) | Medium | BST、Stack | [Solutions](Solutions/1305.%20All%20Elements%20in%20Two%20Binary%20Search%20Trees) | [Note](Solutions/1305.%20All%20Elements%20in%20Two%20Binary%20Search%20Trees/note.md)
+1314! | [Matrix Block Sum](https://leetcode.com/problems/matrix-block-sum/) | Medium | DP(Range Sum) | [Solutions](Solutions/1314.%20Matrix%20Block%20Sum) | [Note](Solutions/1314.%20Matrix%20Block%20Sum/note.md)
 1323** | [Maximum 69 Number](https://leetcode.com/problems/maximum-69-number/) | Easy | Math | [Solutions](Solutions/1323.%20Maximum%2069%20Number) | 
 1337* | [The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/) | Easy | Set、Binary Search、Priority_Queue(With custom comparator in c++) | [Solutions](Solutions/1337.%20The%20K%20Weakest%20Rows%20in%20a%20Matrix) | [Note](Solutions/1337.%20The%20K%20Weakest%20Rows%20in%20a%20Matrix/note.md)
 1387* | [Sort Integers by The Power Value](https://leetcode.com/problems/sort-integers-by-the-power-value/) | Medium | Priority_Queue | [Solutions](Solutions/1387.%20Sort%20Integers%20by%20The%20Power%20Value) |
@@ -82,7 +82,7 @@
 1458* | [Max Dot Product of Two Subsequences](https://leetcode.com/problems/max-dot-product-of-two-subsequences/) | Hard | DP | [Solutions](Solutions/1458.%20Max%20Dot%20Product%20of%20Two%20Subsequences) | [Note](Solutions/1458.%20Max%20Dot%20Product%20of%20Two%20Subsequences/note.md)
 1460* | [Make Two Arrays Equal by Reversing Sub-arrays](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays/) | Easy | HashSet(MultiSet) | [Solutions](Solutions/1460.%20Make%20Two%20Arrays%20Equal%20by%20Reversing%20Sub-arrays) |
 1534 | [Count Good Triplets](https://leetcode.com/problems/count-good-triplets/) | Easy | Operation | [Solutions](Solutions/1534.%20Count%20Good%20Triplets) |
-1535*** | [Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game/) | Medium | Array | [Solutions](Solutions/1535.%20Find%20the%20Winner%20of%20an%20Array%20Game) |
+1535! | [Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game/) | Medium | Array | [Solutions](Solutions/1535.%20Find%20the%20Winner%20of%20an%20Array%20Game) |
 1537** | [Get the Maximum Score](https://leetcode.com/problems/get-the-maximum-score/) | Hard | Two Pointers、DP | [Solutions](Solutions/1537.%20Get%20the%20Maximum%20Score) |
 1539** | [Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/) | Easy | HashSet | [Solutions](Solutions/1539.%20Kth%20Missing%20Positive%20Number) |
 1547 | [Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/) | Hard | DP | [Solutions](Solutions/1547.%20Minimum%20Cost%20to%20Cut%20a%20Stick) | [Note](Solutions/1547.%20Minimum%20Cost%20to%20Cut%20a%20Stick/note.md)
@@ -93,7 +93,7 @@
 1584 | [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/) | Medium | Kruskal(Union-Find)、Prim(Priority_Queue) | [Solutions](Solutions/1584.%20Min%20Cost%20to%20Connect%20All%20Points) | [Note](Solutions/1584.%20Min%20Cost%20to%20Connect%20All%20Points/note.md)
 1598 | [Crawler Log Folder](https://leetcode.com/problems/crawler-log-folder/) | Easy | Operation | [Solutions](Solutions/1598.%20Crawler%20Log%20Folder) |
 1619 | [Mean of Array After Removing Some Elements](https://leetcode.com/problems/mean-of-array-after-removing-some-elements/) | Easy | Array | [Solutions](Solutions/1619.%20Mean%20of%20Array%20After%20Removing%20Some%20Elements) |
-1630*** | [Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/) | Medium | Sort、Math | [Solutions](Solutions/1630.%20Arithmetic%20Subarrays)
+1630! | [Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/) | Medium | Sort、Math | [Solutions](Solutions/1630.%20Arithmetic%20Subarrays)
 1641 | [Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings/) | Medium | Math、DP | [Solutions](Solutions/1641.%20Count%20Sorted%20Vowel%20Strings) | [Note](Solutions/1641.%20Count%20Sorted%20Vowel%20Strings/note.md)
 1642 | [Furthest Building You Can Reach](https://leetcode.com/problems/furthest-building-you-can-reach/) | Medium | Priority_Queue | [Solutions](Solutions/1642.%20Furthest%20Building%20You%20Can%20Reach) | [Note](https://github.com/ErnestL1n/LeetCode/blob/master/Solutions/1642.%20Furthest%20Building%20You%20Can%20Reach/note.md)
 1664 | [Ways to Make a Fair Array](https://leetcode.com/problems/ways-to-make-a-fair-array/) | Medium | Array | [Solutions](Solutions/1664.%20Ways%20to%20Make%20a%20Fair%20Array) | [Note](Solutions/1664.%20Ways%20to%20Make%20a%20Fair%20Array/note.md)
