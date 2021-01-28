@@ -19,6 +19,7 @@
 56* | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Medium | Greedy | [Solutions](Solutions/56.%20Merge%20Intervals) | [Note](Solutions/56.%20Merge%20Intervals/note.md)
 66* | [Plus One](https://leetcode.com/problems/plus-one/) | Easy | Greedy、Array | [Solutions](Solutions/66.%20Plus%20One) | [Note](Solutions/66.%20Plus%20One/note.md)
 78* | [Subsets](https://leetcode.com/problems/subsets/) | Medium | D&C | [Solutions](Solutions/78.%20Subsets) | 
+83* | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | Easy | Linked-List | [Solutions](Solutions/83.%20Remove%20Duplicates%20from%20Sorted%20List) | 
 90* | [Subsets II](https://leetcode.com/problems/subsets-ii/) | Medium | D&C | [Solutions](Solutions/90.%20Subsets%20II) | 
 92* | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | Medium | Linked-List | [Solutions](Solutions/92.%20Reverse%20Linked%20List%20II) | [Note](Solutions/92.%20Reverse%20Linked%20List%20II/note.md)
 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Medium | D&C、Stack | [Solutions](Solutions/94.%20Binary%20Tree%20Inorder%20Traversal) | [Note](Solutions/94.%20Binary%20Tree%20Inorder%20Traversal/note.md)
