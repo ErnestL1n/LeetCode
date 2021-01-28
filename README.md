@@ -5,7 +5,7 @@
 ###### # marks as no python、go
 ###### ! marks as no go
 
-\No. | Title | Difficulty | Related Topics | Solution | Note
+No. | Title | Difficulty | Related Topics | Solution | Note
 ---|---|---|---|---|---|
 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | HashMap | [Solutions](Solutions/1.%20Two%20Sum) |
 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | Medium | Linked List、Math | [Solutions](Solutions/2.%20Add%20Two%20Numbers) | [Note](Solutions/2.%20Add%20Two%20Numbers/note.md)
