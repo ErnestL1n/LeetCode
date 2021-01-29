@@ -43,6 +43,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 454! | [4Sum II](https://leetcode.com/problems/4sum-ii/) | Medium | HashMap、Binary Search | [Solutions](Solutions/454.%204Sum%20II) |
 463* | [Island Perimeter](https://leetcode.com/problems/island-perimeter/) | Easy | Graph | [Solutions](Solutions/463.%20Island%20Perimeter) |
 500* | [Keyboard Row](https://leetcode.com/problems/keyboard-row/) | Easy | HashSet | [Solutions](Solutions/500.%20Keyboard%20Row) |
+503* | [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/) | Medium | Stack | [Solutions](Solutions/503.%20Next%20Greater%20Element%20II) | [Note](Solutions/503.%20Next%20Greater%20Element%20II/note.md)
 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/) | Medium | BFS、DP | [Solutions](Solutions/542.%2001%20Matrix) | [Note](Solutions/542.%2001%20Matrix/note.md)
 589# | [N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/) | Easy | DFS、D&C、Stack | [Solutions](Solutions/589.%20N-ary%20Tree%20Preorder%20Traversal) |
 653 | [Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) | Easy | HashSet、Binary Search | [Solutions](Solutions/653.%20Two%20Sum%20IV%20-%20Input%20is%20a%20BST) | [Note](Solutions/653.%20Two%20Sum%20IV%20-%20Input%20is%20a%20BST/note.md)
