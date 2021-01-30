@@ -80,3 +80,24 @@ public class Find_Common_Characters {
 	}
 
 }
+
+
+
+
+/* 2021.1.30
+class Solution {
+    public List<String> commonChars(String[] A) {
+        int[] cnt=new int[26];
+        Arrays.fill(cnt,Integer.MAX_VALUE);
+        for(var s:A){
+            int[] cnt1=new int[26];
+            for(var c:s.toCharArray())++cnt1[c-'a'];
+            for(int i=0;i<26;++i)cnt[i]=Math.min(cnt[i],cnt1[i]);
+        }
+        List<String> res=new ArrayList<>(); 
+        for(int i=0;i<26;++i)
+            for(int j=0;j<cnt[i];++j)
+                res.add(""+(char)(i+'a'));
+        return res;
+    }
+}*/
