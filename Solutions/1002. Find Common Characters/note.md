@@ -4,10 +4,10 @@
     * Runtime: ```O(n)```, where n is the total number of characters.
       Memory: ```O(1)``` (we use two fixed-size vectors).
       
-## cpp
+## C++
   * int to string alphabet
     ```string(1,'a'+i)    // i=0~25 ``` 
     
-## java
+## Java
   * int to string alphabet
     ```""+(char)(i+'a')   // i=0~25 ``` 
