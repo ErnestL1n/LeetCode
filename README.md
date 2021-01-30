@@ -60,6 +60,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 814 | [Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/) | Medium | D&C | [Solutions](Solutions/814.%20Binary%20Tree%20Pruning) | [Note](Solutions/814.%20Binary%20Tree%20Pruning/note.md)
 832 | [Flipping an Image](https://leetcode.com/problems/flipping-an-image/) | Easy | Operation | [Solutions](Solutions/832.%20Flipping%20an%20Image) | 
 870* | [Advantage Shuffle](https://leetcode.com/problems/advantage-shuffle/) | Medium | HashSet(MultiSet) | [Solutions](Solutions/870.%20Advantage%20Shuffle) | [Note](Solutions/870.%20Advantage%20Shuffle/note.md)
+890* | [Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern/) | Medium | HashMap(Vector) | [Solutions](Solutions/890.%20Find%20and%20Replace%20Pattern) | 
 897# | [Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/) | Easy(Medium) | DFS、D&C、Stack | [Solutions](Solutions/897.%20Increasing%20Order%20Search%20Tree) |
 921# | [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) | Medium | Greedy | [Solutions](Solutions/921.%20Minimum%20Add%20to%20Make%20Parentheses%20Valid) |
 962* | [Maximum Width Ramp](https://leetcode.com/problems/maximum-width-ramp/) | Medium | Stack | [Solutions](Solutions/962.%20Maximum%20Width%20Ramp) | 
