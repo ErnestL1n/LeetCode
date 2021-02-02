@@ -35,6 +35,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 206* | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | Linked-List | [Solutions](Solutions/206.%20Reverse%20Linked%20List) |
 207* | [Course Schedule](https://leetcode.com/problems/course-schedule/) | Medium | Topological Sort、DFS、BFS | [Solutions](Solutions/207.%20Course%20Schedule) |
 221 | [Maximal Square](https://leetcode.com/problems/maximal-square/) | Medium | DP | [Solutions](Solutions/221.%20Maximal%20Square) | [Note](Solutions/221.%20Maximal%20Square/note.md)
+268* | [Missing Number](https://leetcode.com/problems/missing-number/) | Easy | XOR、Math | [Solutions](Solutions/268.%20Missing%20Number) | 
 278* | [First Bad Version](https://leetcode.com/problems/first-bad-version/) | Easy | Binary Search | [Solutions](Solutions/278.%20First%20Bad%20Version) | 
 283* | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | Easy | Two Pointers | [Solutions](Solutions/283.%20Move%20Zeroes) | 
 290* | [Word Pattern](https://leetcode.com/problems/word-pattern/) | Easy | HashMap | [Solutions](Solutions/290.%20Word%20Pattern) | 
