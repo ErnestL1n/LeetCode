@@ -30,7 +30,7 @@ public:
         for(int i=0;i<mat.size();++i){
             pq.push({numOnes(mat[i]),i});
         }
-        while(k-->0){
+        while(k--){
             res.push_back(pq.top().second),pq.pop();
         }
         return res;
