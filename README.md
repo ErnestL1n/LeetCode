@@ -58,6 +58,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 743 | [Network Delay Time](https://leetcode.com/problems/network-delay-time/) | Medium | Dijkstra(Priority_Queue)、Bellman-Ford | [Solutions](Solutions/743.%20Network%20Delay%20Time) | [Note](Solutions/743.%20Network%20Delay%20Time/note.md)
 771# | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | Easy | HashSet | [Solutions](https://github.com/ErnestL1n/LeetCode/tree/main/Solutions/771.%20Jewels%20and%20Stones) | 
 780* | [Reaching Points](https://leetcode.com/problems/reaching-points/) | Hard | Modulo | [Solutions](Solutions/780.%20Reaching%20Points) | 
+786* | [K-th Smallest Prime Fraction](https://leetcode.com/problems/k-th-smallest-prime-fraction/) | Hard | Priority_Queue | [Solutions](Solutions/786.%20K-th%20Smallest%20Prime%20Fraction) | 
 797 | [All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/) | Medium | DAG | [Solutions](Solutions/797.%20All%20Paths%20From%20Source%20to%20Target) | [Note](Solutions/797.%20All%20Paths%20From%20Source%20to%20Target/note.md)
 814 | [Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/) | Medium | D&C | [Solutions](Solutions/814.%20Binary%20Tree%20Pruning) | [Note](Solutions/814.%20Binary%20Tree%20Pruning/note.md)
 832 | [Flipping an Image](https://leetcode.com/problems/flipping-an-image/) | Easy | Operation | [Solutions](Solutions/832.%20Flipping%20an%20Image) | 
