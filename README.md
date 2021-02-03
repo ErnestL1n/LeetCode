@@ -73,6 +73,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1035* | [Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines/) | Medium | DP | [Solutions](Solutions/1035.%20Uncrossed%20Lines) | [Note](Solutions/1035.%20Uncrossed%20Lines/note.md)
 1051 | [Height Checker](https://leetcode.com/problems/height-checker/) | Easy | Sort (Counting) | [Solutions](Solutions/1051.%20Height%20Checker) | 
 1071* | [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) | Easy | String | [Solutions](Solutions/1071.%20Greatest%20Common%20Divisor%20of%20Strings) |
+1122# | [Relative Sort Array](https://leetcode.com/problems/relative-sort-array/) | Medium | Array | [Solutions](Solutions/1122.%20Relative%20Sort%20Array) |
 1185# | [Day of the Week](https://leetcode.com/problems/day-of-the-week/) | Easy(Weird) | Trick | [Solutions](Solutions/1185.%20Day%20of%20the%20Week) | [Note](https://github.com/ErnestL1n/LeetCode/blob/main/Solutions/1185.%20Day%20of%20the%20Week/note.md)
 1186* | [Maximum Subarray Sum with One Deletion](https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/) | Medium | DP | [Solutions](Solutions/1186.%20Maximum%20Subarray%20Sum%20with%20One%20Deletion) | [Note](Solutions/1186.%20Maximum%20Subarray%20Sum%20with%20One%20Deletion/note.md)
 1202* | [Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps/) | Medium | Union-Find | [Solutions](Solutions/1202.%20Smallest%20String%20With%20Swaps) 
