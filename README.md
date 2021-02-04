@@ -67,6 +67,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 890* | [Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern/) | Medium | HashMap(Vector) | [Solutions](Solutions/890.%20Find%20and%20Replace%20Pattern) | 
 897# | [Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/) | Easy(Medium) | DFS、D&C、Stack | [Solutions](Solutions/897.%20Increasing%20Order%20Search%20Tree) |
 921# | [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) | Medium | Greedy | [Solutions](Solutions/921.%20Minimum%20Add%20to%20Make%20Parentheses%20Valid) |
+942# | [DI String Match](https://leetcode.com/problems/di-string-match/) | Easy | Two Pointers | [Solutions](Solutions/942.%20DI%20String%20Match) |
 962* | [Maximum Width Ramp](https://leetcode.com/problems/maximum-width-ramp/) | Medium | Stack | [Solutions](Solutions/962.%20Maximum%20Width%20Ramp) | 
 985* | [Sum of Even Numbers After Queries](https://leetcode.com/problems/sum-of-even-numbers-after-queries/) | Easy | Accumulate、Array | [Solutions](Solutions/985.%20Sum%20of%20Even%20Numbers%20After%20Queries) | [Note](Solutions/985.%20Sum%20of%20Even%20Numbers%20After%20Queries/note.md)
 1002# | [Find Common Characters](https://leetcode.com/problems/find-common-characters/) | Easy(Medium) | HashMap(Vector) | [Solutions](Solutions/1002.%20Find%20Common%20Characters) | [Note](Solutions/1002.%20Find%20Common%20Characters/note.md)
