@@ -78,6 +78,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1122# | [Relative Sort Array](https://leetcode.com/problems/relative-sort-array/) | Medium | Array | [Solutions](Solutions/1122.%20Relative%20Sort%20Array) |
 1185# | [Day of the Week](https://leetcode.com/problems/day-of-the-week/) | Easy(Weird) | Trick | [Solutions](Solutions/1185.%20Day%20of%20the%20Week) | [Note](https://github.com/ErnestL1n/LeetCode/blob/main/Solutions/1185.%20Day%20of%20the%20Week/note.md)
 1186* | [Maximum Subarray Sum with One Deletion](https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/) | Medium | DP | [Solutions](Solutions/1186.%20Maximum%20Subarray%20Sum%20with%20One%20Deletion) | [Note](Solutions/1186.%20Maximum%20Subarray%20Sum%20with%20One%20Deletion/note.md)
+1200# | [Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference/) | Easy | Sort、Array | [Solutions](Solutions/1200.%20Minimum%20Absolute%20Difference) 
 1202* | [Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps/) | Medium | Union-Find | [Solutions](Solutions/1202.%20Smallest%20String%20With%20Swaps) 
 1267* | [Count Servers that Communicate](https://leetcode.com/problems/count-servers-that-communicate/) | Medium | Graph | [Solutions](Solutions/1267.%20Count%20Servers%20that%20Communicate) 
 1302 | [Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum/) | Medium | D&C、BFS | [Solutions](Solutions/1302.%20Deepest%20Leaves%20Sum) | [Note](Solutions/1302.%20Deepest%20Leaves%20Sum/note.md)
