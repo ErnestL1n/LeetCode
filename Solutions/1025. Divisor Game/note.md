@@ -1,4 +1,4 @@
-  ## Tricky and amazing question,I give a thumbs up
+  ## Tricky question
 [proved](https://leetcode.com/problems/divisor-game/discuss/274606/JavaC%2B%2BPython-return-N-2-0)
 ```
 1.
