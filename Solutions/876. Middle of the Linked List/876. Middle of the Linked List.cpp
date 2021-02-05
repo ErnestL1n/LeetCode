@@ -19,7 +19,11 @@ public:
         }
         return slow;
     }
+};
 
+
+class Solution {
+public:
     ListNode* middleNode(ListNode* head) {
         vector<ListNode*> A={head};
         while(A.back()->next!=NULL)

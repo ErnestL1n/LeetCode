@@ -13,3 +13,12 @@ func middleNode(head *ListNode) *ListNode {
     }
     return slow
 }
+
+func middleNode(head *ListNode) *ListNode {
+    var A []*ListNode
+    A=append(A,head)
+    for A[len(A)-1].Next!=nil{
+        A=append(A,A[len(A)-1].Next)
+    }
+    return A[len(A)/2]
+}

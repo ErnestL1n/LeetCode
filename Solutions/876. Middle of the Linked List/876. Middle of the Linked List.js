@@ -9,7 +9,7 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
-var middleNodeFastAndSlow = function(head) {
+var middleNode = function(head) {
     slow=fast=head;
     while(fast&&fast.next){
         slow=slow.next;
@@ -17,6 +17,7 @@ var middleNodeFastAndSlow = function(head) {
     }
     return slow;
 };
+
 var middleNode = function(head) {
     let A = [head];
     while(A[A.length-1].next!=null)
