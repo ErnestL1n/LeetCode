@@ -4,7 +4,7 @@ Key observation: A full bottle of water = A empty bottle + One bottle of water.
 
 e.g., for test case: 9, 3:
 3 empty bottles can exchange a full bottle of water implies 3 empty bottles exchange a empty bottle + one bottle of water, 
-which in turn means (3 - 1) = 2 empty bottles can exchange one bottle of water.
+which in turn means 2 empty bottles can exchange one bottle of water.
 
 Further more, if you only have 2 empty bottles remaining, you can NOT exchange it for a bottle of water.
 
