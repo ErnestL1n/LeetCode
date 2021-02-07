@@ -1,34 +1,22 @@
-/**
- * 
- */
-package github.com.ErnestL1n;
-
-/**
- * @author https://github.com/ErnestL1n
- *
- */
-//Leetcode.1518
-public class Water_Bottles {
-
-	/**
-	 * @param args
-	 */
-    public static int numWaterBottlesOneLine(int numBottles, int numExchange) {
-	        return numBottles + (numBottles - 1) / (numExchange - 1);
-	    }
-    public int numWaterBottles(int numBottles, int numExchange) {
-        int ans = numBottles;
-        while (numBottles >= numExchange) {
-            int remainder = numBottles % numExchange;
-            numBottles /= numExchange;
-            ans += numBottles;
-            numBottles += remainder;
-        }
-        return ans;
+//Trick
+class Solution {
+    public int numWaterBottles(int bts, int ex) {
+        return bts+(bts-1)/(ex-1);
     }
-	public static void main(String[] args) {
-		
+}
 
-	}
 
+
+//straight forward
+class Solution {
+    public int numWaterBottles(int bts, int ex) {
+        int res=bts;
+        while(bts>=ex){
+            int rem=bts%ex;
+            bts/=ex;
+            res+=bts;
+            bts+=rem;
+        }
+        return res;
+    }
 }

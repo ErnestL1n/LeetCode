@@ -1,11 +1,10 @@
 //Trick
 class Solution {
 public:
-    int numWaterBottles(int numBottles, int numExchange) {
-        return numBottles+(numBottles-1)/(numExchange-1);
+    int numWaterBottles(int bts, int ex) {
+        return bts+(bts-1)/(ex-1);
     }
 };
-
 
 
 //straight forward
