@@ -73,6 +73,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 942# | [DI String Match](https://leetcode.com/problems/di-string-match/) | Easy | Two Pointers | [Solutions](Solutions/942.%20DI%20String%20Match) |
 962* | [Maximum Width Ramp](https://leetcode.com/problems/maximum-width-ramp/) | Medium | Stack | [Solutions](Solutions/962.%20Maximum%20Width%20Ramp) | 
 985* | [Sum of Even Numbers After Queries](https://leetcode.com/problems/sum-of-even-numbers-after-queries/) | Easy | Accumulate(C++)、Array | [Solutions](Solutions/985.%20Sum%20of%20Even%20Numbers%20After%20Queries) | [Note](Solutions/985.%20Sum%20of%20Even%20Numbers%20After%20Queries/note.md)
+1000# | [Minimum Cost to Merge Stones](https://leetcode.com/problems/minimum-cost-to-merge-stones/) | Hard | DP | [Solutions](Solutions/1000.%20Minimum%20Cost%20to%20Merge%20Stones) | 
 1002# | [Find Common Characters](https://leetcode.com/problems/find-common-characters/) | Easy(Medium) | HashMap(Vector) | [Solutions](Solutions/1002.%20Find%20Common%20Characters) | [Note](Solutions/1002.%20Find%20Common%20Characters/note.md)
 1010* | [Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/) | Medium | Hash(Memoried)、Math | [Solutions](Solutions/1010.%20Pairs%20of%20Songs%20With%20Total%20Durations%20Divisible%20by%2060) |
 1025# | [Divisor Game](https://leetcode.com/problems/divisor-game/) | Easy | Trick | [Solutions](Solutions/1025.%20Divisor%20Game) | [Note](Solutions/1025.%20Divisor%20Game/note.md)
