@@ -79,6 +79,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1010* | [Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/) | Medium | Hash(Memoried)、Math | [Solutions](Solutions/1010.%20Pairs%20of%20Songs%20With%20Total%20Durations%20Divisible%20by%2060) |
 1025# | [Divisor Game](https://leetcode.com/problems/divisor-game/) | Easy | Trick | [Solutions](Solutions/1025.%20Divisor%20Game) | [Note](Solutions/1025.%20Divisor%20Game/note.md)
 1035* | [Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines/) | Medium | DP | [Solutions](Solutions/1035.%20Uncrossed%20Lines) | [Note](Solutions/1035.%20Uncrossed%20Lines/note.md)
+1038# | [Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/) | Medium | Tree、D&C、Stack | [Solutions](Solutions/1038.%20Binary%20Search%20Tree%20to%20Greater%20Sum%20Tree) |
 1051 | [Height Checker](https://leetcode.com/problems/height-checker/) | Easy | Sort (Counting) | [Solutions](Solutions/1051.%20Height%20Checker) | 
 1071* | [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) | Easy | String | [Solutions](Solutions/1071.%20Greatest%20Common%20Divisor%20of%20Strings) |
 1122# | [Relative Sort Array](https://leetcode.com/problems/relative-sort-array/) | Medium | Array | [Solutions](Solutions/1122.%20Relative%20Sort%20Array) |
