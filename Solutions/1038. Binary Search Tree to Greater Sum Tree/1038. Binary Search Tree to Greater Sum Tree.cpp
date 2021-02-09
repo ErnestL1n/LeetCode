@@ -29,3 +29,14 @@ public:
         return root;
     }
 };
+
+class Solution {
+public:
+    int value=0;
+    TreeNode* bstToGst(TreeNode* root) {
+        if(root->right)bstToGst(root->right);
+        value=root->val=root->val+value;
+        if(root->left)bstToGst(root->left);
+        return root;
+    }
+};
