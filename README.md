@@ -55,6 +55,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 654! | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) | Medium | Stack、Iterator | [Solutions](Solutions/654.%20Maximum%20Binary%20Tree) | [Note](Solutions/654.%20Maximum%20Binary%20Tree/note.md)
 657# | [Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/) | Easy | String | [Solutions](Solutions/657.%20Robot%20Return%20to%20Origin) | 
 677# | [Map Sum Pairs](https://leetcode.com/problems/map-sum-pairs/) | Medium | Trie | [Solutions](Solutions/677.%20Map%20Sum%20Pairs) | [Note](Solutions/677.%20Map%20Sum%20Pairs/note.md)
+701# | [Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/) | Medium | BST | [Solutions](Solutions/701.%20Insert%20into%20a%20Binary%20Search%20Tree) | 
 704 | [Binary Search](https://leetcode.com/problems/binary-search/) | Easy | Binary Search | [Solutions](Solutions/704.%20Binary%20Search) |
 740* | [Delete and Earn](https://leetcode.com/problems/delete-and-earn/) | Medium | DP | [Solutions](Solutions/740.%20Delete%20and%20Earn) |
 743 | [Network Delay Time](https://leetcode.com/problems/network-delay-time/) | Medium | Dijkstra(Priority_Queue)、Bellman-Ford | [Solutions](Solutions/743.%20Network%20Delay%20Time) | [Note](Solutions/743.%20Network%20Delay%20Time/note.md)
