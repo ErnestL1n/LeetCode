@@ -105,6 +105,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1460* | [Make Two Arrays Equal by Reversing Sub-arrays](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays/) | Easy | HashSet(MultiSet) | [Solutions](Solutions/1460.%20Make%20Two%20Arrays%20Equal%20by%20Reversing%20Sub-arrays) |
 1475* | [Final Prices With a Special Discount in a Shop](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/) | Easy | Stack | [Solutions](Solutions/1475.%20Final%20Prices%20With%20a%20Special%20Discount%20in%20a%20Shop) |
 1518# | [Water Bottles](https://leetcode.com/problems/water-bottles/) | Easy | Trick | [Solutions](Solutions/1518.%20Water%20Bottles) | [Note](Solutions/1518.%20Water%20Bottles/note.md)
+1528# | [Shuffle String](https://leetcode.com/problems/shuffle-string/) | Easy | String | [Solutions](Solutions/1528.%20Shuffle%20String) | 
 1534 | [Count Good Triplets](https://leetcode.com/problems/count-good-triplets/) | Easy | Operation | [Solutions](Solutions/1534.%20Count%20Good%20Triplets) |
 1535! | [Find the Winner of an Array Game](https://leetcode.com/problems/find-the-winner-of-an-array-game/) | Medium | Array | [Solutions](Solutions/1535.%20Find%20the%20Winner%20of%20an%20Array%20Game) |
 1537# | [Get the Maximum Score](https://leetcode.com/problems/get-the-maximum-score/) | Hard | Two Pointers、DP | [Solutions](Solutions/1537.%20Get%20the%20Maximum%20Score) |
