@@ -34,7 +34,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 187# | [Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/) | Medium | HashSet | [Solutions](Solutions/187.%20Repeated%20DNA%20Sequences) |
 191* | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | Easy | Bit Manipulation | [Solutions](Solutions/191.%20Number%20of%201%20Bits) | [Note](Solutions/191.%20Number%20of%201%20Bits/note.md)
 206* | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | Linked-List | [Solutions](Solutions/206.%20Reverse%20Linked%20List) |
-207# | [Course Schedule](https://leetcode.com/problems/course-schedule/) | Medium | Topological Sort(Adjacency Matrix)、DFS、BFS | [Solutions](Solutions/207.%20Course%20Schedule) |
+207# | [Course Schedule](https://leetcode.com/problems/course-schedule/) | Medium | Topological Sort(DAG、Adjacency Matrix)、DFS、BFS | [Solutions](Solutions/207.%20Course%20Schedule) |
 221 | [Maximal Square](https://leetcode.com/problems/maximal-square/) | Medium | DP | [Solutions](Solutions/221.%20Maximal%20Square) | [Note](Solutions/221.%20Maximal%20Square/note.md)
 268* | [Missing Number](https://leetcode.com/problems/missing-number/) | Easy | XOR、Math | [Solutions](Solutions/268.%20Missing%20Number) | 
 278* | [First Bad Version](https://leetcode.com/problems/first-bad-version/) | Easy | Binary Search | [Solutions](Solutions/278.%20First%20Bad%20Version) | 
@@ -63,7 +63,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 771# | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | Easy | HashSet | [Solutions](https://github.com/ErnestL1n/LeetCode/tree/main/Solutions/771.%20Jewels%20and%20Stones) | 
 780* | [Reaching Points](https://leetcode.com/problems/reaching-points/) | Hard | Modulo | [Solutions](Solutions/780.%20Reaching%20Points) | 
 786* | [K-th Smallest Prime Fraction](https://leetcode.com/problems/k-th-smallest-prime-fraction/) | Hard | Priority_Queue | [Solutions](Solutions/786.%20K-th%20Smallest%20Prime%20Fraction) | 
-797 | [All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/) | Medium | DAG | [Solutions](Solutions/797.%20All%20Paths%20From%20Source%20to%20Target) | [Note](Solutions/797.%20All%20Paths%20From%20Source%20to%20Target/note.md)
+797 | [All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/) | Medium | DAG、D&C、DFS | [Solutions](Solutions/797.%20All%20Paths%20From%20Source%20to%20Target) | [Note](Solutions/797.%20All%20Paths%20From%20Source%20to%20Target/note.md)
 814 | [Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/) | Medium | D&C | [Solutions](Solutions/814.%20Binary%20Tree%20Pruning) | [Note](Solutions/814.%20Binary%20Tree%20Pruning/note.md)
 832 | [Flipping an Image](https://leetcode.com/problems/flipping-an-image/) | Easy | Operation | [Solutions](Solutions/832.%20Flipping%20an%20Image) | 
 870* | [Advantage Shuffle](https://leetcode.com/problems/advantage-shuffle/) | Medium | HashSet(MultiSet) | [Solutions](Solutions/870.%20Advantage%20Shuffle) | [Note](Solutions/870.%20Advantage%20Shuffle/note.md)
