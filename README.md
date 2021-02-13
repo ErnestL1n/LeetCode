@@ -29,7 +29,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 128! | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Hard | HashSet(Set)、Union-Find | [Solutions](Solutions/128.%20Longest%20Consecutive%20Sequence) |
 129* | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | Medium | BFS、D&C | [Solutions](Solutions/129.%20Sum%20Root%20to%20Leaf%20Numbers)
 131* | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | Medium | DP、DFS | [Solutions](Solutions/131.%20Palindrome%20Partitioning)
-136 | [Single Number](https://leetcode.com/problems/single-number/) | Easy | Math | [Solutions](Solutions/136.%20Single%20Number) |
+136 | [Single Number](https://leetcode.com/problems/single-number/) | Easy | Bit Manipulation、XOR | [Solutions](Solutions/136.%20Single%20Number) |
 152* | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | Medium | DP | [Solutions](Solutions/152.%20Maximum%20Product%20Subarray) |
 187# | [Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/) | Medium | HashSet | [Solutions](Solutions/187.%20Repeated%20DNA%20Sequences) |
 191* | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | Easy | Bit Manipulation | [Solutions](Solutions/191.%20Number%20of%201%20Bits) | [Note](Solutions/191.%20Number%20of%201%20Bits/note.md)
