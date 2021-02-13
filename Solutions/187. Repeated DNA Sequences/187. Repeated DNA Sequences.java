@@ -1,30 +1,11 @@
-/**
- * 
- */
-package github.com.ErnestL1n;
-import java.util.*;
-/**
- * @author https://github.com/ErnestL1n
- *
- */
-//Leetcode.187
-public class Repeated_DNA_Sequences {
-
-	/**
-	 * @param args
-	 */
-	public List<String> findRepeatedDnaSequences(String s) {
-        Set<String> seen=new HashSet<>(),repeated=new HashSet<>();
+class Solution {
+    public List<String> findRepeatedDnaSequences(String s) {
+        Set set=new HashSet(),res=new HashSet();
         for(int i=0;i+9<s.length();++i){
-            String ten = s.substring(i, i + 10);
-            if(!seen.add(ten))
-                repeated.add(ten);
+            String ten=s.substring(i,i+10);
+            if(!set.add(ten))
+                res.add(ten);
         }
-        return new ArrayList(repeated);
+        return new ArrayList(res);
     }
-	public static void main(String[] args) {
-		// TODO 自動產生的方法 Stub
-
-	}
-
 }
