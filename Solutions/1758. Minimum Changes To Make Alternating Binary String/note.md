@@ -1,5 +1,5 @@
 ## [Trick](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/discuss/1064511/JavaC%2B%2BPython-Easy-and-Concise)
-Explanation
+### Explanation
 Small observation that the sequence of index is ```[0,1,2,3..],```
 if we get its module by 2, we get ```[0,1,0,1,0..],```
 which is the alternating binary sequence we want.
@@ -18,8 +18,9 @@ But we don't have to,
 becaue this equals to ```s.length - res```.
 
 
+
+### Complexity
 ```
-Complexity
 Time O(n)
 Space O(1)
 ```
