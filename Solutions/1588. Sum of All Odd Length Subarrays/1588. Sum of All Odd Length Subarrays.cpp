@@ -15,7 +15,7 @@ class Solution {
 public:
     int sumOddLengthSubarrays(vector<int>& arr) {
         int res=0,n=arr.size();
-        int prefix[n+1];
+        vector<int> prefix(n+1);
         for(int i=0;i<n;++i)
             prefix[i+1]=prefix[i]+arr[i];
         for(int i=0;i<n;++i)
