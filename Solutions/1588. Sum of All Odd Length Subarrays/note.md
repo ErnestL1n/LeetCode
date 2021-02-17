@@ -32,5 +32,5 @@ X 2 3 4 5 subarray length 4
 
 5 8 9 8 5 total times each index was added, k = (i + 1) * (n - i)
 3 4 5 4 3 total times in odd length array with (k + 1) / 2
-2 4 4 4 2 total times in even length array with k / 2s
+2 4 4 4 2 total times in even length array with k / 2
 ```
