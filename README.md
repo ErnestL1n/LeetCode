@@ -98,7 +98,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1323# | [Maximum 69 Number](https://leetcode.com/problems/maximum-69-number/) | Easy | Math | [Solutions](Solutions/1323.%20Maximum%2069%20Number) | 
 1337* | [The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/) | Easy | Set、Binary Search、Priority_Queue(With custom comparator in c++) | [Solutions](Solutions/1337.%20The%20K%20Weakest%20Rows%20in%20a%20Matrix) | [Note](Solutions/1337.%20The%20K%20Weakest%20Rows%20in%20a%20Matrix/note.md)
 1370# | [Increasing Decreasing String](https://leetcode.com/problems/increasing-decreasing-string/) | Easy | String、Count | [Solutions](Solutions/1370.%20Increasing%20Decreasing%20String) | 
-1380# | [Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix/) | Easy | Array | [Solutions](Solutions/1380.%20Lucky%20Numbers%20in%20a%20Matrix) | 
+1380# | [Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix/) | Easy | Array、Trick | [Solutions](Solutions/1380.%20Lucky%20Numbers%20in%20a%20Matrix) | 
 1387* | [Sort Integers by The Power Value](https://leetcode.com/problems/sort-integers-by-the-power-value/) | Medium | Priority_Queue | [Solutions](Solutions/1387.%20Sort%20Integers%20by%20The%20Power%20Value) |
 1351 | [Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/) | Easy | Math、Array | [Solutions](Solutions/1351.%20Count%20Negative%20Numbers%20in%20a%20Sorted%20Matrix) | [Note](Solutions/1351.%20Count%20Negative%20Numbers%20in%20a%20Sorted%20Matrix/note.md)
 1402 | [Reducing Dishes](https://leetcode.com/problems/reducing-dishes/) | Hard | DP | [Solutions](Solutions/1402.%20Reducing%20Dishes) |
