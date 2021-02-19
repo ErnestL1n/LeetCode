@@ -61,7 +61,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 701# | [Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/) | Medium | BST | [Solutions](Solutions/701.%20Insert%20into%20a%20Binary%20Search%20Tree) | 
 704 | [Binary Search](https://leetcode.com/problems/binary-search/) | Easy | Binary Search | [Solutions](Solutions/704.%20Binary%20Search) |
 705 | [Design HashSet](https://leetcode.com/problems/design-hashset/) | Easy | HashSet、BitSet、Design | [Solutions](Solutions/705.%20Design%20HashSet) |
-706 | [Design HashMap](https://leetcode.com/problems/design-hashmap/) | Easy | HashMap、Design | [Solutions](Solutions/706.%20Design%20HashMap) |
+706# | [Design HashMap](https://leetcode.com/problems/design-hashmap/) | Easy | HashMap、Design | [Solutions](Solutions/706.%20Design%20HashMap) |
 740* | [Delete and Earn](https://leetcode.com/problems/delete-and-earn/) | Medium | DP | [Solutions](Solutions/740.%20Delete%20and%20Earn) |
 743 | [Network Delay Time](https://leetcode.com/problems/network-delay-time/) | Medium | Dijkstra(Priority_Queue)、Bellman-Ford | [Solutions](Solutions/743.%20Network%20Delay%20Time) | [Note](Solutions/743.%20Network%20Delay%20Time/note.md)
 771# | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | Easy | HashSet | [Solutions](https://github.com/ErnestL1n/LeetCode/tree/main/Solutions/771.%20Jewels%20and%20Stones) | 
@@ -102,6 +102,8 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1337* | [The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/) | Easy | Set、Binary Search、Priority_Queue(With custom comparator in c++) | [Solutions](Solutions/1337.%20The%20K%20Weakest%20Rows%20in%20a%20Matrix) | [Note](Solutions/1337.%20The%20K%20Weakest%20Rows%20in%20a%20Matrix/note.md)
 1370# | [Increasing Decreasing String](https://leetcode.com/problems/increasing-decreasing-string/) | Easy | String、Count | [Solutions](Solutions/1370.%20Increasing%20Decreasing%20String) | 
 1380# | [Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix/) | Easy | Array、Trick | [Solutions](Solutions/1380.%20Lucky%20Numbers%20in%20a%20Matrix) | 
+1380# | [Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix/) | Easy | Array、Trick | [Solutions](Solutions/1380.%20Lucky%20Numbers%20in%20a%20Matrix) | 
+1381# | [Design a Stack With Increment Operation](https://leetcode.com/problems/design-a-stack-with-increment-operation/) | Medium | Stack、Design | [Solutions](Solutions/1381.%20Design%20a%20Stack%20With%20Increment%20Operation) | 
 1387* | [Sort Integers by The Power Value](https://leetcode.com/problems/sort-integers-by-the-power-value/) | Medium | Priority_Queue | [Solutions](Solutions/1387.%20Sort%20Integers%20by%20The%20Power%20Value) |
 1351 | [Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/) | Easy | Math、Array | [Solutions](Solutions/1351.%20Count%20Negative%20Numbers%20in%20a%20Sorted%20Matrix) | [Note](Solutions/1351.%20Count%20Negative%20Numbers%20in%20a%20Sorted%20Matrix/note.md)
 1402 | [Reducing Dishes](https://leetcode.com/problems/reducing-dishes/) | Hard | DP | [Solutions](Solutions/1402.%20Reducing%20Dishes) |
