@@ -61,6 +61,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 701# | [Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/) | Medium | BST | [Solutions](Solutions/701.%20Insert%20into%20a%20Binary%20Search%20Tree) | 
 704 | [Binary Search](https://leetcode.com/problems/binary-search/) | Easy | Binary Search | [Solutions](Solutions/704.%20Binary%20Search) |
 705 | [Design HashSet](https://leetcode.com/problems/design-hashset/) | Easy | HashSet、BitSet、Design | [Solutions](Solutions/705.%20Design%20HashSet) |
+706 | [Design HashMap](https://leetcode.com/problems/design-hashmap/) | Easy | HashMap | [Solutions](Solutions/706.%20Design%20HashMap) |
 740* | [Delete and Earn](https://leetcode.com/problems/delete-and-earn/) | Medium | DP | [Solutions](Solutions/740.%20Delete%20and%20Earn) |
 743 | [Network Delay Time](https://leetcode.com/problems/network-delay-time/) | Medium | Dijkstra(Priority_Queue)、Bellman-Ford | [Solutions](Solutions/743.%20Network%20Delay%20Time) | [Note](Solutions/743.%20Network%20Delay%20Time/note.md)
 771# | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | Easy | HashSet | [Solutions](https://github.com/ErnestL1n/LeetCode/tree/main/Solutions/771.%20Jewels%20and%20Stones) | 
