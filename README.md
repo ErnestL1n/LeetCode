@@ -42,7 +42,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 278* | [First Bad Version](https://leetcode.com/problems/first-bad-version/) | Easy | Binary Search | [Solutions](Solutions/278.%20First%20Bad%20Version) | 
 283* | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | Easy | Two Pointers | [Solutions](Solutions/283.%20Move%20Zeroes) | 
 290* | [Word Pattern](https://leetcode.com/problems/word-pattern/) | Easy | HashMap | [Solutions](Solutions/290.%20Word%20Pattern) | 
-310 | [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/) | Medium | Graph(Adjacency Matrix)、BFS | [Solutions](Solutions/310.%20Minimum%20Height%20Trees) | [Note](Solutions/310.%20Minimum%20Height%20Trees/note.md)
+310* | [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/) | Medium | Graph(Adjacency Matrix)、BFS | [Solutions](Solutions/310.%20Minimum%20Height%20Trees) | [Note](Solutions/310.%20Minimum%20Height%20Trees/note.md)
 312 | [Burst Balloons](https://leetcode.com/problems/burst-balloons/) | Hard | DP | [Solutions](Solutions/312.%20Burst%20Balloons) | [Note](Solutions/312.%20Burst%20Balloons/note.md)
 344# | [Reverse String](https://leetcode.com/problems/reverse-string/) | Easy | Two Pointers | [Solutions](Solutions/344.%20Reverse%20String) | 
 435* | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | Medium | Greedy | [Solutions](Solutions/435.%20Non-overlapping%20Intervals)
