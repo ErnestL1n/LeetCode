@@ -168,3 +168,4 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1759* | [Count Number of Homogenous Substrings](https://leetcode.com/problems/count-number-of-homogenous-substrings/) | Medium | String、Count | [Solutions](Solutions/1759.%20Count%20Number%20of%20Homogenous%20Substrings) | 
 1760* | [Minimum Limit of Balls in a Bag](https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/) | Medium | Binary Search | [Solutions](Solutions/1760.%20Minimum%20Limit%20of%20Balls%20in%20a%20Bag) | [Note](Solutions/1760.%20Minimum%20Limit%20of%20Balls%20in%20a%20Bag/note.md)
 1763* | [Longest Nice Substring](https://leetcode.com/problems/longest-nice-substring/) | Easy(Medium) | String、D&C | [Solutions](Solutions/1763.%20Longest%20Nice%20Substring) | 
+1768* | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | Easy | String、Two Pointers | [Solutions](Solutions/1768.%20Merge%20Strings%20Alternately) | 
