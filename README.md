@@ -86,7 +86,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1025# | [Divisor Game](https://leetcode.com/problems/divisor-game/) | Easy | Trick | [Solutions](Solutions/1025.%20Divisor%20Game) | [Note](Solutions/1025.%20Divisor%20Game/note.md)
 1035* | [Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines/) | Medium | DP | [Solutions](Solutions/1035.%20Uncrossed%20Lines) | [Note](Solutions/1035.%20Uncrossed%20Lines/note.md)
 1038# | [Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/) | Medium | Tree、D&C、Stack | [Solutions](Solutions/1038.%20Binary%20Search%20Tree%20to%20Greater%20Sum%20Tree) |
-1051 | [Height Checker](https://leetcode.com/problems/height-checker/) | Easy | Sort (Counting) | [Solutions](Solutions/1051.%20Height%20Checker) | 
+1051 | [Height Checker](https://leetcode.com/problems/height-checker/) | Easy | Counting Sort | [Solutions](Solutions/1051.%20Height%20Checker) | 
 1071* | [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) | Easy | String | [Solutions](Solutions/1071.%20Greatest%20Common%20Divisor%20of%20Strings) |
 1108! | [Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address/) | Easy | String | [Solutions](Solutions/1108.%20Defanging%20an%20IP%20Address) | [Note](Solutions/1108.%20Defanging%20an%20IP%20Address/note.md)
 1122# | [Relative Sort Array](https://leetcode.com/problems/relative-sort-array/) | Medium | Array | [Solutions](Solutions/1122.%20Relative%20Sort%20Array) |
@@ -94,6 +94,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1186* | [Maximum Subarray Sum with One Deletion](https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/) | Medium | DP | [Solutions](Solutions/1186.%20Maximum%20Subarray%20Sum%20with%20One%20Deletion) | [Note](Solutions/1186.%20Maximum%20Subarray%20Sum%20with%20One%20Deletion/note.md)
 1200# | [Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference/) | Easy | Sort、Array | [Solutions](Solutions/1200.%20Minimum%20Absolute%20Difference) 
 1202* | [Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps/) | Medium | Union-Find | [Solutions](Solutions/1202.%20Smallest%20String%20With%20Swaps) 
+1207# | [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) | Easy | HashMap、HashSet、Counting Sort | [Solutions](Solutions/1207.%20Unique%20Number%20of%20Occurrences) 
 1266# | [Minimum Time Visiting All Points](https://leetcode.com/problems/minimum-time-visiting-all-points/) | Easy | Geometry、Trick | [Solutions](Solutions/1266.%20Minimum%20Time%20Visiting%20All%20Points) 
 1267* | [Count Servers that Communicate](https://leetcode.com/problems/count-servers-that-communicate/) | Medium | Graph | [Solutions](Solutions/1267.%20Count%20Servers%20that%20Communicate) 
 1302 | [Deepest Leaves Sum](https://leetcode.com/problems/deepest-leaves-sum/) | Medium | D&C、BFS | [Solutions](Solutions/1302.%20Deepest%20Leaves%20Sum) | [Note](Solutions/1302.%20Deepest%20Leaves%20Sum/note.md)
