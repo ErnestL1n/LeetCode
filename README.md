@@ -126,6 +126,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1539# | [Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/) | Easy | HashSet | [Solutions](Solutions/1539.%20Kth%20Missing%20Positive%20Number) |
 1544# | [Make The String Great](https://leetcode.com/problems/make-the-string-great/) | Easy | Stack、String | [Solutions](Solutions/1544.%20Make%20The%20String%20Great) |
 1547 | [Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/) | Hard | DP | [Solutions](Solutions/1547.%20Minimum%20Cost%20to%20Cut%20a%20Stick) | [Note](Solutions/1547.%20Minimum%20Cost%20to%20Cut%20a%20Stick/note.md)
+1550 | [Three Consecutive Odds](https://leetcode.com/problems/three-consecutive-odds/) | Easy | Array | [Solutions](Solutions/1550.%20Three%20Consecutive%20Odds) | 
 1552 | [Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls/) | Medium(Hard...) | Binary Search | [Solutions](Solutions/1552.%20Magnetic%20Force%20Between%20Two%20Balls) | [Note](Solutions/1552.%20Magnetic%20Force%20Between%20Two%20Balls/note.md)
 1557# | [Minimum Number of Vertices to Reach All Nodes](https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/) | Medium | Graph | [Solutions](Solutions/1557.%20Minimum%20Number%20of%20Vertices%20to%20Reach%20All%20Nodes) | 
 1572 | [Matrix Diagonal Sum](https://leetcode.com/problems/matrix-diagonal-sum/) | Easy | Operation | [Solutions](Solutions/1572.%20Matrix%20Diagonal%20Sum) | 
