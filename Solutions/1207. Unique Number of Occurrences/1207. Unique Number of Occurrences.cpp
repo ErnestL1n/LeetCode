@@ -28,3 +28,33 @@ public:
         return true;
     }
 };
+
+
+//count with sort
+class Solution {
+public:
+    bool uniqueOccurrences(vector<int>& arr) {
+        short m[2001]={};
+        for(auto n:arr)
+            ++m[n+1000];
+        sort(begin(m),end(m));
+        for(int i=1;i<=2000;++i)
+            if(m[i]&&m[i]==m[i-1])
+                return false;
+        return true;
+    }
+};
+
+//count without sort since 1<=arr.size()<=1000
+class Solution {
+public:
+    bool uniqueOccurrences(vector<int>& arr) {
+        short m[2001]={},s[1001]={};
+        for(int n:arr)
+            ++m[n+1000];
+        for(int i=0;i<2001;++i)
+            if(m[i]&&++s[m[i]]>1)
+                return false;
+        return true;
+    }
+};
