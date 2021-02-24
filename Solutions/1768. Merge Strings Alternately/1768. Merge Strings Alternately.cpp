@@ -10,21 +10,6 @@ public:
 };
 
 
-
-
-class Solution {
-public:
-    string mergeAlternately(string word1, string word2) {
-        int p=0,sz=min(word1.size(),word2.size());
-        string res;
-        while(p<sz){
-            res+=word1[p];
-            res+=word2[p++];
-        }
-        return res+word1.substr(p)+word2.substr(p);
-    }
-};
-
 class Solution {
 public:
     string mergeAlternately(string word1, string word2) {
@@ -40,5 +25,22 @@ public:
         }
 		*/
         return res+word1.substr(p)+word2.substr(p);
+    }
+};
+
+
+//opt version
+class Solution {
+public:
+    string mergeAlternately(string word1, string word2) {
+        int i=0,j=0,sz1=word1.size(),sz2=word2.size();
+        string res;
+        while(i<sz1||j<sz2){
+            if(i<sz1)
+                res+=word1[i++];
+            if(j<sz2)
+                res+=word2[j++];
+        }
+        return res;
     }
 };
