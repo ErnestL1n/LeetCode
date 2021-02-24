@@ -103,6 +103,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1314! | [Matrix Block Sum](https://leetcode.com/problems/matrix-block-sum/) | Medium | DP(Range Sum) | [Solutions](Solutions/1314.%20Matrix%20Block%20Sum) | [Note](Solutions/1314.%20Matrix%20Block%20Sum/note.md)
 1323# | [Maximum 69 Number](https://leetcode.com/problems/maximum-69-number/) | Easy | Math | [Solutions](Solutions/1323.%20Maximum%2069%20Number) | 
 1337* | [The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/) | Easy | Set、Binary Search、Priority_Queue(With custom comparator in c++) | [Solutions](Solutions/1337.%20The%20K%20Weakest%20Rows%20in%20a%20Matrix) | [Note](Solutions/1337.%20The%20K%20Weakest%20Rows%20in%20a%20Matrix/note.md)
+1342* | [Number of Steps to Reduce a Number to Zero](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/) | Easy | 	Bit Manipulation、Math | [Solutions](Solutions/1342.%20Number%20of%20Steps%20to%20Reduce%20a%20Number%20to%20Zero) | 
 1370# | [Increasing Decreasing String](https://leetcode.com/problems/increasing-decreasing-string/) | Easy | String、Count | [Solutions](Solutions/1370.%20Increasing%20Decreasing%20String) | 
 1380# | [Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix/) | Easy | Array、Trick | [Solutions](Solutions/1380.%20Lucky%20Numbers%20in%20a%20Matrix) | 
 1380# | [Lucky Numbers in a Matrix](https://leetcode.com/problems/lucky-numbers-in-a-matrix/) | Easy | Array、Trick | [Solutions](Solutions/1380.%20Lucky%20Numbers%20in%20a%20Matrix) | 
