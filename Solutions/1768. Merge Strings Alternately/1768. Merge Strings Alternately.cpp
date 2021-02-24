@@ -24,3 +24,21 @@ public:
         return res+word1.substr(p)+word2.substr(p);
     }
 };
+
+class Solution {
+public:
+    string mergeAlternately(string word1, string word2) {
+        int p=0,sz=min(word1.size(),word2.size());
+        string res;
+		//good points - a one-liner implementation does create a temporary string for w1[i] + w2[i].
+        while(p<sz)
+            res+=string()+word1[p]+word2[p++];
+		/* same as above one line implementation,but doesn't create a temporary string for w1[i] + w2[i]
+		while(p<sz){
+            res+=word1[p];
+            res+=word2[p++];
+        }
+		*/
+        return res+word1.substr(p)+word2.substr(p);
+    }
+};
