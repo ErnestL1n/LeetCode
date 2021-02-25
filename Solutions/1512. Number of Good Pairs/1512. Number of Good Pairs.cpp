@@ -25,7 +25,6 @@ public:
 };
 
 //one line
-
 class Solution {
 public:
     int numIdenticalPairs(vector<int>& A) {
