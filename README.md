@@ -119,6 +119,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1458* | [Max Dot Product of Two Subsequences](https://leetcode.com/problems/max-dot-product-of-two-subsequences/) | Hard | DP | [Solutions](Solutions/1458.%20Max%20Dot%20Product%20of%20Two%20Subsequences) | [Note](Solutions/1458.%20Max%20Dot%20Product%20of%20Two%20Subsequences/note.md)
 1460* | [Make Two Arrays Equal by Reversing Sub-arrays](https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays/) | Easy | HashSet(MultiSet) | [Solutions](Solutions/1460.%20Make%20Two%20Arrays%20Equal%20by%20Reversing%20Sub-arrays) |
 1475* | [Final Prices With a Special Discount in a Shop](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/) | Easy | Stack | [Solutions](Solutions/1475.%20Final%20Prices%20With%20a%20Special%20Discount%20in%20a%20Shop) |
+1512* | [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/) | Easy | Count(HashMap)、Math | [Solutions](Solutions/1512.%20Number%20of%20Good%20Pairs) |
 1518# | [Water Bottles](https://leetcode.com/problems/water-bottles/) | Easy | Trick | [Solutions](Solutions/1518.%20Water%20Bottles) | [Note](Solutions/1518.%20Water%20Bottles/note.md)
 1528# | [Shuffle String](https://leetcode.com/problems/shuffle-string/) | Easy | String | [Solutions](Solutions/1528.%20Shuffle%20String) | 
 1529# | [Bulb Switcher IV](https://leetcode.com/problems/bulb-switcher-iv/) | Medium | Trick、Greedy | [Solutions](Solutions/1529.%20Bulb%20Switcher%20IV) | [Note](Solutions/1529.%20Bulb%20Switcher%20IV/note.md)
