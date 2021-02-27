@@ -23,3 +23,21 @@ class Solution {
         return root;
     }
 }
+
+class Solution {
+    public TreeNode invertTree(TreeNode root) {
+        Stack<TreeNode> stk=new Stack<>();
+        stk.push(root);
+        while(!stk.isEmpty()){
+            var tmp=stk.pop();
+            if(tmp!=null){
+                stk.push(tmp.left);
+                stk.push(tmp.right);
+                TreeNode t=tmp.left;
+                tmp.left=tmp.right;
+                tmp.right=t;
+            }
+        }
+        return root;
+    }
+}

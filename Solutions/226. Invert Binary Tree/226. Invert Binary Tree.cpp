@@ -20,3 +20,23 @@ public:
         return root;
     }
 };
+
+
+
+class Solution {
+public:
+    TreeNode* invertTree(TreeNode* root) {
+        stack<TreeNode*> stk;
+        stk.push(root);
+        while(stk.size()){
+            auto tmp=stk.top();
+            stk.pop();
+            if(tmp){
+                stk.push(tmp->left);
+                stk.push(tmp->right);
+                swap(tmp->left,tmp->right);
+            }
+        }
+        return root;
+    }
+};
