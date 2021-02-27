@@ -132,6 +132,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1537# | [Get the Maximum Score](https://leetcode.com/problems/get-the-maximum-score/) | Hard | Two Pointers、DP | [Solutions](Solutions/1537.%20Get%20the%20Maximum%20Score) |
 1539# | [Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/) | Easy | HashSet | [Solutions](Solutions/1539.%20Kth%20Missing%20Positive%20Number) |
 1544# | [Make The String Great](https://leetcode.com/problems/make-the-string-great/) | Easy | Stack、String | [Solutions](Solutions/1544.%20Make%20The%20String%20Great) |
+1545* | [Find Kth Bit in Nth Binary String](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/) | Medium | String、Trick | [Solutions](Solutions/1545.%20Find%20Kth%20Bit%20in%20Nth%20Binary%20String) |
 1547 | [Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/) | Hard | DP | [Solutions](Solutions/1547.%20Minimum%20Cost%20to%20Cut%20a%20Stick) | [Note](Solutions/1547.%20Minimum%20Cost%20to%20Cut%20a%20Stick/note.md)
 1550 | [Three Consecutive Odds](https://leetcode.com/problems/three-consecutive-odds/) | Easy | Array | [Solutions](Solutions/1550.%20Three%20Consecutive%20Odds) | 
 1552 | [Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls/) | Medium(Hard...) | Binary Search | [Solutions](Solutions/1552.%20Magnetic%20Force%20Between%20Two%20Balls) | [Note](Solutions/1552.%20Magnetic%20Force%20Between%20Two%20Balls/note.md)
