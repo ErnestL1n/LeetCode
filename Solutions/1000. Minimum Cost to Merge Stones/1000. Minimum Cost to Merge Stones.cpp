@@ -17,6 +17,7 @@ public:
                     dp[i][j]=min(dp[i][j],dp[i][mid]+dp[mid+1][j]);
                 // all stones in [i,j] can be merged into one pile
                 if((len-1)%(K-1)==0)
+                //or if((j-i)%(K-1)==0)
                     dp[i][j]+=prefix[j+1]-prefix[i]; // add sum in [i,j]
             }
         return dp[0][n-1];
