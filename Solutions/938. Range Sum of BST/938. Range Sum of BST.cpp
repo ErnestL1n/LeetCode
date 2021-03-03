@@ -19,5 +19,25 @@ public:
     }
 };
 
-
+//iterative
+class Solution {
+public:
+    int rangeSumBST(TreeNode* root, int low, int high) {
+        int res=0;
+        stack<TreeNode*> stk;
+        stk.push(root);
+        while(stk.size()){
+            auto curr=stk.top();
+            stk.pop();
+            if(!curr)continue;
+            if(curr->val>low)
+                stk.push(curr->left);
+            if(curr->val<high)
+                stk.push(curr->right);
+            if(curr->val<=high && curr->val>=low)
+                res+=curr->val;
+        }
+        return res;
+    }
+};
 
