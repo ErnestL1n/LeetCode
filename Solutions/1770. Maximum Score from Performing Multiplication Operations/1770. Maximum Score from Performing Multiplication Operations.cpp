@@ -17,7 +17,7 @@ public:
 };
 
 
-
+//trick
 class Solution {
 public:
     int dp[1000][1000]={};
@@ -36,7 +36,7 @@ public:
     }
 };
 
-
+//same as above , don't need to count "r"
 class Solution {
 public:
     int dp[1000][1000]={};
