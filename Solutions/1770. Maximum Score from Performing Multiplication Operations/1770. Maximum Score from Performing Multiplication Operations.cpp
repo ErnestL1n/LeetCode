@@ -1,6 +1,4 @@
 //bottom up method 
-// n=number of elements we pick 
-// l=left index we can pick from nums,r=right index we can pick from nums
 class Solution {
 public:
     int maximumScore(vector<int>& nums, vector<int>& muls) {
@@ -15,10 +13,10 @@ public:
     }
 };
 
-//trick
+//trick top down method
 class Solution {
 public:
-    int dp[1000][1000]={};
+    int dp[1001][1001]={};
     int maximumScore(vector<int>& nums, vector<int>& muls) {
         return dfs(nums,muls,0,0);
     }
@@ -37,7 +35,7 @@ public:
 //same as above , don't need to count "r"
 class Solution {
 public:
-    int dp[1000][1000]={};
+    int dp[1001][1001]={};
     int maximumScore(vector<int>& nums, vector<int>& muls) {
         return dfs(nums,muls,0,nums.size()-1,0);
     }
