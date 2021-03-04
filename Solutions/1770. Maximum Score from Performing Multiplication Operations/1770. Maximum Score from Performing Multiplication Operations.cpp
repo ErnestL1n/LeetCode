@@ -5,11 +5,11 @@ public:
         const int m = b.size();
         static int dp[1010][1010];
         memset(dp, 0, sizeof dp);
-        for (int i = m - 1; i >= 0; --i) {
-            for (int j = 0; j <= i; ++j) {
-                int k = i - j;
+        for (int i = m - 1; i >= 0; --i) {  //# of elements take
+            for (int j = 0; j <= i; ++j) {  //left index
+                int r=n-1-(i-j);
                 dp[i][j] = dp[i+1][j+1] + b[i]*a[j];
-                dp[i][j] = max(dp[i][j], dp[i+1][j] + b[i]*a[n-k-1]);
+                dp[i][j] = max(dp[i][j], dp[i+1][j] + b[i]*a[r]);
             }
         }
         return dp[0][0];
