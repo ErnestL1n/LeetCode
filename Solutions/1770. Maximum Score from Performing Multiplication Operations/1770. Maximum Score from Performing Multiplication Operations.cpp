@@ -1,21 +1,19 @@
+//bottom up method 
+// n=number of elements we pick 
+// l=left index we can pick from nums,r=right index we can pick from nums
 class Solution {
 public:
-    int maximumScore(vector<int>& a, vector<int>& b) {
-        const int n = a.size();
-        const int m = b.size();
-        static int dp[1010][1010];
-        memset(dp, 0, sizeof dp);
-        for (int i = m - 1; i >= 0; --i) {  //# of elements take
-            for (int j = 0; j <= i; ++j) {  //left index
-                int r=n-1-(i-j);
-                dp[i][j] = dp[i+1][j+1] + b[i]*a[j];
-                dp[i][j] = max(dp[i][j], dp[i+1][j] + b[i]*a[r]);
+    int maximumScore(vector<int>& nums, vector<int>& muls) {
+        int dp[1001][1001]={};
+        for(int n=muls.size()-1;n>=0;--n)
+            for(int l=0;l<=n;++l){
+                int r=(nums.size()-1-(n-l));
+                dp[n][l]=max(dp[n+1][l+1]+nums[l]*muls[n],
+                            dp[n+1][l]+nums[r]*muls[n]);
             }
-        }
         return dp[0][0];
     }
 };
-
 
 //trick
 class Solution {
