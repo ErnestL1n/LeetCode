@@ -55,20 +55,3 @@ public:
 };
 
 
-
-// OJ: https://leetcode.com/problems/maximum-score-from-performing-multiplication-operations/
-// Author: github.com/lzl124631x
-// Time: O(M^2)
-// Space: O(M^2)
-class Solution {
-    int memo[1001][1001] = {};
-    int dfs(vector<int> &A, vector<int> &M, int i, int j) {
-        if (j == M.size()) return 0;
-        if (memo[j][i]) return memo[j][i];
-        return memo[j][i] = max(A[i] * M[j] + dfs(A, M, i + 1, j + 1), A[A.size() - j + i - 1] * M[j] + dfs(A, M, i, j + 1));
-    }
-public:
-    int maximumScore(vector<int>& A, vector<int>& M) {
-        return dfs(A, M, 0, 0);
-    }
-};
