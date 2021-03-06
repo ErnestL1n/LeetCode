@@ -90,6 +90,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1025# | [Divisor Game](https://leetcode.com/problems/divisor-game/) | Easy | Trick | [Solutions](Solutions/1025.%20Divisor%20Game) | [Note](Solutions/1025.%20Divisor%20Game/note.md)
 1035* | [Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines/) | Medium | DP | [Solutions](Solutions/1035.%20Uncrossed%20Lines) | [Note](Solutions/1035.%20Uncrossed%20Lines/note.md)
 1038# | [Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/) | Medium | Tree、D&C、Stack | [Solutions](Solutions/1038.%20Binary%20Search%20Tree%20to%20Greater%20Sum%20Tree) |
+1043* | [Partition Array for Maximum Sum](https://leetcode.com/problems/partition-array-for-maximum-sum/) | Medium | DP | [Solutions](Solutions/1043.%20Partition%20Array%20for%20Maximum%20Sum) | [Note](Solutions/1043.%20Partition%20Array%20for%20Maximum%20Sum/note.md)
 1051 | [Height Checker](https://leetcode.com/problems/height-checker/) | Easy | Counting Sort | [Solutions](Solutions/1051.%20Height%20Checker) | 
 1052* | [Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner/) | Medium | Sliding Window、Array | [Solutions](Solutions/1052.%20Grumpy%20Bookstore%20Owner) | [Note](Solutions/1052.%20Grumpy%20Bookstore%20Owner/note.md) 
 1071* | [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) | Easy | String | [Solutions](Solutions/1071.%20Greatest%20Common%20Divisor%20of%20Strings) |
