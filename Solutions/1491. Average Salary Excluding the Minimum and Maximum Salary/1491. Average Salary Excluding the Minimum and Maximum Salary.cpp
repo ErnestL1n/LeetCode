@@ -15,3 +15,19 @@ public:
         return (accumulate(begin(salary),end(salary),0.0)-*max_element(begin(salary),end(salary))-*min_element(begin(salary),end(salary)))/(salary.size()-2);
     }
 };
+
+
+// O(n)
+class Solution {
+public:
+    double average(vector<int>& salary) {
+        double sum=0.0;
+        int mins=INT_MAX,maxs=INT_MIN;
+        for(auto s:salary){
+            mins=min(mins,s);
+            maxs=max(maxs,s);
+            sum+=s;
+        }
+        return (sum-mins-maxs)/(salary.size()-2);
+    }
+};
