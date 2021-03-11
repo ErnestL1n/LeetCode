@@ -1,25 +1,26 @@
 class Solution {
-    vector<int> state; // -1 unvisited, 0 visiting, 1 visited
-    bool dfs(vector<vector<int>> &G, int u) {
-        if (state[u] != -1) return state[u];
-        state[u] = 0;
-        for (int v : G[u]) {
-            if (!dfs(G, v)) return false;
-        }
-        return state[u] = 1;
-    }
 public:
-    bool canFinish(int N, vector<vector<int>>& E) {
-        vector<vector<int>> G(N);
-        state.assign(N, -1);
-        for (auto &e : E) G[e[1]].push_back(e[0]);
-        for (int i = 0; i < N; ++i) {
-            if (!dfs(G, i)) return false;
-        }
+    vector<int> state; // -1 unvisited, 0 visiting, 1 visited
+    bool dfs(vector<vector<int>>& G,int u){
+        if(state[u]!=-1)
+            return state[u];
+        state[u]=0;
+        for(int v:G[u])
+            if(dfs(G,v)==0)
+                return false;
+        return state[u]=1;
+    }
+    bool canFinish(int n, vector<vector<int>>& pre) {
+        vector<vector<int>> G(n);
+        state.assign(n,-1);
+        for(auto& p:pre)
+            G[p[1]].push_back(p[0]);
+        for(int i=0;i<n;++i)
+            if(!dfs(G,i))
+                return false;
         return true;
     }
 };
-
 
 
 
