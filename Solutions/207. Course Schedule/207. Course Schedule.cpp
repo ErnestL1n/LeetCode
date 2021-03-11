@@ -1,3 +1,4 @@
+//faster dfs
 class Solution {
 public:
     vector<int> state; // -1 unvisited, 0 visiting, 1 visited
@@ -23,7 +24,7 @@ public:
 };
 
 
-
+//faster bfs
 class Solution {
 public:
     bool canFinish(int n, vector<vector<int>>& pre) {
