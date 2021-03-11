@@ -18,7 +18,12 @@ public:
 
 
 
-
+//much brilliant solution
+//  n=6
+//  i =0,1,2,3,4,5
+//a[i]=-5,-3,-1,1,3,5
+//=>a[i]=i*2-n+1
+//n==odd is OK
 
 class Solution {
 public:
