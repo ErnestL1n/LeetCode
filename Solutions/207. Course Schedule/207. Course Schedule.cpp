@@ -26,27 +26,27 @@ public:
 
 class Solution {
 public:
-    bool canFinish(int N, vector<vector<int>>& E) {
-        vector<vector<int>> G(N);
-        vector<int> indegree(N);
-        for (auto &e : E) {
-            G[e[1]].push_back(e[0]);
-            ++indegree[e[0]];
+    bool canFinish(int n, vector<vector<int>>& pre) {
+        vector<vector<int>> G(n);
+        vector<int> indegree(n);
+        for(auto& p:pre){
+            G[p[1]].push_back(p[0]);
+            ++indegree[p[0]];
         }
         queue<int> q;
-        for (int i = 0; i < N; ++i) {
-            if (indegree[i] == 0) q.push(i);
-        }
-        int cnt = 0;
-        while (q.size()) {
-            int u = q.front();
+        for(int i=0;i<n;++i)
+            if(indegree[i]==0)
+                q.push(i);
+        int cnt=0;
+        while(q.size()){
+            int u=q.front();
             q.pop();
             ++cnt;
-            for (int v : G[u]) {
-                if (--indegree[v] == 0) q.push(v);
-            }
+            for(int v:G[u])
+                if(--indegree[v]==0)
+                    q.push(v);
         }
-        return cnt == N;
+        return cnt==n;
     }
 };
 
