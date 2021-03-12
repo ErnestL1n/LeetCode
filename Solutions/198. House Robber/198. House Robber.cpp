@@ -45,3 +45,19 @@ public:
         return dp[n];
     }
 };
+
+
+
+//O(1) space
+class Solution {
+public:
+    int rob(vector<int>& nums) {
+        int f=0,s=0;
+        for(int n:nums){
+            int tmp=f;
+            f=max(f,s+n);
+            s=tmp;
+        }
+        return f;
+    }
+};
