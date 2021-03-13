@@ -26,13 +26,15 @@ public:
     int dfs(vector<vector<pr>>& G,vector<int>& dist,vector<int>& dp,int i){
         //we begin from n
         //thus distanceToLastNode(n) must less than 
-        //distanceToLastNode(1~n-1) to form a path
+        //distanceToLastNode(1~n-1) to form a Restricted Path
         if(i==1)
             return 1;
         if(dp[i]==-1){
             dp[i]=0;
             for(auto [j,w]:G[i])
                 if(dist[i]<dist[j])
+                    //runtime error: signed integer overflow
+                    //dp[i]+=dp[i]+dfs(G,dist,dp,j);
                     dp[i]=(dp[i]+dfs(G,dist,dp,j))%mod;
         }
         return dp[i];
@@ -74,16 +76,18 @@ public:
     int dfs(vector<vector<pr>>& G,vector<int>& dist,vector<int>& dp,int i){
         //we begin from n
         //thus distanceToLastNode(n) must less than 
-        //distanceToLastNode(1~n-1) to form a path
+        //distanceToLastNode(1~n-1) to form a Restricted Path
         if(i==1)
             return 1;
         if(dp[i]==-1){
             dp[i]=0;
             for(auto [j,w]:G[i]){
                 if(dist[j]>dist[i])
-                    dp[i]+=dfs(G,dist,dp,j);       
+                    //runtime error: signed integer overflow
+                    //dp[i]+=dp[i]+dfs(G,dist,dp,j);
+                    dp[i]=(dp[i]+dfs(G,dist,dp,j))%mod;       
             }
         }
-        return dp[i]%mod;
+        return dp[i];
     }
 };
