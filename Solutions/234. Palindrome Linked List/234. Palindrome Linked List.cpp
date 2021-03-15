@@ -31,20 +31,55 @@ public:
 };
 
 
-//recursive
+//Same as the above, 
+//but while comparing the two halves, 
+//restore the list to its original state by reversing the first half back. Not that the OJ or anyone else cares.
+
 class Solution {
 public:
     bool isPalindrome(ListNode* head) {
-        return check(head, head);
+        ListNode* rev=nullptr;
+        auto fast=head;
+        //head same as above slow , but finally it returns to origin
+        while(fast && fast->next){
+            fast=fast->next->next;
+            auto tmp=rev;
+            rev=head;
+            head=head->next;
+            rev->next=tmp;
+        }
+        ListNode* tail;
+        //tail same as above code's slow
+        if(fast)
+            tail=head->next;
+        else
+            tail=head;
+        auto isPal=true;
+        while (rev){
+            isPal = isPal and rev->val == tail->val;
+            auto tmp=head;
+            head=rev;
+            rev=rev->next;
+            head->next=tmp;
+            tail = tail->next;
+            }
+        return isPal;
     }
-    
-    bool check(ListNode*& head, ListNode* p) {
-    if(!p) { return true; }
-    bool isPal = check(head, p->next);
-    if(!isPal || head->val != p->val) {
-        return false;
+};
+
+//recursive 
+class Solution {
+public:
+    bool isPalindrome(ListNode* head) {
+        return foo(head,head);
+    } 
+    //first parameter of function foo, taking reference on ListNode* type
+    bool foo(ListNode* &head,ListNode* tail){
+        if(!tail)return true;
+        bool isPal=foo(head,tail->next);
+        if(head->val!=tail->val)
+            isPal=false;
+        head=head->next;
+        return isPal;
     }
-    head = head->next;
-    return isPal;
-}
 };
