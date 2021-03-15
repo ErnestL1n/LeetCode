@@ -41,7 +41,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 213* | [House Robber II](https://leetcode.com/problems/house-robber-ii/) | Medium | DP | [Solutions](Solutions/213.%20House%20Robber%20II) | [Note](Solutions/213.%20House%20Robber%20II/note.md)
 221 | [Maximal Square](https://leetcode.com/problems/maximal-square/) | Medium | DP | [Solutions](Solutions/221.%20Maximal%20Square) | [Note](Solutions/221.%20Maximal%20Square/note.md)
 226 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | Easy | Tree、D&C | [Solutions](Solutions/226.%20Invert%20Binary%20Tree) | 
-234* | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | Easy | Linked List、Two Pointers、D&C | [Solutions](Solutions/234.%20Palindrome%20Linked%20List) | 
+234* | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | Easy | Linked List、Two Pointers、D&C | [Solutions](Solutions/234.%20Palindrome%20Linked%20List) | [Note](Solutions/234.%20Palindrome%20Linked%20List/note.md)
 268* | [Missing Number](https://leetcode.com/problems/missing-number/) | Easy | XOR、Math | [Solutions](Solutions/268.%20Missing%20Number) | 
 278* | [First Bad Version](https://leetcode.com/problems/first-bad-version/) | Easy | Binary Search | [Solutions](Solutions/278.%20First%20Bad%20Version) | 
 283* | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | Easy | Two Pointers | [Solutions](Solutions/283.%20Move%20Zeroes) | 
