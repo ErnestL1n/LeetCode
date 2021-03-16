@@ -67,7 +67,7 @@ public:
     }
 };
 
-//recursive 
+//recursive , O(n) space
 class Solution {
 public:
     bool isPalindrome(ListNode* head) {
