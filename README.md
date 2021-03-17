@@ -49,6 +49,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 290* | [Word Pattern](https://leetcode.com/problems/word-pattern/) | Easy | HashMap | [Solutions](Solutions/290.%20Word%20Pattern) | 
 310* | [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/) | Medium | Graph(Adjacency Matrix)、BFS | [Solutions](Solutions/310.%20Minimum%20Height%20Trees) | [Note](Solutions/310.%20Minimum%20Height%20Trees/note.md)
 312 | [Burst Balloons](https://leetcode.com/problems/burst-balloons/) | Hard | DP | [Solutions](Solutions/312.%20Burst%20Balloons) | [Note](Solutions/312.%20Burst%20Balloons/note.md)
+322* | [Coin Change](https://leetcode.com/problems/coin-change/) | Medium | DP | [Solutions](Solutions/322.%20Coin%20Change) | 
 344# | [Reverse String](https://leetcode.com/problems/reverse-string/) | Easy | Two Pointers | [Solutions](Solutions/344.%20Reverse%20String) | 
 435* | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | Medium | Greedy | [Solutions](Solutions/435.%20Non-overlapping%20Intervals)
 453* | [Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/) | Easy | Math | [Solutions](Solutions/453.%20Minimum%20Moves%20to%20Equal%20Array%20Elements) | [Note](Solutions/453.%20Minimum%20Moves%20to%20Equal%20Array%20Elements/note.md)
