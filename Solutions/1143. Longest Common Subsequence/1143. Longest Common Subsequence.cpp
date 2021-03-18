@@ -16,8 +16,7 @@ public:
 };
 
 
-
-//space optimization
+//two rows
 class Solution {
 public:
     int longestCommonSubsequence(string s1, string s2) {
@@ -34,6 +33,24 @@ public:
     }
 };
 
+//space optimization
+class Solution {
+public:
+    int longestCommonSubsequence(string s1, string s2) {
+        int n1=s1.size(),n2=s2.size();
+        vector<short> dp(n2+1);
+        short pre,curr;
+        for(int i=1;i<=n1;++i){
+            pre=0;
+            for(int j=1;j<=n2;++j){
+                pre=dp[j];
+                dp[j]=max({dp[j],dp[j-1],pre+(s1[i-1]==s2[j-1])});
+                pre=curr;
+            }
+        }
+        return dp[n2];
+    }
+};
 
 //top down
 class Solution {
