@@ -33,24 +33,23 @@ public:
     }
 };
 
-//space optimization
+//space optimization , less space taken , but the OJ punished one the time 
 class Solution {
 public:
-    int longestCommonSubsequence(string text1, string text2) {
-        int len1 = text1.length(), len2 = text2.length();
-        int cur_val, pre_val;
-        vector<int> dp(len2+1, 0);
-        for(int i=1;i<=len1;++i) {
-            pre_val = 0;
-            for(int j=1;j<=len2;++j) {
-                cur_val = dp[j];
-                dp[j] = max({dp[j], dp[j-1], pre_val + (text1[i-1]==text2[j-1])});
-                pre_val = cur_val;
+    int longestCommonSubsequence(string s1, string s2) {
+        int n1=s1.size(),n2=s2.size();
+        vector<int> dp(n2+1);
+        int pre_left_up,pre_up;
+        for(int i=1;i<=n1;++i){
+            pre_left_up=0;
+            for(int j=1;j<=n2;++j){
+                pre_up=dp[j];
+                dp[j]=max({dp[j-1],pre_up,pre_left_up+(s1[i-1]==s2[j-1])});
+                pre_left_up=pre_up;
             }
         }
-        return dp[len2];
+        return dp[n2];
     }
-
 };
 
 //top down
