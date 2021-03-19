@@ -2,6 +2,19 @@ class Solution {
 public:
     bool canBeEqual(vector<int>& target, vector<int>& arr) {
         int record[1001]={};
+        for(int a:arr)
+            ++record[a];
+        for(int t:target)
+            if(--record[t])
+                return false;
+        return true;
+    }
+};
+
+class Solution {
+public:
+    bool canBeEqual(vector<int>& target, vector<int>& arr) {
+        int record[1001]={};
         for(int i=0;i<target.size();++i){
             ++record[target[i]];
             --record[arr[i]];
@@ -12,6 +25,8 @@ public:
         return true;
     }
 };
+
+
 
 //multiset
 class Solution {
