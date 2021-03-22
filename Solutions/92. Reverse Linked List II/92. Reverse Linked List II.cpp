@@ -23,10 +23,11 @@ public:
         
         // a~d do right-left times
         for(int i=1;i<=right-left;++i){
-            auto tmp=pre->next;                        //a  :1->2next stores
+            auto tmp=pre->next;                        //a  :1->2 (next stores)
             pre->next=progress->next;                  //b  :1->->3
             progress->next=progress->next->next;       //c  :2->->4
-            pre->next->next=tmp;                       //d  :3->2next stores
+            pre->next->next=tmp;                       //d  :3->2 (next stores)
         }
+        return newhead->next;
     }
 };
