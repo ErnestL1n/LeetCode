@@ -5,6 +5,7 @@
  *     Next *ListNode
  * }
  */
+ //iterative
 func reverseList(head *ListNode) *ListNode {
     var newhead *ListNode=nil
     for head!=nil{
@@ -17,6 +18,7 @@ func reverseList(head *ListNode) *ListNode {
 }
 
 
+//recursive
 func reverseList(head *ListNode) *ListNode {
     return reverList(head,nil)
 }
