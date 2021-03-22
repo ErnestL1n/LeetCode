@@ -9,15 +9,18 @@
  * };
  */
 
-//recursive solution: Operate the next pointed one ,then break my own's next pointer(point to null)
+
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        if(!head||!head->next)return head;
-        ListNode *pre=reverseList(head->next);
-        head->next->next=head;
-        head->next=nullptr;
-        return pre;
+        return reverseList(head,nullptr);
+    }
+    ListNode* reverseList(ListNode* head,ListNode* newhead){
+        if(!head)
+            return newhead;
+        auto next=head->next;
+        head->next=newhead;
+        return reverseList(next,head);
     }
 };
 
@@ -25,13 +28,13 @@ public:
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        ListNode *pre=nullptr;
+        ListNode* newhead=nullptr;
         while(head){
-            ListNode *next=head->next;
-            head->next=pre;
-            pre=head;
+            auto next=head->next;
+            head->next=newhead;
+            newhead=head;
             head=next;
         }
-        return pre;
+        return newhead;
     }
 };
