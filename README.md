@@ -36,7 +36,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 187# | [Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/) | Medium | HashSet | [Solutions](Solutions/187.%20Repeated%20DNA%20Sequences) |
 191* | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | Easy | Bit Manipulation | [Solutions](Solutions/191.%20Number%20of%201%20Bits) | [Note](Solutions/191.%20Number%20of%201%20Bits/note.md)
 198* | [House Robber](https://leetcode.com/problems/house-robber/) | Medium | DP | [Solutions](Solutions/198.%20House%20Robber) | [Note](Solutions/198.%20House%20Robber/note.md)
-206* | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | Linked-List | [Solutions](Solutions/206.%20Reverse%20Linked%20List) |
+206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | Linked-List | [Solutions](Solutions/206.%20Reverse%20Linked%20List) |
 207# | [Course Schedule](https://leetcode.com/problems/course-schedule/) | Medium | Topological Sort(DAG、Adjacency Matrix)、DFS、BFS | [Solutions](Solutions/207.%20Course%20Schedule) |
 213* | [House Robber II](https://leetcode.com/problems/house-robber-ii/) | Medium | DP | [Solutions](Solutions/213.%20House%20Robber%20II) | [Note](Solutions/213.%20House%20Robber%20II/note.md)
 215* | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Medium | ```std::make_heap```、Priority_Queue | [Solutions](Solutions/215.%20Kth%20Largest%20Element%20in%20an%20Array) | 
