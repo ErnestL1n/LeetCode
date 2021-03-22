@@ -10,51 +10,23 @@
  */
 class Solution {
 public:
-    ListNode* reverseBetween(ListNode* head, int m, int n) {
-        if(!head||m==n)return head;
-        ListNode *rec=new ListNode(0),*pre=rec;
-        rec->next=head;
-        for(int i=1;i<=m-1;++i)
+    ListNode* reverseBetween(ListNode* head, int left, int right) {
+        ListNode *newhead=new ListNode(0);
+        newhead->next=head;
+        ListNode *pre=newhead;
+        //find pre and pre continues stay at left-1 
+        for(int i=1;i<=left-1;++i)
             pre=pre->next;
-        ListNode* tail=pre->next;
-        for(int i=1;i<=n-m;++i){
-            ListNode *tmp=pre->next;        //a
-            pre->next=tail->next;           //b
-            tail->next=tail->next->next;    //c
-            pre->next->next=tmp;            //d
+        //current progress begin from left
+        ListNode *progress=pre->next;
+        //current progress pointer,until reach to right
+        
+        // a~d do right-left times
+        for(int i=1;i<=right-left;++i){
+            auto tmp=pre->next;                        //a  :1->2next stores
+            pre->next=progress->next;                  //b  :1->->3
+            progress->next=progress->next->next;       //c  :2->->4
+            pre->next->next=tmp;                       //d  :3->2next stores
         }
-        return rec->next;
-    }
-};
-
-
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
-class Solution {
-public:
-    ListNode* reverseBetween(ListNode* head, int m, int n) {
-        if(!head||m==n)
-            return head;
-        ListNode* pre=head;
-        //pre continues stay at m-1
-        for(int i=1;i<m-1;++i)
-            pre=pre->next;
-        //Current progress ,until reach to m+1
-        ListNode* tail=pre->next;
-        for(int i=1;i<=n-m;++i){
-            auto tmp=pre->next;
-            pre->next=tail->next;
-            tail->next=tail->next->next;
-            pre->next->next=tmp;
-        }
-        return head;
     }
 };
