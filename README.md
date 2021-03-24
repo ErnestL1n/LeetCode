@@ -65,6 +65,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 654! | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) | Medium | Stack、Iterator | [Solutions](Solutions/654.%20Maximum%20Binary%20Tree) | [Note](Solutions/654.%20Maximum%20Binary%20Tree/note.md)
 657# | [Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/) | Easy | String | [Solutions](Solutions/657.%20Robot%20Return%20to%20Origin) | 
 677# | [Map Sum Pairs](https://leetcode.com/problems/map-sum-pairs/) | Medium | Trie | [Solutions](Solutions/677.%20Map%20Sum%20Pairs) | [Note](Solutions/677.%20Map%20Sum%20Pairs/note.md)
+700# | [Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/) | Easy | BST | [Solutions](Solutions/700.%20Search%20in%20a%20Binary%20Search%20Tree) | 
 701# | [Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/) | Medium | BST | [Solutions](Solutions/701.%20Insert%20into%20a%20Binary%20Search%20Tree) | 
 704 | [Binary Search](https://leetcode.com/problems/binary-search/) | Easy | Binary Search | [Solutions](Solutions/704.%20Binary%20Search) |
 705 | [Design HashSet](https://leetcode.com/problems/design-hashset/) | Easy | HashSet、BitSet、Design | [Solutions](Solutions/705.%20Design%20HashSet) |
