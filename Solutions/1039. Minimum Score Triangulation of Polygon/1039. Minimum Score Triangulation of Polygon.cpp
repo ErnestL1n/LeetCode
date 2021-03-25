@@ -1,19 +1,18 @@
 //top down
 class Solution {
 public:
-    int dp[50][50]={};
-    int minScoreTriangulation(vector<int>& values) {
-        return foo(values,0,values.size()-1);
+    int dpTopDown[50][50];
+    int minScoreTriangulation(vector<int>& A) {
+        return help(A,0,A.size()-1);
     }
-    int foo(vector<int>& values,int i,int j){
-        if(j-i<=1)
-            return 0;
-        if(!dp[i][j]){
-            dp[i][j]=INT_MAX;
+    int help(vector<int>& arr,int i,int j){
+        if(j-i<=1)return 0;
+        if(!dpTopDown[i][j]){
+            dpTopDown[i][j]=INT_MAX;
             for(int k=i+1;k<j;++k)
-                dp[i][j]=min(dp[i][j],dp[i][k]+dp[k][j]+values[i]*values[k]*values[j]);
+            dpTopDown[i][j]=min(dpTopDown[i][j],help(arr,i,k)+help(arr,k,j)+arr[i]*arr[k]*arr[j]);
         }
-        return dp[i][j];
+        return dpTopDown[i][j];
     }
 };
 
