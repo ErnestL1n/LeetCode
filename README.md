@@ -97,6 +97,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1025# | [Divisor Game](https://leetcode.com/problems/divisor-game/) | Easy | Trick | [Solutions](Solutions/1025.%20Divisor%20Game) | [Note](Solutions/1025.%20Divisor%20Game/note.md)
 1035* | [Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines/) | Medium | DP | [Solutions](Solutions/1035.%20Uncrossed%20Lines) | [Note](Solutions/1035.%20Uncrossed%20Lines/note.md)
 1038# | [Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/) | Medium | Tree、D&C、Stack | [Solutions](Solutions/1038.%20Binary%20Search%20Tree%20to%20Greater%20Sum%20Tree) |
+1039 | [Minimum Score Triangulation of Polygon](https://leetcode.com/problems/minimum-score-triangulation-of-polygon/) | Medium | DP | [Solutions](Solutions/1039.%20Minimum%20Score%20Triangulation%20of%20Polygon) |
 1043* | [Partition Array for Maximum Sum](https://leetcode.com/problems/partition-array-for-maximum-sum/) | Medium | DP | [Solutions](Solutions/1043.%20Partition%20Array%20for%20Maximum%20Sum) | [Note](Solutions/1043.%20Partition%20Array%20for%20Maximum%20Sum/note.md)
 1047* | [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | Easy | Stack、Two Pointers、String | [Solutions](Solutions/1047.%20Remove%20All%20Adjacent%20Duplicates%20In%20String) |
 1051 | [Height Checker](https://leetcode.com/problems/height-checker/) | Easy | Counting Sort | [Solutions](Solutions/1051.%20Height%20Checker) | 
