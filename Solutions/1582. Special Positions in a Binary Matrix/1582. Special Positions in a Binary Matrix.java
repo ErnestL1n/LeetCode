@@ -1,9 +1,8 @@
-// HashMap may save some space
+// HashMap solution
 class Solution {
     public int numSpecial(int[][] mat) {
         int res=0;
-        var row=new HashMap<Integer,Integer>();
-        var column=new HashMap<Integer,Integer>();
+        HashMap<Integer,Integer> row=new HashMap<>(),column=new HashMap<>();
         for(int i=0;i<mat.length;++i)
             for(int j=0;j<mat[0].length;++j){
                 if(mat[i][j]==1){
@@ -19,7 +18,6 @@ class Solution {
         return res;
     }
 }
-
 
 class Solution {
     public int numSpecial(int[][] mat) {
