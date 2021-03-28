@@ -22,3 +22,26 @@ public:
         return s.size();
     }
 };
+
+
+//two pointers
+class Solution {
+public:
+    int numDifferentIntegers(string w) {
+        unordered_set<string> s{""};    //now, s.size()==1
+        int i=0;
+        for (int j = 0;j<w.size();++j) {
+            if(isdigit(w[j])){
+                if (i<j and w[i]=='0')
+                    ++i;
+            }
+            else {
+                if (i<j)
+                    s.insert(w.substr(i,j-i));
+                i=j+1;
+            }
+        }
+        s.insert(w.substr(i));
+        return s.size()-1;
+    }
+};
