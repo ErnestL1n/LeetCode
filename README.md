@@ -90,6 +90,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 942# | [DI String Match](https://leetcode.com/problems/di-string-match/) | Easy | Two Pointers | [Solutions](Solutions/942.%20DI%20String%20Match) |
 961# | [N-Repeated Element in Size 2N Array](https://leetcode.com/problems/n-repeated-element-in-size-2n-array/) | Easy | Array、Count、Trick | [Solutions](Solutions/961.%20N-Repeated%20Element%20in%20Size%202N%20Array) |
 962* | [Maximum Width Ramp](https://leetcode.com/problems/maximum-width-ramp/) | Medium | Stack | [Solutions](Solutions/962.%20Maximum%20Width%20Ramp) | 
+965# | [Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/) | Easy | Tree | [Solutions](Solutions/965.%20Univalued%20Binary%20Tree) | 
 985* | [Sum of Even Numbers After Queries](https://leetcode.com/problems/sum-of-even-numbers-after-queries/) | Easy | Accumulate(C++)、Array | [Solutions](Solutions/985.%20Sum%20of%20Even%20Numbers%20After%20Queries) | [Note](Solutions/985.%20Sum%20of%20Even%20Numbers%20After%20Queries/note.md)
 1000# | [Minimum Cost to Merge Stones](https://leetcode.com/problems/minimum-cost-to-merge-stones/) | Hard | DP | [Solutions](Solutions/1000.%20Minimum%20Cost%20to%20Merge%20Stones) | [Note](Solutions/1000.%20Minimum%20Cost%20to%20Merge%20Stones/note.md) 
 1002# | [Find Common Characters](https://leetcode.com/problems/find-common-characters/) | Easy(Medium) | HashMap(Vector) | [Solutions](Solutions/1002.%20Find%20Common%20Characters) | [Note](Solutions/1002.%20Find%20Common%20Characters/note.md)
@@ -221,4 +222,4 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1796* | [Second Largest Digit in a String](https://leetcode.com/problems/second-largest-digit-in-a-string/) | Easy | String、Set、```std::next```、```std::prev``` | [Solutions](Solutions/1796.%20Second%20Largest%20Digit%20in%20a%20String) | 
 1800* | [Maximum Ascending Subarray Sum](https://leetcode.com/problems/maximum-ascending-subarray-sum/) | Easy | Array | [Solutions](Solutions/1800.%20Maximum%20Ascending%20Subarray%20Sum) | 
 1801* | [Number of Orders in the Backlog](https://leetcode.com/problems/number-of-orders-in-the-backlog/) | Medium | Priority_Queue | [Solutions](Solutions/1801.%20Number%20of%20Orders%20in%20the%20Backlog) |
-1805* | [Number of Different Integers in a String](https://leetcode.com/problems/number-of-different-integers-in-a-string/) | Easy | HashSet、Two Pointers | [Solutions](Solutions/1805.%20Number%20of%20Different%20Integers%20in%20a%20String) |
+1805* | [Number of Different Integers in a String](https://leetcode.com/problems/number-of-different-integers-in-a-string/) | Easy(Medium) | HashSet、Two Pointers | [Solutions](Solutions/1805.%20Number%20of%20Different%20Integers%20in%20a%20String) |
