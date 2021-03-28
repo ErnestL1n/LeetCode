@@ -221,3 +221,4 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1796* | [Second Largest Digit in a String](https://leetcode.com/problems/second-largest-digit-in-a-string/) | Easy | String、Set、```std::next```、```std::prev``` | [Solutions](Solutions/1796.%20Second%20Largest%20Digit%20in%20a%20String) | 
 1800* | [Maximum Ascending Subarray Sum](https://leetcode.com/problems/maximum-ascending-subarray-sum/) | Easy | Array | [Solutions](Solutions/1800.%20Maximum%20Ascending%20Subarray%20Sum) | 
 1801* | [Number of Orders in the Backlog](https://leetcode.com/problems/number-of-orders-in-the-backlog/) | Medium | Priority_Queue | [Solutions](Solutions/1801.%20Number%20of%20Orders%20in%20the%20Backlog) |
+1805* | [Number of Different Integers in a String](https://leetcode.com/problems/number-of-different-integers-in-a-string/) | Easy | HashSet、Two Pointers | [Solutions](Solutions/1805.%20Number%20of%20Different%20Integers%20in%20a%20String) |
