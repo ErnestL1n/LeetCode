@@ -21,3 +21,25 @@ public:
         return isUnivalTree(root->left) and isUnivalTree(root->right);
     }
 };
+
+
+//stack iterative
+class Solution {
+public:
+    bool isUnivalTree(TreeNode* root) {
+        if(!root)return true;
+        stack<TreeNode*> stk;
+        stk.push(root);
+        while(stk.size()){
+            auto curr=stk.top();
+            stk.pop();
+            if(curr->val!=root->val)
+                return false;
+            if(curr->right)
+                stk.push(curr->right);
+            if(curr->left)
+                stk.push(curr->left);
+        }
+        return true;
+    }
+};
