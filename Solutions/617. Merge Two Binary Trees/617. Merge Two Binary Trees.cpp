@@ -50,3 +50,31 @@ public:
         return t1;
     }
 };
+
+
+//queue iterative
+class Solution {
+public:
+    TreeNode* mergeTrees(TreeNode* t1, TreeNode* t2) {
+        if(!t1 or !t2)
+            return t1?t1:t2?t2:nullptr;
+        queue<array<TreeNode*,2>> q;
+        q.push({t1,t2});
+        while(q.size()){
+            auto curr=q.front(); //copy value 
+            q.pop();
+            if(!curr[1])
+                continue;
+            curr[0]->val+=curr[1]->val;
+            if(!curr[0]->left)
+                curr[0]->left=curr[1]->left;
+            else
+                q.push({curr[0]->left,curr[1]->left});
+            if(!curr[0]->right)
+                curr[0]->right=curr[1]->right;
+            else
+                q.push({curr[0]->right,curr[1]->right});
+        }
+        return t1;
+    }
+};
