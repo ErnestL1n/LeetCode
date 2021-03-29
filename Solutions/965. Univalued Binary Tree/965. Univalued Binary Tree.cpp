@@ -43,3 +43,25 @@ public:
         return true;
     }
 };
+
+
+//queue iterative
+class Solution {
+public:
+    bool isUnivalTree(TreeNode* root) {
+        if(!root)return true;
+        queue<TreeNode*> q;
+        q.push(root);
+        while(q.size()){
+            auto curr=q.front();
+            q.pop();
+            if(curr->val!=root->val)
+                return false;
+            if(curr->left)
+                q.push(curr->left);
+            if(curr->right)
+                q.push(curr->right);
+        }
+        return true;
+    }
+};
