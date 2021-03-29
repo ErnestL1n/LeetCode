@@ -18,6 +18,6 @@ public:
             return false;
         if(root->right and root->right->val!=root->val)
             return false;
-        return isUnivalTree(root->left)&&isUnivalTree(root->right);
+        return isUnivalTree(root->left) and isUnivalTree(root->right);
     }
 };
