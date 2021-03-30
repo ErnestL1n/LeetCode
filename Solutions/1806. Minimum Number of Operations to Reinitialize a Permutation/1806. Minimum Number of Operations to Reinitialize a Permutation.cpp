@@ -5,12 +5,14 @@ public:
         vector<int> init(n),a(n);
         iota(begin(init),end(init),0),iota(begin(a),end(a),0);
         while(res==0 or a!=init){
+            vector<int> tmp(n);
             for(int i=0;i<n;++i){
                 if(i%2==0)
-                    a[i]=a[i/2];
+                    tmp[i]=a[i/2];
                 else
-                    a[i]=a[n/2+(i-1)/2];
+                    tmp[i]=a[n/2+(i-1)/2];
             }
+            a=tmp;
             ++res;
         }
         return res;
