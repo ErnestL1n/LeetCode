@@ -83,15 +83,6 @@ public class Univalued_Binary_Tree {
 		}
 	}
 	
-	public static TreeNode mergeTreesRecursive(TreeNode t1, TreeNode t2) {
-		if(t1==null)return t2==null?null:t2;
-		if(t2==null)return t1;
-		t1.left=mergeTreesRecursive(t1.left,t2.left);
-		t1.right=mergeTreesRecursive(t1.right,t2.right);
-		t1.val+=t2.val;
-		return t1;
-	}
-	
 	public static boolean isUnivalTree(TreeNode root) {
         if(root==null)return true;
         if(root.left!=null&&root.left.val!=root.val)return false;
