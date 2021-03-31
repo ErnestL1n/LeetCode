@@ -80,6 +80,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 814 | [Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/) | Medium | D&C | [Solutions](Solutions/814.%20Binary%20Tree%20Pruning) | [Note](Solutions/814.%20Binary%20Tree%20Pruning/note.md)
 817* | [Linked List Components](https://leetcode.com/problems/linked-list-components/) | Medium | Linked List、HashMap | [Solutions](Solutions/817.%20Linked%20List%20Components) | 
 832 | [Flipping an Image](https://leetcode.com/problems/flipping-an-image/) | Easy | Operation | [Solutions](Solutions/832.%20Flipping%20an%20Image) | 
+859* | [Buddy Strings](https://leetcode.com/problems/buddy-strings/) | Easy | String、HashSet | [Solutions](Solutions/859.%20Buddy%20Strings) | [Note](Solutions/859.%20Buddy%20Strings/note.md) 
 870* | [Advantage Shuffle](https://leetcode.com/problems/advantage-shuffle/) | Medium | HashSet(MultiSet) | [Solutions](Solutions/870.%20Advantage%20Shuffle) | [Note](Solutions/870.%20Advantage%20Shuffle/note.md)
 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | Easy | Linked List、Two Pointers | [Solutions](Solutions/876.%20Middle%20of%20the%20Linked%20List) | 
 890* | [Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern/) | Medium | HashMap(Vector) | [Solutions](Solutions/890.%20Find%20and%20Replace%20Pattern) | 
