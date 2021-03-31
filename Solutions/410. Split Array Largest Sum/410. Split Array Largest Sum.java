@@ -18,11 +18,11 @@ class Solution {
         return l;
     }
     private boolean valid(int[] nums,int mid,int m){
-        int cnt=1,sum=0;
+        int cnt=1,total=0;
         for(int num:nums){
-            sum+=num;
-            if(sum>mid){
-                sum=num;
+            total+=num;
+            if(total>mid){
+                total=num;
                 ++cnt;
                 if(cnt>m)
                     return false;
