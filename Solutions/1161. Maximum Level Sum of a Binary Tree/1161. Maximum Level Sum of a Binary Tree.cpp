@@ -25,3 +25,29 @@ public:
       return distance(begin(sums), max_element(begin(sums), end(sums))) + 1;
     }
 };
+
+
+
+class Solution {
+public:
+    int maxLevelSum(TreeNode* r) {
+      vector<TreeNode*> q{r};
+      int msum = 0, lvl = 0, msum_lvl = 0;
+      while (!q.empty()) {
+          vector<TreeNode*> q1;
+          int sum = 0;
+          ++lvl;
+          for (auto n : q) {
+              sum += n->val;
+              if (n->left != nullptr) 
+                  q1.push_back(n->left);
+              if (n->right != nullptr) 
+                  q1.push_back(n->right);
+          }
+          msum_lvl = sum < msum ? msum_lvl : lvl;
+          msum = max(sum, msum);
+          swap(q, q1);
+      }
+      return msum_lvl;
+    }
+};
