@@ -1,3 +1,4 @@
+//count
 class Solution {
 	public int[] smallerNumbersThanCurrent(int[] nums) {
 		int[] res=new int[nums.length];
@@ -9,5 +10,17 @@ class Solution {
 			else res[i]=cnt[nums[i]-1];
 		}
 		return res;
+	}
+}
+
+//hashmap
+class Solution {
+	public static int[] smallerNumbersThanCurrent(int[] nums) {
+		HashMap<Integer,Integer> map=new HashMap<>();
+		int[] temp=nums.clone();
+		Arrays.sort(temp);
+		for(int i=0;i<nums.length;++i)map.putIfAbsent(temp[i], i);
+		for(int i=0;i<nums.length;++i)temp[i]=map.get(nums[i]);
+		return temp;
 	}
 }
