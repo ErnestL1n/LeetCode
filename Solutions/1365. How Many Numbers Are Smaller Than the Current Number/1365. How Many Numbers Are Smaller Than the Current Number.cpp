@@ -16,3 +16,19 @@ public:
         return res;
     }
 };
+
+//hashmap
+class Solution {
+public:
+    vector<int> smallerNumbersThanCurrent(vector<int>& nums) {
+        unordered_map<int,int> m;
+        auto res=nums;
+        sort(begin(res),end(res));
+        for(int i=0;i<nums.size();++i)
+            if(m.find(res[i])==m.end())
+                m[res[i]]=i;
+        for(int i=0;i<res.size();++i)
+            res[i]=m[nums[i]];
+        return res;
+    }
+};
