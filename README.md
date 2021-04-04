@@ -231,3 +231,4 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1806* | [Minimum Number of Operations to Reinitialize a Permutation](https://leetcode.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation/) | Medium | Array、Greedy | [Solutions](Solutions/1806.%20Minimum%20Number%20of%20Operations%20to%20Reinitialize%20a%20Permutation) |
 1812* | [Determine Color of a Chessboard Square](https://leetcode.com/problems/determine-color-of-a-chessboard-square/) | Easy | String | [Solutions](Solutions/1812.%20Determine%20Color%20of%20a%20Chessboard%20Square) |
 1813* | [Sentence Similarity III](https://leetcode.com/problems/sentence-similarity-iii/) | Medium | Deque(C++ STL)、String、Greedy | [Solutions](Solutions/1813.%20Sentence%20Similarity%20III) |
+1816* | [Truncate Sentence](https://leetcode.com/problems/truncate-sentence/) | Medium | String | [Solutions](Solutions/1816.%20Truncate%20Sentence) |
