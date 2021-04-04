@@ -232,3 +232,4 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1812* | [Determine Color of a Chessboard Square](https://leetcode.com/problems/determine-color-of-a-chessboard-square/) | Easy | String | [Solutions](Solutions/1812.%20Determine%20Color%20of%20a%20Chessboard%20Square) |
 1813* | [Sentence Similarity III](https://leetcode.com/problems/sentence-similarity-iii/) | Medium | Deque(C++ STL)、String、Greedy | [Solutions](Solutions/1813.%20Sentence%20Similarity%20III) |
 1816* | [Truncate Sentence](https://leetcode.com/problems/truncate-sentence/) | Medium | String | [Solutions](Solutions/1816.%20Truncate%20Sentence) |
+1817* | [Finding the Users Active Minutes](https://leetcode.com/problems/finding-the-users-active-minutes/) | Medium | HashMap、HashSet | [Solutions](Solutions/1817.%20Finding%20the%20Users%20Active%20Minutes) |
