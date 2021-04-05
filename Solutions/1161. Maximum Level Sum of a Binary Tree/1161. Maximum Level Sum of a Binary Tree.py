@@ -4,6 +4,7 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+#BFS , level order traversal
 class Solution:
     def maxLevelSum(self, root: TreeNode) -> int:
         q,maxsum,maxlevel,level=[root],float('-inf'),0,0
@@ -21,3 +22,21 @@ class Solution:
             if maxsum<sum:
                 maxsum,maxlevel=sum,level
         return maxlevel
+
+
+#DFS
+class Solution:
+    def maxLevelSum(self, root: TreeNode) -> int:
+        def dfs(root,level):
+            if not root:
+                return 
+            if level==len(list):
+                list.append(root.val)
+            else:
+                list[level]+=root.val
+            dfs(root.left,level+1)
+            dfs(root.right,level+1)
+        list=[]
+        dfs(root,0)
+        return 1+list.index(max(list))
+                
