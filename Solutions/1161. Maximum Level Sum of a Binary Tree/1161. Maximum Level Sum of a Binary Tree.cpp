@@ -27,6 +27,23 @@ public:
     }
 };
 
+//or DFS like this
+class Solution {
+public:
+    vector<int> sums;
+    void dfs(TreeNode* root,size_t level){
+        if(!root)return;
+        if(level==sums.size())sums.push_back(root->val);  // never reach this level before, add first value.
+        else sums[level]+=root->val;                      // reached the level before, accumulate current value to old value.
+        dfs(root->left,level+1);
+        dfs(root->right,level+1);
+    }
+    int maxLevelSum(TreeNode* root) {
+        dfs(root,0);
+        return distance(begin(sums),max_element(begin(sums),end(sums)))+1;
+    }
+};
+
 
 
 //BFS , level order traversal
