@@ -32,3 +32,26 @@ func maxLevelSum(root *TreeNode) int {
     }
     return maxlevel
 }
+
+//DFS
+func maxLevelSum(root *TreeNode) int {
+    var list []int
+    dfs(&list,root,0)
+    maxlevel:=0
+    for i:=0;i<len(list);i+=1{
+        if list[maxlevel]<list[i]{
+            maxlevel=i
+        }
+    }
+    return maxlevel+1
+}
+func dfs(list *[]int,root *TreeNode,level int) {
+    if(root==nil){return}
+    if(level==len(*list)){
+        *list=append(*list,root.Val)
+    }else{
+        (*list)[level]+=root.Val
+    }
+    dfs(list,root.Left,level+1)
+    dfs(list,root.Right,level+1)
+}
