@@ -13,17 +13,17 @@
 class Solution {
 public:
     vector<int> sums;
-    void dfs(TreeNode* r, size_t lvl) {
-      if (r != nullptr) {
-        sums.resize(max(sums.size(), lvl));
-        sums[lvl - 1] += r->val;
-        dfs(r->left, lvl + 1);
-        dfs(r->right, lvl + 1);
-      }
+    void dfs(TreeNode* root,size_t level){
+        if(root){
+            sums.resize(max(sums.size(),level));
+            sums[level-1]+=root->val;
+            dfs(root->left,level+1);
+            dfs(root->right,level+1);
+        }
     }
-    int maxLevelSum(TreeNode* r) {
-      dfs(r, 1);
-      return distance(begin(sums), max_element(begin(sums), end(sums))) + 1;
+    int maxLevelSum(TreeNode* root) {
+        dfs(root,1);
+        return distance(begin(sums),max_element(begin(sums),end(sums)))+1;
     }
 };
 
