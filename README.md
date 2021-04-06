@@ -151,6 +151,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1491* | [Average Salary Excluding the Minimum and Maximum Salary](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/) | Easy | Array | [Solutions](Solutions/1491.%20Average%20Salary%20Excluding%20the%20Minimum%20and%20Maximum%20Salary) |
 1512* | [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/) | Easy | Count(HashMap)、Math | [Solutions](Solutions/1512.%20Number%20of%20Good%20Pairs) |
 1518# | [Water Bottles](https://leetcode.com/problems/water-bottles/) | Easy | Trick | [Solutions](Solutions/1518.%20Water%20Bottles) | [Note](Solutions/1518.%20Water%20Bottles/note.md)
+1525# | [Number of Good Ways to Split a String](https://leetcode.com/problems/number-of-good-ways-to-split-a-string/) | Medium | Sliding Window | [Solutions](Solutions/1525.%20Number%20of%20Good%20Ways%20to%20Split%20a%20String) | 
 1528# | [Shuffle String](https://leetcode.com/problems/shuffle-string/) | Easy | String | [Solutions](Solutions/1528.%20Shuffle%20String) | 
 1529# | [Bulb Switcher IV](https://leetcode.com/problems/bulb-switcher-iv/) | Medium | Trick、Greedy | [Solutions](Solutions/1529.%20Bulb%20Switcher%20IV) | [Note](Solutions/1529.%20Bulb%20Switcher%20IV/note.md)
 1534 | [Count Good Triplets](https://leetcode.com/problems/count-good-triplets/) | Easy | Operation | [Solutions](Solutions/1534.%20Count%20Good%20Triplets) |
