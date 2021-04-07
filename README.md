@@ -78,6 +78,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 780* | [Reaching Points](https://leetcode.com/problems/reaching-points/) | Hard | Modulo | [Solutions](Solutions/780.%20Reaching%20Points) | 
 786* | [K-th Smallest Prime Fraction](https://leetcode.com/problems/k-th-smallest-prime-fraction/) | Hard | Priority_Queue | [Solutions](Solutions/786.%20K-th%20Smallest%20Prime%20Fraction) | 
 797 | [All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/) | Medium | DAG、D&C、DFS | [Solutions](Solutions/797.%20All%20Paths%20From%20Source%20to%20Target) | [Note](Solutions/797.%20All%20Paths%20From%20Source%20to%20Target/note.md)
+807 | [Max Increase to Keep City Skyline](https://leetcode.com/problems/max-increase-to-keep-city-skyline/) | Medium | Graph | [Solutions](Solutions/807.%20Max%20Increase%20to%20Keep%20City%20Skyline) | 
 814 | [Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/) | Medium | D&C | [Solutions](Solutions/814.%20Binary%20Tree%20Pruning) | [Note](Solutions/814.%20Binary%20Tree%20Pruning/note.md)
 817* | [Linked List Components](https://leetcode.com/problems/linked-list-components/) | Medium | Linked List、HashMap | [Solutions](Solutions/817.%20Linked%20List%20Components) | 
 832 | [Flipping an Image](https://leetcode.com/problems/flipping-an-image/) | Easy | Operation | [Solutions](Solutions/832.%20Flipping%20an%20Image) | 
