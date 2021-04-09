@@ -50,7 +50,7 @@ public:
         if(root==nullptr)
         return;
         if(res.size()==depth)
-        res.push_back(vector<int>());
+            res.push_back(vector<int>());
         res[depth].push_back(root->val);
         dfs(root->left,depth+1);
         dfs(root->right,depth+1);
