@@ -10,16 +10,16 @@ class Solution:
         if not root:
             return res
         q.append(root)
-        while len(q)>0:
+        while q:
             sz=len(q)
             tmp=[]
             for i in range(sz):
                 if q[0].left:
                     q.append(q[0].left)
                 if q[0].right:
-                    q.append(q[1].right)
+                    q.append(q[0].right)
                 tmp.append(q[0].val)
-                q=q[1:]
+                q.pop(0)
             res.append(tmp)
         return res
             
