@@ -19,6 +19,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 47 | [Permutations II](https://leetcode.com/problems/permutations-ii/) | Medium | D&C、HashSet | [Solutions](Solutions/47.%20Permutations%20II) | [Note](Solutions/47.%20Permutations%20II/note.md)
 53* | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Easy | DP、D&C | [Solutions](Solutions/53.%20Maximum%20Subarray) | 
 56* | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Medium | Greedy | [Solutions](Solutions/56.%20Merge%20Intervals) | [Note](Solutions/56.%20Merge%20Intervals/note.md)
+58* | [Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | Easy | String | [Solutions](Solutions/58.%20Length%20of%20Last%20Word) | 
 66* | [Plus One](https://leetcode.com/problems/plus-one/) | Easy | Greedy、Array | [Solutions](Solutions/66.%20Plus%20One) | [Note](Solutions/66.%20Plus%20One/note.md)
 74 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | Medium | Binary Search、2DArray | [Solutions](Solutions/74.%20Search%20a%202D%20Matrix) | [Note](Solutions/74.%20Search%20a%202D%20Matrix/note.md)
 78* | [Subsets](https://leetcode.com/problems/subsets/) | Medium | D&C | [Solutions](Solutions/78.%20Subsets) | 
