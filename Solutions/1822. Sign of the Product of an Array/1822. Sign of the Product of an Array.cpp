@@ -11,3 +11,11 @@ public:
         return res;
     }
 };
+
+// 1 liner
+class Solution {
+public:
+    int arraySign(vector<int>& nums) {
+        return count(begin(nums),end(nums),0)?0:count_if(begin(nums),end(nums),[](int i){return i<0;})%2?-1:1;
+    }
+};
