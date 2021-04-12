@@ -1,9 +1,9 @@
-# LeetCode ![Travis](https://img.shields.io/badge/language-C%2B%2B-red) ![Travis](https://img.shields.io/badge/language-Java-yellow) ![Travis](https://img.shields.io/badge/language-Go-brightgreen) ![Travis](https://img.shields.io/badge/language-Python-blue)
+# :bowtie:LeetCode ![Travis](https://img.shields.io/badge/language-C%2B%2B-red) ![Travis](https://img.shields.io/badge/language-Java-yellow) ![Travis](https://img.shields.io/badge/language-Go-brightgreen) ![Travis](https://img.shields.io/badge/language-Python-blue)
 ###### Clicking with ctrl makes you open in a new tab(Github does not include the target attribute ,even if you use plain HTML,to let a Link open in a new tab)
 
-###### *: marks as only c++
-###### #: marks as no python、go
-###### !: marks as no go
+:point_right: * marks as only c++
+:point_right: # marks as no python、go
+:point_right: ! marks as no go
 
 No. | Title | Difficulty | Related Topics | Solution | Note
 ---|---|---|---|---|---|
