@@ -24,3 +24,22 @@ public:
         return res;
     }
 };
+
+class Solution {
+public:
+    int sumEvenGrandparent(TreeNode* root) {
+        int res=0;
+        if(!root)return res;
+        queue<array<TreeNode*,3>>> q;
+        // cur,parent,grandpa
+        q.push({root,nullptr,nullptr});
+        while(q.size()){
+            int qsz=q.size();
+            int cur=q.front();q.pop();
+            while(qsz--){
+                res+=cur[2] and cur[2]
+            }
+        }
+        return res;
+    }
+};
