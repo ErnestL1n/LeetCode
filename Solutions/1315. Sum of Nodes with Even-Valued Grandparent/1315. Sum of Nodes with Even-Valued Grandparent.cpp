@@ -25,19 +25,24 @@ public:
     }
 };
 
+//level order traversal
 class Solution {
 public:
     int sumEvenGrandparent(TreeNode* root) {
         int res=0;
         if(!root)return res;
-        queue<array<TreeNode*,3>>> q;
+        queue<array<TreeNode*,3>> q;
         // cur,parent,grandpa
         q.push({root,nullptr,nullptr});
         while(q.size()){
             int qsz=q.size();
-            int cur=q.front();q.pop();
             while(qsz--){
-                res+=cur[2] and cur[2]
+                auto treepair=q.front();q.pop();
+                res+=treepair[2] and treepair[2]->val%2==0?treepair[0]->val:0;
+                if(treepair[0]->left)
+                    q.push({treepair[0]->left,treepair[0],treepair[1]});
+                if(treepair[0]->right)
+                    q.push({treepair[0]->right,treepair[0],treepair[1]});
             }
         }
         return res;
