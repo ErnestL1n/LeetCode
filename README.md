@@ -76,6 +76,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 706# | [Design HashMap](https://leetcode.com/problems/design-hashmap/) | Easy | HashMap、Design | [Solutions](Solutions/706.%20Design%20HashMap) |
 740* | [Delete and Earn](https://leetcode.com/problems/delete-and-earn/) | Medium | DP | [Solutions](Solutions/740.%20Delete%20and%20Earn) |
 743 | [Network Delay Time](https://leetcode.com/problems/network-delay-time/) | Medium | Dijkstra(Priority_Queue)、Bellman-Ford | [Solutions](Solutions/743.%20Network%20Delay%20Time) | [Note](Solutions/743.%20Network%20Delay%20Time/note.md)
+766* | [Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/) | Easy | Array | [Solutions](Solutions/766.%20Toeplitz%20Matrix) | 
 771# | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | Easy | HashSet | [Solutions](https://github.com/ErnestL1n/LeetCode/tree/main/Solutions/771.%20Jewels%20and%20Stones) | 
 780* | [Reaching Points](https://leetcode.com/problems/reaching-points/) | Hard | Modulo | [Solutions](Solutions/780.%20Reaching%20Points) | 
 786* | [K-th Smallest Prime Fraction](https://leetcode.com/problems/k-th-smallest-prime-fraction/) | Hard | Priority_Queue | [Solutions](Solutions/786.%20K-th%20Smallest%20Prime%20Fraction) | 
