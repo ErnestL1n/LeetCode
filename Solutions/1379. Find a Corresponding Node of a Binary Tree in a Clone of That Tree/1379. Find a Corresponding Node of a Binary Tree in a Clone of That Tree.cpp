@@ -10,9 +10,12 @@
 
 class Solution {
 public:
-        TreeNode* getTargetCopy(TreeNode* orig, TreeNode* clone, TreeNode* targ) {
-      return orig == nullptr ? nullptr :
-        orig == targ ? clone : 
-          getTargetCopy(orig->left, clone->left, targ) ?: getTargetCopy(orig->right, clone->right, targ);
+    TreeNode* getTargetCopy(TreeNode* original, TreeNode* cloned, TreeNode* target) {
+        if(original==nullptr)
+            return nullptr;
+        if(original==target)
+            return cloned;
+        return getTargetCopy(original->left,cloned->left,target)?:
+        getTargetCopy(original->right,cloned->right,target);
     }
 };
