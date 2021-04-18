@@ -253,4 +253,5 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1817* | [Finding the Users Active Minutes](https://leetcode.com/problems/finding-the-users-active-minutes/) | Medium | HashMap、HashSet | [Solutions](Solutions/1817.%20Finding%20the%20Users%20Active%20Minutes) |
 1822* | [Sign of the Product of an Array](https://leetcode.com/problems/sign-of-the-product-of-an-array/) | Easy | Math | [Solutions](Solutions/1822.%20Sign%20of%20the%20Product%20of%20an%20Array) |
 1823* | [Find the Winner of the Circular Game](https://leetcode.com/problems/find-the-winner-of-the-circular-game/) | Medium | Trick、Game | [Solutions](Solutions/1823.%20Find%20the%20Winner%20of%20the%20Circular%20Game) |
+1832* | [Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram/) | Easy | Count | [Solutions](Solutions/1832.%20Check%20if%20the%20Sentence%20Is%20Pangram) |
 
