@@ -8,26 +8,25 @@
  */
 func pseudoPalindromicPaths (root *TreeNode) int {
     cnt:=make([]int,10)
-    odds,res:=0,0
-    dfs(root,&cnt,&odd,&res)
-    return res
+    return dfs(root,&cnt,0)
 }
-func dfs(root *TreeNode,cnt *[]int,odd,res *int) {
+func dfs(root *TreeNode,cnt *[]int,odds int) int{
+    res:=0
     if root!=nil{
         (*cnt)[root.Val]+=1
         if (*cnt)[root.Val]%2==1{
-            *(odd)+=1
+            odds+=1
         }else{
-            *(odd)-=1
+            odds-=1
         }
-        if root.Left==root.Right{
-            if *(odd)<2{
-                *(res)=1
+        if root.Left==nil &&root.Right==nil{
+            if odds<2{
+                res=1
             }else{
-                *(res)=0
+                res=0
             }
         }else{
-            res=dfs(root.Left,cnt)+dfs(root.Right,cnt)
+            res=dfs(root.Left,cnt,odds) + dfs(root.Right,cnt,odds) 
         }
         (*cnt)[root.Val]-=1
         if (*cnt)[root.Val]%2==1{
