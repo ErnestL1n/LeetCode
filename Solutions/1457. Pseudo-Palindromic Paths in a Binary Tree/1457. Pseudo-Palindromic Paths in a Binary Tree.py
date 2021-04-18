@@ -6,7 +6,7 @@
 #         self.right = right
 class Solution:
     cnt=[0]*10
-    def pseudoPalindromicPaths (self,root,odds=0,res=0) -> int:
+    def pseudoPalindromicPaths (self,root,odds=0) -> int:
         res=0
         if root:
             self.cnt[root.val]+=1
