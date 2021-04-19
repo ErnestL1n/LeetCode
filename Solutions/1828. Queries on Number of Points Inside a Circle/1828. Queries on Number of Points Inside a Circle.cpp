@@ -19,6 +19,7 @@ public:
     }
 };
 
+//optimize version
 class Solution {
 public:
     vector<int> countPoints(vector<vector<int>>& ps, vector<vector<int>>& queries) {
