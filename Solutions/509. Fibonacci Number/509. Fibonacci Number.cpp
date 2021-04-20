@@ -1,4 +1,4 @@
-//recursive
+//Recursive approach
 class Solution {
 public:
     int fib(int n) {
@@ -8,7 +8,7 @@ public:
     }
 };
 
-//dp
+//Bottom-Up Approach using Memoization
 class Solution {
 public:
     int fib(int n) {
