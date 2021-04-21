@@ -149,6 +149,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1387* | [Sort Integers by The Power Value](https://leetcode.com/problems/sort-integers-by-the-power-value/) | Medium | Priority_Queue | [Solutions](Solutions/1387.%20Sort%20Integers%20by%20The%20Power%20Value) |
 1351 | [Count Negative Numbers in a Sorted Matrix](https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/) | Easy | Math、Array | [Solutions](Solutions/1351.%20Count%20Negative%20Numbers%20in%20a%20Sorted%20Matrix) | [Note](Solutions/1351.%20Count%20Negative%20Numbers%20in%20a%20Sorted%20Matrix/note.md)
 1389* | [Create Target Array in the Given Order](https://leetcode.com/problems/create-target-array-in-the-given-order/) | Easy | Array(```vector::insert```) | [Solutions](Solutions/1389.%20Create%20Target%20Array%20in%20the%20Given%20Order) |
+1395# | [Count Number of Teams](https://leetcode.com/problems/count-number-of-teams/) | Medium | Count、Balance BST | [Solutions](Solutions/1395.%20Count%20Number%20of%20Team) |
 1402 | [Reducing Dishes](https://leetcode.com/problems/reducing-dishes/) | Hard | DP | [Solutions](Solutions/1402.%20Reducing%20Dishes) |
 1424* | [Diagonal Traverse II](https://leetcode.com/problems/diagonal-traverse-ii/) | Medium | Array、Iterator | [Solutions](Solutions/1424.%20Diagonal%20Traverse%20II) |
 1431* | [Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/) | Easy | Array | [Solutions](Solutions/1431.%20Kids%20With%20the%20Greatest%20Number%20of%20Candies) |
