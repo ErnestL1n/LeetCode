@@ -265,5 +265,6 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1829* | [Maximum XOR for Each Query](https://leetcode.com/problems/maximum-xor-for-each-query/) | Medium | XOR | [Solutions](Solutions/1829.%20Maximum%20XOR%20for%20Each%20Query) | [Note](Solutions/1829.%20Maximum%20XOR%20for%20Each%20Query/note.md)
 1832* | [Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram/) | Easy | Count | [Solutions](Solutions/1832.%20Check%20if%20the%20Sentence%20Is%20Pangram) |
 1833* | [Maximum Ice Cream Bars](https://leetcode.com/problems/maximum-ice-cream-bars/) | Medium(Easy) | Greedy | [Solutions](Solutions/1833.%20Maximum%20Ice%20Cream%20Bars) |
+1837* | [Sum of Digits in Base K](https://leetcode.com/problems/sum-of-digits-in-base-k/) | Easy | Math | [Solutions](Solutions/1837.%20Sum%20of%20Digits%20in%20Base%20K) |
 
 
