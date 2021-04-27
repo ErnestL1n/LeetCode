@@ -267,4 +267,5 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1832* | [Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram/) | Easy | Count | [Solutions](Solutions/1832.%20Check%20if%20the%20Sentence%20Is%20Pangram) |
 1833* | [Maximum Ice Cream Bars](https://leetcode.com/problems/maximum-ice-cream-bars/) | Medium(Easy) | Greedy | [Solutions](Solutions/1833.%20Maximum%20Ice%20Cream%20Bars) |
 1837* | [Sum of Digits in Base K](https://leetcode.com/problems/sum-of-digits-in-base-k/) | Easy | Math | [Solutions](Solutions/1837.%20Sum%20of%20Digits%20in%20Base%20K) |
+1838* | [Frequency of the Most Frequent Element](https://leetcode.com/problems/frequency-of-the-most-frequent-element/) | Medium(Hard) | Sliding Window、Greedy | [Solutions](Solutions/1838.%20Frequency%20of%20the%20Most%20Frequent%20Element) |
 1839* | [Longest Substring Of All Vowels in Order](https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/) | Medium | Sliding Window、String | [Solutions](Solutions/1839.%20Longest%20Substring%20Of%20All%20Vowels%20in%20Order) |
