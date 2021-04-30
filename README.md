@@ -171,7 +171,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1475* | [Final Prices With a Special Discount in a Shop](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/) | Easy | Stack | [Solutions](Solutions/1475.%20Final%20Prices%20With%20a%20Special%20Discount%20in%20a%20Shop) |
 1480* | [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) | Easy | Array、```std::partial_sum``` | [Solutions](Solutions/1480.%20Running%20Sum%20of%201d%20Array) |
 1491* | [Average Salary Excluding the Minimum and Maximum Salary](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/) | Easy | Array | [Solutions](Solutions/1491.%20Average%20Salary%20Excluding%20the%20Minimum%20and%20Maximum%20Salary) |
-1496* | [Path Crossing](https://leetcode.com/problems/path-crossing/) | Easy | HashSet、String | [Solutions](Solutions/1496.%20Path%20Crossing) |
+1496* | [Path Crossing](https://leetcode.com/problems/path-crossing/) | Easy | Set、String | [Solutions](Solutions/1496.%20Path%20Crossing) |
 1502# | [Can Make Arithmetic Progression From Sequence](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/) | Easy | Array、Sort | [Solutions](Solutions/1502.%20Can%20Make%20Arithmetic%20Progression%20From%20Sequence) |
 1512* | [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/) | Easy | Count(HashMap)、Math | [Solutions](Solutions/1512.%20Number%20of%20Good%20Pairs) |
 1518# | [Water Bottles](https://leetcode.com/problems/water-bottles/) | Easy | Trick | [Solutions](Solutions/1518.%20Water%20Bottles) | [Note](Solutions/1518.%20Water%20Bottles/note.md)
