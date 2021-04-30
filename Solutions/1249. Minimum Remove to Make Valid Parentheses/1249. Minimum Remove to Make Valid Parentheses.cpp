@@ -1,19 +1,23 @@
 class Solution {
 public:
-string minRemoveToMakeValid(string s) {
-      stack<int> st;
-      for (auto i = 0; i < s.size(); ++i) {
-        if (s[i] == '(') st.push(i);
-        if (s[i] == ')') {
-          if (!st.empty()) st.pop();
-          else s[i] = '*';
+    string minRemoveToMakeValid(string s) {
+        stack<int> stk;
+        //remove @ position
+        for(int i=0;i<s.size();++i){
+            if(s[i]=='(')
+                stk.push(i);
+            if(s[i]==')'){
+                if(stk.size())
+                    stk.pop();
+                else
+                    s[i]='@';
+            }
         }
-      }
-      while (!st.empty()) {
-        s[st.top()] = '*';
-        st.pop();
-      }
-      s.erase(remove(s.begin(), s.end(), '*'), s.end());
-      return s;
+        while(stk.size()){
+            s[stk.top()]='@';
+            stk.pop();
+        }
+        s.erase(remove(s.begin(),s.end(),'@'),s.end());
+        return s;
     }
 };
