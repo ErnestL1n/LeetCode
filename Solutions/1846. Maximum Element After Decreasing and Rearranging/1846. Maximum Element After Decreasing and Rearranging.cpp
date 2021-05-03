@@ -14,3 +14,16 @@ public:
         return res;
     }
 };
+
+
+//simplify
+class Solution {
+public:
+    int maximumElementAfterDecrementingAndRearranging(vector<int>& arr) {
+        int res=0;
+        sort(arr.begin(),arr.end());
+        for(int& a:arr)
+            res=min(res+1,a);
+        return res;
+    }
+};
