@@ -10,7 +10,7 @@ public:
     }
     void foo(VVI& res,VI& path,VI& c,int t,int begin){
         if(t<=0){
-            if(!t){
+            if(t==0){
                 res.push_back(path);
                 return;
             }
