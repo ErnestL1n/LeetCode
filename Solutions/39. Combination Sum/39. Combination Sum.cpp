@@ -2,10 +2,10 @@ typedef vector<vector<int>> VVI;
 typedef vector<int> VI;
 class Solution {
 public:
-    vector<vector<int>> combinationSum(vector<int>& c, int t) {
+    vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
         VVI res;
         VI path;
-        foo(res,path,c,t,0);
+        foo(res,path,candidates,target,0);
         return res;
     }
     void foo(VVI& res,VI& path,VI& c,int t,int begin){
