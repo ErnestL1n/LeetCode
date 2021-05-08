@@ -14,7 +14,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | Linked List、Two Pointers | [Solutions](Solutions/19.%20Remove%20Nth%20Node%20From%20End%20of%20List) | 
 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | Easy | Binary Search | [Solutions](Solutions/35.%20Search%20Insert%20Position) | [Note](Solutions/35.%20Search%20Insert%20Position/note.md)
 39 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | Medium | D&C(Backtracking) | [Solutions](Solutions/39.%20Combination%20Sum) | 
-40* | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | Medium | D&C(Backtracking) | [Solutions](Solutions/40.%20Combination%20Sum%20II) | 
+40 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | Medium | D&C(Backtracking)、Trick | [Solutions](Solutions/40.%20Combination%20Sum%20II) | 
 46 | [Permutations](https://leetcode.com/problems/permutations/) | Medium | D&C | [Solutions](Solutions/46.%20Permutations) | [Note](Solutions/46.%20Permutations/note.md)
 47 | [Permutations II](https://leetcode.com/problems/permutations-ii/) | Medium | D&C、HashSet | [Solutions](Solutions/47.%20Permutations%20II) | [Note](Solutions/47.%20Permutations%20II/note.md)
 53* | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Easy | DP、D&C | [Solutions](Solutions/53.%20Maximum%20Subarray) | 
