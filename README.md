@@ -278,3 +278,4 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1845* | [Seat Reservation Manager](https://leetcode.com/problems/seat-reservation-manager/) | Medium | Priority_Queue、Set | [Solutions](Solutions/1845.%20Seat%20Reservation%20Manager) |
 1846* | [Maximum Element After Decreasing and Rearranging](https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/) | Medium | Greedy、Sort | [Solutions](Solutions/1846.%20Maximum%20Element%20After%20Decreasing%20and%20Rearranging) |
 1848* | [Minimum Distance to the Target Element](https://leetcode.com/problems/minimum-distance-to-the-target-element/) | Easy | Array | [Solutions](Solutions/1848.%20Minimum%20Distance%20to%20the%20Target%20Element) |
+1854* | [Maximum Population Year](https://leetcode.com/problems/maximum-population-year/) | Easy | Count | [Solutions](Solutions/1854.%20Maximum%20Population%20Year) |
