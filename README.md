@@ -279,3 +279,4 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1846* | [Maximum Element After Decreasing and Rearranging](https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/) | Medium | Greedy、Sort | [Solutions](Solutions/1846.%20Maximum%20Element%20After%20Decreasing%20and%20Rearranging) |
 1848* | [Minimum Distance to the Target Element](https://leetcode.com/problems/minimum-distance-to-the-target-element/) | Easy | Array | [Solutions](Solutions/1848.%20Minimum%20Distance%20to%20the%20Target%20Element) |
 1854* | [Maximum Population Year](https://leetcode.com/problems/maximum-population-year/) | Easy | Count | [Solutions](Solutions/1854.%20Maximum%20Population%20Year) |
+1855* | [Maximum Distance Between a Pair of Values](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/) | Medium | Two Pointers、Binary Search、Segment tree(RMQ) | [Solutions](Solutions/1855.%20Maximum%20Distance%20Between%20a%20Pair%20of%20Values) |
