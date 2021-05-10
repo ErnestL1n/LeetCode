@@ -174,6 +174,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1491* | [Average Salary Excluding the Minimum and Maximum Salary](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/) | Easy | Array | [Solutions](Solutions/1491.%20Average%20Salary%20Excluding%20the%20Minimum%20and%20Maximum%20Salary) |
 1496* | [Path Crossing](https://leetcode.com/problems/path-crossing/) | Easy | Set、String | [Solutions](Solutions/1496.%20Path%20Crossing) |
 1502# | [Can Make Arithmetic Progression From Sequence](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/) | Easy | Array、Sort | [Solutions](Solutions/1502.%20Can%20Make%20Arithmetic%20Progression%20From%20Sequence) |
+1504* | [Count Submatrices With All Ones](https://leetcode.com/problems/count-submatrices-with-all-ones/) | Medium | DP | [Solutions](Solutions/1504.%20Count%20Submatrices%20With%20All%20Ones) |
 1512* | [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/) | Easy | Count(HashMap)、Math | [Solutions](Solutions/1512.%20Number%20of%20Good%20Pairs) |
 1518# | [Water Bottles](https://leetcode.com/problems/water-bottles/) | Easy | Trick | [Solutions](Solutions/1518.%20Water%20Bottles) | [Note](Solutions/1518.%20Water%20Bottles/note.md)
 1523 | [Count Odd Numbers in an Interval Range](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/) | Easy | Math | [Solutions](Solutions/1523.%20Count%20Odd%20Numbers%20in%20an%20Interval%20Range) |
