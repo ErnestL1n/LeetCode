@@ -17,7 +17,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 40 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | Medium | D&C(Backtracking)、Trick | [Solutions](Solutions/40.%20Combination%20Sum%20II) | 
 46 | [Permutations](https://leetcode.com/problems/permutations/) | Medium | D&C | [Solutions](Solutions/46.%20Permutations) | [Note](Solutions/46.%20Permutations/note.md)
 47 | [Permutations II](https://leetcode.com/problems/permutations-ii/) | Medium | D&C、HashSet | [Solutions](Solutions/47.%20Permutations%20II) | [Note](Solutions/47.%20Permutations%20II/note.md)
-53* | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Easy | DP、D&C | [Solutions](Solutions/53.%20Maximum%20Subarray) | 
+53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Easy | DP、D&C | [Solutions](Solutions/53.%20Maximum%20Subarray) | 
 56* | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Medium | Greedy | [Solutions](Solutions/56.%20Merge%20Intervals) | [Note](Solutions/56.%20Merge%20Intervals/note.md)
 58* | [Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | Easy | String | [Solutions](Solutions/58.%20Length%20of%20Last%20Word) | 
 66* | [Plus One](https://leetcode.com/problems/plus-one/) | Easy | Greedy、Array | [Solutions](Solutions/66.%20Plus%20One) | [Note](Solutions/66.%20Plus%20One/note.md)
