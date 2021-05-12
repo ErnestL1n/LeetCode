@@ -5,7 +5,9 @@ func subsets(nums []int) [][]int {
     return res
 }
 func foo(nums []int,res *[][]int,tmp []int,begin int){
-    (*res)=append(*res,tmp)
+    t:=make([]int,len(tmp))
+    copy(t,tmp)
+    (*res)=append(*res,t)
     for i:=begin;i<len(nums);i+=1{
         tmp=append(tmp,nums[i])
         foo(nums,res,tmp,i+1)
