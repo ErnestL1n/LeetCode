@@ -98,7 +98,8 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 890* | [Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern/) | Medium | HashMap(Vector) | [Solutions](Solutions/890.%20Find%20and%20Replace%20Pattern) | 
 897# | [Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/) | Easy(Medium) | DFS、D&C、Stack | [Solutions](Solutions/897.%20Increasing%20Order%20Search%20Tree) |
 905# | [Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/) | Easy | Two Pointers | [Solutions](Solutions/905.%20Sort%20Array%20By%20Parity) |
-908 | [Smallest Range I](https://leetcode.com/problems/smallest-range-i/) | Easy | Greedy trick | [Solutions](Solutions/908.%20Smallest%20Range%20I) |
+908 | [Smallest Range I](https://leetcode.com/problems/smallest-range-i/) | Easy | Greedy、Trick | [Solutions](Solutions/908.%20Smallest%20Range%20I) |
+910 | [Smallest Range II](https://leetcode.com/problems/smallest-range-ii/) | Medium | Greedy、Trick、Sliding Window | [Solutions](Solutions/910.%20Smallest%20Range%20II) |
 921# | [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) | Medium | Greedy | [Solutions](Solutions/921.%20Minimum%20Add%20to%20Make%20Parentheses%20Valid) |
 938# | [Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/) | Easy | BST、Stack | [Solutions](Solutions/938.%20Range%20Sum%20of%20BST) |
 942# | [DI String Match](https://leetcode.com/problems/di-string-match/) | Easy | Two Pointers | [Solutions](Solutions/942.%20DI%20String%20Match) |
