@@ -286,4 +286,4 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1854* | [Maximum Population Year](https://leetcode.com/problems/maximum-population-year/) | Easy | Count | [Solutions](Solutions/1854.%20Maximum%20Population%20Year) |
 1855* | [Maximum Distance Between a Pair of Values](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/) | Medium | Two Pointers、Binary Search、Segment tree(RMQ) | [Solutions](Solutions/1855.%20Maximum%20Distance%20Between%20a%20Pair%20of%20Values) |
 1859* | [Sorting the Sentence](https://leetcode.com/problems/sorting-the-sentence/) | Easy | Map、String | [Solutions](1859.%20Sorting%20the%20Sentence) |
-1860* | [Incremental Memory Leak](https://leetcode.com/problems/maximum-population-year/) | Easy | Count | [Solutions](Solutions/1854.%20Maximum%20Population%20Year) |
+1860* | [Incremental Memory Leak](https://leetcode.com/problems/incremental-memory-leak/) | Medium | Math | [Solutions](Solutions/1860.%20Incremental%20Memory%20Leak) |
