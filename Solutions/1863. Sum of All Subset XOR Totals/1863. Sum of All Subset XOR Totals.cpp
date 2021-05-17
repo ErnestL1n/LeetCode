@@ -28,3 +28,16 @@ public:
         }
     }
 };
+
+
+//trick
+class Solution {
+public:
+    int subsetXORSum(vector<int>& nums) {
+        int n=nums.size(),res=0;
+        for(int i=0;i<n;++i)
+            res|=nums[i];
+        res*=pow(2,n-1);
+        return res;
+    }
+};
