@@ -19,3 +19,19 @@ public:
         return j;
     }
 };
+
+
+class Solution {
+public:
+    vector<int> memLeak(int m1, int m2) {
+        int cnt=1;
+        while(max(m1,m2)>=cnt){
+            if(m1>=m2)
+                m1-=cnt;
+            else
+                m2-=cnt;
+            ++cnt;
+        }
+        return {cnt,m1,m2};
+    }
+};
