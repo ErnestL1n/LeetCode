@@ -1,3 +1,4 @@
+#brute force
 class Solution:
     def subsetXORSum(self, nums: List[int]) -> int:
         def subset(nums,s,tmp,begin):
@@ -15,7 +16,9 @@ class Solution:
                 tmp^=n
             res+=tmp
         return res
-        
+     
+
+#trick        
 class Solution:
     def subsetXORSum(self, nums: List[int]) -> int:
         res,l=0,len(nums)
