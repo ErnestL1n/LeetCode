@@ -7,7 +7,6 @@ class Solution:
                 tmp.append(nums[i])
                 subset(nums,s,tmp,i+1)
                 tmp.pop()
-            return 
         s,tmp,res=[],[],0
         subset(nums,s,tmp,0)
         for x in s:
