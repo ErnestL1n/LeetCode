@@ -16,3 +16,10 @@ class Solution:
             res+=tmp
         return res
         
+class Solution:
+    def subsetXORSum(self, nums: List[int]) -> int:
+        res,l=0,len(nums)
+        for n in nums:
+            res|=n
+        res*=pow(2,l-1)
+        return res
