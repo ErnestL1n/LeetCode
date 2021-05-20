@@ -122,6 +122,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1051 | [Height Checker](https://leetcode.com/problems/height-checker/) | Easy | Counting Sort | [Solutions](Solutions/1051.%20Height%20Checker) | 
 1052* | [Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner/) | Medium | Sliding Window、Array | [Solutions](Solutions/1052.%20Grumpy%20Bookstore%20Owner) | [Note](Solutions/1052.%20Grumpy%20Bookstore%20Owner/note.md) 
 1071* | [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) | Easy | String | [Solutions](Solutions/1071.%20Greatest%20Common%20Divisor%20of%20Strings) |
+1078* | [Occurrences After Bigram](https://leetcode.com/problems/occurrences-after-bigram/) | Easy | String | [Solutions](Solutions/1078.%20Occurrences%20After%20Bigram) |
 1104# | [Path In Zigzag Labelled Binary Tree](https://leetcode.com/problems/path-in-zigzag-labelled-binary-tree/) | Medium | Trick、Tree | [Solutions](Solutions/1104.%20Path%20In%20Zigzag%20Labelled%20Binary%20Tree) | [Note](Solutions/1104.%20Path%20In%20Zigzag%20Labelled%20Binary%20Tree/note.md)
 1108! | [Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address/) | Easy | String | [Solutions](Solutions/1108.%20Defanging%20an%20IP%20Address) | [Note](Solutions/1108.%20Defanging%20an%20IP%20Address/note.md)
 1122# | [Relative Sort Array](https://leetcode.com/problems/relative-sort-array/) | Medium | Array | [Solutions](Solutions/1122.%20Relative%20Sort%20Array) |
