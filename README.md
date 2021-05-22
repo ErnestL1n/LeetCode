@@ -86,6 +86,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 766* | [Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/) | Easy | Array | [Solutions](Solutions/766.%20Toeplitz%20Matrix) | 
 771# | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | Easy | HashSet | [Solutions](https://github.com/ErnestL1n/LeetCode/tree/main/Solutions/771.%20Jewels%20and%20Stones) | 
 780* | [Reaching Points](https://leetcode.com/problems/reaching-points/) | Hard | Modulo | [Solutions](Solutions/780.%20Reaching%20Points) | 
+783* | [Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/) | Easy | BST | [Solutions](Solutions/783.%20Minimum%20Distance%20Between%20BST%20Nodes) | 
 786* | [K-th Smallest Prime Fraction](https://leetcode.com/problems/k-th-smallest-prime-fraction/) | Hard | Priority_Queue | [Solutions](Solutions/786.%20K-th%20Smallest%20Prime%20Fraction) | 
 795 | [Number of Subarrays with Bounded Maximum](https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/) | Medium | DP | [Solutions](Solutions/795.%20Number%20of%20Subarrays%20with%20Bounded%20Maximum) | [Note](Solutions/795.%20Number%20of%20Subarrays%20with%20Bounded%20Maximum/note.md)
 797 | [All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/) | Medium | DAG、D&C、DFS | [Solutions](Solutions/797.%20All%20Paths%20From%20Source%20to%20Target) | [Note](Solutions/797.%20All%20Paths%20From%20Source%20to%20Target/note.md)
