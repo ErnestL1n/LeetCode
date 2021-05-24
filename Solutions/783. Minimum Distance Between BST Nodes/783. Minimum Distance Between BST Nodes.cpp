@@ -55,3 +55,23 @@ public:
         return res;
     }
 };
+
+
+class Solution {
+public:
+    set<int> s;
+    int res=INT_MAX;
+    int minDiffInBST(TreeNode* root) {
+        dfs(root);
+        for(auto i=s.begin(),j=next(i,1);j!=s.end();++i,++j)
+            res=min(*j-*i,res);
+        return res;
+    }
+    void dfs(TreeNode* root){
+        if(!root)
+            return;
+        s.insert(root->val);
+        dfs(root->left);
+        dfs(root->right);
+    }
+};
