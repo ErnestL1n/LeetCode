@@ -30,36 +30,28 @@ public:
 };
 
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
 class Solution {
 public:
     set<int> s;
     int res=INT_MAX;
-    int getMinimumDifference(TreeNode* root) {
+    int minDiffInBST(TreeNode* root) {
         if(!root)
             return res;
-        if(s.size()){
-            //larger close
-            auto p=s.find(root->val);
-            if(p!=nullptr)
-                res=min(res,*(p+1)-root->val);
-            //smaller close
-            if(s.find(root->val)-1)
-                res=min(res,root->val-*(s.find(root->val)-1));
+        if(!s.empty()){
+            auto lw=s.lower_bound(root->val);
+            if(lw!=s.begin()){
+                --lw;
+                if(*lw<root->val){
+                    res=min(res,root->val-*lw);
+                }
+            }
+            auto up=s.upper_bound(root->val);
+            if(*up>root->val)
+                res=min(res,*up-root->val);
         }
         s.insert(root->val);
-        getMinimumDifference(root->left);
-        getMinimumDifference(root->right);
+        minDiffInBST(root->left);
+        minDiffInBST(root->right);
         return res;
     }
 };
