@@ -29,7 +29,9 @@ public:
     }
 };
 
-
+//for normal binary tree
+//every time we can use O(lgN) time to lookup for the nearest values
+//total:O(NlgN)
 class Solution {
 public:
     set<int> s;
@@ -56,7 +58,9 @@ public:
     }
 };
 
-
+//for normal binary tree
+//much faster than above
+//O(N)
 class Solution {
 public:
     set<int> s;
