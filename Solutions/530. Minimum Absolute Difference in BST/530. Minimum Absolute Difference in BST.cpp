@@ -9,6 +9,9 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
+//same as leetcode 783. Just see it
+
 class Solution {
 public:
     int res=INT_MAX;
