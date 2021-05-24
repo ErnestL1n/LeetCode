@@ -48,7 +48,7 @@ public:
     }
     void dfs(TreeNode* root,int depth){
         if(root==nullptr)
-        return;
+            return;
         if(res.size()==depth)
             res.push_back(vector<int>());
         res[depth].push_back(root->val);
