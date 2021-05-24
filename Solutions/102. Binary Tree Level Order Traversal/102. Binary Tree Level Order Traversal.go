@@ -31,3 +31,21 @@ func levelOrder(root *TreeNode) [][]int {
     }
     return res
 }
+
+//DFS
+func levelOrder(root *TreeNode) [][]int {
+    var res [][]int
+    dfs(&res,root,0)
+    return res
+}
+func dfs(res *[][]int,root *TreeNode,depth int) {
+    if root==nil{
+        return 
+    }
+    if len(*res)==depth{
+        (*res)=append(*res,[]int{})
+    }
+    (*res)[depth]=append((*res)[depth],root.Val)
+    dfs(res,root.Left,depth+1)
+    dfs(res,root.Right,depth+1)
+}
