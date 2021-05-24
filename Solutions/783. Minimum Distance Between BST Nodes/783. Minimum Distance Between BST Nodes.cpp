@@ -9,6 +9,7 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+//brute force
 class Solution {
 public:
     vector<int> values;
@@ -26,6 +27,24 @@ public:
             dfs(root->left);
             dfs(root->right);
         }
+    }
+};
+
+
+//inorder for BST ,best for this question setting
+class Solution {
+public:
+    int res=INT_MAX;
+    TreeNode* prev=nullptr;
+    int minDiffInBST(TreeNode* root) {
+        if(!root)
+            return res;
+        minDiffInBST(root->left);
+        if(prev)
+            res=min(res,root->val-prev->val);
+        prev=root;
+        minDiffInBST(root->right);
+        return res;
     }
 };
 
