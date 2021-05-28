@@ -52,7 +52,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 258* | [Add Digits](https://leetcode.com/problems/add-digits/) | Easy | Trick | [Solutions](Solutions/258.%20Add%20Digits) | [Note](Solutions/258.%20Add%20Digits/note.md)
 268* | [Missing Number](https://leetcode.com/problems/missing-number/) | Easy | XOR、Math | [Solutions](Solutions/268.%20Missing%20Number) | 
 278* | [First Bad Version](https://leetcode.com/problems/first-bad-version/) | Easy | Binary Search | [Solutions](Solutions/278.%20First%20Bad%20Version) | 
-283* | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | Easy | Two Pointers | [Solutions](Solutions/283.%20Move%20Zeroes) | 
+283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | Easy | Two Pointers | [Solutions](Solutions/283.%20Move%20Zeroes) | 
 290* | [Word Pattern](https://leetcode.com/problems/word-pattern/) | Easy | HashMap | [Solutions](Solutions/290.%20Word%20Pattern) | 
 310* | [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/) | Medium | Graph(Adjacency Matrix)、BFS | [Solutions](Solutions/310.%20Minimum%20Height%20Trees) | [Note](Solutions/310.%20Minimum%20Height%20Trees/note.md)
 312 | [Burst Balloons](https://leetcode.com/problems/burst-balloons/) | Hard | DP | [Solutions](Solutions/312.%20Burst%20Balloons) | [Note](Solutions/312.%20Burst%20Balloons/note.md)
