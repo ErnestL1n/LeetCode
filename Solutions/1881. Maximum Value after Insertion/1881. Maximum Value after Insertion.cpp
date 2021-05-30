@@ -35,3 +35,26 @@ public:
     }
 };
 
+
+//right answer
+//The main idea is, if there is a negative sign. You wanted to make the value to be as minimum as possible when you ignore the negative sign.
+class Solution {
+public:
+    string maxValue(string n, int x) {
+        bool neg=false;
+        if(n[0]=='-')
+            neg=true,n=n.substr(1);
+        if(neg){
+            for(int i=0;i<n.size();++i)
+                if(x<n[i]-'0')
+                    return "-"+n.substr(0,i)+to_string(x)+n.substr(i);
+            return "-"+n+to_string(x);
+        }else{
+            for(int i=0;i<n.size();++i)
+                if(x>n[i]-'0')
+                    return n.substr(0,i)+to_string(x)+n.substr(i);
+            return n+to_string(x);
+        }
+        return n;
+    }
+};
