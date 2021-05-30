@@ -300,4 +300,4 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1860* | [Incremental Memory Leak](https://leetcode.com/problems/incremental-memory-leak/) | Medium | Math | [Solutions](Solutions/1860.%20Incremental%20Memory%20Leak) |
 1863 | [Sum of All Subset XOR Totals](https://leetcode.com/problems/sum-of-all-subset-xor-totals/) | Easy | Bit Manipulation、XOR、Trick | [Solutions](Solutions/1863.%20Sum%20of%20All%20Subset%20XOR%20Totals) |
 1876* | [Substrings of Size Three with Distinct Characters](https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/) | Easy | String | [Solutions](Solutions/1876.%20Substrings%20of%20Size%20Three%20with%20Distinct%20Characters) |
-
+1877* | [Minimize Maximum Pair Sum in Array](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/) | Medium | Sort | [Solutions](Solutions/1877.%20Minimize%20Maximum%20Pair%20Sum%20in%20Array) |
