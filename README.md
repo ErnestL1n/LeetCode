@@ -39,7 +39,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | Medium | DP | [Solutions](Solutions/152.%20Maximum%20Product%20Subarray) |
 155* | [Min Stack](https://leetcode.com/problems/min-stack/) | Easy | Stack、Design | [Solutions](Solutions/155.%20Min%20Stack) |
 187# | [Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/) | Medium | HashSet | [Solutions](Solutions/187.%20Repeated%20DNA%20Sequences) |
-191* | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | Easy | Bit Manipulation | [Solutions](Solutions/191.%20Number%20of%201%20Bits) | [Note](Solutions/191.%20Number%20of%201%20Bits/note.md)
+191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | Easy | Bit Manipulation | [Solutions](Solutions/191.%20Number%20of%201%20Bits) | [Note](Solutions/191.%20Number%20of%201%20Bits/note.md)
 198* | [House Robber](https://leetcode.com/problems/house-robber/) | Medium | DP | [Solutions](Solutions/198.%20House%20Robber) | [Note](Solutions/198.%20House%20Robber/note.md)
 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | Linked-List | [Solutions](Solutions/206.%20Reverse%20Linked%20List) |
 207# | [Course Schedule](https://leetcode.com/problems/course-schedule/) | Medium | Topological Sort(DAG、Adjacency Matrix)、DFS、BFS | [Solutions](Solutions/207.%20Course%20Schedule) |
