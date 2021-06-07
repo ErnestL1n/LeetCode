@@ -303,6 +303,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1877* | [Minimize Maximum Pair Sum in Array](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/) | Medium | Sort | [Solutions](Solutions/1877.%20Minimize%20Maximum%20Pair%20Sum%20in%20Array) |
 1880* | [Check if Word Equals Summation of Two Words](https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/) | Easy | String | [Solutions](Solutions/1880.%20Check%20if%20Word%20Equals%20Summation%20of%20Two%20Words) |
 1881* | [Maximum Value after Insertion](https://leetcode.com/problems/maximum-value-after-insertion/) | Medium | Greedy、String(to Int=>OverFlow) | [Solutions](Solutions/1881.%20Maximum%20Value%20after%20Insertion) |
+1882* | [Process Tasks Using Servers](https://leetcode.com/problems/process-tasks-using-servers/) | Medium | Priority_Queue | [Solutions](Solutions/1882.%20Process%20Tasks%20Using%20Servers) |
 1886 | [Determine Whether Matrix Can Be Obtained By Rotation](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/) | Easy | Array | [Solutions](Solutions/1886.%20Determine%20Whether%20Matrix%20Can%20Be%20Obtained%20By%20Rotation) |
 1887 | [Reduction Operations to Make the Array Elements Equal](https://leetcode.com/problems/reduction-operations-to-make-the-array-elements-equal/) | Medium | Sort、Greedy | [Solutions](Solutions/1887.%20Reduction%20Operations%20to%20Make%20the%20Array%20Elements%20Equal) |
 
