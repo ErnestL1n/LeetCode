@@ -21,3 +21,35 @@ public:
         return res;
     }
 };
+
+//clear version
+typedef array<int,3> ar;
+class Solution {
+public:
+    vector<int> assignTasks(vector<int>& servers, vector<int>& tasks) {
+        vector<int> res;
+        priority_queue<ar,vector<ar>,greater<ar>> freeServers,usedServers;
+        for(int i=0;i<servers.size();++i)
+            freeServers.push({servers[i],i,0});
+        for(int i=0;i<tasks.size();++i){
+            int t=tasks[i];
+            //wait
+            while(usedServers.size()>0 and usedServers.top()[0]<=i){
+                auto [time,w,index]=usedServers.top();usedServers.pop();
+                freeServers.push({w,index,time});
+            }
+            if(freeServers.empty()){
+                auto [time,w,index]=usedServers.top();usedServers.pop();
+                res.push_back(index);
+                time+=t;
+                usedServers.push({time,w,index});
+            }else{
+                auto [w,index,time]=freeServers.top();freeServers.pop();
+                res.push_back(index);
+                time=i+t;
+                usedServers.push({time,w,index});
+            }
+        }
+        return res;
+    }
+};
