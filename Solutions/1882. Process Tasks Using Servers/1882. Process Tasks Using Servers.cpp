@@ -28,26 +28,26 @@ class Solution {
 public:
     vector<int> assignTasks(vector<int>& servers, vector<int>& tasks) {
         vector<int> res;
-        priority_queue<ar,vector<ar>,greater<ar>> freeServers,usedServers;
+        priority_queue<ar,vector<ar>,greater<ar>> avail,busy;
         for(int i=0;i<servers.size();++i)
-            freeServers.push({servers[i],i,0});
+            avail.push({servers[i],i,0});
         for(int i=0;i<tasks.size();++i){
             int t=tasks[i];
             //try to free servers
-            while(usedServers.size()>0 and usedServers.top()[0]<=i){
-                auto [time,w,index]=usedServers.top();usedServers.pop();
-                freeServers.push({w,index,time});
+            while(busy.size()>0 and busy.top()[0]<=i){
+                auto [time,weight,index]=busy.top();busy.pop();
+                avail.push({weight,index,time});
             }
-            if(freeServers.empty()){
-                auto [time,w,index]=usedServers.top();usedServers.pop();
+            if(avail.size()==0){
+                auto [time,weight,index]=busy.top();busy.pop();
                 res.push_back(index);
                 time+=t;
-                usedServers.push({time,w,index});
+                busy.push({time,weight,index});
             }else{
-                auto [w,index,time]=freeServers.top();freeServers.pop();
+                auto [weight,index,time]=avail.top();avail.pop();
                 res.push_back(index);
                 time=i+t;
-                usedServers.push({time,w,index});
+                busy.push({time,weight,index});
             }
         }
         return res;
