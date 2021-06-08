@@ -34,3 +34,22 @@ public:
         return res;
     }
 };
+
+//priority queue
+class Solution {
+public:
+    int minSetSize(vector<int>& arr) {
+        int res=0,n=arr.size(),cnt=0;
+        unordered_map<int,int> m;
+        priority_queue<int> pq;
+        for(const auto& a:arr)
+            ++m[a];
+        for(const auto& p:m)
+            pq.push(p.second);
+        while(cnt<n/2){
+            ++res;
+            cnt+=pq.top();pq.pop();
+        }
+        return res;
+    }
+};
