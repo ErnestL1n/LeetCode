@@ -33,7 +33,7 @@ public:
             freeServers.push({servers[i],i,0});
         for(int i=0;i<tasks.size();++i){
             int t=tasks[i];
-            //free servers
+            //try to free servers
             while(usedServers.size()>0 and usedServers.top()[0]<=i){
                 auto [time,w,index]=usedServers.top();usedServers.pop();
                 freeServers.push({w,index,time});
