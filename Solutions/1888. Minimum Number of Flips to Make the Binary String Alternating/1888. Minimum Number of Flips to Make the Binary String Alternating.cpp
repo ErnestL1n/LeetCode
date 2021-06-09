@@ -1,3 +1,35 @@
+// if your solution needs to compare all N chars every time for each shift, the time complexity will be O(N^2), which will give you TLE
+// TLE version
+class Solution {
+public:
+    int minFlips(string s) {
+        int n=s.size(),res=INT_MAX;
+        s+=s;
+        string s1,s2;
+        for(int i=0;i<s.size();++i){
+            if(i%2==0)
+                s1+='0',s2+='1';
+            else
+                s1+='1',s2+='0';
+        }
+        int i=0,j;
+        for(;i<=n;++i){
+            j=i;
+            int cnt=0,cnt1=0,cnt2=0;
+            while(++cnt<=n){
+                if(s[j]!=s1[j])
+                    ++cnt1;
+                if(s[j]!=s2[j])
+                    ++cnt2;
+                ++j;
+            }
+            res=min({cnt1,cnt2,res});
+        }
+        return res;
+    }
+};
+
+//ac version
 class Solution {
 public:
     int minFlips(string s) {
