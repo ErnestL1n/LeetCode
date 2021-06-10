@@ -62,3 +62,32 @@ public:
         return res;
     }
 };
+
+
+// space and time optimization
+class Solution {
+public:
+    int minFlips(string s) {
+        int n=s.size(),cnt1=0,cnt2=0,res=n;
+        for(int i=0;i<2*n;++i){
+            char c=s[i%n];
+            char cc=i%2?'1':'0';
+            if(c!=cc)
+                ++cnt1;
+            else
+                ++cnt2;
+            if(i>=n){
+                int idx=i-n;
+                cc=idx%2?'1':'0';
+                if(s[idx]!=cc)
+                    --cnt1;
+                else
+                    --cnt2;
+            }
+            if(i>=n-1){
+                res=min({res,cnt1,cnt2});
+            }
+        }
+        return res;
+    }
+};
