@@ -4,7 +4,7 @@ class Solution {
         if(n<=1)
             return arr;
         for(int i=n-1;i>0;--i){
-            if(arr[i]>arr[i-1]){
+            if(arr[i]<arr[i-1]){
                 idx=i-1;
                 break;
             }
