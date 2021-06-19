@@ -6,10 +6,19 @@ func coinChange(coins []int, amount int) int {
     dp[0]=0
     for i:=1;i<=amount;i+=1{
         for _,c:=range(coins){
-            if c<=i:
+            if c<=i{
                 dp[i]=min(dp[i],dp[i-c]+1)
+            }
         }
     }
-
-    return -1 if dp[amount]>amount else dp[amount]
+    if dp[amount]>amount{
+        return -1
+    }
+    return dp[amount]
+}
+func min(i,j int) int{
+    if i<j{
+        return i
+    }
+    return j
 }
