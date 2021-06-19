@@ -6,4 +6,4 @@ class Solution:
             for c in coins:
                 if c<=i:
                     dp[i]=min(dp[i],dp[i-c]+1)
-        return -1 if dp[amount]>amount else dp[amount];
+        return -1 if dp[amount]>amount else dp[amount]
