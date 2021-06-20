@@ -56,7 +56,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 290* | [Word Pattern](https://leetcode.com/problems/word-pattern/) | Easy | HashMap | [Solutions](Solutions/290.%20Word%20Pattern) | 
 310* | [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/) | Medium | Graph(Adjacency Matrix)、BFS | [Solutions](Solutions/310.%20Minimum%20Height%20Trees) | [Note](Solutions/310.%20Minimum%20Height%20Trees/note.md)
 312 | [Burst Balloons](https://leetcode.com/problems/burst-balloons/) | Hard | DP | [Solutions](Solutions/312.%20Burst%20Balloons) | [Note](Solutions/312.%20Burst%20Balloons/note.md)
-322* | [Coin Change](https://leetcode.com/problems/coin-change/) | Medium | DP | [Solutions](Solutions/322.%20Coin%20Change) | 
+322 | [Coin Change](https://leetcode.com/problems/coin-change/) | Medium | DP | [Solutions](Solutions/322.%20Coin%20Change) | 
 344 | [Reverse String](https://leetcode.com/problems/reverse-string/) | Easy | Two Pointers | [Solutions](Solutions/344.%20Reverse%20String) | 
 410 | [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/) | Hard | Binary | [Solutions](Solutions/410.%20Split%20Array%20Largest%20Sum) |
 435* | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | Medium | Greedy | [Solutions](Solutions/435.%20Non-overlapping%20Intervals) |
@@ -313,3 +313,4 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1888 | [Minimum Number of Flips to Make the Binary String Alternating](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium | Sliding Window | [Solutions](Solutions/1888.%20Minimum%20Number%20of%20Flips%20to%20Make%20the%20Binary%20String%20Alternating) |
 1893 | [Check if All the Integers in a Range Are Covered](https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/) | Medium | Count、Greedy | [Solutions](Solutions/1893.%20Check%20if%20All%20the%20Integers%20in%20a%20Range%20Are%20Covered) |
 1897 | [Redistribute Characters to Make All Strings Equal](https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/) | Medium | Count、String | [Solutions](Solutions/1897.%20Redistribute%20Characters%20to%20Make%20All%20Strings%20Equal) |
+1903* | [Largest Odd Number in String](https://leetcode.com/problems/largest-odd-number-in-string/) | Easy | Greedy、```string::find_last_of``` | [Solutions](Solutions/1903.%20Largest%20Odd%20Number%20in%20String) |
