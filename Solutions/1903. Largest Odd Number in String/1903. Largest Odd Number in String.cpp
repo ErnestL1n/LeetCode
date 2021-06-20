@@ -27,3 +27,11 @@ public:
         return s.substr(0,len);
     }
 };
+
+//1-liner
+class Solution {
+public:
+    string largestOddNumber(string s) {
+        return s.substr(0, s.find_last_of("13579") + 1);
+    }
+};
