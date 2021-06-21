@@ -1,3 +1,27 @@
+//DFS
+class Solution {
+public:
+    int countSubIslands(vector<vector<int>>& g1, vector<vector<int>>& g2) {
+        int res=0,m=g1.size(),n=g1[0].size();
+        for(int i=0;i<m;++i)
+            for(int j=0;j<n;++j)
+                if(g2[i][j]==1)
+                    res+=dfs(g1,g2,i,j);
+        return res;
+    }
+    int dfs(vector<vector<int>>& g1, vector<vector<int>>& g2,int i,int j){
+        int res=1,m=g1.size(),n=g1[0].size();
+        if(i<0 or j<0 or i>=m or j>=n or g2[i][j]==0)
+            return res;
+        g2[i][j]=0;
+        res&=dfs(g1,g2,i+1,j);
+        res&=dfs(g1,g2,i,j+1);
+        res&=dfs(g1,g2,i-1,j);
+        res&=dfs(g1,g2,i,j-1);
+        return res&g1[i][j];
+    }
+};
+
 //BFS
 class Solution {
 public:
