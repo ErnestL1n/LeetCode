@@ -73,6 +73,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 509# | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | Easy | D&C、DP | [Solutions](Solutions/509.%20Fibonacci%20Number) | [Note](Solutions/509.%20Fibonacci%20Number/note.md)
 530* | [Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/) | Easy | Same as 783 | [Solutions](Solutions/530.%20Minimum%20Absolute%20Difference%20in%20BST) | [Note](Solutions/530.%20Minimum%20Absolute%20Difference%20in%20BST/note.md)
 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/) | Medium | BFS、DP | [Solutions](Solutions/542.%2001%20Matrix) | [Note](Solutions/542.%2001%20Matrix/note.md)
+576* | [Out of Boundary Paths](https://leetcode.com/problems/out-of-boundary-paths/) | Medium | DP | [Solutions](Solutions/576.%20Out%20of%20Boundary%20Paths) |
 589# | [N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/) | Easy | DFS、D&C、Stack | [Solutions](Solutions/589.%20N-ary%20Tree%20Preorder%20Traversal) |
 617# | [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/) | Easy | DFS、BFS、D&C | [Solutions](Solutions/617.%20Merge%20Two%20Binary%20Trees) | [Note](Solutions/617.%20Merge%20Two%20Binary%20Trees/note.md)
 653 | [Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) | Easy | HashSet、Binary Search | [Solutions](Solutions/653.%20Two%20Sum%20IV%20-%20Input%20is%20a%20BST) | [Note](Solutions/653.%20Two%20Sum%20IV%20-%20Input%20is%20a%20BST/note.md)
