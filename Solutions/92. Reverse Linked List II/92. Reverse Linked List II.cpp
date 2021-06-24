@@ -31,3 +31,28 @@ public:
         return newhead->next;
     }
 };
+
+
+//recursive
+class Solution {
+public:
+    ListNode* reverseBetween(ListNode* head, int left, int right) {
+        if(left==1){
+            return reverseN(head,right-left+1);
+        }
+        head->next=reverseBetween(head->next,left-1,right-1);
+        return head;
+    }
+    //reverse first n nodes
+    ListNode* look=nullptr;
+    ListNode* reverseN(ListNode* head,int n){
+        if(n==1){
+            look=head->next;
+            return head;
+        }
+        ListNode* last=reverseN(head->next,n-1);
+        head->next->next=head;
+        head->next=look;
+        return last;
+    }
+};
