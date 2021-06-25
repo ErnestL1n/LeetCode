@@ -1,13 +1,13 @@
 class Solution {
 public:
     vector<int> findRedundantConnection(vector<vector<int>>& edges) {
-        vector<int> parent(1001,-1);
+        vector<int> ds(1001,-1);
         for(const auto& e:edges){
             int f=e[0],t=e[1];
-            if(find(parent,f)==find(parent,t))
+            if(find(ds,f)==find(ds,t))
                 return e;
             else
-                parent[find(parent,f)]=find(parent,t);
+                ds[find(ds,f)]=find(ds,t);
         }
         return {-1,-1};
     }
