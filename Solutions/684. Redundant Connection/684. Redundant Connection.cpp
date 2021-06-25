@@ -1,8 +1,8 @@
 class Solution {
 public:
     vector<int> findRedundantConnection(vector<vector<int>>& edges) {
-        vector<int> parent(2001);
-        for(int i=0;i<2001;++i)
+        vector<int> parent(1001);
+        for(int i=0;i<1001;++i)
             parent[i]=i;
         for(const auto& e:edges){
             int f=e[0],t=e[1];
