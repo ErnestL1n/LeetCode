@@ -317,7 +317,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1888 | [Minimum Number of Flips to Make the Binary String Alternating](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium | Sliding Window | [Solutions](Solutions/1888.%20Minimum%20Number%20of%20Flips%20to%20Make%20the%20Binary%20String%20Alternating) |
 1893 | [Check if All the Integers in a Range Are Covered](https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/) | Medium | Count、Greedy | [Solutions](Solutions/1893.%20Check%20if%20All%20the%20Integers%20in%20a%20Range%20Are%20Covered) |
 1897 | [Redistribute Characters to Make All Strings Equal](https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/) | Medium | Count、String | [Solutions](Solutions/1897.%20Redistribute%20Characters%20to%20Make%20All%20Strings%20Equal) |
-1899* | [Merge Triplets to Form Target Triplet](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/) | Medium | Greedy | [Solutions](Solutions/1899.%20Merge%20Triplets%20to%20Form%20Target%20Triplet) |
+1899 | [Merge Triplets to Form Target Triplet](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/) | Medium | Greedy | [Solutions](Solutions/1899.%20Merge%20Triplets%20to%20Form%20Target%20Triplet) |
 1903* | [Largest Odd Number in String](https://leetcode.com/problems/largest-odd-number-in-string/) | Easy | Greedy、```string::find_last_of``` | [Solutions](Solutions/1903.%20Largest%20Odd%20Number%20in%20String) |
 1905* | [Count Sub Islands](https://leetcode.com/problems/count-sub-islands/) | Medium | Graph、BFS、DFS | [Solutions](Solutions/1905.%20Count%20Sub%20Islands) |
 
