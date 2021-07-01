@@ -26,6 +26,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 74 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | Medium | Binary Search、2DArray | [Solutions](Solutions/74.%20Search%20a%202D%20Matrix) | [Note](Solutions/74.%20Search%20a%202D%20Matrix/note.md)
 78 | [Subsets](https://leetcode.com/problems/subsets/) | Medium | D&C | [Solutions](Solutions/78.%20Subsets) | 
 83* | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | Easy | Linked-List | [Solutions](Solutions/83.%20Remove%20Duplicates%20from%20Sorted%20List) | 
+89* | [Gray Code](https://leetcode.com/problems/gray-code/) | Medium | Bit Manipulation | [Solutions](Solutions/89.%20Gray%20Code) | 
 90* | [Subsets II](https://leetcode.com/problems/subsets-ii/) | Medium | D&C | [Solutions](Solutions/90.%20Subsets%20II) | 
 92 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | Medium | Linked-List | [Solutions](Solutions/92.%20Reverse%20Linked%20List%20II) | [Note](Solutions/92.%20Reverse%20Linked%20List%20II/note.md)
 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Medium | D&C、Stack | [Solutions](Solutions/94.%20Binary%20Tree%20Inorder%20Traversal) | [Note](Solutions/94.%20Binary%20Tree%20Inorder%20Traversal/note.md)
