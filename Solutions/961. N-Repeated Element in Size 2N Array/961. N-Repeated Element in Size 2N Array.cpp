@@ -9,6 +9,18 @@ public:
     }
 };
 
+
+class Solution {
+public:
+    int repeatedNTimes(vector<int>& nums) {
+        for(int i=2;i<nums.size();++i)
+            if(nums[i]==nums[i-1] or nums[i]==nums[i-2])
+                return nums[i];
+        return nums[0];
+    }
+};
+
+
 class Solution {
 public:
         int repeatedNTimes(vector<int>& A, int i = 0, int j = 0) {
