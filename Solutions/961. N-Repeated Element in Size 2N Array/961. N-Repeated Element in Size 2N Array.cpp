@@ -1,10 +1,10 @@
 class Solution {
 public:
-    int repeatedNTimes(vector<int>& A) {
+    int repeatedNTimes(vector<int>& nums) {
         int cnt[10000]={};
-        for(int a:A)
-            if(cnt[a]++==1)
-                return a;
+        for(const auto& n:nums)
+            if(++cnt[n]==2)
+                return n;
         return -1;
     }
 };
