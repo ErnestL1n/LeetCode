@@ -38,3 +38,19 @@ public:
         return vector<int>(arr.begin()+lo,arr.begin()+lo+k);
     }
 };
+
+//Two pointers solution
+class Solution {
+public:
+    vector<int> findClosestElements(vector<int>& arr, int k, int x) {
+        int lo=0,hi=arr.size()-1;
+        while(lo+k<=hi){
+            if(abs(arr[lo]-x)>abs(arr[hi]-x))
+                ++lo;
+            else
+                --hi;
+        }
+        //break,lo~hi must contain exactly k elements
+        return vector<int>(arr.begin()+lo,arr.begin()+hi+1);
+    }
+};
