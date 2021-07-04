@@ -325,4 +325,4 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1899 | [Merge Triplets to Form Target Triplet](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/) | Medium | Greedy | [Solutions](Solutions/1899.%20Merge%20Triplets%20to%20Form%20Target%20Triplet) |
 1903* | [Largest Odd Number in String](https://leetcode.com/problems/largest-odd-number-in-string/) | Easy | Greedy、```string::find_last_of``` | [Solutions](Solutions/1903.%20Largest%20Odd%20Number%20in%20String) |
 1905* | [Count Sub Islands](https://leetcode.com/problems/count-sub-islands/) | Medium | Graph、BFS、DFS | [Solutions](Solutions/1905.%20Count%20Sub%20Islands) |
-
+1920* | [Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/) | Easy | Array | [Solutions](Solutions/1920.%20Build%20Array%20from%20Permutation) |
