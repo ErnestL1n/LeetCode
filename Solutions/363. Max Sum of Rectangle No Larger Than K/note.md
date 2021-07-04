@@ -1,0 +1,2 @@
+1. [Maximum Sum Rectangular Submatrix in Matrix dynamic programming/2D kadane](https://youtu.be/yCQN096CwWM)
+2. [Given an array of integers A and an integer k, find a subarray that contains the largest sum, subject to a constraint that the sum is less than k?](https://www.quora.com/Given-an-array-of-integers-A-and-an-integer-k-find-a-subarray-that-contains-the-largest-sum-subject-to-a-constraint-that-the-sum-is-less-than-k)
