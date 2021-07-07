@@ -25,3 +25,24 @@ public:
 
 
 //binary search
+class Solution {
+public:
+    int kthSmallest(vector<vector<int>>& mat, int k) {
+        int m=mat.size(),n=mat[0].size();
+        int lo=mat[0][0],hi=mat[m-1][n-1]+1;
+        while(lo<hi){
+            int mid=lo+(hi-lo)/2;
+            int cnt=0,j=n-1;
+            for(int i=0;i<m;++i){
+                while(j>=0 and mat[i][j]>mid)
+                    --j;
+                cnt+=(j+1);
+            }
+            if(cnt<k)
+                lo=mid+1;
+            else
+                hi=mid;
+        }
+        return lo;
+    }
+};
