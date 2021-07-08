@@ -1,25 +1,21 @@
 //priority queue
-typedef pair<int,pair<int,int>> pr;
 class Solution {
 public:
-    int kthSmallest(vector<vector<int>>& mat, int k) {   
-        int n=mat.size();
-        priority_queue<pr,vector<pr>,greater<pr>> pq;
-        for(int i=0;i<n and i<k;++i)
-            pq.push({mat[i][0],{i,0}});
-        int cnt=0,res=0;
-        while(pq.size()){
+    int kthSmallest(vector<vector<int>>& mat, int k) {
+        int m=mat.size(),n=mat[0].size();
+        priority_queue<array<int,3>,vector<array<int,3>>,greater<array<int,3>>> pq;
+        //put elements of row 0 into pq
+        for(int j=0;j<n;++j)
+            pq.push({mat[0][j],0,j});
+        //k-1 times
+        while(--k){
             auto cur=pq.top();pq.pop();
-            res=cur.first;
-            if(++cnt==k)
-                break;
-            ++cur.second.second;
-            if(n>cur.second.second){
-                cur.first=mat[cur.second.first][cur.second.second];
-                pq.push(cur);
-            }
+            //in the last row
+            if(cur[1]==m-1)
+                continue;
+            pq.push({mat[cur[1]+1][cur[2]],cur[1]+1,cur[2]});
         }
-        return res;
+        return pq.top()[0];
     }
 };
 
