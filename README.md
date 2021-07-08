@@ -93,6 +93,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 704 | [Binary Search](https://leetcode.com/problems/binary-search/) | Easy | Binary Search | [Solutions](Solutions/704.%20Binary%20Search) |
 705 | [Design HashSet](https://leetcode.com/problems/design-hashset/) | Easy | HashSet、BitSet、Design | [Solutions](Solutions/705.%20Design%20HashSet) |
 706# | [Design HashMap](https://leetcode.com/problems/design-hashmap/) | Easy | HashMap、Design | [Solutions](Solutions/706.%20Design%20HashMap) |
+718* | [Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray/) | Medium | DP | [Solutions](Solutions/718.%20Maximum%20Length%20of%20Repeated%20Subarray) |
 740* | [Delete and Earn](https://leetcode.com/problems/delete-and-earn/) | Medium | DP | [Solutions](Solutions/740.%20Delete%20and%20Earn) |
 743 | [Network Delay Time](https://leetcode.com/problems/network-delay-time/) | Medium | Dijkstra(Priority_Queue)、Bellman-Ford | [Solutions](Solutions/743.%20Network%20Delay%20Time) | [Note](Solutions/743.%20Network%20Delay%20Time/note.md)
 766* | [Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/) | Easy | Array | [Solutions](Solutions/766.%20Toeplitz%20Matrix) | 
