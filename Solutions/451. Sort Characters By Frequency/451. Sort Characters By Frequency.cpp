@@ -23,6 +23,7 @@ public:
 //using priority queue
 class foo{
 public:
+    //always seem priority queue a reverse order
     bool operator()(pair<char,int>& a,pair<char,int>& b){
         return a.second<b.second;
     }
