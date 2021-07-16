@@ -46,3 +46,35 @@ public:
         return res;
     }
 };
+
+//maintain the same order as original string if they have same freqency
+typedef pair<char,pair<int,int>> pr;
+class foo{
+public:
+    //always seem priority queue a reverse order
+    bool operator()(const pr& a,const pr& b){
+        return a.second.first==b.second.first?a.second.second>b.second.second:a.second.first<b.second.first;
+    }
+};
+class Solution {
+public:
+    string frequencySort(string s) {
+        unordered_map<char,pair<int,int>> m;
+        for(int i=0;i<s.size();++i){
+            if(m.find(s[i])!=m.end())
+                m[s[i]]={++m[s[i]].first,m[s[i]].second};
+            else
+                m[s[i]]={1,i};  
+        }
+        priority_queue<pr,vector<pr>,foo> pq;
+        for(const auto& [k,v]:m)
+            pq.push({k,{v.first,v.second}});
+        string res="";
+        while(pq.size()){
+            auto cur=pq.top();pq.pop();
+            while(cur.second.first--)
+                res+=cur.first;
+        }
+        return res;
+    }
+};
