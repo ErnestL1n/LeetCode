@@ -19,6 +19,7 @@ public:
 typedef pair<int,int> pr;
 class Solution {
 public:
+    //always seem priority queue a reverse order
     struct cmp{
         bool operator()(const pr& a,const pr& b){
             return a.first!=b.first?a.first>b.first:a.second>b.second;
