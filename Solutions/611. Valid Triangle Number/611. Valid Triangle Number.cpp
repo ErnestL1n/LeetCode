@@ -7,6 +7,7 @@ public:
             int lo=0,hi=i-1;
             while(lo<hi){
                 if(nums[lo]+nums[hi]>nums[i]){
+                    //then lo~hi-1、hi、i are valid
                     res+=hi-lo;
                     --hi;
                 }else
