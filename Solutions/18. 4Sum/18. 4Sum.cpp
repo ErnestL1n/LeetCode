@@ -1,11 +1,11 @@
 //general solution for N>=2
 class Solution {
 public:
-    vector<vector<int>> threeSum(vector<int>& nums, int target=0) {
+    vector<vector<int>> fourSum(vector<int>& nums, int target) {
         sort(nums.begin(),nums.end());
         vector<vector<int>> res;
         vector<int> tmp;
-        foo(nums,target,3,0,nums.size()-1,tmp,res);
+        foo(nums,target,4,0,nums.size()-1,tmp,res);
         return res;
     }
     void foo(vector<int>& nums,int target,int N,int l,int r,vector<int>& tmp,vector<vector<int>>& res){
