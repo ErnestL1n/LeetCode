@@ -12,7 +12,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | Two Pointers、HashMap、Sliding Window  | [Solutions](Solutions/3.%20Longest%20Substring%20Without%20Repeating%20Characters) | 
 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | Easy | Math、Trick | [Solutions](Solutions/9.%20Palindrome%20Number) | 
 15* | [3Sum](https://leetcode.com/problems/3sum/) | Medium | Two Pointers、Sort、Array | [Solutions](Solutions/15.%203Sum) | 
-18* | [4Sum](https://leetcode.com/problems/4sum/) | Medium | Two Pointers、Sort、Array | [Solutions](Solutions/1/.%204Sum) | 
+18* | [4Sum](https://leetcode.com/problems/4sum/) | Medium | Two Pointers、Sort、Array | [Solutions](Solutions/18.%204Sum) | 
 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | Linked List、Two Pointers | [Solutions](Solutions/19.%20Remove%20Nth%20Node%20From%20End%20of%20List) | 
 21* | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | Linked List | [Solutions](Solutions/21.%20Merge%20Two%20Sorted%20Lists) | 
 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | Easy | Binary Search | [Solutions](Solutions/35.%20Search%20Insert%20Position) | [Note](Solutions/35.%20Search%20Insert%20Position/note.md)
