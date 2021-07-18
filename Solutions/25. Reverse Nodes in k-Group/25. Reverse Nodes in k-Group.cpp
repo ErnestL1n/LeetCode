@@ -14,7 +14,7 @@ public:
     ListNode* reverseKGroup(ListNode* head, int k) {
         ListNode* cur=head;
         int cnt=0;
-        while(cur and cnt!=k)
+        while(cur and cnt<k)
             cur=cur->next,++cnt;
         if(cnt==k){
             cur=reverseKGroup(cur,k);
@@ -51,15 +51,16 @@ public:
             while(r and cnt<k)
                 r=r->next,++cnt;
             if(cnt==k){
-                ListNode *pre=l,*cur=r;
+                ListNode *cur=l,*pre=r;
                 for(int i=0;i<k;++i){
-                    auto tmp=pre->next;
-                    pre->next=cur;
-                    cur=pre;
-                    pre=tmp;
+                    auto tmp=cur->next;
+                    cur->next=pre;
+                    pre=cur;
+                    cur=tmp;
                 }
-                jump->next=cur;
-                jump=l;
+                //after the for loop ,cur is on the next group first element
+                jump->next=pre;  //jump next points to the last element in previous one,for example for example 1 connect to 4
+                jump=l;          //jump : used to connect last node in previous k-group to first node in following k-group  
                 l=r;
             }else{
                 return dummy->next;
