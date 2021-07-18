@@ -15,6 +15,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 18* | [4Sum](https://leetcode.com/problems/4sum/) | Medium | Two Pointers、Sort、Array | [Solutions](Solutions/18.%204Sum) | 
 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | Linked List、Two Pointers | [Solutions](Solutions/19.%20Remove%20Nth%20Node%20From%20End%20of%20List) | 
 21* | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | Linked List | [Solutions](Solutions/21.%20Merge%20Two%20Sorted%20Lists) | 
+25* | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | Hard | Linked List | [Solutions](Solutions/25.%20Reverse%20Nodes%20in%20k-Group) | 
 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | Easy | Binary Search | [Solutions](Solutions/35.%20Search%20Insert%20Position) | [Note](Solutions/35.%20Search%20Insert%20Position/note.md)
 39 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | Medium | D&C(Backtracking) | [Solutions](Solutions/39.%20Combination%20Sum) | 
 40 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | Medium | D&C(Backtracking)、Trick | [Solutions](Solutions/40.%20Combination%20Sum%20II) | 
