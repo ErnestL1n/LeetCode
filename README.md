@@ -132,6 +132,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 905# | [Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/) | Easy | Two Pointers | [Solutions](Solutions/905.%20Sort%20Array%20By%20Parity) |
 908 | [Smallest Range I](https://leetcode.com/problems/smallest-range-i/) | Easy | Greedy、Trick | [Solutions](Solutions/908.%20Smallest%20Range%20I) |
 910 | [Smallest Range II](https://leetcode.com/problems/smallest-range-ii/) | Medium | Greedy、Trick、Sliding Window | [Solutions](Solutions/910.%20Smallest%20Range%20II) |
+915* | [Partition Array into Disjoint Intervals](https://leetcode.com/problems/partition-array-into-disjoint-intervals/) | Medium | Two Pointers | [Solutions](Solutions/915.%20Partition%20Array%20into%20Disjoint%20Intervals) |
 921# | [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) | Medium | Greedy | [Solutions](Solutions/921.%20Minimum%20Add%20to%20Make%20Parentheses%20Valid) |
 938# | [Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/) | Easy | BST、Stack | [Solutions](Solutions/938.%20Range%20Sum%20of%20BST) |
 942# | [DI String Match](https://leetcode.com/problems/di-string-match/) | Easy | Two Pointers | [Solutions](Solutions/942.%20DI%20String%20Match) |
