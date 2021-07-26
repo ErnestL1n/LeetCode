@@ -35,10 +35,10 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 92 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | Medium | Linked-List | [Solutions](Solutions/92.%20Reverse%20Linked%20List%20II) | [Note](Solutions/92.%20Reverse%20Linked%20List%20II/note.md)
 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Medium | D&C、Stack | [Solutions](Solutions/94.%20Binary%20Tree%20Inorder%20Traversal) | [Note](Solutions/94.%20Binary%20Tree%20Inorder%20Traversal/note.md)
 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Easy | Tree、DFS、BFS、Level-Order | [Solutions](Solutions/102.%20Binary%20Tree%20Level%20Order%20Traversal) | [Note](Solutions/102.%20Binary%20Tree%20Level%20Order%20Traversal/note.md)
-105* | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium | Tree、DFS、BFS | 
+105* | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium | Tree、DFS、BFS | N/A
 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | DP、Array | [Solutions](Solutions/121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock) |
 122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | Easy | DP、Math | [Solutions](Solutions/122.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20II) |
-126* | [Word Ladder II](https://leetcode.com/problems/word-ladder-ii/) | Hard | HashSet | 
+126* | [Word Ladder II](https://leetcode.com/problems/word-ladder-ii/) | Hard | HashSet | N/A
 128! | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Hard | HashSet(Set)、Union-Find | [Solutions](Solutions/128.%20Longest%20Consecutive%20Sequence) |
 129* | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | Medium | BFS、D&C | [Solutions](Solutions/129.%20Sum%20Root%20to%20Leaf%20Numbers)
 131* | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | Medium | DP、DFS | [Solutions](Solutions/131.%20Palindrome%20Partitioning)
@@ -94,7 +94,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 566* | [Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix/) | Easy | 2DArray | [Solutions](Solutions/566.%20Reshape%20the%20Matrix) |
 576* | [Out of Boundary Paths](https://leetcode.com/problems/out-of-boundary-paths/) | Medium | DP | [Solutions](Solutions/576.%20Out%20of%20Boundary%20Paths) |
 589# | [N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/) | Easy | DFS、D&C、Stack | [Solutions](Solutions/589.%20N-ary%20Tree%20Preorder%20Traversal) |
-600* | [Non-negative Integers without Consecutive Ones](https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/) | Hard | DP | 
+600* | [Non-negative Integers without Consecutive Ones](https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/) | Hard | DP | N/A
 611* | [Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/) | Medium | Three Pointers | [Solutions](Solutions/611.%20Valid%20Triangle%20Number) |
 617# | [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/) | Easy | DFS、BFS、D&C | [Solutions](Solutions/617.%20Merge%20Two%20Binary%20Trees) | [Note](Solutions/617.%20Merge%20Two%20Binary%20Trees/note.md)
 653 | [Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) | Easy | HashSet、Binary Search | [Solutions](Solutions/653.%20Two%20Sum%20IV%20-%20Input%20is%20a%20BST) | [Note](Solutions/653.%20Two%20Sum%20IV%20-%20Input%20is%20a%20BST/note.md)
