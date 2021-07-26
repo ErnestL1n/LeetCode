@@ -9,6 +9,8 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
+//BFS
 class Node {
 public:
     TreeNode* root;
@@ -40,6 +42,24 @@ public:
                 q.push(new Node(rightchild,mid+1,cur->ridx));
             }
         }
+        return root;
+    }
+};
+
+
+//Recursive
+class Solution {
+public:
+    TreeNode* sortedArrayToBST(vector<int>& nums) {
+        return foo(nums,0,nums.size()-1);
+    }
+    TreeNode* foo(vector<int>& nums,int lo,int hi){
+        if(lo>hi)
+            return nullptr;
+        int mid=(lo+hi)/2;
+        TreeNode* root=new TreeNode(nums[mid]);
+        root->left=foo(nums,lo,mid-1);
+        root->right=foo(nums,mid+1,hi);
         return root;
     }
 };
