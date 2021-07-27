@@ -41,7 +41,9 @@ public:
     }
 };
 
-//
+// [1000000000, 1000000000, 1000000000, 1000000000]
+// 0
+// test case pass
 class Solution {
 public:
     vector<vector<int>> fourSum(vector<int>& nums, int target) {
@@ -85,3 +87,7 @@ public:
         }
     }
 };
+
+//[2,1,0,-1]
+//2
+// test case failed
