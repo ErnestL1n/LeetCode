@@ -41,8 +41,12 @@ public:
     }
 };
 
+
+// above code failed to this test case
 // [1000000000, 1000000000, 1000000000, 1000000000]
 // 0
+
+// below is AC solution
 // test case pass
 class Solution {
 public:
@@ -54,8 +58,7 @@ public:
         return res;
     }
     void foo(vector<int>& nums,int target,int N,int l,int r,vector<vector<int>>& res,vector<int>& tmp){
-        long m_ax=(long)nums[r]*N,m_in=(long)nums[l]*N;
-        if(r-l+1<N or N<2 or m_ax<target or m_in>target)
+        if(r-l+1<N or N<2 or (long)nums[l]*N>target or (long)nums[r]*N<target)
             return;
         if(N==2){
             while(l<r){
@@ -87,7 +90,3 @@ public:
         }
     }
 };
-
-//[2,1,0,-1]
-//2
-// test case failed
