@@ -58,6 +58,7 @@ public:
         return res;
     }
     void foo(vector<int>& nums,int target,int N,int l,int r,vector<vector<int>>& res,vector<int>& tmp){
+        //modified
         if(r-l+1<N or N<2 or (long)nums[l]*N>target or (long)nums[r]*N<target)
             return;
         if(N==2){
