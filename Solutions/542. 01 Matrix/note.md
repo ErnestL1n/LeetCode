@@ -6,4 +6,4 @@
 	```min(matrix[i][j],min(downcell,rightcell))``` to compute the final result
 	
 2. In BFS solution
-	we use the current location,which is ```matrix[i][j]```, to visit neighbor ```matrix[r][c]``` in order to find out whether it is fit to update the value
+	we use position '0' to update nearest neighbors
