@@ -1,31 +1,28 @@
 //BFS
-typedef pair<int,int> pr;
 class Solution {
 public:
-    vector<vector<int>> updateMatrix(vector<vector<int>>& matrix) {
-        int m=matrix.size(),n=matrix[0].size();
-        queue<pr> q;
-        for(int i=0;i<m;++i)
-            for(int j=0;j<n;++j){
-                if(matrix[i][j]==0)
-                    q.push(make_pair(i,j));
-                else
-                    matrix[i][j]=INT_MAX;
+    vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
+        int n=mat.size(),m=mat[0].size();
+        queue<pair<int,int>> q;
+        for(int i=0;i<n;++i)
+            for(int j=0;j<m;++j){
+                if(mat[i][j]==0){
+                    q.push({i,j});
+                }else
+                    mat[i][j]=INT_MAX;
             }
-        vector<pr> dirs={{1,0},{0,1},{-1,0},{0,-1}};
-        while(!q.empty()){
-            auto cell=q.front();
-            q.pop();
-            for(auto& [i,j]:dirs){
-                int r=i+cell.first;
-                int c=j+cell.second;
-                if(r<0||r>=m||c<0||c>=n||matrix[r][c]<=1+matrix[cell.first][cell.second])
+        vector<pair<int,int>> dirs={{-1,0},{1,0},{0,1},{0,-1}};
+        while(q.size()){
+            auto [i,j]=q.front();q.pop();
+            for(const auto& [a,b]:dirs){
+                int x=a+i,y=b+j;
+                if(x<0 or x>=n or y<0 or y>=m or mat[x][y]<=1+mat[i][j])
                     continue;
-                q.push(make_pair(r,c));
-                matrix[r][c]=matrix[cell.first][cell.second]+1;
+                q.push({x,y});
+                mat[x][y]=mat[i][j]+1;
             }
         }
-        return matrix;
+        return mat;
     }
 };
 
