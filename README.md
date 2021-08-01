@@ -127,6 +127,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 807 | [Max Increase to Keep City Skyline](https://leetcode.com/problems/max-increase-to-keep-city-skyline/) | Medium | Graph | [Solutions](Solutions/807.%20Max%20Increase%20to%20Keep%20City%20Skyline) | 
 814 | [Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/) | Medium | D&C | [Solutions](Solutions/814.%20Binary%20Tree%20Pruning) | [Note](Solutions/814.%20Binary%20Tree%20Pruning/note.md)
 817* | [Linked List Components](https://leetcode.com/problems/linked-list-components/) | Medium | Linked List、HashMap | [Solutions](Solutions/817.%20Linked%20List%20Components) | 
+827* | [Making A Large Island](https://leetcode.com/problems/making-a-large-island/) | Hard | HashSet | N/A | 
 832 | [Flipping an Image](https://leetcode.com/problems/flipping-an-image/) | Easy | Operation | [Solutions](Solutions/832.%20Flipping%20an%20Image) | 
 838* | [Push Dominoes](https://leetcode.com/problems/push-dominoes/) | Medium | Two Pointers | 
 859* | [Buddy Strings](https://leetcode.com/problems/buddy-strings/) | Easy | String、HashSet | [Solutions](Solutions/859.%20Buddy%20Strings) | [Note](Solutions/859.%20Buddy%20Strings/note.md) 
