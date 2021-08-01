@@ -357,3 +357,4 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1920* | [Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/) | Easy | Array | [Solutions](Solutions/1920.%20Build%20Array%20from%20Permutation) |
 1925* | [Count Square Sum Triples](https://leetcode.com/problems/count-square-sum-triples/) | Easy | Math、Trick | [Solutions](Solutions/1925.%20Count%20Square%20Sum%20Triples) | [Note](Solutions/1925.%20Count%20Square%20Sum%20Triples/note.md)
 1929 | [Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/) | Easy | Array | [Solutions](Solutions/1929.%20Concatenation%20of%20Array) |
+1954* | [Minimum Garden Perimeter to Collect Enough Apples](https://leetcode.com/problems/minimum-garden-perimeter-to-collect-enough-apples/) | Medium | Math、Binary Search | [Solutions](Solutions/1954.%20Minimum%20Garden%20Perimeter%20to%20Collect%20Enough%20Apples) |
