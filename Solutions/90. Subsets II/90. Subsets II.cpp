@@ -19,3 +19,21 @@ public:
         }
     }
 };
+
+//iterative solution
+class Solution {
+public:
+    vector<vector<int>> subsetsWithDup(vector<int>& nums) {
+        sort(nums.begin(),nums.end());
+        vector<vector<int>> res={{}};
+        for(int i=0,n=0;i<nums.size();++i){
+            int st=i!=0 and nums[i]==nums[i-1]?n:0;
+            n=res.size();
+            for(;st<n;++st){
+                res.push_back(res[st]);
+                res.back().push_back(nums[i]);
+            }
+        }
+        return res;
+    }
+};
