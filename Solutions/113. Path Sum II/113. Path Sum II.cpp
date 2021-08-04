@@ -35,6 +35,7 @@ public:
 
 
 //dfs using stack,iterative
+// Note: bfs method is similar to dfs method while bfs using queue instead of using stack
 typedef struct{
     TreeNode* root;
     int val;
