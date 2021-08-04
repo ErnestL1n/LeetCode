@@ -27,7 +27,7 @@ public:
     
     int sum(string prefix) {
         trie* p=&root;
-        for (int i=0;i<prefix.size() and p!=nullptr;++i)
+        for(int i=0;i<prefix.size() and p!=nullptr;++i)
             p=p->ch[prefix[i]-'a'];
         return p?p->sum:0;
     }
