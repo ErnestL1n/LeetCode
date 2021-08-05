@@ -26,7 +26,7 @@ class MapSum:
     def sum(self, prefix: str) -> int:
         p=self.root
         for c in prefix:
-            if p.ch[c]==None:
+            if p==None:
                 break;
             p=p.ch[c]
         return p.sum if p!=None else 0
