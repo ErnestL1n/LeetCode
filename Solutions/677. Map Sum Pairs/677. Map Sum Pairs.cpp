@@ -1,24 +1,27 @@
+//trie struct solution
+struct trie{
+    int sum=0;
+    trie *ch[26]={};
+};
 class MapSum {
 public:
-    /** Initialize your data structure here. */
-    struct trie{
-            trie* ch[26]={};
-            int sum=0;
-        }root;
+    struct trie root;
     unordered_map<string,int> m;
+    
+    /** Initialize your data structure here. */
     MapSum() {
         
     }
     
-    void insert(string key,int val) {
-        trie* p=&root;
-        for(int i=0;i<key.size();++i){
-            if(p->ch[key[i]-'a']!=nullptr){
-                p->ch[key[i]-'a']=p->ch[key[i]-'a'];
-                p=p->ch[key[i]-'a'];
+    void insert(string key, int val) {
+        auto p=&root;
+        for(const auto& c:key){
+            if(p->ch[c-'a']!=nullptr){
+                p->ch[c-'a']=p->ch[c-'a'];
+                p=p->ch[c-'a'];
             }else{
-                p->ch[key[i]-'a']=new trie();
-                p=p->ch[key[i]-'a'];
+                p->ch[c-'a']=new trie();
+                p=p->ch[c-'a'];
             }
             p->sum+=val-m[key];
         }
@@ -26,26 +29,15 @@ public:
     }
     
     int sum(string prefix) {
-        trie* p=&root;
-        for(int i=0;i<prefix.size() and p!=nullptr;++i)
-            p=p->ch[prefix[i]-'a'];
+        auto p=&root;
+        for(const auto& c:prefix){
+            if(!p)
+                break;
+            p=p->ch[c-'a'];
+        }
         return p?p->sum:0;
     }
 };
-
-/**
- * Your MapSum object will be instantiated and called as such:
- * MapSum* obj = new MapSum();
- * obj->insert(key,val);
- * int param_2 = obj->sum(prefix);
- */
-
-/**
- * Your MapSum object will be instantiated and called as such:
- * MapSum* obj = new MapSum();
- * obj->insert(key,val);
- * int param_2 = obj->sum(prefix);
- */
 
 
 //map solution
@@ -69,3 +61,10 @@ public:
         return sum;
     }
 };
+
+/**
+ * Your MapSum object will be instantiated and called as such:
+ * MapSum* obj = new MapSum();
+ * obj->insert(key,val);
+ * int param_2 = obj->sum(prefix);
+ */
