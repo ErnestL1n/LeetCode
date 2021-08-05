@@ -134,6 +134,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 859* | [Buddy Strings](https://leetcode.com/problems/buddy-strings/) | Easy | String、HashSet | [Solutions](Solutions/859.%20Buddy%20Strings) | [Note](Solutions/859.%20Buddy%20Strings/note.md) 
 870* | [Advantage Shuffle](https://leetcode.com/problems/advantage-shuffle/) | Medium | HashSet(MultiSet) | [Solutions](Solutions/870.%20Advantage%20Shuffle) | [Note](Solutions/870.%20Advantage%20Shuffle/note.md)
 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | Easy | Linked List、Two Pointers | [Solutions](Solutions/876.%20Middle%20of%20the%20Linked%20List) | 
+877* | [Stone Game](https://leetcode.com/problems/stone-game/) | Medium | DP | [Solutions](Solutions/877.%20Stone%20Game) | [Note](Solutions/877.%20Stone%20Game/note.md)
 880* | [Decoded String at Index](https://leetcode.com/problems/decoded-string-at-index/) | Medium(Hard) | String(Trick) | [Solutions](Solutions/880.%20Decoded%20String%20at%20Index) | [Note](Solutions/880.%20Decoded%20String%20at%20Index/note.md)
 890* | [Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern/) | Medium | HashMap(Vector) | [Solutions](Solutions/890.%20Find%20and%20Replace%20Pattern) | 
 897# | [Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/) | Easy(Medium) | DFS、D&C、Stack | [Solutions](Solutions/897.%20Increasing%20Order%20Search%20Tree) |
