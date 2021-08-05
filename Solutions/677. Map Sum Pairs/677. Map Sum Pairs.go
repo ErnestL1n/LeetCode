@@ -36,8 +36,11 @@ func (this *MapSum) Insert(key string, val int)  {
 
 func (this *MapSum) Sum(prefix string) int {
     p:=this.root
-    for i:=0;i<len(prefix)&&p!=nil;i+=1{
-        p=p.ch[prefix[i]-'a']
+    for _,c:=range(prefix){
+        if(p==nil){
+            break;
+        }
+        p=p.ch[c-'a']
     }
     if p!=nil{
         return p.sum

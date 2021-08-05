@@ -1,25 +1,37 @@
+public class trie{
+    trie[] ch=new trie[26];
+    int sum=0;
+}
 class MapSum {
-    private class trie{
-        trie[] ch=new trie[26];
-        int sum=0;
-    }
     private Map<String,Integer> m=new HashMap<>();
-    private trie root=new trie(); //here  ,java should build object to become a reference
+    private trie root=new trie(); //here  ,java always builds object to become a reference
     /** Initialize your data structure here. */
     public MapSum() {
         
     }
     
     public void insert(String key, int val) {
-        var p=root; //here, var like auto ,or :trie p=root is OK
-        for(int i=0;i<key.length();++i,p.sum+=val-m.getOrDefault(key,0))
-            p=p.ch[key.charAt(i)-'a']=p.ch[key.charAt(i)-'a']==null?new trie():p.ch[key.charAt(i)-'a'];
-        m.putIfAbsent(key,val);//here,use m.put(key,val) is OK
+        trie p=root; //here, var like auto ,or "trie p=root" is OK
+        for(var c:key.toCharArray()){
+            if(p.ch[c-'a']!=null){
+                p.ch[c-'a']=p.ch[c-'a'];
+                p=p.ch[c-'a'];
+            }else{
+                p.ch[c-'a']=new trie();
+                p=p.ch[c-'a'];
+            }
+            p.sum+=val-m.getOrDefault(key,0);
+        }
+        m.put(key,val);
     }
     
     public int sum(String prefix) {
-        var p=root;
-        for(int i=0;i<prefix.length()&&p!=null;p=p.ch[prefix.charAt(i)-'a'],++i);//here,++i should be back,or the fronter statement may skip
+        trie p=root;
+        for(var c:prefix.toCharArray()){
+            if(p==null)
+                break;
+            p=p.ch[c-'a'];
+        }
         return p==null?0:p.sum;
     }
 }
