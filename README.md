@@ -80,7 +80,8 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 344 | [Reverse String](https://leetcode.com/problems/reverse-string/) | Easy | Two Pointers | [Solutions](Solutions/344.%20Reverse%20String) | 
 363* | [Max Sum of Rectangle No Larger Than K](https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/) | Hard | DP、Binary Search(```std::lower_bound```) | [Solutions](Solutions/363.%20Max%20Sum%20of%20Rectangle%20No%20Larger%20Than%20K) | [Note](Solutions/363.%20Max%20Sum%20of%20Rectangle%20No%20Larger%20Than%20K/note.md)
 384* | [Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/) | Medium | Array、Implementation | [Solutions](Solutions/384.%20Shuffle%20an%20Array) | [Note](Solutions/384.%20Shuffle%20an%20Array/note.md)
-410 | [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/) | Hard | Binary | [Solutions](Solutions/410.%20Split%20Array%20Largest%20Sum) |
+410 | [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/) | Hard | Binary Search | [Solutions](Solutions/410.%20Split%20Array%20Largest%20Sum) |
+429* | [N-ary Tree Level Order Traversal](https://leetcode.com/problems/n-ary-tree-level-order-traversal/) | Medium | DFS、BFS | [Solutions](Solutions/429.%20N-ary%20Tree%20Level%20Order%20Traversal) |
 435* | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | Medium | Greedy | [Solutions](Solutions/435.%20Non-overlapping%20Intervals) |
 436* | [Find Right Interval](https://leetcode.com/problems/find-right-interval/) | Medium | TreeMap、```std::lower_bound```、```std::upper_bound```(Binary Search) | [Solutions](Solutions/436.%20Find%20Right%20Interval) | [Note](Solutions/436.%20Find%20Right%20Interval/note.md)
 442 | [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) | Medium | Count | [Solutions](Solutions/442.%20Find%20All%20Duplicates%20in%20an%20Array) | 
