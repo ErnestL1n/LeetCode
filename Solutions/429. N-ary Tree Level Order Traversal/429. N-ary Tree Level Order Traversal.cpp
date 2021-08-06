@@ -18,6 +18,7 @@ public:
 };
 */
 
+//bfs iterative
 class Solution {
 public:
     vector<vector<int>> levelOrder(Node* root) {
@@ -39,5 +40,25 @@ public:
             res.push_back(tmp);
         }
         return res;
+    }
+};
+
+
+//dfs recursive
+class Solution {
+public:
+    vector<vector<int>> res;
+    vector<vector<int>> levelOrder(Node* root) {
+        dfs(root,0);
+        return res;
+    }
+    void dfs(Node *root,int level){
+        if(!root)
+            return;
+        if(level==res.size())
+            res.push_back({});
+        res[level].push_back(root->val);
+        for(const auto& child:root->children)
+            dfs(child,level+1);
     }
 };
