@@ -11,6 +11,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | Medium | Linked List、Math | [Solutions](Solutions/2.%20Add%20Two%20Numbers) | [Note](Solutions/2.%20Add%20Two%20Numbers/note.md)
 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | Two Pointers、HashMap、Sliding Window  | [Solutions](Solutions/3.%20Longest%20Substring%20Without%20Repeating%20Characters) | 
 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | Easy | Math、Trick | [Solutions](Solutions/9.%20Palindrome%20Number) | 
+13* | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | Easy | HashMap | [Solutions](Solutions/13.%20Roman%20to%20Integer) | 
 15* | [3Sum](https://leetcode.com/problems/3sum/) | Medium | Two Pointers、Sort、Array | [Solutions](Solutions/15.%203Sum) | 
 16* | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | Medium | Two Pointers、Sort、Array | [Solutions](Solutions/16.%203Sum%20Closest) | 
 18* | [4Sum](https://leetcode.com/problems/4sum/) | Medium | Two Pointers、Sort、Array | [Solutions](Solutions/18.%204Sum) | 
