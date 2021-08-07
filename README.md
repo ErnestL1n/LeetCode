@@ -47,6 +47,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 128! | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Hard | HashSet(Set)、Union-Find | [Solutions](Solutions/128.%20Longest%20Consecutive%20Sequence) |
 129* | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | Medium | BFS、D&C | [Solutions](Solutions/129.%20Sum%20Root%20to%20Leaf%20Numbers)
 131* | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | Medium | DP、DFS | [Solutions](Solutions/131.%20Palindrome%20Partitioning)
+132* | [Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/) | Hard | DP | [Solutions](Solutions/132.%20Palindrome%20Partitioning%20II) | [Note](Solutions/132.%20Palindrome%20Partitioning%20II/note.md)
 135* | [Candy](https://leetcode.com/problems/candy/) | Hard | Array、Greedy、Trick | [Solutions](Solutions/135.%20Candy) | [Note](Solutions/135.%20Candy/note.md)
 136 | [Single Number](https://leetcode.com/problems/single-number/) | Easy | Bit Manipulation、XOR | [Solutions](Solutions/136.%20Single%20Number) |
 152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | Medium | DP | [Solutions](Solutions/152.%20Maximum%20Product%20Subarray) |
