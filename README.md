@@ -359,6 +359,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1899 | [Merge Triplets to Form Target Triplet](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/) | Medium | Greedy | [Solutions](Solutions/1899.%20Merge%20Triplets%20to%20Form%20Target%20Triplet) |
 1903* | [Largest Odd Number in String](https://leetcode.com/problems/largest-odd-number-in-string/) | Easy | Greedy、```string::find_last_of``` | [Solutions](Solutions/1903.%20Largest%20Odd%20Number%20in%20String) |
 1905* | [Count Sub Islands](https://leetcode.com/problems/count-sub-islands/) | Medium | Graph、BFS、DFS | [Solutions](Solutions/1905.%20Count%20Sub%20Islands) |
+1913* | [Maximum Product Difference Between Two Pairs](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/) | Easy | Sort、Min Max | [Solutions](Solutions/1913.%20Maximum%20Product%20Difference%20Between%20Two%20Pairs) |
 1920* | [Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/) | Easy | Array | [Solutions](Solutions/1920.%20Build%20Array%20from%20Permutation) |
 1925* | [Count Square Sum Triples](https://leetcode.com/problems/count-square-sum-triples/) | Easy | Math、Trick | [Solutions](Solutions/1925.%20Count%20Square%20Sum%20Triples) | [Note](Solutions/1925.%20Count%20Square%20Sum%20Triples/note.md)
 1929 | [Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/) | Easy | Array | [Solutions](Solutions/1929.%20Concatenation%20of%20Array) |
