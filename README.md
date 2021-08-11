@@ -137,6 +137,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 832 | [Flipping an Image](https://leetcode.com/problems/flipping-an-image/) | Easy | Operation | [Solutions](Solutions/832.%20Flipping%20an%20Image) | 
 838* | [Push Dominoes](https://leetcode.com/problems/push-dominoes/) | Medium | Two Pointers | 
 859* | [Buddy Strings](https://leetcode.com/problems/buddy-strings/) | Easy | String、HashSet | [Solutions](Solutions/859.%20Buddy%20Strings) | [Note](Solutions/859.%20Buddy%20Strings/note.md) 
+861* | [Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix/) | Medium(Hard) | Greedy、Bit Manipulation | [Solutions](Solutions/861.%20Score%20After%20Flipping%20Matrix) | [Note](Solutions/861.%20Score%20After%20Flipping%20Matrix/note.md) 
 870* | [Advantage Shuffle](https://leetcode.com/problems/advantage-shuffle/) | Medium | HashSet(MultiSet) | [Solutions](Solutions/870.%20Advantage%20Shuffle) | [Note](Solutions/870.%20Advantage%20Shuffle/note.md)
 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | Easy | Linked List、Two Pointers | [Solutions](Solutions/876.%20Middle%20of%20the%20Linked%20List) | 
 877* | [Stone Game](https://leetcode.com/problems/stone-game/) | Medium | DP | [Solutions](Solutions/877.%20Stone%20Game) | [Note](Solutions/877.%20Stone%20Game/note.md)
