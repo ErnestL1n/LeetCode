@@ -152,6 +152,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 932* | [Beautiful Array](https://leetcode.com/problems/beautiful-array/) | Medium | Math | N/A
 938# | [Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/) | Easy | BST、Stack | [Solutions](Solutions/938.%20Range%20Sum%20of%20BST) |
 942# | [DI String Match](https://leetcode.com/problems/di-string-match/) | Easy | Two Pointers | [Solutions](Solutions/942.%20DI%20String%20Match) |
+954* | [Array of Doubled Pairs](https://leetcode.com/problems/array-of-doubled-pairs/) | Medium | HashMap、Sort(With custom comaprison)、Trick | [Solutions](Solutions/954.%20Array%20of%20Doubled%20Pairs)
 961# | [N-Repeated Element in Size 2N Array](https://leetcode.com/problems/n-repeated-element-in-size-2n-array/) | Easy | Array、Count、Trick | [Solutions](Solutions/961.%20N-Repeated%20Element%20in%20Size%202N%20Array) |
 962* | [Maximum Width Ramp](https://leetcode.com/problems/maximum-width-ramp/) | Medium | Stack | [Solutions](Solutions/962.%20Maximum%20Width%20Ramp) | 
 965# | [Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/) | Easy | Tree | [Solutions](Solutions/965.%20Univalued%20Binary%20Tree) | 
