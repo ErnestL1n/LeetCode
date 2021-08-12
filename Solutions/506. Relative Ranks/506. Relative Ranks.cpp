@@ -24,7 +24,7 @@ public:
     }
 };
 
-// sort and not using map&priority_queue
+// sorting and not using map&priority_queue
 class Solution {
 public:
     vector<string> findRelativeRanks(vector<int>& score) {
