@@ -23,3 +23,27 @@ public:
         return res;
     }
 };
+
+// sort and not using map&priority_queue
+class Solution {
+public:
+    vector<string> findRelativeRanks(vector<int>& score) {
+        vector<int> idx(score.size());
+        for(int i=0;i<score.size();++i){
+            idx[i]=i;
+        }
+        sort(idx.begin(),idx.end(),[&score](int i,int j){return score[i]>score[j];});
+        vector<string> res(score.size());
+        for(int i=0;i<score.size();++i){
+            if(i==0)
+                res[idx[i]]="Gold Medal";
+            else if(i==1)
+                res[idx[i]]="Silver Medal";
+            else if(i==2)
+                res[idx[i]]="Bronze Medal";
+            else
+                res[idx[i]]=to_string(i+1);
+        }
+        return res;
+    }
+};
