@@ -24,6 +24,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 42* | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Hard | Two Pointers | [Solutions](Solutions/42.%20Trapping%20Rain%20Water) | 
 46 | [Permutations](https://leetcode.com/problems/permutations/) | Medium | D&C | [Solutions](Solutions/46.%20Permutations) | [Note](Solutions/46.%20Permutations/note.md)
 47 | [Permutations II](https://leetcode.com/problems/permutations-ii/) | Medium | D&C、HashSet | [Solutions](Solutions/47.%20Permutations%20II) | [Note](Solutions/47.%20Permutations%20II/note.md)
+49* | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium | HashMap、Counting Sort | [Solutions](Solutions/49.%20Group%20Anagrams) | 
 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Easy | DP、D&C | [Solutions](Solutions/53.%20Maximum%20Subarray) | 
 56* | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Medium | Greedy | [Solutions](Solutions/56.%20Merge%20Intervals) | [Note](Solutions/56.%20Merge%20Intervals/note.md)
 58 | [Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | Easy | String | [Solutions](Solutions/58.%20Length%20of%20Last%20Word) | 
