@@ -1,4 +1,3 @@
-// O(m*n)
 class Solution {
 public:
     void setZeroes(vector<vector<int>>& mat) {
