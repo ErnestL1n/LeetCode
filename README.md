@@ -78,7 +78,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 295* | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | Hard | Priority_Queue | [Solutions](Solutions/295.%20Find%20Median%20from%20Data%20Stream) | 
 300* | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium | DP、Binary Search | [Solutions](Solutions/300.%20Longest%20Increasing%20Subsequence) | 
 310* | [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/) | Medium | Graph(Adjacency Matrix)、BFS | [Solutions](Solutions/310.%20Minimum%20Height%20Trees) | [Note](Solutions/310.%20Minimum%20Height%20Trees/note.md)
-312 | [Burst Balloons](https://leetcode.com/problems/burst-balloons/) | Hard | DP | [Solutions](Solutions/312.%20Burst%20Balloons) | [Note](Solutions/312.%20Burst%20Balloons/note.md)
+312 | [Burst Balloons](https://leetcode.com/problems/burst-balloons/) | Hard | DP((non-self-contained)) | [Solutions](Solutions/312.%20Burst%20Balloons) | [Note](Solutions/312.%20Burst%20Balloons/note.md)
 322 | [Coin Change](https://leetcode.com/problems/coin-change/) | Medium | DP | [Solutions](Solutions/322.%20Coin%20Change) | 
 344 | [Reverse String](https://leetcode.com/problems/reverse-string/) | Easy | Two Pointers | [Solutions](Solutions/344.%20Reverse%20String) | 
 363* | [Max Sum of Rectangle No Larger Than K](https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/) | Hard | DP、Binary Search(```std::lower_bound```) | [Solutions](Solutions/363.%20Max%20Sum%20of%20Rectangle%20No%20Larger%20Than%20K) | [Note](Solutions/363.%20Max%20Sum%20of%20Rectangle%20No%20Larger%20Than%20K/note.md)
@@ -102,7 +102,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 509# | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | Easy | D&C、DP | [Solutions](Solutions/509.%20Fibonacci%20Number) | [Note](Solutions/509.%20Fibonacci%20Number/note.md)
 530* | [Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/) | Easy | Same as 783 | [Solutions](Solutions/530.%20Minimum%20Absolute%20Difference%20in%20BST) | [Note](Solutions/530.%20Minimum%20Absolute%20Difference%20in%20BST/note.md)
 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/) | Medium | BFS、DP | [Solutions](Solutions/542.%2001%20Matrix) | [Note](Solutions/542.%2001%20Matrix/note.md)
-546* | [Remove Boxes](https://leetcode.com/problems/remove-boxes/) | Hard | DP(non-self-contained) | [Solutions](Solutions/546.%20Remove%20Boxes)
+546* | [Remove Boxes](https://leetcode.com/problems/remove-boxes/) | Hard | DP(non-self-contained) | [Solutions](Solutions/546.%20Remove%20Boxes) | [Note](Solutions/546.%20Remove%20Boxes/note.md)
 566* | [Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix/) | Easy | 2DArray | [Solutions](Solutions/566.%20Reshape%20the%20Matrix) |
 576* | [Out of Boundary Paths](https://leetcode.com/problems/out-of-boundary-paths/) | Medium | DP | [Solutions](Solutions/576.%20Out%20of%20Boundary%20Paths) |
 589# | [N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/) | Easy | DFS、D&C、Stack | [Solutions](Solutions/589.%20N-ary%20Tree%20Preorder%20Traversal) |
@@ -254,7 +254,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1539# | [Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/) | Easy | HashSet | [Solutions](Solutions/1539.%20Kth%20Missing%20Positive%20Number) |
 1544# | [Make The String Great](https://leetcode.com/problems/make-the-string-great/) | Easy | Stack、String | [Solutions](Solutions/1544.%20Make%20The%20String%20Great) |
 1545* | [Find Kth Bit in Nth Binary String](https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/) | Medium | String、Trick | [Solutions](Solutions/1545.%20Find%20Kth%20Bit%20in%20Nth%20Binary%20String) |
-1547 | [Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/) | Hard | DP | [Solutions](Solutions/1547.%20Minimum%20Cost%20to%20Cut%20a%20Stick) | [Note](Solutions/1547.%20Minimum%20Cost%20to%20Cut%20a%20Stick/note.md)
+1547 | [Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/) | Hard | DP(non-self-contained) | [Solutions](Solutions/1547.%20Minimum%20Cost%20to%20Cut%20a%20Stick) | [Note](Solutions/1547.%20Minimum%20Cost%20to%20Cut%20a%20Stick/note.md)
 1550 | [Three Consecutive Odds](https://leetcode.com/problems/three-consecutive-odds/) | Easy | Array | [Solutions](Solutions/1550.%20Three%20Consecutive%20Odds) | 
 1552 | [Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls/) | Medium(Hard...) | Binary Search | [Solutions](Solutions/1552.%20Magnetic%20Force%20Between%20Two%20Balls) | [Note](Solutions/1552.%20Magnetic%20Force%20Between%20Two%20Balls/note.md)
 1556# | [Thousand Separator](https://leetcode.com/problems/thousand-separator/) | Easy | String | [Solutions](Solutions/1556.%20Thousand%20Separator) |
