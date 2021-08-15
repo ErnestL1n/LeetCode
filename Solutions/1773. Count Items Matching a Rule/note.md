@@ -9,3 +9,4 @@ In this case,results are the same
 return count_if(begin(items),end(items),[=](const auto& i){return i[type]==ruleValue;});
 return count_if(begin(items),end(items),[&](const auto& i){return i[type]==ruleValue;});
 ```
+### [Ｃ＋＋ count和count_if的使用](https://blog.csdn.net/sinat_24310873/article/details/53364185)
