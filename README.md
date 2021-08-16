@@ -33,6 +33,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 72 | [Edit Distance](https://leetcode.com/problems/edit-distance/) | Hard | DP | [Solutions](Solutions/72.%20Edit%20Distance) | [Note](Solutions/72.%20Edit%20Distance/note.md)
 73* | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | Medium | HashSet | [Solutions](Solutions/73.%20Set%20Matrix%20Zeroes) | 
 74 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | Medium | Binary Search、2DArray | [Solutions](Solutions/74.%20Search%20a%202D%20Matrix) | [Note](Solutions/74.%20Search%20a%202D%20Matrix/note.md)
+76* | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | Hard | HashMap、Sliding Window | [Solutions](Solutions/76.%20Minimum%20Window%20Substring) | 
 78 | [Subsets](https://leetcode.com/problems/subsets/) | Medium | D&C | [Solutions](Solutions/78.%20Subsets) | [Note](Solutions/78.%20Subsets/note.md)
 83* | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | Easy | Linked-List | [Solutions](Solutions/83.%20Remove%20Duplicates%20from%20Sorted%20List) | 
 89* | [Gray Code](https://leetcode.com/problems/gray-code/) | Medium | Bit Manipulation | [Solutions](Solutions/89.%20Gray%20Code) | 
@@ -378,4 +379,5 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1945* | [Sum of Digits of String After Convert](https://leetcode.com/problems/sum-of-digits-of-string-after-convert/) | Easy | String | [Solutions](Solutions/1945.%20Sum%20of%20Digits%20of%20String%20After%20Convert) |
 1952* | [Three Divisors](https://leetcode.com/problems/three-divisors/) | Easy | Count、Prime | [Solutions](Solutions/1952.%20Three%20Divisors) |
 1954* | [Minimum Garden Perimeter to Collect Enough Apples](https://leetcode.com/problems/minimum-garden-perimeter-to-collect-enough-apples/) | Medium | Math、Binary Search | [Solutions](Solutions/1954.%20Minimum%20Garden%20Perimeter%20to%20Collect%20Enough%20Apples) | [Note](Solutions/1954.%20Minimum%20Garden%20Perimeter%20to%20Collect%20Enough%20Apples/note.md)
-1961* | [Check If String Is a Prefix of Array](https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/) | Easy | String | [Solutions](Solutions/1961.%20Check%20If%20String%20Is%20a%20Prefix%20of%20Array)
+1961* | [Check If String Is a Prefix of Array](https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/) | Easy | String | [Solutions](Solutions/1961.%20Check%20If%20String%20Is%20a%20Prefix%20of%20Array) |
+1967* | [Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/) | Easy | String、```string::npos``` | [Solutions](Solutions/1967.%20Number%20of%20Strings%20That%20Appear%20as%20Substrings%20in%20Word) |
