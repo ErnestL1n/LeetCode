@@ -25,6 +25,6 @@ public:
         int cnt[26]={},m_cnt=0;
         for(const auto& c:s)
             m_cnt=max(m_cnt,++cnt[c-'a']);
-        return all_of(begin(cnt),end(cnt),[&m_cnt](int t){return t==0 or t==m_cnt;});
+        return all_of(begin(cnt),end(cnt),[&m_cnt](const int& t){return t==0 or t==m_cnt;});
     }
 };
