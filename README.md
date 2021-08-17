@@ -274,6 +274,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1598 | [Crawler Log Folder](https://leetcode.com/problems/crawler-log-folder/) | Easy | Operation | [Solutions](Solutions/1598.%20Crawler%20Log%20Folder) |
 1614* | [Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/) | Easy | String、Count | [Solutions](Solutions/1614.%20Maximum%20Nesting%20Depth%20of%20the%20Parentheses) |
 1619 | [Mean of Array After Removing Some Elements](https://leetcode.com/problems/mean-of-array-after-removing-some-elements/) | Easy | Array | [Solutions](Solutions/1619.%20Mean%20of%20Array%20After%20Removing%20Some%20Elements) |
+1624* | [Largest Substring Between Two Equal Characters](https://leetcode.com/problems/largest-substring-between-two-equal-characters/) | Easy | Trick、Count | [Solutions](Solutions/1624.%20Largest%20Substring%20Between%20Two%20Equal%20Characters) |
 1630! | [Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/) | Medium | Sort、Math | [Solutions](Solutions/1630.%20Arithmetic%20Subarrays)
 1632* | [Rank Transform of a Matrix](https://leetcode.com/problems/rank-transform-of-a-matrix/) | Hard | Union Find | N/A
 1641 | [Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings/) | Medium | Math、DP | [Solutions](Solutions/1641.%20Count%20Sorted%20Vowel%20Strings) | [Note](Solutions/1641.%20Count%20Sorted%20Vowel%20Strings/note.md)
