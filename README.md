@@ -377,6 +377,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1925* | [Count Square Sum Triples](https://leetcode.com/problems/count-square-sum-triples/) | Easy | Math、Trick | [Solutions](Solutions/1925.%20Count%20Square%20Sum%20Triples) | [Note](Solutions/1925.%20Count%20Square%20Sum%20Triples/note.md)
 1929 | [Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/) | Easy | Array | [Solutions](Solutions/1929.%20Concatenation%20of%20Array) |
 1935* | [Maximum Number of Words You Can Type](https://leetcode.com/problems/maximum-number-of-words-you-can-type/) | Easy | Count、HashSet | [Solutions](Solutions/1935.%20Maximum%20Number%20of%20Words%20You%20Can%20Type) |
+1936* | [Add Minimum Number of Rungs](https://leetcode.com/problems/add-minimum-number-of-rungs/) | Medium | Trick、Math(Float and Int) | [Solutions](Solutions/1936.%20Add%20Minimum%20Number%20of%20Rungs) |
 1941* | [Check if All Characters Have Equal Number of Occurrences](https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/) | Easy | Count、```std::all_of``` | [Solutions](Solutions/1941.%20Check%20if%20All%20Characters%20Have%20Equal%20Number%20of%20Occurrences) |
 1945* | [Sum of Digits of String After Convert](https://leetcode.com/problems/sum-of-digits-of-string-after-convert/) | Easy | String | [Solutions](Solutions/1945.%20Sum%20of%20Digits%20of%20String%20After%20Convert) |
 1952* | [Three Divisors](https://leetcode.com/problems/three-divisors/) | Easy | Count、Prime | [Solutions](Solutions/1952.%20Three%20Divisors) |
