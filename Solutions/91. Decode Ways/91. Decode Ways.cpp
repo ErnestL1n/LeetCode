@@ -40,7 +40,7 @@ public:
 class Solution {
 public:
     int numDecodings(string s) {
-        int n=s.size(),dp=0,dp1=1,dp2=0;
+        int n=s.size(),dp=0,dp1=1,dp2=1;
         for(int i=n-1;i>=0;--i){
             if(s[i]!='0')
                 dp+=dp1;
