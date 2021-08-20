@@ -19,6 +19,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 21* | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | Linked List | [Solutions](Solutions/21.%20Merge%20Two%20Sorted%20Lists) | 
 25* | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | Hard | Linked List | [Solutions](Solutions/25.%20Reverse%20Nodes%20in%20k-Group) | 
 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | Easy | Binary Search | [Solutions](Solutions/35.%20Search%20Insert%20Position) | [Note](Solutions/35.%20Search%20Insert%20Position/note.md)
+36* | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium | HashSet、Array | [Solutions](https://leetcode.com/problems/valid-sudoku/) |
 39 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | Medium | D&C(Backtracking) | [Solutions](Solutions/39.%20Combination%20Sum) | 
 40 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | Medium | D&C(Backtracking)、Trick | [Solutions](Solutions/40.%20Combination%20Sum%20II) | 
 42* | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Hard | Two Pointers | [Solutions](Solutions/42.%20Trapping%20Rain%20Water) | 
