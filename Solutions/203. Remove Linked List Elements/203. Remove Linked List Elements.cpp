@@ -14,14 +14,13 @@ public:
     ListNode* removeElements(ListNode* head, int val) {
         ListNode* pre=new ListNode(0);
         pre->next=head;
-        ListNode *p=pre,*cur=head;
+        auto cur=head,p=pre;
         while(cur){
-            if (cur->val == val) {
-                p->next = cur->next;
-            } else {
-                p = p->next;
-            }
-            cur = cur->next;
+            if(cur->val==val)
+                p->next=cur->next;
+            else
+                p=p->next;
+            cur=cur->next;
         }
         return pre->next;
     }
