@@ -8,6 +8,7 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+//iterative
 class Solution {
 public:
     ListNode* removeElements(ListNode* head, int val) {
@@ -27,3 +28,12 @@ public:
 };
 
 //recursive
+class Solution {
+public:
+    ListNode* removeElements(ListNode* head, int val) {
+        if(!head)
+            return nullptr;
+        head->next=removeElements(head->next,val);
+        return head->val==val?head->next:head;
+    }
+};
