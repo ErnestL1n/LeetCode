@@ -25,3 +25,5 @@ public:
         return pre->next;
     }
 };
+
+//recursive
