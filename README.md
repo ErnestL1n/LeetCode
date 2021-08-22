@@ -145,7 +145,8 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 817* | [Linked List Components](https://leetcode.com/problems/linked-list-components/) | Medium | Linked List、HashMap | [Solutions](Solutions/817.%20Linked%20List%20Components) | 
 827* | [Making A Large Island](https://leetcode.com/problems/making-a-large-island/) | Hard | HashSet | N/A | 
 832 | [Flipping an Image](https://leetcode.com/problems/flipping-an-image/) | Easy | Operation | [Solutions](Solutions/832.%20Flipping%20an%20Image) | 
-838* | [Push Dominoes](https://leetcode.com/problems/push-dominoes/) | Medium | Two Pointers | 
+838* | [Push Dominoes](https://leetcode.com/problems/push-dominoes/) | Medium | Two Pointers | [Solutions](Solutions/838.%20Push%20Dominoes) |
+850* | [Rectangle Area II](https://leetcode.com/problems/rectangle-area-ii/) | Hard | Segment tree(RMQ) | [Solutions](Solutions/850.%20Rectangle%20Area%20II) |
 859* | [Buddy Strings](https://leetcode.com/problems/buddy-strings/) | Easy | String、HashSet | [Solutions](Solutions/859.%20Buddy%20Strings) | [Note](Solutions/859.%20Buddy%20Strings/note.md) 
 861* | [Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix/) | Medium(Hard) | Greedy、Bit Manipulation | [Solutions](Solutions/861.%20Score%20After%20Flipping%20Matrix) | [Note](Solutions/861.%20Score%20After%20Flipping%20Matrix/note.md) 
 870* | [Advantage Shuffle](https://leetcode.com/problems/advantage-shuffle/) | Medium | HashSet(MultiSet) | [Solutions](Solutions/870.%20Advantage%20Shuffle) | [Note](Solutions/870.%20Advantage%20Shuffle/note.md)
