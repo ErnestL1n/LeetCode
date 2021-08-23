@@ -29,28 +29,26 @@ public:
 //binary search method
 class Solution {
 public:
-    bool findTarget(TreeNode* node, int k) {
-        if(this->root==nullptr)
-            this->root=node;
-        if(node==nullptr)
+    TreeNode *root;
+    bool findTarget(TreeNode* root, int k) {
+        if(!this->root)
+            this->root=root;
+        if(!root)
             return false;
-        if(search(node,k-node->val))
+        if(search(root,k-root->val))
             return true;
-        return findTarget(node->left,k) || findTarget(node->right,k);
+        return findTarget(root->left,k) or findTarget(root->right,k);
     }
-    bool search(TreeNode* node,int complement){
-        TreeNode* curr=this->root;
-        while(curr!=nullptr){
-            if(complement>curr->val)
-                curr=curr->right;
-            else if(complement<curr->val)
-                curr=curr->left;
+    bool search(TreeNode* root,int complement){
+        TreeNode* cur=this->root;
+        while(cur){
+            if(complement>cur->val)
+                cur=cur->right;
+            else if(complement<cur->val)
+                cur=cur->left;
             else
-                return curr==node?false:true;
+                return cur==root?false:true;
         }
         return false;
     }
-    
-private:
-    TreeNode* root;
 };
