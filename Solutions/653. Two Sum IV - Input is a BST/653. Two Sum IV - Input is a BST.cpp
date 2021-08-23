@@ -13,17 +13,14 @@
  //set implementation
 class Solution {
 public:
+    unordered_set<int> s;
     bool findTarget(TreeNode* root, int k) {
-        unordered_set<int> s;
-        return dfs(root,s,k);
-    }
-    bool dfs(TreeNode* root,unordered_set<int>& s,int k){
         if(!root)
-            return false;    
+            return false;
         if(s.count(k-root->val))
             return true;
         s.insert(root->val);
-        return dfs(root->left,s,k) || dfs(root->right,s,k);  
+        return findTarget(root->left,k) or findTarget(root->right,k);
     }
 };
 
