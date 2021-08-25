@@ -117,6 +117,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 600* | [Non-negative Integers without Consecutive Ones](https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/) | Hard | DP | N/A
 611* | [Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/) | Medium | Three Pointers | [Solutions](Solutions/611.%20Valid%20Triangle%20Number) |
 617# | [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/) | Easy | DFS、BFS、D&C | [Solutions](Solutions/617.%20Merge%20Two%20Binary%20Trees) | [Note](Solutions/617.%20Merge%20Two%20Binary%20Trees/note.md)
+633* | [Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/) | Medium | Two Pointers、HashSet | [Solutions](Solutions/633.%20Sum%20of%20Square%20Numbers) 
 653 | [Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) | Easy | HashSet、Binary Search | [Solutions](Solutions/653.%20Two%20Sum%20IV%20-%20Input%20is%20a%20BST) | [Note](Solutions/653.%20Two%20Sum%20IV%20-%20Input%20is%20a%20BST/note.md)
 654! | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) | Medium | Stack、Iterator | [Solutions](Solutions/654.%20Maximum%20Binary%20Tree) | [Note](Solutions/654.%20Maximum%20Binary%20Tree/note.md)
 657# | [Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/) | Easy | String | [Solutions](Solutions/657.%20Robot%20Return%20to%20Origin) | 
