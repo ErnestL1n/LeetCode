@@ -108,6 +108,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 503* | [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/) | Medium | Stack | [Solutions](Solutions/503.%20Next%20Greater%20Element%20II) | [Note](Solutions/503.%20Next%20Greater%20Element%20II/note.md)
 506* | [Relative Ranks](https://leetcode.com/problems/relative-ranks/) | Easy | Sort(With custom comaprison)、Priority_Queue | [Solutions](Solutions/506.%20Relative%20Ranks) |
 509# | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | Easy | D&C、DP | [Solutions](Solutions/509.%20Fibonacci%20Number) | [Note](Solutions/509.%20Fibonacci%20Number/note.md)
+522* | [Longest Uncommon Subsequence II](https://leetcode.com/problems/longest-uncommon-subsequence-ii/) | Medium | ??? | N/A | 
 530* | [Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/) | Easy | Same as 783 | [Solutions](Solutions/530.%20Minimum%20Absolute%20Difference%20in%20BST) | [Note](Solutions/530.%20Minimum%20Absolute%20Difference%20in%20BST/note.md)
 537* | [Complex Number Multiplication](https://leetcode.com/problems/complex-number-multiplication/) | Medium | ```std::stringstream``` | [Solutions](Solutions/537.%20Complex%20Number%20Multiplication) | [Note](Solutions/537.%20Complex%20Number%20Multiplication/note.md)
 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/) | Medium | BFS、DP | [Solutions](Solutions/542.%2001%20Matrix) | [Note](Solutions/542.%2001%20Matrix/note.md)
