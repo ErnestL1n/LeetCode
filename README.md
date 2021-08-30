@@ -117,6 +117,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 566* | [Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix/) | Easy | 2DArray | [Solutions](Solutions/566.%20Reshape%20the%20Matrix) |
 576* | [Out of Boundary Paths](https://leetcode.com/problems/out-of-boundary-paths/) | Medium | DP | [Solutions](Solutions/576.%20Out%20of%20Boundary%20Paths) |
 589# | [N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/) | Easy | DFS、D&C、Stack | [Solutions](Solutions/589.%20N-ary%20Tree%20Preorder%20Traversal) |
+598* | [Range Addition II](https://leetcode.com/problems/range-addition-ii/) | Easy | Array | [Solutions](Solutions/598.%20Range%20Addition%20II) |
 600* | [Non-negative Integers without Consecutive Ones](https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/) | Hard | DP | N/A
 611* | [Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/) | Medium | Three Pointers | [Solutions](Solutions/611.%20Valid%20Triangle%20Number) |
 617# | [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/) | Easy | DFS、BFS、D&C | [Solutions](Solutions/617.%20Merge%20Two%20Binary%20Trees) | [Note](Solutions/617.%20Merge%20Two%20Binary%20Trees/note.md)
