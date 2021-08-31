@@ -58,6 +58,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 135* | [Candy](https://leetcode.com/problems/candy/) | Hard | Array、Greedy、Trick | [Solutions](Solutions/135.%20Candy) | [Note](Solutions/135.%20Candy/note.md)
 136 | [Single Number](https://leetcode.com/problems/single-number/) | Easy | Bit Manipulation、XOR | [Solutions](Solutions/136.%20Single%20Number) |
 152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | Medium | DP | [Solutions](Solutions/152.%20Maximum%20Product%20Subarray) |
+153* | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Medium | Binary Search | [Solutions](Solutions/153.%20Find%20Minimum%20in%20Rotated%20Sorted%20Array) |
 155* | [Min Stack](https://leetcode.com/problems/min-stack/) | Easy | Stack、Design | [Solutions](Solutions/155.%20Min%20Stack) |
 162* | [Find Peak Element](https://leetcode.com/problems/find-peak-element/) | Medium | Binary Search(Two Middle) | [Solutions](Solutions/162.%20Find%20Peak%20Element) |
 187# | [Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/) | Medium | HashSet | [Solutions](Solutions/187.%20Repeated%20DNA%20Sequences) |
