@@ -115,6 +115,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 537* | [Complex Number Multiplication](https://leetcode.com/problems/complex-number-multiplication/) | Medium | ```std::stringstream``` | [Solutions](Solutions/537.%20Complex%20Number%20Multiplication) | [Note](Solutions/537.%20Complex%20Number%20Multiplication/note.md)
 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/) | Medium | BFS、DP | [Solutions](Solutions/542.%2001%20Matrix) | [Note](Solutions/542.%2001%20Matrix/note.md)
 546* | [Remove Boxes](https://leetcode.com/problems/remove-boxes/) | Hard | DP(non-self-contained) | [Solutions](Solutions/546.%20Remove%20Boxes) | [Note](Solutions/546.%20Remove%20Boxes/note.md)
+565* | [Array Nesting](https://leetcode.com/problems/array-nesting/) | Medium | Array | [Solutions](Solutions/565.%20Array%20Nesting) | 
 566* | [Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix/) | Easy | 2DArray | [Solutions](Solutions/566.%20Reshape%20the%20Matrix) |
 576* | [Out of Boundary Paths](https://leetcode.com/problems/out-of-boundary-paths/) | Medium | DP | [Solutions](Solutions/576.%20Out%20of%20Boundary%20Paths) |
 589# | [N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/) | Easy | DFS、D&C、Stack | [Solutions](Solutions/589.%20N-ary%20Tree%20Preorder%20Traversal) |
