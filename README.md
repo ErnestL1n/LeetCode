@@ -77,6 +77,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 234* | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | Easy | Linked List、Two Pointers、D&C | [Solutions](Solutions/234.%20Palindrome%20Linked%20List) | [Note](Solutions/234.%20Palindrome%20Linked%20List/note.md)
 235* | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Easy | BST、DFS、BFS | [Solutions](Solutions/235.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Search%20Tree) | 
 236* | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | Medium | Binary Tree、DFS、BFS | [Solutions](Solutions/236.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree) | 
+242* | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy | HashMap | [Solutions](Solutions/242.%20Valid%20Anagram) | 
 258 | [Add Digits](https://leetcode.com/problems/add-digits/) | Easy | Trick | [Solutions](Solutions/258.%20Add%20Digits) | [Note](Solutions/258.%20Add%20Digits/note.md)
 268 | [Missing Number](https://leetcode.com/problems/missing-number/) | Easy | XOR、Math | [Solutions](Solutions/268.%20Missing%20Number) | 
 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version/) | Easy | Binary Search | [Solutions](Solutions/278.%20First%20Bad%20Version) | 
