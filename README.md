@@ -120,6 +120,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 565* | [Array Nesting](https://leetcode.com/problems/array-nesting/) | Medium | Array | [Solutions](Solutions/565.%20Array%20Nesting) | 
 566* | [Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix/) | Easy | 2DArray | [Solutions](Solutions/566.%20Reshape%20the%20Matrix) |
 576* | [Out of Boundary Paths](https://leetcode.com/problems/out-of-boundary-paths/) | Medium | DP | [Solutions](Solutions/576.%20Out%20of%20Boundary%20Paths) |
+587* | [Erect the Fence](https://leetcode.com/problems/erect-the-fence/) | Hard | Convex hull | [Solutions](Solutions/587.%20Erect%20the%20Fence) |
 589# | [N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/) | Easy | DFS、D&C、Stack | [Solutions](Solutions/589.%20N-ary%20Tree%20Preorder%20Traversal) |
 598* | [Range Addition II](https://leetcode.com/problems/range-addition-ii/) | Easy | Array | [Solutions](Solutions/598.%20Range%20Addition%20II) |
 600* | [Non-negative Integers without Consecutive Ones](https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/) | Hard | DP | N/A
