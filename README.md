@@ -157,6 +157,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 817* | [Linked List Components](https://leetcode.com/problems/linked-list-components/) | Medium | Linked List、HashMap | [Solutions](Solutions/817.%20Linked%20List%20Components) | 
 827* | [Making A Large Island](https://leetcode.com/problems/making-a-large-island/) | Hard | HashSet | N/A | 
 832 | [Flipping an Image](https://leetcode.com/problems/flipping-an-image/) | Easy | Operation | [Solutions](Solutions/832.%20Flipping%20an%20Image) | 
+834* | [Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree/) | Easy | DFS、Tree、HashSet | [Solutions](Solutions/834.%20Sum%20of%20Distances%20in%20Tree) | 
 838* | [Push Dominoes](https://leetcode.com/problems/push-dominoes/) | Medium | Two Pointers | [Solutions](Solutions/838.%20Push%20Dominoes) |
 850* | [Rectangle Area II](https://leetcode.com/problems/rectangle-area-ii/) | Hard | Segment tree(RMQ) | [Solutions](Solutions/850.%20Rectangle%20Area%20II) |
 859* | [Buddy Strings](https://leetcode.com/problems/buddy-strings/) | Easy | String、HashSet | [Solutions](Solutions/859.%20Buddy%20Strings) | [Note](Solutions/859.%20Buddy%20Strings/note.md) 
