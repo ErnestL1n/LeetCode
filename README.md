@@ -167,6 +167,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 877* | [Stone Game](https://leetcode.com/problems/stone-game/) | Medium | DP | [Solutions](Solutions/877.%20Stone%20Game) | [Note](Solutions/877.%20Stone%20Game/note.md)
 880* | [Decoded String at Index](https://leetcode.com/problems/decoded-string-at-index/) | Medium(Hard) | String(Trick) | [Solutions](Solutions/880.%20Decoded%20String%20at%20Index) | [Note](Solutions/880.%20Decoded%20String%20at%20Index/note.md)
 890* | [Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern/) | Medium | HashMap(Vector) | [Solutions](Solutions/890.%20Find%20and%20Replace%20Pattern) | 
+899* | [Orderly Queue](https://leetcode.com/problems/orderly-queue/) | Hard | String、Sort、Trick | [Solutions](Solutions/899.%20Orderly%20Queue) | 
 897# | [Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/) | Easy(Medium) | DFS、D&C、Stack | [Solutions](Solutions/897.%20Increasing%20Order%20Search%20Tree) |
 905# | [Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/) | Easy | Two Pointers | [Solutions](Solutions/905.%20Sort%20Array%20By%20Parity) |
 908 | [Smallest Range I](https://leetcode.com/problems/smallest-range-i/) | Easy | Greedy、Trick | [Solutions](Solutions/908.%20Smallest%20Range%20I) |
