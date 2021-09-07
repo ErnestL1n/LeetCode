@@ -95,6 +95,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 344 | [Reverse String](https://leetcode.com/problems/reverse-string/) | Easy | Two Pointers | [Solutions](Solutions/344.%20Reverse%20String) | 
 363* | [Max Sum of Rectangle No Larger Than K](https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/) | Hard | DP、Binary Search(```std::lower_bound```) | [Solutions](Solutions/363.%20Max%20Sum%20of%20Rectangle%20No%20Larger%20Than%20K) | [Note](Solutions/363.%20Max%20Sum%20of%20Rectangle%20No%20Larger%20Than%20K/note.md)
 384* | [Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/) | Medium | Array、Implementation | [Solutions](Solutions/384.%20Shuffle%20an%20Array) | [Note](Solutions/384.%20Shuffle%20an%20Array/note.md)
+387* | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | Easy | Count | [Solutions](Solutions/387.%20First%20Unique%20Character%20in%20a%20String) |
 389* | [Find the Difference](https://leetcode.com/problems/find-the-difference/) | Easy | Bit Manipulation | [Solutions](Solutions/389.%20Find%20the%20Difference) | 
 410 | [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/) | Hard | Binary Search | [Solutions](Solutions/410.%20Split%20Array%20Largest%20Sum) |
 415* | [Add Strings](https://leetcode.com/problems/add-strings/) | Easy | String(to Int=>OverFlow) | [Solutions](Solutions/415.%20Add%20Strings) |
