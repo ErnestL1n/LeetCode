@@ -161,6 +161,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 832 | [Flipping an Image](https://leetcode.com/problems/flipping-an-image/) | Easy | Operation | [Solutions](Solutions/832.%20Flipping%20an%20Image) | 
 834* | [Sum of Distances in Tree](https://leetcode.com/problems/sum-of-distances-in-tree/) | Easy | DFS、Tree、HashSet | [Solutions](Solutions/834.%20Sum%20of%20Distances%20in%20Tree) | 
 838* | [Push Dominoes](https://leetcode.com/problems/push-dominoes/) | Medium | Two Pointers | [Solutions](Solutions/838.%20Push%20Dominoes) |
+848* | [Shifting Letters](https://leetcode.com/problems/shifting-letters/) | Medium | String、Array | [Solutions](Solutions/848.%20Shifting%20Letters) |
 850* | [Rectangle Area II](https://leetcode.com/problems/rectangle-area-ii/) | Hard | Segment tree(RMQ) | [Solutions](Solutions/850.%20Rectangle%20Area%20II) |
 859* | [Buddy Strings](https://leetcode.com/problems/buddy-strings/) | Easy | String、HashSet | [Solutions](Solutions/859.%20Buddy%20Strings) | [Note](Solutions/859.%20Buddy%20Strings/note.md) 
 861* | [Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix/) | Medium(Hard) | Greedy、Bit Manipulation | [Solutions](Solutions/861.%20Score%20After%20Flipping%20Matrix) | [Note](Solutions/861.%20Score%20After%20Flipping%20Matrix/note.md) 
