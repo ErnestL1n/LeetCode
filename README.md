@@ -145,6 +145,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 740* | [Delete and Earn](https://leetcode.com/problems/delete-and-earn/) | Medium | DP | [Solutions](Solutions/740.%20Delete%20and%20Earn) |
 743 | [Network Delay Time](https://leetcode.com/problems/network-delay-time/) | Medium | Dijkstra(Priority_Queue)、Bellman-Ford | [Solutions](Solutions/743.%20Network%20Delay%20Time) | [Note](Solutions/743.%20Network%20Delay%20Time/note.md)
 744* | [Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) | Easy | Binary Search | [Solutions](Solutions/744.%20Find%20Smallest%20Letter%20Greater%20Than%20Target)
+764* | [Largest Plus Sign](https://leetcode.com/problems/largest-plus-sign/) | Medium | DP | [Solutions](Solutions/764.%20Largest%20Plus%20Sign) |
 766* | [Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/) | Easy | Array | [Solutions](Solutions/766.%20Toeplitz%20Matrix) | 
 771# | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | Easy | HashSet | [Solutions](https://github.com/ErnestL1n/LeetCode/tree/main/Solutions/771.%20Jewels%20and%20Stones) | 
 780* | [Reaching Points](https://leetcode.com/problems/reaching-points/) | Hard | Modulo | [Solutions](Solutions/780.%20Reaching%20Points) | 
