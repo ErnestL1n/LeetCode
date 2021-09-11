@@ -73,6 +73,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 215* | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Medium | ```std::make_heap```、Priority_Queue | [Solutions](Solutions/215.%20Kth%20Largest%20Element%20in%20an%20Array) | 
 217* | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy | HashMap | [Solutions](Solutions/217.%20Contains%20Duplicate) | 
 221 | [Maximal Square](https://leetcode.com/problems/maximal-square/) | Medium | DP | [Solutions](Solutions/221.%20Maximal%20Square) | [Note](Solutions/221.%20Maximal%20Square/note.md)
+224* | [Basic Calculator](https://leetcode.com/problems/basic-calculator/) | Hard | Stack | [Solutions](Solutions/224.%20Basic%20Calculator) | 
 226# | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | Easy | Tree、D&C | [Solutions](Solutions/226.%20Invert%20Binary%20Tree) | 
 232* | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | Easy | Queue、Stack | [Solutions](Solutions/232.%20Implement%20Queue%20using%20Stacks)
 234* | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | Easy | Linked List、Two Pointers、D&C | [Solutions](Solutions/234.%20Palindrome%20Linked%20List) | [Note](Solutions/234.%20Palindrome%20Linked%20List/note.md)
