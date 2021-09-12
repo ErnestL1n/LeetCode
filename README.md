@@ -172,6 +172,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | Easy | Linked List、Two Pointers | [Solutions](Solutions/876.%20Middle%20of%20the%20Linked%20List) | 
 877* | [Stone Game](https://leetcode.com/problems/stone-game/) | Medium | DP | [Solutions](Solutions/877.%20Stone%20Game) | [Note](Solutions/877.%20Stone%20Game/note.md)
 880* | [Decoded String at Index](https://leetcode.com/problems/decoded-string-at-index/) | Medium(Hard) | String(Trick) | [Solutions](Solutions/880.%20Decoded%20String%20at%20Index) | [Note](Solutions/880.%20Decoded%20String%20at%20Index/note.md)
+882* | [Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/) | Hard | Dijkstra(Priority_Queue) | [Solutions](Solutions/882.%20Reachable%20Nodes%20In%20Subdivided%20Graph) |
 890* | [Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern/) | Medium | HashMap(Vector) | [Solutions](Solutions/890.%20Find%20and%20Replace%20Pattern) | 
 899* | [Orderly Queue](https://leetcode.com/problems/orderly-queue/) | Hard | String、Sort、Trick | [Solutions](Solutions/899.%20Orderly%20Queue) | 
 897# | [Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/) | Easy(Medium) | DFS、D&C、Stack | [Solutions](Solutions/897.%20Increasing%20Order%20Search%20Tree) |
