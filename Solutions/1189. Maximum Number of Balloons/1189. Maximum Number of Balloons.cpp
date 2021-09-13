@@ -8,9 +8,14 @@ public:
                 ++cnt[c-'a'];
         cnt['l'-'a']/=2;
         cnt['o'-'a']/=2;
-        for(int i=0;i<26;++i)
-            if(i=='a'-'a' or i=='b'-'a' or i=='l'-'a' or i=='o'-'a' or i=='n'-'a')
-                res=min(res,cnt[i]);
+        compare('b'-'a',cnt,res);
+        compare('l'-'a',cnt,res);
+        compare('a'-'a',cnt,res);
+        compare('o'-'a',cnt,res);
+        compare('n'-'a',cnt,res);
         return res;
+    }
+    void compare(int i,int (&cnt)[26],int& res){
+        res=min(res,cnt[i]);
     }
 };
