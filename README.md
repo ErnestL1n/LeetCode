@@ -95,6 +95,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 330* | [Patching Array](https://leetcode.com/problems/patching-array/) | Hard | Greedy | [Solutions](Solutions/330.%20Patching%20Array) | 
 331* | [Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/) | Medium | Pre-Order | [Solutions](Solutions/331.%20Verify%20Preorder%20Serialization%20of%20a%20Binary%20Tree) | 
 344 | [Reverse String](https://leetcode.com/problems/reverse-string/) | Easy | Two Pointers | [Solutions](Solutions/344.%20Reverse%20String) | 
+350* | [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | Easy | HashSet(```set_intersection```) | [Solutions](Solutions/350.%20Intersection%20of%20Two%20Arrays%20II) |
 363* | [Max Sum of Rectangle No Larger Than K](https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/) | Hard | DP、Binary Search(```std::lower_bound```) | [Solutions](Solutions/363.%20Max%20Sum%20of%20Rectangle%20No%20Larger%20Than%20K) | [Note](Solutions/363.%20Max%20Sum%20of%20Rectangle%20No%20Larger%20Than%20K/note.md)
 384* | [Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/) | Medium | Array、Implementation | [Solutions](Solutions/384.%20Shuffle%20an%20Array) | [Note](Solutions/384.%20Shuffle%20an%20Array/note.md)
 387* | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | Easy | Count | [Solutions](Solutions/387.%20First%20Unique%20Character%20in%20a%20String) |
