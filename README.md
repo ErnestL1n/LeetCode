@@ -84,6 +84,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 258 | [Add Digits](https://leetcode.com/problems/add-digits/) | Easy | Trick | [Solutions](Solutions/258.%20Add%20Digits) | [Note](Solutions/258.%20Add%20Digits/note.md)
 268 | [Missing Number](https://leetcode.com/problems/missing-number/) | Easy | XOR、Math | [Solutions](Solutions/268.%20Missing%20Number) | 
 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version/) | Easy | Binary Search | [Solutions](Solutions/278.%20First%20Bad%20Version) | 
+282* | [Expression Add Operators](https://leetcode.com/problems/expression-add-operators/) | Hard | D&C | [Solutions](Solutions/282.%20Expression%20Add%20Operators) | 
 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | Easy | Two Pointers | [Solutions](Solutions/283.%20Move%20Zeroes) | 
 290* | [Word Pattern](https://leetcode.com/problems/word-pattern/) | Easy | HashMap | [Solutions](Solutions/290.%20Word%20Pattern) | 
 295* | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | Hard | Priority_Queue | [Solutions](Solutions/295.%20Find%20Median%20from%20Data%20Stream) | 
