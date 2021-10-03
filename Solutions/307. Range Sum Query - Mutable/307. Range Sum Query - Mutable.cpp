@@ -1,46 +1,46 @@
+// RSQ with array
 class NumArray {
-    #define maxn 30005  // nums.length
-    int seg[maxn*4]={}; //children
     inline static int n;
+    int* segTree;
 public:
-    // segtree index must start from 1
-    // otherwise root is 0 and its left child=0*2=0
-    // will be invalid
     NumArray(vector<int>& nums) {
         n=nums.size();
+        //calloc assign 0 value
+        segTree=(int*)calloc(n*4,sizeof(int));
         for(int i=0;i<n;++i)
             update(i,nums[i]);
     }
     
-    void update(int index, int val,int l=0,int r=n-1,int root=1) {
+    void update(int idx, int val,int l=0,int r=n-1,int segidx=1) {
         if(l==r)
-            seg[root]=val;
+            segTree[segidx]=val;
         else{
-            int mid=(l+r)/2,leftson=root*2,rightson=root*2+1;
-            if(index<=mid)
-                update(index,val,l,mid,leftson);
+            int mid=(l+r)/2,leftson=segidx*2,rightson=segidx*2+1;
+            if(idx<=mid)
+                update(idx,val,l,mid,leftson);
             else
-                update(index,val,mid+1,r,rightson);
-            seg[root]=seg[leftson]+seg[rightson];
+                update(idx,val,mid+1,r,rightson);
+            segTree[segidx]=segTree[leftson]+segTree[rightson];
         }
     }
     
-    int sumRange(int left, int right,int st=0,int end=n-1,int root=1) {
-        if(left<=st and end<=right)
-            return seg[root];
-        int mid=(st+end)/2,leftson=root*2,rightson=root*2+1;
-        if(right<=mid){
-            return sumRange(left,right,st,mid,leftson);
-        }
+    int sumRange(int left, int right,int l=0,int r=n-1,int segidx=1) {
+        if(left<=l and right>=r)
+            return segTree[segidx];
+        int mid=(l+r)/2,leftson=segidx*2,rightson=segidx*2+1;
+        if(right<=mid)
+            return sumRange(left,right,l,mid,leftson);
         if(left>mid)
-            return sumRange(left,right,mid+1,end,rightson);
-        return sumRange(left,right,st,mid,leftson)+sumRange(left,right,mid+1,end,rightson);
+            return sumRange(left,right,mid+1,r,rightson);
+        return sumRange(left,right,l,mid,leftson)+sumRange(left,right,mid+1,r,rightson);
     }
 };
 
-/**
- * Your NumArray object will be instantiated and called as such:
- * NumArray* obj = new NumArray(nums);
- * obj->update(index,val);
- * int param_2 = obj->sumRange(left,right);
- */
+
+//RSQ with Tree construction
+
+
+
+
+
+//RMQ 
