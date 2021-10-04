@@ -1,11 +1,12 @@
 * ==> second time can't solve
 
-174	9.21	2*	10.2
-62	9.21	2	10.2
-115	9.21	2*	10.2
-312	9.22	
-70	9.22
-303	9.22
-1143	10.1
-516	10.2
-55	10.3
+174. Dungeon Game			9.21	2*	10.2
+62. Unique Paths			9.21	2	10.2
+115. Distinct Subsequences		9.21	2*	10.2
+312. Burst Balloons			9.22	
+70. Climbing Stairs			9.22
+303. Range Sum Query - Immutable	9.22
+1143. Longest Common Subsequence	10.1
+516. Longest Palindromic Subsequence	10.2
+55. Jump Game				10.3
+5. Longest Palindromic Substring	10.4
