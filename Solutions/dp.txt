@@ -7,6 +7,6 @@
 70. Climbing Stairs			9.22
 303. Range Sum Query - Immutable	9.22
 1143. Longest Common Subsequence	10.1
-516. Longest Palindromic Subsequence	10.2
+516. Longest Palindromic Subsequence	10.2	2*	10.4
 55. Jump Game				10.3
 5. Longest Palindromic Substring	10.4
