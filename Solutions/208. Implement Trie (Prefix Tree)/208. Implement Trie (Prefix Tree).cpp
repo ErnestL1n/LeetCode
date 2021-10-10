@@ -1,59 +1,51 @@
-class TrieNode
-{
-public:
-    TrieNode *next[26];
-    bool is_word;
-    
-    // Initialize your data structure here.
-    TrieNode(bool b = false)
-    {
-        memset(next, 0, sizeof(next));
-        is_word = b;
-    }
+struct trie{
+    bool isword;
+    trie* ch[26]={};
 };
-
-class Trie
-{
-    TrieNode *root;
+class Trie {
 public:
-    Trie()
-    {
-        root = new TrieNode();
+    struct trie root;
+    Trie() {
+        
     }
-
-    // Inserts a word into the trie.
-    void insert(string s)
-    {
-        TrieNode *p = root;
-        for(int i = 0; i < s.size(); ++ i)
-        {
-            if(p -> next[s[i] - 'a'] == NULL)
-                p -> next[s[i] - 'a'] = new TrieNode();
-            p = p -> next[s[i] - 'a'];
+    // marking end isword=true
+    void insert(string word) {
+        auto p=&root;
+        for(const auto& c:word){
+            if(p->ch[c-'a']==nullptr)
+                p->ch[c-'a']=new trie();
+            p=p->ch[c-'a'];
         }
-        p -> is_word = true;
+        p->isword=true;
     }
-
-    // Returns if the word is in the trie.
-    bool search(string key)
-    {
-        TrieNode *p = find(key);
-        return p != NULL && p -> is_word;
+    
+    // checking end if isword
+    bool search(string word) {
+        auto p=&root;
+        for(const auto& c:word){
+            if(!p)
+                return false;
+            p=p->ch[c-'a'];
+        }
+        return p and p->isword;
     }
-
-    // Returns if there is any word in the trie
-    // that starts with the given prefix.
-    bool startsWith(string prefix)
-    {
-        return find(prefix) != NULL;
-    }
-
-private:
-    TrieNode* find(string key)
-    {
-        TrieNode *p = root;
-        for(int i = 0; i < key.size() && p != NULL; ++ i)
-            p = p -> next[key[i] - 'a'];
-        return p;
+    
+    // checking trie exists or not
+    bool startsWith(string prefix) {
+        auto p=&root;
+        for(const auto& c:prefix){
+            if(!p)
+                break;
+            p=p->ch[c-'a'];
+        }
+        return p!=nullptr;
     }
 };
+
+/**
+ * Your Trie object will be instantiated and called as such:
+ * Trie* obj = new Trie();
+ * obj->insert(word);
+ * bool param_2 = obj->search(word);
+ * bool param_3 = obj->startsWith(prefix);
+ */
