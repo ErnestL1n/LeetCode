@@ -16,13 +16,9 @@ public:
     void insert(string key, int val) {
         auto p=&root;
         for(const auto& c:key){
-            if(p->ch[c-'a']!=nullptr){
-                p->ch[c-'a']=p->ch[c-'a'];
-                p=p->ch[c-'a'];
-            }else{
+            if(!p->ch[c-'a'])
                 p->ch[c-'a']=new trie();
-                p=p->ch[c-'a'];
-            }
+            p=p->ch[c-'a'];
             p->sum+=val-m[key];
         }
         m[key]=val;
