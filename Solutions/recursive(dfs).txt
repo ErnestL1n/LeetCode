@@ -3,4 +3,5 @@
 698. Partition to K Equal Sum Subsets			9.30
 79. Word Search						10.7	
 212. Word Search II					10.9
-543. Diameter of Binary Tree				10.11						
+543. Diameter of Binary Tree				10.11	
+1008. Construct Binary Search Tree from Preorder Traversal					
