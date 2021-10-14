@@ -10,3 +10,4 @@
 516. Longest Palindromic Subsequence	10.2	2*	10.4
 55. Jump Game				10.3
 5. Longest Palindromic Substring	10.4
+279. Perfect Squares			10.14
