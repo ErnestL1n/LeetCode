@@ -311,7 +311,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1624* | [Largest Substring Between Two Equal Characters](https://leetcode.com/problems/largest-substring-between-two-equal-characters/) | Easy | Trick、Count | [Solutions](Solutions/1624.%20Largest%20Substring%20Between%20Two%20Equal%20Characters) |
 1629* | [Slowest Key](https://leetcode.com/problems/slowest-key/) | Easy | Array | [Solutions](Solutions/1629.%20Slowest%20Key) |
 1630! | [Arithmetic Subarrays](https://leetcode.com/problems/arithmetic-subarrays/) | Medium | Sort、Math | [Solutions](Solutions/1630.%20Arithmetic%20Subarrays)
-1632* | [Rank Transform of a Matrix](https://leetcode.com/problems/rank-transform-of-a-matrix/) | Hard | Union Find | N/A
+1632* | [Rank Transform of a Matrix](https://leetcode.com/problems/rank-transform-of-a-matrix/) | Hard | Union-Find | N/A
 1641 | [Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings/) | Medium | Math、DP | [Solutions](Solutions/1641.%20Count%20Sorted%20Vowel%20Strings) | [Note](Solutions/1641.%20Count%20Sorted%20Vowel%20Strings/note.md)
 1642 | [Furthest Building You Can Reach](https://leetcode.com/problems/furthest-building-you-can-reach/) | Medium | Priority_Queue | [Solutions](Solutions/1642.%20Furthest%20Building%20You%20Can%20Reach) | [Note](https://github.com/ErnestL1n/LeetCode/blob/master/Solutions/1642.%20Furthest%20Building%20You%20Can%20Reach/note.md)
 1662* | [Check If Two String Arrays are Equivalent](https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/) | Easy | String | [Solutions](Solutions/1662.%20Check%20If%20Two%20String%20Arrays%20are%20Equivalent)
