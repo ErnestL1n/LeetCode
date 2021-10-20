@@ -21,6 +21,40 @@ public:
     }
 };
 
+//Kruskal  ,min priority_queue implementation  2021.10.20
+#define ar3 array<int,3>
+class Solution {
+public:
+    int find(vector<int>& ds,int i){
+        return ds[i]<0?i:ds[i]=find(ds,ds[i]);
+    }
+    int minCostConnectPoints(vector<vector<int>>& pts) {
+        int n=pts.size(),res=0;
+        vector<int> ds(n,-1);
+        priority_queue<ar3,vector<ar3>,greater<ar3>> pq;
+        for(int i=0;i<n-1;++i){
+            for(int j=i+1;j<n;++j){
+                pq.push({abs(pts[i][0]-pts[j][0])+abs(pts[i][1]-pts[j][1]),i,j});
+            }
+        }
+        while(pq.size()){
+            auto [dis,i,j]=pq.top();pq.pop();
+            i=find(ds,i),j=find(ds,j);
+            if(i!=j){
+                res+=dis;
+                if(ds[i]>ds[j])
+                    swap(i,j);
+                ds[i]+=ds[j];
+                ds[j]=i;
+                if(ds[find(ds,1)]==-n)
+                    break;
+            }
+        }
+        return res;
+    }
+};
+
+
 //Kruskal  ,min heap implementation(fetch from back,compare to min priority queue fetch from top())
 typedef array<int,3> ar;
 class Solution {
