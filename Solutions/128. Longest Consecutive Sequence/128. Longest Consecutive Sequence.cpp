@@ -43,35 +43,34 @@ public:
 class Solution {
 public:
     int find(vector<int>& ds,int i){
-        return ds[i]<0?i:ds[i]=find(ds,ds[i]);
+        return ds[i]<0?i:find(ds,ds[i]);
     }
     int longestConsecutive(vector<int>& nums) {
-        if(nums.empty())
+        if(nums.size()==0){
             return 0;
-        int seq=0;
+        }
+        int res=0;
+        unordered_map<int,int> mp;
         vector<int> ds(nums.size(),-1);
-        unordered_map<int,int> m;
         for(int i=0;i<nums.size();++i){
-            int n=nums[i];
-            if(m.count(n))
+            int x=nums[i];
+            if(mp.count(x))
                 continue;
-            m[n]=i;
-            if(m.count(n-1)){
-                //union
-                int j=find(ds,m[n]);
-                int k=find(ds,m[n-1]);
-                ds[j]+=ds[k];
-                ds[k]=j;
-            }           
-            if(m.count(n+1)){
-                //union
-                int j=find(ds,m[n]);
-                int k=find(ds,m[n+1]);
+            mp[x]=i;
+            if(mp.count(x-1)){
+                int j=find(ds,mp[x]);
+                int k=find(ds,mp[x-1]);
                 ds[j]+=ds[k];
                 ds[k]=j;
             }
-            seq=max(seq,abs(ds[find(ds,m[n])]));
+            if(mp.count(x+1)){
+                int j=find(ds,mp[x]);
+                int k=find(ds,mp[x+1]);
+                ds[j]+=ds[k];
+                ds[k]=j;
+            }
+            res=max(res,abs(ds[find(ds,mp[x])]));
         }
-        return seq;
+        return res;
     }
 };
