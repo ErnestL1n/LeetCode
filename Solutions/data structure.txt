@@ -4,3 +4,4 @@
 677. Map Sum Pairs				10.10	trie + hashmap
 496. Next Greater Element I			10.19	stack + hashmap
 128. Longest Consecutive Sequence	2* 	10.20	union-find
+155. Min Stack					10.25	stack
