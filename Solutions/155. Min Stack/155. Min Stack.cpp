@@ -30,6 +30,34 @@ public:
     }
 };
 
+//using multiset
+class MinStack {
+public:
+    MinStack() {
+        
+    }
+    multiset<int> s;
+    stack<int> stk;
+    void push(int val) {
+        s.insert(val);
+        stk.push(val);
+    }
+    
+    void pop() {
+        auto it=s.find(stk.top());
+        s.erase(it);
+        stk.pop();
+    }
+    
+    int top() {
+        return stk.top();
+    }
+    
+    int getMin() {
+        return *s.begin();
+    }
+};
+
 /**
  * Your MinStack object will be instantiated and called as such:
  * MinStack* obj = new MinStack();
