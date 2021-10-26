@@ -13,9 +13,9 @@ class Solution {
 public:
     TreeNode* invertTree(TreeNode* root) {
         if(root){
-            TreeNode* temp=root->left;
-            root->left=invertTree(root->right);
-            root->right=invertTree(temp);
+            root->left=invertTree(root->left);
+            root->right=invertTree(root->right);
+            swap(root->left,root->right);
         }
         return root;
     }
@@ -26,16 +26,19 @@ public:
 class Solution {
 public:
     TreeNode* invertTree(TreeNode* root) {
-        stack<TreeNode*> stk;
-        stk.push(root);
-        while(stk.size()){
-            auto tmp=stk.top();
-            stk.pop();
-            if(tmp){
-                stk.push(tmp->left);
-                stk.push(tmp->right);
-                swap(tmp->left,tmp->right);
+        if(!root)
+            return nullptr;
+        queue<TreeNode*> q;
+        q.push(root);
+        while(q.size()){
+            auto cur=q.front();q.pop();
+            if(cur->left or cur->right){
+                swap(cur->left,cur->right);
             }
+            if(cur->left)
+                q.push(cur->left);
+            if(cur->right)
+                q.push(cur->right);
         }
         return root;
     }
