@@ -22,43 +22,20 @@ public:
 };
 
 
-
 class Solution {
 public:
     TreeNode* invertTree(TreeNode* root) {
-        if(!root)
-            return nullptr;
         queue<TreeNode*> q;
         q.push(root);
         while(q.size()){
             auto cur=q.front();q.pop();
-            if(cur->left or cur->right){
+            if(cur){
+                q.push(cur->left);
+                q.push(cur->right);
                 swap(cur->left,cur->right);
             }
-            if(cur->left)
-                q.push(cur->left);
-            if(cur->right)
-                q.push(cur->right);
         }
         return root;
     }
 };
 
-
-
-class Solution {
-public:
-    TreeNode* invertTree(TreeNode* root) {
-        queue<TreeNode*> q;
-        q.push(root);
-        while(q.size()){
-            auto curr=q.front();q.pop();
-            if(curr){
-                auto tmp=curr->left;
-                curr->left=curr->right;q.push(curr->left);
-                curr->right=tmp;q.push(curr->right);
-            }
-        }
-        return root;
-    }
-};
