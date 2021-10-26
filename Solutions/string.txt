@@ -1,1 +1,2 @@
 151. Reverse Words in a String			10.20
+392. Is Subsequence				10.26
