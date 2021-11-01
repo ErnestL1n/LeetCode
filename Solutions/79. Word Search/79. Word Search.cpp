@@ -1,30 +1,31 @@
 class Solution {
 public:
-    int m,n;
+    inline static int m,n;
     bool exist(vector<vector<char>>& board, string word) {
         m=board.size(),n=board[0].size();
         for(int i=0;i<m;++i){
             for(int j=0;j<n;++j){
-                if(foo(i,j,0,word,board))
+                if(foo(board,word,i,j,0)){
                     return true;
+                }
             }
         }
         return false;
     }
-    bool foo(int x,int y,int start,string& word,vector<vector<char>>& board){
-        if(x<0 or y<0 or x>=m or y>=n)
+    bool foo(vector<vector<char>>& board,string& word,int i,int j,int pos){
+        if(i<0 or j<0 or i>=m or j>=n or board[i][j]!=word[pos]){
             return false;
-        if(word[start]!=board[x][y])
-            return false;
-        if(start==word.size()-1)
+        }
+        if(pos==word.size()-1){
             return true;
-        auto cur=board[x][y];
-        board[x][y]='*';
-        bool res=foo(x-1,y,start+1,word,board) or 
-            foo(x,y-1,start+1,word,board) or
-            foo(x+1,y,start+1,word,board) or
-            foo(x,y+1,start+1,word,board);
-        board[x][y]=cur;
+        }
+        auto cur=board[i][j];
+        // tip avoid repetition
+        board[i][j]='*';
+        bool res=(foo(board,word,i+1,j,pos+1) or foo(board,word,i,j+1,pos+1)
+          or foo(board,word,i-1,j,pos+1) or foo(board,word,i,j-1,pos+1));
+        // tip unmark
+        board[i][j]=cur;
         return res;
     }
 };
