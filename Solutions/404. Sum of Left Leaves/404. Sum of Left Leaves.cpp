@@ -33,3 +33,22 @@ public:
         return res;
     }
 };
+
+
+class Solution {
+public:
+    int sumOfLeftLeaves(TreeNode* root,TreeNode* parent=nullptr) {
+        int res=0;
+        function<void(TreeNode*,TreeNode*)> dfs=[&](TreeNode* parent,TreeNode* root){
+            if(root){
+                dfs(root,root->left);
+                dfs(root,root->right);
+                if(root->left==nullptr and root->right==nullptr and parent and root==parent->left){
+                    res+=root->val;
+                }
+            }
+        };
+        dfs(parent,root);
+        return res;
+    }
+}; 
