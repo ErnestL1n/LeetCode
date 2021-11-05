@@ -2,3 +2,4 @@
 154. Find Minimum in Rotated Sorted Array II		10.23
 392. Is Subsequence					10.26
 1044. Longest Duplicate Substring			10.30
+441. Arranging Coins					11.5
