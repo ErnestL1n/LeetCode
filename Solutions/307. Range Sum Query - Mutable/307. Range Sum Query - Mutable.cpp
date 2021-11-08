@@ -92,7 +92,7 @@ public:
 //RMQ 
 
 
-// fenwick tree (Binary index tree)
+// fenwick tree (Binary indexed tree)
 class NumArray {
 public:
     vector<int> nums;
