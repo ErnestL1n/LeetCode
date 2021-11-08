@@ -90,3 +90,25 @@ public:
 
 
 //RMQ 
+
+
+// fenwick tree (Binary index tree)
+class NumArray {
+public:
+    vector<int> nums;
+    int* fenwick;
+    inline static int n;
+    NumArray(vector<int>& nums) {
+        this->nums=nums;
+        n=nums.size();
+        fenwick=(int*)calloc(n+1,sizeof(int));
+    }
+    
+    void update(int index, int val) {
+        
+    }
+    
+    int sumRange(int left, int right) {
+        
+    }
+};
