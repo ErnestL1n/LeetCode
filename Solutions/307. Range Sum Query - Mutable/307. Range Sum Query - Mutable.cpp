@@ -102,13 +102,37 @@ public:
         this->nums=nums;
         n=nums.size();
         fenwick=(int*)calloc(n+1,sizeof(int));
+        for(int i=0;i<n;++i){
+            init(i,nums[i]);
+        }
+    }
+    // function for fenwick tree
+    void init(int index,int val){
+        ++index;
+        while(index<=n){
+            fenwick[index]+=val;
+            //the least bit
+            index+=(index&-index);
+        }
     }
     
     void update(int index, int val) {
-        
+        int diff=val-nums[index];
+        nums[index]=val;
+        init(index,diff);
+    }
+    
+    int getsum(int index){
+        int sum=0;
+        ++index;
+        while(index>0){
+            sum+=fenwick[index];
+            index-=(index&-index);
+        }
+        return sum;
     }
     
     int sumRange(int left, int right) {
-        
-    }
+        return getsum(right)-getsum(left-1);
+    };
 };
