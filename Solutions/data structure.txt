@@ -5,3 +5,4 @@
 496. Next Greater Element I			10.19	stack + hashmap
 128. Longest Consecutive Sequence	2* 	10.20	union-find
 155. Min Stack					10.25	stack
+307. Range Sum Query - Mutable			11.8	fenwick tree(Binary indexed tree)
