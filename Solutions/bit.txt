@@ -1,3 +1,4 @@
 1239. Maximum Length of a Concatenated String with Unique Characters	9.22
 201. Bitwise AND of Numbers Range					10.10
 260. Single Number III							11.6
+1178. Number of Valid Words for Each Puzzle				11.9
