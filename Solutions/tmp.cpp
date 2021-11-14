@@ -87,34 +87,34 @@ using mint = Fp<MOD>;
 // }
 // cout << dp[n] << "\n";
 
-template <int D, typename T>
-struct VEC : public vector<VEC<D - 1, T>> {
+template <typename T, int D>
+struct VEC : public vector<VEC<T, D-1>> {
   static_assert(D >= 1, "Vector dimension must be greater than zero!");
   template <typename... Args>
   VEC(int n = 0, Args... args)
-      : vector<VEC<D - 1, T>>(n, VEC<D - 1, T>(args...)) {}
+      : vector<VEC<T, D-1>>(n, VEC<T, D-1>(args...)) {}
 };
 template <typename T>
-struct VEC<1, T> : public vector<T> {
+struct VEC<T, 1> : public vector<T> {
   VEC(int n = 0, const T& val = T()) : vector<T>(n, val) {}
 };
 // EX:
 // ---------------------------------------
 // int a[10][50] initialized with zero
-// VEC<2, int> a(10, 50);
+// VEC<int, 2> a(10, 50);
 // ---------------------------------------
 // double b[n][m][k] initialized with 3.14
-// VEC<3, double> b(n, m, k, 3.14);
+// VEC<double, 3> b(n, m, k, 3.14);
 // ---------------------------------------
 // the third dimension has no value yet
-// VEC<3, long long> c(5, 5);
+// VEC<long long, 3> c(5, 5);
 // now c[0][0][0] has a value (100) but others don't
 // c[0][0].push_back(100);
 // ---------------------------------------
-// VEC<4, int> d(10, 10);
+// VEC<int, 4> d(10, 10);
 // now d[2][3][0] is a vector with 100 values of 12345
-// d[2][3].push_back(VEC<1, int>(100, 12345));
+// d[2][3].push_back(VEC<int, 1>(100, 12345));
 // ---------------------------------------
 // just blank vector of strings
-// VEC<1, string> e;
+// VEC<string, 1> e;
 // ---------------------------------------
