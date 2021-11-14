@@ -160,7 +160,42 @@ public:
 
 
 //sol2
-
+//inplace , without using set
+class CombinationIterator {
+public:
+    string s;
+    int len,mask;
+    CombinationIterator(string characters, int combinationLength) {
+        this->s=characters;
+        this->len=combinationLength;
+        this->mask=(1<<characters.size())-1;
+    }
+    
+    string next() {
+        while(this->mask and __builtin_popcount(this->mask)!=this->len){
+            --this->mask;
+        }
+        string res="";
+        rep(i,this->s.size()){
+            if(this->mask & (1<<(this->s.size()-i-1))){
+                res+=s[i];
+            }
+        }
+        --this->mask;
+        return res;
+    }
+    
+    bool hasNext() {
+        while(this->mask and __builtin_popcount(this->mask)!=this->len){
+            --this->mask;
+        }
+        if(!this->mask){
+            return false;
+        }else{
+            return true;
+        }
+    }
+};
 
 /**
  * Your CombinationIterator object will be instantiated and called as such:
