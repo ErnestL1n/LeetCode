@@ -122,9 +122,9 @@ struct VEC<T, 1> : public vector<T> {
 //sol1
 //using set
 set<string> foo(string& s,int length){
-    int len=1<<s.size();
+    int mask=1<<s.size();
     set<string> res;
-    for(int l=1;l<len;++l){
+    for(int l=1;l<mask;++l){
         string tmp="";
         int n=l,i=0;
         while(n){
@@ -158,9 +158,14 @@ public:
     }
 };
 
+
+//sol2
+
+
 /**
  * Your CombinationIterator object will be instantiated and called as such:
  * CombinationIterator* obj = new CombinationIterator(characters, combinationLength);
  * string param_1 = obj->next();
  * bool param_2 = obj->hasNext();
  */
+
