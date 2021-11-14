@@ -2,3 +2,4 @@
 201. Bitwise AND of Numbers Range					10.10
 260. Single Number III							11.6
 1178. Number of Valid Words for Each Puzzle				11.9
+1286. Iterator for Combination						11.14
