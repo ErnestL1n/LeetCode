@@ -14,4 +14,4 @@
 #309. Best Time to Buy and Sell Stock with Cooldown	10.15
 #123. Best Time to Buy and Sell Stock III		10.16
 122. Best Time to Buy and Sell Stock II			11.10
-368. Largest Divisible Subset				11.15
+368. Largest Divisible Subset				11.15 (LIS)
