@@ -124,39 +124,33 @@ class Solution {
 public:
     vector<int> largestDivisibleSubset(vector<int>& nums) {
         int n=nums.size();
-        sort(nums.begin(),nums.end());
-        bool flag=true;
-        if(nums[0]==1){
-            flag=false;
-        }else{
-            nums.push_back(1);
-            ++n;
+        if(n==1){
+            return nums;
         }
         sort(nums.begin(),nums.end());
-        int i,j;
-        VEC<int,2> dp(n,2);
-        for(i=n-1;i>=0;--i){
-            dp[i][0]=0;
-            dp[i][1]=i;
-            for(int j=i+1;j<n;++j){
-                if(nums[j]%nums[i]==0){
-                    if(dp[j][0]>dp[i][0]){
-                        dp[i][0]=dp[j][0];
-                        dp[i][1]=j;
+        VEC<int,1> dp(n,1);
+        int mx=INT_MIN;
+        for(int i=1;i<n;++i){
+            for(int j=i-1;j>=0;--j){
+                if(nums[i]%nums[j]==0){
+                    int tmp=1+dp[j];
+                    if(tmp>dp[i]){
+                        dp[i]=tmp;
                     }
                 }
             }
-            ++dp[i][0];
+            if(dp[i]>mx){
+                mx=dp[i];
+            }
         }
-        i=0;
         VEC<int,1> res;
-        res.pb(nums[i]);
-        while(dp[i][1]!=i){
-            i=dp[i][1];
-            res.pb(nums[i]);
-        }
-        if(flag){
-            res.erase(res.begin());
+        int prev=0;
+        for(int i=n-1;i>=0;--i){
+            if(dp[i]==mx and prev%nums[i]==0){
+                res.pb(nums[i]);
+                --mx;
+                prev=res.back();
+            }
         }
         return res;
     }
