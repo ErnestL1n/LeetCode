@@ -128,10 +128,10 @@ public:
             return nums;
         }
         sort(nums.begin(),nums.end());
-        VEC<int,1> dp(n,1);
+        VEC<int,1> dp(n,1),res;
         int mx=INT_MIN;
-        for(int i=1;i<n;++i){
-            for(int j=i-1;j>=0;--j){
+        for(int i=0;i<n;++i){
+            for(int j=0;j<i;++j){
                 if(nums[i]%nums[j]==0){
                     int tmp=1+dp[j];
                     if(tmp>dp[i]){
@@ -143,7 +143,6 @@ public:
                 mx=dp[i];
             }
         }
-        VEC<int,1> res;
         int prev=0;
         for(int i=n-1;i>=0;--i){
             if(dp[i]==mx and prev%nums[i]==0){
