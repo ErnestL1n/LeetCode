@@ -4,3 +4,4 @@
 1044. Longest Duplicate Substring			10.30
 441. Arranging Coins					11.5
 668. Kth Smallest Number in Multiplication Table	11.16
+300. Longest Increasing Subsequence			11.17
