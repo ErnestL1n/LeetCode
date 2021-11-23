@@ -123,14 +123,15 @@ struct VEC<T, 1> : public vector<T> {
 class Solution {
 public:
     vector<int> findDisappearedNumbers(vector<int>& nums) {
-        int len = nums.size();
-        for(int i=0; i<len; i++) {
-            int m = abs(nums[i])-1; 
-            nums[m] = nums[m]>0 ? -nums[m] : nums[m];
+        rep(i,nums.size()){
+            int idx=abs(nums[i])-1;
+            nums[idx]=-abs(nums[idx]);
         }
-        vector<int> res;
-        for(int i = 0; i<len; i++) {
-            if(nums[i] > 0) res.push_back(i+1);
+        VEC<int,1> res;
+        rep(i,nums.size()){
+            if(nums[i]>0){
+                res.pb(i+1);
+            }
         }
         return res;
     }
