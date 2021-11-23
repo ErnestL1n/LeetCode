@@ -7,3 +7,4 @@
 155. Min Stack					10.25	stack
 307. Range Sum Query - Mutable			11.8	fenwick tree(Binary indexed tree)
 739. Daily Temperatures				11.13	stack
+952. Largest Component Size by Common Factor	11.23	union-find
