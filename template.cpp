@@ -2,7 +2,6 @@
 using namespace std;
 #define pb push_back
 #define rep(i, n) for (int i = 0; i < n; ++i)
-// #define rep(i, n) for (ll i = 0; i < n; ++i)
 typedef long long ll;
 template <int MOD>
 struct Fp {
