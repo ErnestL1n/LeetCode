@@ -2,6 +2,7 @@
 using namespace std;
 #define pb push_back
 #define rep(i, n) for (int i = 0; i < n; ++i)
+// #define rep(i, n) for (ll i = 0; i < n; ++i)
 typedef long long ll;
 template <int MOD>
 struct Fp {
@@ -118,23 +119,15 @@ struct VEC<T, 1> : public vector<T> {
 // VEC<string, 1> e;
 // ---------------------------------------
 
-
 class Solution {
 public:
-    vector<vector<int>> intervalIntersection(vector<vector<int>>& a, vector<vector<int>>& b) {
+    vector<vector<int>> intervalIntersection(vector<vector<int>>& a,vector<vector<int>>& b) {
         vector<vector<int>> res;
-        for(int i=0,j=0;i<a.size() and j<b.size();){
-            if(a[i][1]<b[j][0]){
-                ++i;
-            }else if(a[i][0]>b[j][1]){
-                ++j;
-            }else{
-                res.pb({max(a[i][0],b[j][0]),min(a[i][1],b[j][1])});
-                if(a[i][1]<b[j][1]){
-                    ++i;
-                }else{
-                    ++j;
-                }
+        for(int i=0,j=0;i<a.size() and j<b.size();a[i][1]<b[j][1]?++i:++j){
+            int st=max(a[i][0],b[j][0]);
+            int ed=min(a[i][1],b[j][1]);
+            if(st<=ed){
+                res.pb({st,ed});
             }
         }
         return res;
