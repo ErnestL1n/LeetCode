@@ -137,13 +137,13 @@ public:
                 }
             }
         }
-        map<int,vector<string>> newaccounts;
+        unordered_map<int,vector<string>> newaccounts;
         for(auto [k,v]:em2id){
-           newaccounts[find(ds,v)].pb(k);
+            newaccounts[find(ds,v)].pb(k);
         }
         vector<vector<string>> res;
         for(auto [k,v]:newaccounts){
-            auto email=v;
+            vector<string> email=v;
             sort(email.begin(),email.end());
             email.insert(email.begin(),accounts[k][0]);
             res.pb(email);
