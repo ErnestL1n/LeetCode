@@ -131,9 +131,9 @@ public:
             ds[i]=i;
             for(int j=1;j<accounts[i].size();++j){
                 if(em2id.find(accounts[i][j])!=em2id.end()){
-                    ds[find(ds,em2id[accounts[i][j]])]=find(ds,ds[i]);
+                    ds[find(ds,em2id[accounts[i][j]])]=i;
                 }else{
-                    em2id[accounts[i][j]]=find(ds,ds[i]);
+                    em2id[accounts[i][j]]=i;
                 }
             }
         }
