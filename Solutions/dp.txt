@@ -18,3 +18,4 @@
 673. Number of Longest Increasing Subsequence		11.17 (# of LIS's)
 53. Maximum Subarray					11.25
 85. Maximal Rectangle					11.30
+198. House Robber					12.1
