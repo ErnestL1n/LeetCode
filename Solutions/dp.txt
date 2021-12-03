@@ -19,3 +19,4 @@
 53. Maximum Subarray					11.25
 85. Maximal Rectangle					11.30
 198. House Robber					12.1
+152. Maximum Product Subarray				12.3 (Prefix Sum)
