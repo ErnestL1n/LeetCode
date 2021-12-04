@@ -119,12 +119,13 @@ struct VEC<T, 1> : public vector<T> {
 // ---------------------------------------
 
 struct Trie{
+    Trie *ch[26]={};
     bool isword;
-    Trie* ch[26]={};
 };
 
 class StreamChecker {
 public:
+        
     struct Trie root;
     string s;
     
@@ -135,9 +136,9 @@ public:
     bool query(char letter) {
         s+=letter;
         auto p=&root;
-        for(int i=s.size()-1;i>=0 and p!=nullptr;--i){
+        for(int i=s.size()-1;i>=0 and p;--i){
             p=p->ch[s[i]-'a'];
-            if(p!=nullptr and p->isword){
+            if(p and p->isword){
                 return true;
             }
         }
@@ -148,14 +149,15 @@ public:
         for(auto& w:words){
             auto p=&root;
             for(int i=w.size()-1;i>=0;--i){
-                if(p->ch[w[i]-'a']==nullptr){
+                if(!p->ch[w[i]-'a']){
                     p->ch[w[i]-'a']=new Trie();
                 }
                 p=p->ch[w[i]-'a'];
             }
             p->isword=true;
-        }    
+        }
     }
+    
 };
 
 /**
