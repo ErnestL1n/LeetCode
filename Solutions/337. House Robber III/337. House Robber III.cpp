@@ -148,3 +148,22 @@ public:
     }
 };
 
+//DP
+class Solution {
+public:
+    vector<int> foo(TreeNode* root){
+        if(!root){
+            return vector<int> {0,0};
+        }
+        vector<int> left=foo(root->left);
+        vector<int> right=foo(root->right);
+        vector<int> res(2);
+        res[0]=max(left[0],left[1])+max(right[0],right[1]);
+        res[1]=root->val+left[0]+right[0];
+        return res;
+    }
+    int rob(TreeNode* root) {
+        vector<int> res=foo(root);
+        return max(res[0],res[1]);
+    }
+};
