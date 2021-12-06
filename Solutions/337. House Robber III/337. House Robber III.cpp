@@ -148,22 +148,50 @@ public:
     }
 };
 
-//DP
+//store precount with map
 class Solution {
 public:
-    vector<int> foo(TreeNode* root){
+    int foo(TreeNode* root,unordered_map<TreeNode*,int>& m){
         if(!root){
-            return vector<int> {0,0};
+            return 0;
         }
-        vector<int> left=foo(root->left);
-        vector<int> right=foo(root->right);
-        vector<int> res(2);
+        if(m.find(root)!=m.end()){
+            return m[root];
+        }
+        int res=0;
+        if(root->left){
+            res+=foo(root->left->left,m)+foo(root->left->right,m);
+        }
+        if(root->right){
+            res+=foo(root->right->left,m)+foo(root->right->right,m);
+        }
+        res=max(res+root->val,foo(root->left,m)+foo(root->right,m));
+        m[root]=res;
+        return res;
+    }
+    int rob(TreeNode* root) {
+        unordered_map<TreeNode*,int> m;
+        return foo(root,m);
+    }
+};
+
+//DP
+// res[0] -> the first element of which denotes the maximum amount of money that can be robbed if root is not robbed
+// res[1] -> the second element signifies the maximum amount of money robbed if it is robbed
+class Solution {
+public:
+    VEC<int,1> foo(TreeNode* root){
+        if(!root){
+            return VEC<int,1>(2);
+        }
+        VEC<int,1> left=foo(root->left),right=foo(root->right);
+        VEC<int,1> res(2);
         res[0]=max(left[0],left[1])+max(right[0],right[1]);
         res[1]=root->val+left[0]+right[0];
         return res;
     }
     int rob(TreeNode* root) {
-        vector<int> res=foo(root);
+        VEC<int,1> res=foo(root);
         return max(res[0],res[1]);
     }
 };
