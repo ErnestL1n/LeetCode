@@ -10,3 +10,4 @@
 952. Largest Component Size by Common Factor	11.23	union-find
 721. Accounts Merge				11.29	union-find(different version) + hashmap
 1032. Stream of Characters			12.4	trie
+2104. Sum of Subarray Ranges			12.13
