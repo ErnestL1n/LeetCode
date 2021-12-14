@@ -148,3 +148,29 @@ public:
         return root->val+rangeSumBST(root->left,low,high)+rangeSumBST(root->right,low,high);
     }
 };
+
+//stack solution
+class Solution {
+public:
+    int rangeSumBST(TreeNode* root, int low, int high) {
+        stack<TreeNode*> stk;
+        stk.push(root);
+        int res=0;
+        while(stk.size()){
+            auto x=stk.top();stk.pop();
+            if(!x){
+                continue;
+            }
+            if(low<x->val){
+                stk.push(x->left);
+            }
+            if(high>x->val){
+                stk.push(x->right);
+            }
+            if(low<=x->val and x->val<=high){
+                res+=x->val;
+            }
+        }
+        return res;
+    }
+};
