@@ -4,3 +4,4 @@
 1178. Number of Valid Words for Each Puzzle				11.9
 1286. Iterator for Combination						11.14
 461. Hamming Distance							11.19
+231. Power of Two							12.21
