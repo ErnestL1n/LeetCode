@@ -132,6 +132,40 @@ struct VEC<T, 1> : public vector<T> {
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+
+class Solution {
+public:
+    void reorderList(ListNode* head) {
+        if(!head or !head->next){
+            return;
+        }
+        auto slow=head;
+        auto fast=head;
+        while(fast->next and fast->next->next){
+            slow=slow->next;
+            fast=fast->next->next;
+        }
+        auto premid=slow;
+        auto precur=slow->next;
+        while(precur->next){
+            ListNode *cur=precur->next;
+            precur->next=cur->next;
+            cur->next=premid->next;
+            premid->next=cur;
+        }
+        slow=head;
+        fast=premid->next;
+        while(slow!=premid){
+            premid->next=fast->next;
+            fast->next=slow->next;
+            slow->next=fast;
+            slow=fast->next;
+            fast=premid->next;
+        }
+    }
+};
+
+//naive version
 class Solution {
 public:
     void reorderList(ListNode* head) {
