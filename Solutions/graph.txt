@@ -2,3 +2,4 @@
 1584. Min Cost to Connect All Points 			10.20	Prim's
 1584. Min Cost to Connect All Points 			10.20	Kruskal
 310. Minimum Height Trees				12.16
+210. Course Schedule II					12.23	Topological sort
