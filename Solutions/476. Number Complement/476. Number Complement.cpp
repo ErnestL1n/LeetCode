@@ -138,3 +138,27 @@ public:
         return res;
     }
 };
+
+// 3 lines
+// num          = 00000101
+// mask         = 11111000
+// ~mask & ~num = 00000010
+
+// unsigned int x = 0;
+// int a = 0;
+// cout<<"Unsigned Result "<< ~x <<endl ;
+// cout<<"Normal Result "<< ~a ;
+
+// Unsigned Result 4294967295
+// Normal Result -1
+
+class Solution {
+public:
+    int findComplement(int num) {
+        unsigned mask=~0;
+        while(num&mask){
+            mask<<=1;
+        }
+        return ~mask&~num;
+    }
+};
