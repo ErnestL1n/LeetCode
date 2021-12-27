@@ -1,54 +1,184 @@
-//Dijkstra
-typedef pair<int, int> pii;
+#include <bits/stdc++.h>
+using namespace std;
+#define pb push_back
+#define rep(i,l,r) for (int i = l; i < r; ++i)
+#define repe(i,l,r) for (int i = l; i <= r; ++i)
+#define repde(i,r,l) for (int i = r; i >= l; --i)
+#define repall(v,a) for (const auto& v:a)
+// #define rep(i, n) for (ll i = 0; i < n; ++i)
+#define maxint INT_MAX
+#define maxll std::numeric_limits<long long int>::max()
+#define minint INT_MIN
+#define minll std::numeric_limits<long long int>::min()
+typedef long long ll;
+template <int MOD>
+struct Fp {
+  long long val;
+  constexpr Fp(long long v = 0) noexcept : val(v % MOD) {
+    if (val < 0) val += MOD;
+  }
+  constexpr int getmod() const { return MOD; }
+  constexpr Fp operator-() const noexcept { return val ? MOD - val : 0; }
+  constexpr Fp operator+(const Fp& r) const noexcept { return Fp(*this) += r; }
+  constexpr Fp operator-(const Fp& r) const noexcept { return Fp(*this) -= r; }
+  constexpr Fp operator*(const Fp& r) const noexcept { return Fp(*this) *= r; }
+  constexpr Fp operator/(const Fp& r) const noexcept { return Fp(*this) /= r; }
+  constexpr Fp& operator+=(const Fp& r) noexcept {
+    val += r.val;
+    if (val >= MOD) val -= MOD;
+    return *this;
+  }
+  constexpr Fp& operator-=(const Fp& r) noexcept {
+    val -= r.val;
+    if (val < 0) val += MOD;
+    return *this;
+  }
+  constexpr Fp& operator*=(const Fp& r) noexcept {
+    val = val * r.val % MOD;
+    return *this;
+  }
+  constexpr Fp& operator/=(const Fp& r) noexcept {
+    long long a = r.val, b = MOD, u = 1, v = 0;
+    while (b) {
+      long long t = a / b;
+      a -= t * b, swap(a, b);
+      u -= t * v, swap(u, v);
+    }
+    val = val * u % MOD;
+    if (val < 0) val += MOD;
+    return *this;
+  }
+  constexpr bool operator==(const Fp& r) const noexcept {
+    return this->val == r.val;
+  }
+  constexpr bool operator!=(const Fp& r) const noexcept {
+    return this->val != r.val;
+  }
+  friend constexpr istream& operator>>(istream& is, Fp<MOD>& x) noexcept {
+    is >> x.val;
+    x.val %= MOD;
+    if (x.val < 0) x.val += MOD;
+    return is;
+  }
+  friend constexpr ostream& operator<<(ostream& os, const Fp<MOD>& x) noexcept {
+    return os << x.val;
+  }
+  friend constexpr Fp<MOD> modpow(const Fp<MOD>& r, long long n) noexcept {
+    if (n == 0) return 1;
+    if (n < 0) return modpow(modinv(r), -n);
+    auto t = modpow(r, n / 2);
+    t = t * t;
+    if (n & 1) t = t * r;
+    return t;
+  }
+  friend constexpr Fp<MOD> modinv(const Fp<MOD>& r) noexcept {
+    long long a = r.val, b = MOD, u = 1, v = 0;
+    while (b) {
+      long long t = a / b;
+      a -= t * b, swap(a, b);
+      u -= t * v, swap(u, v);
+    }
+    return Fp<MOD>(u);
+  }
+};
+const int MOD = 1e9 + 7;
+// const int MOD = 998244353;
+using mint = Fp<MOD>;
+// EX:
+// vector<mint> dp(n + 1);
+// dp[0] = 1;
+// dp[1] = 2;
+// dp[2] = 7;
+// for (ll i = 3; i <= n; ++i) {
+// dp[i] = ((mint)3 * dp[i - 1] + dp[i - 2] - dp[i - 3]);
+// }
+// cout << dp[n] << "\n";
+
+template <typename T, int D>
+struct VEC : public vector<VEC<T, D - 1>> {
+  static_assert(D >= 1, "Vector dimension must be greater than zero!");
+  template <typename... Args>
+  VEC(int n = 0, Args... args)
+      : vector<VEC<T, D - 1>>(n, VEC<T, D - 1>(args...)) {}
+};
+template <typename T>
+struct VEC<T, 1> : public vector<T> {
+  VEC(int n = 0, const T& val = T()) : vector<T>(n, val) {}
+};
+// EX:
+// ---------------------------------------
+// int a[10][50] initialized with zero
+// VEC<int, 2> a(10, 50);
+// ---------------------------------------
+// double b[n][m][k] initialized with 3.14
+// VEC<double, 3> b(n, m, k, 3.14);
+// ---------------------------------------
+// the third dimension has no value yet
+// VEC<long long, 3> c(5, 5);
+// now c[0][0][0] has a value (100) but others don't
+// c[0][0].push_back(100);
+// ---------------------------------------
+// VEC<int, 4> d(10, 10);
+// now d[2][3][0] is a vector with 100 values of 12345
+// d[2][3].push_back(VEC<int, 1>(100, 12345));
+// ---------------------------------------
+// just blank vector of strings
+// VEC<string, 1> e;
+// ---------------------------------------
+
+//Dijkstra  O(V+ElogV)
 class Solution {
 public:
-    int networkDelayTime(vector<vector<int>>& times, int N, int K) {
-        vector<vector<pii>>vp(N+1);
-        for(const auto&time:times)    vp[time[0]].emplace_back(time[1],time[2]);
-        vector<bool>visited(N+1,false);
-        vector<int>d(N+1,INT_MAX);
-        d[0]=0,d[K]=0;
-        priority_queue<pii,vector<pii>,greater<pii>>pq;
-        pq.emplace(0,K);
-        while(!pq.empty()){
-            auto [c,u] = pq.top();
+    int networkDelayTime(vector<vector<int>>& times, int n, int k) {
+        VEC<array<int,2>,2> g(n+1);
+        VEC<bool,1> visited(n+1);
+        VEC<int,1> dis(n+1,maxint);
+        repall(x,times){
+            int u=x[0],v=x[1],w=x[2];
+            g[u].pb({v,w});
+        }
+        dis[0]=dis[k]=0;
+        priority_queue<array<int,2>,vector<array<int,2>>,greater<array<int,2>>> pq;
+        pq.push({0,k});
+        while(pq.size()){
+            auto [len,u]=pq.top();
             pq.pop();
-            if(visited[u]) continue;
-            for(auto to:vp[u]){
-                auto[v,w]=to;
-                if(c+w<d[v])    {
-                    d[v]=c+w;
-                    pq.emplace(d[v],v);
+            if(visited[u]){
+                continue;
+            }
+            repall(vw,g[u]){
+                auto [v,w]=vw;
+                if(len+w<dis[v]){
+                    dis[v]=len+w;
+                    pq.push({dis[v],v});
                 }
             }
             visited[u]=true;
         }
-        int res = *max_element(begin(d),end(d));
-        return res==INT_MAX?-1:res;
+        int res=*max_element(dis.begin(),dis.end());
+        return res==maxint?-1:res;
     }
 };
 
 
 
 
-
-
-//Bellman Ford
+//Bellman Ford  O(V*E)
 class Solution {
 public:
-    int networkDelayTime(vector<vector<int>>& times, int N, int K) {
-        vector<int> dist(N + 1, INT_MAX);
-        dist[0] = dist[K] = 0;
-        for (int i = 0; i < N; i++) {
-            for (auto& e : times) {
-                int u = e[0], v = e[1], w = e[2];
-                if (dist[u] != INT_MAX && dist[v] > dist[u] + w) {
-                    dist[v] = dist[u] + w;
+    int networkDelayTime(vector<vector<int>>& times, int n, int k) {
+        VEC<int,1> dis(n+1,maxint);
+        dis[0]=dis[k]=0;
+        rep(i,0,n-1){   //  n-1 times is enough , since there is no negative cycle 
+                        //  no need to do one more time to detect
+            repall(edge,times){
+                int u=edge[0],v=edge[1],w=edge[2];
+                if(dis[u]!=maxint and dis[v]>dis[u]+w){
+                    dis[v]=dis[u]+w;                
                 }
             }
         }
-
-        int res=*max_element(begin(dist),end(dist));
-        return res == INT_MAX ? -1 : res;
+        int res=*max_element(dis.begin(),dis.end());
+        return res==maxint?-1:res;
     }
 };
