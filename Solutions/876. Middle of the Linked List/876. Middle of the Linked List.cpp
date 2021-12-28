@@ -118,7 +118,6 @@ struct VEC<T, 1> : public vector<T> {
 // VEC<string, 1> e;
 // ---------------------------------------
 
-
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -132,14 +131,12 @@ struct VEC<T, 1> : public vector<T> {
 class Solution {
 public:
     ListNode* middleNode(ListNode* head) {
-        if(!head->next){
-            return head;
-        }
-        auto slow=head,fast=head->next->next;
-        while(fast and fast->next){
+        ListNode* fast=head;
+        ListNode* slow=head;
+        while(fast->next and fast->next->next){
             fast=fast->next->next;
             slow=slow->next;
         }
-        return slow->next;
+        return fast->next?slow->next:slow;
     }
 };
