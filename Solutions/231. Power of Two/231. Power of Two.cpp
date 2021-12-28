@@ -125,9 +125,6 @@ struct VEC<T, 1> : public vector<T> {
 class Solution {
 public:
     bool isPowerOfTwo(int n) {
-        if(n<=0){
-            return 0;
-        }
-        return !(n&(n-1));
+        return n>0 and !(n&(n-1));
     }
 };
