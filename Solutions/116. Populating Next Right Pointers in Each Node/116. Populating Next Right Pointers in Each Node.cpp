@@ -16,6 +16,7 @@ public:
 };
 */
 
+//bfs with queue
 class Solution {
 public:
     Node* connect(Node* root) {
@@ -38,5 +39,44 @@ public:
             }
         }
         return root;
+    }
+};
+
+//dfs
+class Solution {
+public:
+    Node* connect(Node* root) {
+        if(!root){
+            return nullptr;
+        }
+        auto l=root->left,r=root->right,n=root->next;
+        if(l){  //have children
+            l->next=r;
+            if(n){  //root has next
+                r->next=n->left;
+            }
+            connect(l);
+            connect(r);
+        }
+        return root;
+    }
+};
+
+// bfs space opt
+class Solution {
+public:
+    Node* connect(Node* root) {
+        auto head=root;
+        for(;root;root=root->left){
+            for(auto cur=root;cur;cur=cur->next){
+                if(cur->left){
+                    cur->left->next=cur->right;
+                    if(cur->next){
+                        cur->right->next=cur->next->left;
+                    }
+                }
+            }
+        }
+        return head;
     }
 };
