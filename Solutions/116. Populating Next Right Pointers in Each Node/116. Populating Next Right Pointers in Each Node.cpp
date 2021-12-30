@@ -18,19 +18,24 @@ public:
 
 class Solution {
 public:
-    Node* connect(Node *root) {
-        if (root == NULL) 
-            return NULL;
-        Node *pre = root;
-        Node *cur = NULL;
-        while(pre->left) {
-            cur = pre;
-            while(cur) {
-                cur->left->next = cur->right;
-                if(cur->next) cur->right->next = cur->next->left;
-                cur = cur->next;
+    Node* connect(Node* root) {
+        if(!root){
+            return nullptr;
+        }
+        queue<Node*> q;
+        q.push(root);
+        while(q.size()){
+            Node* rightnode=nullptr;
+            int cnt=q.size();
+            while(cnt--){
+                auto cur=q.front();q.pop();
+                cur->next=rightnode;
+                rightnode=cur;
+                if(cur->right){
+                    q.push(cur->right);
+                    q.push(cur->left);
+                }
             }
-            pre = pre->left;
         }
         return root;
     }
