@@ -3,7 +3,7 @@
 174. Dungeon Game			9.21	2*	10.2
 62. Unique Paths			9.21	2	10.2
 115. Distinct Subsequences		9.21	2*	10.2
-312. Burst Balloons			9.22	
+312. Burst Balloons			9.22	2	2022.1.1
 70. Climbing Stairs			9.22
 303. Range Sum Query - Immutable	9.22
 1143. Longest Common Subsequence	10.1
