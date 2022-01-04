@@ -7,3 +7,4 @@
 231. Power of Two							12.21
 476. Number Complement							12.27
 191. Number of 1 Bits							12.28
+1009. Complement of Base 10 Integer					1.4
