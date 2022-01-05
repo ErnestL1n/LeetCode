@@ -23,3 +23,4 @@
 1306. Jump Game III						12.9
 938. Range Sum of BST						12.14
 1026. Maximum Difference Between Node and Ancestor		12.31
+131. Palindrome Partitioning					1.5
