@@ -4,3 +4,4 @@
 902. Numbers At Most N Given Digit Set		12.18
 394. Decode String				12.19
 1041. Robot Bounded In Circle			1.9
+67. Add Binary					1.10
