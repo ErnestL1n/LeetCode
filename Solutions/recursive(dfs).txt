@@ -24,3 +24,4 @@
 938. Range Sum of BST						12.14
 1026. Maximum Difference Between Node and Ancestor		12.31
 131. Palindrome Partitioning					1.5
+1022. Sum of Root To Leaf Binary Numbers			1.11
