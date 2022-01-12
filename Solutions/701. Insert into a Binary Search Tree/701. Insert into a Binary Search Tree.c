@@ -7,7 +7,7 @@
  * };
  */
 
-
+//iterative
 struct TreeNode* insertIntoBST(struct TreeNode* root, int val){
     if(!root){
         struct TreeNode* root=(struct TreeNode*)malloc(sizeof(struct TreeNode));
@@ -39,5 +39,23 @@ struct TreeNode* insertIntoBST(struct TreeNode* root, int val){
            }
        }
     }  
+    return root;
+}
+
+//recursive
+
+
+struct TreeNode* insertIntoBST(struct TreeNode* root, int val){
+    if(!root){
+        root=(struct TreeNode*)malloc(sizeof(struct TreeNode));
+        root->val=val;
+        root->left=root->right=NULL;
+        return root;
+    }
+    if(root->val<val){
+        root->right=insertIntoBST(root->right,val);
+    }else{
+        root->left=insertIntoBST(root->left,val);
+    }
     return root;
 }
