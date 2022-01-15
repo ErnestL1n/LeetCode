@@ -131,12 +131,12 @@ public:
                     if(idx2>=0 and idx2<n and !visited[idx2]){
                         visited[idx2]=true;
                         q.push(idx2);
-                        }
+                    }
                 }
                 next.clear();
-                }
-            ++step;
             }
+            ++step;
+        }
         return 0;
     }
 };
