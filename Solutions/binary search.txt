@@ -8,3 +8,4 @@
 540. Single Element in a Sorted Array			11.20
 35. Search Insert Position				11.26
 878. Nth Magical Number					12.11
+875. Koko Eating Bananas				1.20
