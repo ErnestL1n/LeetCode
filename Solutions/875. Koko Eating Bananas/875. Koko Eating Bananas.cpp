@@ -5,14 +5,9 @@ public:
         while(lo<hi){
             int mid=lo+hi>>1,sum=0;
             for(int i=0;i<piles.size();++i){
-                if(mid>piles[i]){
-                    sum+=1;
-                }else{
-                    if(piles[i]%mid==0){
-                        sum+=piles[i]/mid;
-                    }else{
-                        sum+=1+piles[i]/mid;
-                    }
+                sum+=(piles[i]/mid);
+                if(piles[i]%mid){
+                    ++sum;
                 }
             }
             if(sum>h){
