@@ -1,13 +1,14 @@
 
 
 int canCompleteCircuit(int* gas, int gasSize, int* cost, int costSize){
-    int st=0,total=0,tank=0;
+    int st=0,gassum=0,costsum=0,g=0;
     for(int i=0;i<gasSize;++i){
-        if((tank=tank+gas[i]-cost[i])<0){
+        gassum+=gas[i],costsum+=cost[i];
+        g+=gas[i]-cost[i];
+        if(g<0){
             st=i+1;
-            total+=tank;
-            tank=0;
+            g=0;
         }
     }
-    return (total+tank<0)?-1:st;
+    return gassum>=costsum?st:-1;
 }
