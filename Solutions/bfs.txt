@@ -1,3 +1,4 @@
 863. All Nodes Distance K in Binary Tree		9.28
 994. Rotting Oranges					9.29
 1345. Jump Game IV					1.15
+1291. Sequential Digits					1.23
