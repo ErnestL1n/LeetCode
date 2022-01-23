@@ -48,14 +48,11 @@ int* sequentialDigits(int low, int high, int* returnSize){
     struct Queue* q=createQueue();
     for(int i=1;i<=9;++i){
         enqueue(q,i);
-        printf("%d\n",q->size);
-        printf("%d\n",q->rear);
-        printf("%d\n",q->front);
     }
     int *res=NULL;
     *returnSize=0;
     while(q->size>0){
-        int f=q->front;
+        int f=q->front->val;
         dequeue(q);
         if(low<=f && f<=high){
             ++*returnSize;
