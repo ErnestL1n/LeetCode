@@ -6,3 +6,4 @@
 1041. Robot Bounded In Circle			1.9
 67. Add Binary	(String(to Int=>OverFlow))	1.10
 8. String to Integer (atoi)			1.14
+520. Detect Capital				1.24
