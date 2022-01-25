@@ -3,3 +3,4 @@
 452. Minimum Number of Arrows to Burst Balloons	1.13
 849. Maximize Distance to Closest Person	1.16
 605. Can Place Flowers				1.18
+941. Valid Mountain Array			1.25
