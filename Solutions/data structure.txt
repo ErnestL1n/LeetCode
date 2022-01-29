@@ -15,3 +15,4 @@
 1010. Pairs of Songs With Total Durations Divisible by 60	2022.1.2
 290. Word Pattern						1.17	hashmap
 211. Design Add and Search Words Data Structure	1.28	trie
+84. Largest Rectangle in Histogram		1.29 	stack
