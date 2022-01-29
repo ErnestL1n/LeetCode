@@ -13,13 +13,12 @@ WordDictionary* wordDictionaryCreate() {
 }
 
 void wordDictionaryAddWord(WordDictionary* obj, char * word) {
-    char* s=word;
-    while(*s){
-        if(!obj->ch[(*s)-'a']){
-            obj->ch[(*s)-'a']=(WordDictionary*)calloc(1,sizeof(WordDictionary));
+    while(*word){
+        if(!obj->ch[(*word)-'a']){
+            obj->ch[(*word)-'a']=(WordDictionary*)calloc(1,sizeof(WordDictionary));
         }
-        obj=obj->ch[(*s)-'a'];
-        ++s;
+        obj=obj->ch[(*word)-'a'];
+        ++word;
     }
     obj->isword=true;
 }
