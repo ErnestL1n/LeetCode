@@ -1,11 +1,11 @@
-struct trie{
-    string item="";
+typedef struct trie{
     trie* ch[26]={};
-};
+    bool isword;
+}Trie;
 
 class WordDictionary{
 public:
-    struct trie root;
+    Trie root;
     WordDictionary(){
         
     }
@@ -14,20 +14,20 @@ public:
         auto p=&root;
         for(const auto& c:word){
             if(!p->ch[c-'a']){
-                p->ch[c-'a']=new trie();
+                p->ch[c-'a']=new Trie();
             }
             p=p->ch[c-'a'];
         }
-        p->item=word;
+        p->isword=true;
     }
     
     bool search(string word){
         return match(word,0,&root);
     }
     
-    bool match(string& s,int k,trie* node) {
+    bool match(string& s,int k,Trie* node) {
         if(k==s.size()){
-            return node->item!="";
+            return node->isword;
         }
         if(s[k]!='.') {
             return node->ch[s[k]-'a'] and match(s,k+1,node->ch[s[k]-'a']);
