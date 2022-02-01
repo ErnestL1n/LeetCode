@@ -25,3 +25,4 @@
 221. Maximal Square                   			12.17
 1463. Cherry Pickup II					1.8
 1510. Stone Game IV					1.22
+121. Best Time to Buy and Sell Stock			2.1
