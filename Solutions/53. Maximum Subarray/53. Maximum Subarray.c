@@ -1,17 +1,16 @@
-#include<stdlib.h>
-#include<stdio.h>
-#include<limits.h>
+#define max(a,b) (a>b?a:b)
 
 int maxSubArray(int* nums, int numsSize){
-    int max_so_far=INT_MIN;
-    int max_ending_now=0;
-    for(int i=0;i<numsSize;i++){
-        max_ending_now+=nums[i];
-        if(max_ending_now>max_so_far)
-            max_so_far=max_ending_now;
-        if(max_ending_now<0)
-            max_ending_now=0;
+    int res=nums[0];
+    int* dp=(int*)calloc(numsSize,sizeof(int));
+    dp[0]=nums[0];
+    for(int i=1;i<numsSize;++i){
+        if(dp[i-1]<0){
+            dp[i]=nums[i];
+        }else{
+            dp[i]=dp[i-1]+nums[i];
+        }
+        res=max(res,dp[i]);
     }
-    return max_so_far;
+    return res;
 }
-
