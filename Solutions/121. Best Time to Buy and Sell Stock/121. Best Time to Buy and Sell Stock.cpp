@@ -26,3 +26,23 @@ public:
         return res;
     }
 };
+
+
+//stack
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int n=prices.size(),res=0;
+        stack<int> stk;
+        stk.push(prices[0]);
+        for(int i=1;i<n;++i){
+            if(prices[i]<stk.top()){
+                stk.pop();
+                stk.push(prices[i]);
+            }else{
+                res=max(res,prices[i]-stk.top());
+            }
+        }
+        return res;
+    }
+};
