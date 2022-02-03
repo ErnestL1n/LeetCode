@@ -17,3 +17,4 @@
 211. Design Add and Search Words Data Structure	1.28	trie
 84. Largest Rectangle in Histogram		1.29 	stack
 438. Find All Anagrams in a String		2.2	sliding window、hashmap
+454. 4Sum II					2.3	hashmap
