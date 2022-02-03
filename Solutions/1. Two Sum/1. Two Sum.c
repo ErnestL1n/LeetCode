@@ -30,7 +30,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize){
             res[1]=element->val;
             break;
         }
-        HASH_FIND_INT(table,&nums[i],element);
+        // HASH_FIND_INT(table,&nums[i],element);
         // if(!element){
         element=(map*)malloc(sizeof(map));
         element->idx=nums[i];
