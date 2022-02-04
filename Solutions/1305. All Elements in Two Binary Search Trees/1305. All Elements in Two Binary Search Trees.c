@@ -48,7 +48,7 @@ int* getAllElements(struct TreeNode* root1, struct TreeNode* root2, int* returnS
 }
 
 
-//AC
+//AC without sort
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -96,3 +96,5 @@ int* getAllElements(struct TreeNode* root1, struct TreeNode* root2, int* returnS
     free(t2);
     return res;
 }
+
+

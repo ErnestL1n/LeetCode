@@ -47,8 +47,7 @@ class Solution:
             # s=s2 if not s1 else s1 if not s2 else s1 if s1[-1].val<s2[-1].val else s2
             # n=s.pop()
             # res.append(n.val)
-            # if n.right!=None:
-                # pushleft(s,n.right)
+            # pushleft(s,n.right)
         # return res
         
         

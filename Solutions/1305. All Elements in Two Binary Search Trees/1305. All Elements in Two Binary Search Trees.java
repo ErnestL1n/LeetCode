@@ -141,8 +141,7 @@ class Solution {
             var s=s1.empty()?s2:s2.empty()?s1:s1.peek().val<s2.peek().val?s1:s2;
             var n=s.pop();
             res.add(n.val);
-            if(n.right!=null)
-                pushleft(s,n.right);
+            pushleft(s,n.right);
         }
         return res;
     }
