@@ -4,10 +4,11 @@
 :point_right: * marks as only c++  
 :point_right: # marks as no python、go  
 :point_right: ! marks as no go  
+:point_right: @ with c solution
 
 No. | Title | Difficulty | Related Topics | Solution | Note
 ---|---|---|---|---|---|
-1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | HashMap | [Solutions](Solutions/1.%20Two%20Sum) |
+1@ | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | HashMap | [Solutions](Solutions/1.%20Two%20Sum) |
 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | Medium | Linked List、Math | [Solutions](Solutions/2.%20Add%20Two%20Numbers) | [Note](Solutions/2.%20Add%20Two%20Numbers/note.md)
 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | Two Pointers、HashMap、Sliding Window  | [Solutions](Solutions/3.%20Longest%20Substring%20Without%20Repeating%20Characters) | 
 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | Easy | Math、Trick | [Solutions](Solutions/9.%20Palindrome%20Number) | 
@@ -87,7 +88,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version/) | Easy | Binary Search | [Solutions](Solutions/278.%20First%20Bad%20Version) | 
 282* | [Expression Add Operators](https://leetcode.com/problems/expression-add-operators/) | Hard | D&C | [Solutions](Solutions/282.%20Expression%20Add%20Operators) | 
 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | Easy | Two Pointers | [Solutions](Solutions/283.%20Move%20Zeroes) | 
-290* | [Word Pattern](https://leetcode.com/problems/word-pattern/) | Easy | HashMap | [Solutions](Solutions/290.%20Word%20Pattern) | 
+290*@ | [Word Pattern](https://leetcode.com/problems/word-pattern/) | Easy | HashMap | [Solutions](Solutions/290.%20Word%20Pattern) | 
 295* | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | Hard | Priority_Queue | [Solutions](Solutions/295.%20Find%20Median%20from%20Data%20Stream) | 
 300* | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium | DP、Binary Search | [Solutions](Solutions/300.%20Longest%20Increasing%20Subsequence) | 
 303* | [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/) | Easy | Prefix Sum、```std::accumulate``` | [Solutions](Solutions/303.%20Range%20Sum%20Query%20-%20Immutable) | 
@@ -107,12 +108,13 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 429* | [N-ary Tree Level Order Traversal](https://leetcode.com/problems/n-ary-tree-level-order-traversal/) | Medium | DFS、BFS | [Solutions](Solutions/429.%20N-ary%20Tree%20Level%20Order%20Traversal) |
 435* | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | Medium | Greedy | [Solutions](Solutions/435.%20Non-overlapping%20Intervals) |
 436* | [Find Right Interval](https://leetcode.com/problems/find-right-interval/) | Medium | TreeMap、```std::lower_bound```、```std::upper_bound```(Binary Search) | [Solutions](Solutions/436.%20Find%20Right%20Interval) | [Note](Solutions/436.%20Find%20Right%20Interval/note.md)
+438* | [Find Right Interval](https://leetcode.com/problems/find-right-interval/) | Medium | TreeMap、```std::lower_bound```、```std::upper_bound```(Binary Search) | [Solutions](Solutions/436.%20Find%20Right%20Interval) | [Note](Solutions/436.%20Find%20Right%20Interval/note.md)
 442 | [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) | Medium | Count | [Solutions](Solutions/442.%20Find%20All%20Duplicates%20in%20an%20Array) | 
 446* | [Arithmetic Slices II - Subsequence](https://leetcode.com/problems/arithmetic-slices-ii-subsequence/) | Hard | DP、HashMap | [Solutions](Solutions/446.%20Arithmetic%20Slices%20II%20-%20Subsequence) | 
 448* | [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) | Easy | Count | [Solutions](Solutions/448.%20Find%20All%20Numbers%20Disappeared%20in%20an%20Array) | 
 451# | [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/) | Medium | Bucket Sort、Priority_Queue(With custom comparator in c++、java) | [Solutions](Solutions/451.%20Sort%20Characters%20By%20Frequency) | 
 453 | [Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-moves-to-equal-array-elements/) | Easy | Math | [Solutions](Solutions/453.%20Minimum%20Moves%20to%20Equal%20Array%20Elements) | [Note](Solutions/453.%20Minimum%20Moves%20to%20Equal%20Array%20Elements/note.md)
-454 | [4Sum II](https://leetcode.com/problems/4sum-ii/) | Medium | HashMap、Count | [Solutions](Solutions/454.%204Sum%20II) |
+454@ | [4Sum II](https://leetcode.com/problems/4sum-ii/) | Medium | HashMap、Count | [Solutions](Solutions/454.%204Sum%20II) |
 463 | [Island Perimeter](https://leetcode.com/problems/island-perimeter/) | Easy | Graph | [Solutions](Solutions/463.%20Island%20Perimeter) |
 485* | [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) | Easy | Array | [Solutions](Solutions/485.%20Max%20Consecutive%20Ones) |
 496* | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/) | Easy(Medium) | HashMap、Stack | [Solutions](Solutions/496.%20Next%20Greater%20Element%20I) |
@@ -121,6 +123,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 506* | [Relative Ranks](https://leetcode.com/problems/relative-ranks/) | Easy | Sort(With custom comaprison)、Priority_Queue | [Solutions](Solutions/506.%20Relative%20Ranks) |
 509# | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | Easy | D&C、DP | [Solutions](Solutions/509.%20Fibonacci%20Number) | [Note](Solutions/509.%20Fibonacci%20Number/note.md)
 522* | [Longest Uncommon Subsequence II](https://leetcode.com/problems/longest-uncommon-subsequence-ii/) | Medium | ??? | N/A | 
+525@ | [Contiguous Array](https://leetcode.com/problems/contiguous-array/) | Medium | HashMap | [Solutions](Solutions/525.%20Contiguous%20Array) | [Note](Solutions/525.%20Contiguous%20Array/note.md)
 530* | [Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/) | Easy | Same as 783 | [Solutions](Solutions/530.%20Minimum%20Absolute%20Difference%20in%20BST) | [Note](Solutions/530.%20Minimum%20Absolute%20Difference%20in%20BST/note.md)
 537* | [Complex Number Multiplication](https://leetcode.com/problems/complex-number-multiplication/) | Medium | ```std::stringstream``` | [Solutions](Solutions/537.%20Complex%20Number%20Multiplication) | [Note](Solutions/537.%20Complex%20Number%20Multiplication/note.md)
 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/) | Medium | BFS、DP | [Solutions](Solutions/542.%2001%20Matrix) | [Note](Solutions/542.%2001%20Matrix/note.md)
