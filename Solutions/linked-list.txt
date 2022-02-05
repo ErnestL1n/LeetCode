@@ -14,3 +14,4 @@
 116. Populating Next Right Pointers in Each Node		12.29
 382. Linked List Random Node					1.7
 142. Linked List Cycle II					1.19
+23. Merge k Sorted Lists					2.5
