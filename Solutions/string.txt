@@ -8,3 +8,4 @@
 8. String to Integer (atoi)			1.14
 520. Detect Capital				1.24
 438. Find All Anagrams in a String		2.2
+2124. Check if All A's Appears Before All B's	2.8
