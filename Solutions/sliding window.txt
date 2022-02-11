@@ -3,3 +3,4 @@
 76. Minimum Window Substring
 3. Longest Substring Without Repeating Characters
 30. Substring with Concatenation of All Words
+567. Permutation in String
