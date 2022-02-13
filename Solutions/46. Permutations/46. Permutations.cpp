@@ -50,7 +50,30 @@ public:
 };
 
 
-
+// 2022.2.20
+class Solution {
+public:
+    vector<vector<int>> permute(vector<int>& nums) {
+        vector<vector<int>> res;
+        vector<int> tmp;
+        dfs(res,tmp,nums);
+        return res;
+    }
+    void dfs(vector<vector<int>>& res,vector<int>& tmp,vector<int>& nums){
+        if(tmp.size()==nums.size()){
+            res.push_back(tmp);
+            return;
+        }
+        for(int i=0;i<nums.size();++i){
+            if(find(tmp.begin(),tmp.end(),nums[i])!=tmp.end()){
+                continue;
+            }
+            tmp.push_back(nums[i]);
+            dfs(res,tmp,nums);
+            tmp.pop_back();
+        }
+    }
+};
 
 
 
