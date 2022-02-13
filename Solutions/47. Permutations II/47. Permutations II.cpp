@@ -22,3 +22,33 @@ public:
         return;
     }
 };
+
+//2022.2.13
+class Solution {
+public:
+    vector<vector<int>> permuteUnique(vector<int>& nums) {
+        vector<vector<int>> res;
+        vector<int> tmp;
+        vector<bool> used(nums.size());
+        sort(nums.begin(),nums.end());
+        dfs(res,tmp,nums,used);
+        return res;
+        
+    }
+    void dfs(vector<vector<int>>& res,vector<int>& tmp,vector<int>& nums,vector<bool>& used){
+        if(tmp.size()==nums.size()){
+            res.push_back(tmp);
+            return;
+        }
+        for(int i=0;i<nums.size();++i){
+            if(used[i] or (i>0 and used[i-1] and nums[i]==nums[i-1])){
+                continue;
+            }
+            used[i]=true;
+            tmp.push_back(nums[i]);
+            dfs(res,tmp,nums,used);
+            used[i]=false;
+            tmp.pop_back();
+        }
+    }
+};
