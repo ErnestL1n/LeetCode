@@ -28,3 +28,4 @@
 701. Insert into a Binary Search Tree				1.12
 1305. All Elements in Two Binary Search Trees			1.26
 189. Rotate Array						1.30
+104. Maximum Depth of Binary Tree				2.14
