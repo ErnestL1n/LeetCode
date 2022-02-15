@@ -27,3 +27,6 @@
 1510. Stone Game IV					1.22
 121. Best Time to Buy and Sell Stock			2.1
 746. Min Cost Climbing Stairs				2.14
+198. House Robber					2.15
+213. House Robber II					2.15
+
