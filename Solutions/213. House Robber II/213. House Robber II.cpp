@@ -1,19 +1,18 @@
 class Solution {
 public:
     int rob(vector<int>& nums) {
-        if(nums.size()<=2)
+        int n=nums.size();
+        if(n<=2)
             return nums.size()==1?nums[0]:nums[1]>nums[0]?nums[1]:nums[0];
-        int f1=0,s1=0,f2=0,s2=0;
-        for(int i=0;i<nums.size()-1;++i){
-            int tmp=f1;
-            f1=max(f1,s1+nums[i]);
-            s1=tmp;
+        return max(foo(nums,0,n-2),foo(nums,1,n-1));
+    }
+    int foo(vector<int>& nums,int st,int ed){
+        int n=ed-st+1;
+        vector<int> dp(n);
+        dp[0]=nums[st],dp[1]=max(nums[st],nums[st+1]);
+        for(int i=st+2;i<=ed;++i){
+            dp[i-st]=max(dp[i-st-1],dp[i-st-2]+nums[i]);
         }
-        for(int i=1;i<nums.size();++i){
-            int tmp=f2;
-            f2=max(f2,s2+nums[i]);
-            s2=tmp;
-        }
-        return f1>f2?f1:f2;
+        return dp[n-1];
     }
 };
