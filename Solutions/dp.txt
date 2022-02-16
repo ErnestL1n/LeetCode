@@ -30,5 +30,7 @@
 198. House Robber					2.15
 213. House Robber II					2.15
 740. Delete and Earn					2.15
+55. Jump Game						2.16
+45. Jump Game II					2.16
 
 
