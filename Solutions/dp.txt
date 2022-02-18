@@ -33,5 +33,7 @@
 55. Jump Game						2.16
 45. Jump Game II					2.16
 918. Maximum Sum Circular Subarray			2.17
+1567. Maximum Length of Subarray With Positive Product	2.18
+152. Maximum Product Subarray				2.18
 
 
