@@ -21,3 +21,4 @@
 525. Contiguous Array				2.4	hashmap
 532. K-diff Pairs in an Array			2.9	hashmap
 560. Subarray Sum Equals K			2.10	hashmap
+402. Remove K Digits				2.18	stack
