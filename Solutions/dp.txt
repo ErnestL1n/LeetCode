@@ -19,7 +19,7 @@
 53. Maximum Subarray					11.25
 85. Maximal Rectangle					11.30
 198. House Robber					12.1
-152. Maximum Product Subarray				12.3 (Prefix Sum)
+152. Maximum Product Subarray				12.3 (Prefix Sum)	2*	2.18
 790. Domino and Tromino Tiling				12.10
 416. Partition Equal Subset Sum				12.12
 221. Maximal Square                   			12.17
