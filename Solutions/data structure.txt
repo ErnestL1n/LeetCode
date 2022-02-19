@@ -22,3 +22,4 @@
 532. K-diff Pairs in an Array			2.9	hashmap
 560. Subarray Sum Equals K			2.10	hashmap
 402. Remove K Digits				2.18	stack
+1675. Minimize Deviation in Array		2.19	treeset
