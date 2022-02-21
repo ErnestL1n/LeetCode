@@ -16,3 +16,4 @@
 142. Linked List Cycle II					1.19
 23. Merge k Sorted Lists					2.5
 24. Swap Nodes in Pairs						2.16
+141. Linked List Cycle						2.21
