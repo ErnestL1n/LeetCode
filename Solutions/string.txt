@@ -9,3 +9,4 @@
 520. Detect Capital				1.24
 438. Find All Anagrams in a String		2.2
 2124. Check if All A's Appears Before All B's	2.8
+171. Excel Sheet Column Number			2.22
