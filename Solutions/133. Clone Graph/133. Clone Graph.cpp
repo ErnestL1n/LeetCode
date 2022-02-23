@@ -19,6 +19,10 @@ public:
 };
 */
 
+//To clone a graph, you will need to traverse it. 
+//Both BFS and DFS are for this purpose. But that is not all you need. 
+//To clone a graph, you need to have a copy of each node and you need to avoid copying the same node for multiple times. 
+//So you still need a mapping from an original node to its copy.
 //bfs
 class Solution {
 public:
