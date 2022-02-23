@@ -23,6 +23,7 @@ public:
 //Both BFS and DFS are for this purpose. But that is not all you need. 
 //To clone a graph, you need to have a copy of each node and you need to avoid copying the same node for multiple times. 
 //So you still need a mapping from an original node to its copy.
+
 //bfs
 class Solution {
 public:
@@ -46,5 +47,23 @@ public:
             }
         }
         return copy;
+    }
+};
+
+//dfs
+class Solution {
+public:
+    unordered_map<Node*,Node*> copies;
+    Node* cloneGraph(Node* node) {
+        if(!node){
+            return nullptr;
+        }
+        if(copies.find(node)==copies.end()){
+            copies[node]=new Node(node->val,{});
+            for(Node* n:node->neighbors){
+                copies[node]->neighbors.push_back(cloneGraph(n));
+            }
+        }
+        return copies[node];
     }
 };
