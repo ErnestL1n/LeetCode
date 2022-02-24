@@ -18,3 +18,4 @@
 24. Swap Nodes in Pairs						2.16
 141. Linked List Cycle						2.21
 191. Number of 1 Bits						2.22
+148. Sort List							2.24
