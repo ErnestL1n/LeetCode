@@ -12,14 +12,15 @@
 class Solution {
 public:
     ListNode* removeElements(ListNode* head, int val) {
-        ListNode* pre=new ListNode(0);
+        ListNode *pre=new ListNode(0);
         pre->next=head;
         auto cur=head,p=pre;
         while(cur){
-            if(cur->val==val)
+            if(cur->val==val){
                 p->next=cur->next;
-            else
+            }else{
                 p=p->next;
+            }
             cur=cur->next;
         }
         return pre->next;
@@ -30,8 +31,9 @@ public:
 class Solution {
 public:
     ListNode* removeElements(ListNode* head, int val) {
-        if(!head)
+        if(!head){
             return nullptr;
+        }
         head->next=removeElements(head->next,val);
         return head->val==val?head->next:head;
     }
