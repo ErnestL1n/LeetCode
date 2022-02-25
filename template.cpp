@@ -11,88 +11,67 @@ using namespace std;
 #define minint INT_MIN
 #define minll std::numeric_limits<long long int>::min()
 typedef long long ll;
-template <int MOD>
-struct Fp {
-  long long val;
-  constexpr Fp(long long v = 0) noexcept : val(v % MOD) {
-    if (val < 0) val += MOD;
-  }
-  constexpr int getmod() const { return MOD; }
-  constexpr Fp operator-() const noexcept { return val ? MOD - val : 0; }
-  constexpr Fp operator+(const Fp& r) const noexcept { return Fp(*this) += r; }
-  constexpr Fp operator-(const Fp& r) const noexcept { return Fp(*this) -= r; }
-  constexpr Fp operator*(const Fp& r) const noexcept { return Fp(*this) *= r; }
-  constexpr Fp operator/(const Fp& r) const noexcept { return Fp(*this) /= r; }
-  constexpr Fp& operator+=(const Fp& r) noexcept {
-    val += r.val;
-    if (val >= MOD) val -= MOD;
-    return *this;
-  }
-  constexpr Fp& operator-=(const Fp& r) noexcept {
-    val -= r.val;
-    if (val < 0) val += MOD;
-    return *this;
-  }
-  constexpr Fp& operator*=(const Fp& r) noexcept {
-    val = val * r.val % MOD;
-    return *this;
-  }
-  constexpr Fp& operator/=(const Fp& r) noexcept {
-    long long a = r.val, b = MOD, u = 1, v = 0;
-    while (b) {
-      long long t = a / b;
-      a -= t * b, swap(a, b);
-      u -= t * v, swap(u, v);
+typedef unsigned long long ull;
+
+
+constexpr unsigned mod = 1000000007;
+
+
+struct mint{
+    unsigned num = 0;
+    constexpr mint() noexcept {}
+    constexpr mint(const mint &x) noexcept : num(x.num){}
+    inline constexpr operator ll() const noexcept { return num; }
+    inline constexpr mint& operator+=(mint x) noexcept { num += x.num; if(num >= mod) num -= mod; return *this; }
+    inline constexpr mint& operator++() noexcept { if(num == mod - 1) num = 0; else num++; return *this; }
+    inline constexpr mint operator++(int) noexcept { mint ans(*this); operator++(); return ans; }
+    inline constexpr mint operator-() const noexcept { return mint(0) -= *this; }
+    inline constexpr mint operator-(mint x) const noexcept { return mint(*this) -= x; }
+    inline constexpr mint& operator-=(mint x) noexcept { if(num < x.num) num += mod; num -= x.num; return *this; }
+    inline constexpr mint& operator--() noexcept { if(num == 0) num = mod - 1; else num--; return *this; }
+    inline constexpr mint operator--(int) noexcept { mint ans(*this); operator--(); return ans; }
+    inline constexpr mint& operator*=(mint x) noexcept { num = ull(num) * x.num % mod; return *this; }
+    inline constexpr mint& operator/=(mint x) noexcept { return operator*=(x.inv()); }
+    template<class T> constexpr mint(T x) noexcept {
+        using U = typename conditional<sizeof(T) >= 4, T, int>::type;
+        U y = x; y %= U(mod); if(y < 0) y += mod; num = unsigned(y);
     }
-    val = val * u % MOD;
-    if (val < 0) val += MOD;
-    return *this;
-  }
-  constexpr bool operator==(const Fp& r) const noexcept {
-    return this->val == r.val;
-  }
-  constexpr bool operator!=(const Fp& r) const noexcept {
-    return this->val != r.val;
-  }
-  friend constexpr istream& operator>>(istream& is, Fp<MOD>& x) noexcept {
-    is >> x.val;
-    x.val %= MOD;
-    if (x.val < 0) x.val += MOD;
-    return is;
-  }
-  friend constexpr ostream& operator<<(ostream& os, const Fp<MOD>& x) noexcept {
-    return os << x.val;
-  }
-  friend constexpr Fp<MOD> modpow(const Fp<MOD>& r, long long n) noexcept {
-    if (n == 0) return 1;
-    if (n < 0) return modpow(modinv(r), -n);
-    auto t = modpow(r, n / 2);
-    t = t * t;
-    if (n & 1) t = t * r;
-    return t;
-  }
-  friend constexpr Fp<MOD> modinv(const Fp<MOD>& r) noexcept {
-    long long a = r.val, b = MOD, u = 1, v = 0;
-    while (b) {
-      long long t = a / b;
-      a -= t * b, swap(a, b);
-      u -= t * v, swap(u, v);
-    }
-    return Fp<MOD>(u);
-  }
+    template<class T> inline constexpr mint operator+(T x) const noexcept { return mint(*this) += x; }
+    template<class T> inline constexpr mint& operator+=(T x) noexcept { return operator+=(mint(x)); }
+    template<class T> inline constexpr mint operator-(T x) const noexcept { return mint(*this) -= x; }
+    template<class T> inline constexpr mint& operator-=(T x) noexcept { return operator-=(mint(x)); }
+    template<class T> inline constexpr mint operator*(T x) const noexcept { return mint(*this) *= x; }
+    template<class T> inline constexpr mint& operator*=(T x) noexcept { return operator*=(mint(x)); }
+    template<class T> inline constexpr mint operator/(T x) const noexcept { return mint(*this) /= x; }
+    template<class T> inline constexpr mint& operator/=(T x) noexcept { return operator/=(mint(x)); }
+    inline constexpr mint inv() const noexcept { ll x = 0, y = 0; extgcd(num, mod, x, y); return x; }
+    static inline constexpr ll extgcd(ll a, ll b, ll &x, ll &y) noexcept { ll g = a; x = 1; y = 0; if(b){ g = extgcd(b, a % b, y, x); y -= a / b * x; } return g; }
+    inline constexpr mint pow(ull x) const noexcept { mint ans = 1, cnt = *this; while(x){ if(x & 1) ans *= cnt; cnt *= cnt; x /= 2; } return ans; }
 };
-const int MOD = 1e9 + 7;
-// const int MOD = 998244353;
-using mint = Fp<MOD>;
-// EX:
-// vector<mint> dp(n + 1);
-// dp[0] = 1;
-// dp[1] = 2;
-// dp[2] = 7;
-// for (ll i = 3; i <= n; ++i) {
-// dp[i] = ((mint)3 * dp[i - 1] + dp[i - 2] - dp[i - 3]);
-// }
-// cout << dp[n] << "\n";
+std::istream& operator>>(std::istream& is, mint& x) noexcept { ll a; cin >> a; x = a; return is; }
+inline constexpr mint operator""_M(ull x) noexcept { return mint(x); }
+std::vector<mint> fac(1, 1), inv(1, 1);
+inline void reserve(ll a){
+    if(fac.size() >= a) return;
+    if(a < fac.size() * 2) a = fac.size() * 2;
+    if(a >= mod) a = mod;
+    while(fac.size() < a) fac.push_back(fac.back() * mint(fac.size()));
+    inv.resize(fac.size());
+    inv.back() = fac.back().inv();
+    for(ll i = inv.size() - 1; !inv[i - 1]; i--) inv[i - 1] = inv[i] * i;
+}
+inline mint fact(ll n){ if(n < 0) return 0; reserve(n + 1); return fac[n]; }
+inline mint perm(ll n, ll r){
+    if(r < 0 || n < r) return 0;
+    if(n >> 24){ mint ans = 1; for(ll i = 0; i < r; i++) ans *= n--; return ans; }
+    reserve(n + 1); return fac[n] * inv[n - r];
+}
+inline mint comb(ll n, ll r){ if(r < 0 || n < r) return 0; reserve(r + 1); return perm(n, r) * inv[r]; }
+inline mint Mcomb(ll n, ll r){ return comb(n + r - 1, n - 1); } 
+inline mint catalan(ll n){ reserve(n * 2 + 1); return fac[n * 2] * inv[n] * inv[n + 1]; }
+
+
+
 
 template <typename T, int D>
 struct VEC : public vector<VEC<T, D - 1>> {
