@@ -12,3 +12,4 @@
 389. Find the Difference						2.7
 258. Add Digits								2.8
 136. Single Number							2.15
+847. Shortest Path Visiting All Nodes					2.26
