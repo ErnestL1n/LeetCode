@@ -33,3 +33,23 @@ public:
         return res;
     }
 };
+
+class Solution {
+public:
+    int widthOfBinaryTree(TreeNode* root) {
+        return dfs(root,0,1,vector<pair<uint64_t,uint64_t>>()={});
+    }
+    uint64_t dfs(TreeNode* root,uint64_t level,uint64_t idx,vector<pair<uint64_t,uint64_t>>& tmp){
+        if(!root){
+            return 0;
+        }
+        if(tmp.size()==level){
+            tmp.push_back({idx,idx});
+        }else{
+            tmp[level].second=idx;
+        }
+        return max({tmp[level].second-tmp[level].first+1,
+                   dfs(root->left,level+1,idx*2,tmp),
+                   dfs(root->right,level+1,idx*2+1,tmp)});
+    }
+};
