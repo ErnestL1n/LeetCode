@@ -11,3 +11,4 @@
 2124. Check if All A's Appears Before All B's	2.8
 171. Excel Sheet Column Number			2.22
 165. Compare Version Numbers(Split)		2.25
+228. Summary Ranges				2.28
