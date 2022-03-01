@@ -14,3 +14,4 @@
 136. Single Number							2.15
 847. Shortest Path Visiting All Nodes					2.26
 190. Reverse Bits							2.28
+338. Counting Bits							3.1
