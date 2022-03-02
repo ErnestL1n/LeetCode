@@ -12,3 +12,5 @@
 171. Excel Sheet Column Number			2.22
 165. Compare Version Numbers(Split)		2.25
 228. Summary Ranges				2.28
+2185. Counting Words With a Given Prefix	3.2
+392. Is Subsequence				3.2
