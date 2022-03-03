@@ -35,5 +35,6 @@
 918. Maximum Sum Circular Subarray			2.17
 1567. Maximum Length of Subarray With Positive Product	2.18
 152. Maximum Product Subarray				2.18
+413. Arithmetic Slices					3.3
 
 
