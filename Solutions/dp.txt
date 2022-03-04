@@ -36,5 +36,6 @@
 1567. Maximum Length of Subarray With Positive Product	2.18
 152. Maximum Product Subarray				2.18
 413. Arithmetic Slices					3.3
+799. Champagne Tower					3.4
 
 
