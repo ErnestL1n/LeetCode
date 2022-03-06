@@ -37,5 +37,5 @@
 152. Maximum Product Subarray				2.18
 413. Arithmetic Slices					3.3
 799. Champagne Tower					3.4
-
+1359. Count All Valid Pickup and Delivery Options(permutation)	3.6	
 
