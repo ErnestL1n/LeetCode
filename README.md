@@ -17,7 +17,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 16* | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | Medium | Two Pointers、Sort、Array | [Solutions](Solutions/16.%203Sum%20Closest) | 
 18* | [4Sum](https://leetcode.com/problems/4sum/) | Medium | Two Pointers、Sort、Array | [Solutions](Solutions/18.%204Sum) | 
 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | Linked List、Two Pointers | [Solutions](Solutions/19.%20Remove%20Nth%20Node%20From%20End%20of%20List) | 
-21* | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | Linked List | [Solutions](Solutions/21.%20Merge%20Two%20Sorted%20Lists) | 
+21@ | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | Linked List | [Solutions](Solutions/21.%20Merge%20Two%20Sorted%20Lists) | 
 25* | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) | Hard | Linked List | [Solutions](Solutions/25.%20Reverse%20Nodes%20in%20k-Group) | 
 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | Easy | Binary Search | [Solutions](Solutions/35.%20Search%20Insert%20Position) | [Note](Solutions/35.%20Search%20Insert%20Position/note.md)
 36* | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium | HashSet、Array | [Solutions](https://leetcode.com/problems/valid-sudoku/) |
