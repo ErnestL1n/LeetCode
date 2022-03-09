@@ -8,6 +8,7 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+//recursive
 class Solution {
 public:
     ListNode* deleteDuplicates(ListNode* head) {
@@ -23,5 +24,31 @@ public:
             head->next=deleteDuplicates(head->next);
         }
         return head;
+    }
+};
+
+//iterative
+class Solution {
+public:
+    ListNode* deleteDuplicates(ListNode* head) {
+        if(!head){
+            return nullptr;
+        }
+        ListNode *newhead=new ListNode(0);
+        newhead->next=head;
+        ListNode* pre=newhead;
+        ListNode* cur=head;
+        while(cur){
+            while(cur->next and cur->val==cur->next->val){
+                cur=cur->next;
+            }
+            if(pre->next==cur){
+                pre=pre->next;
+            }else{
+                pre->next=cur->next;
+            }
+            cur=cur->next;
+        }
+        return newhead->next;
     }
 };
