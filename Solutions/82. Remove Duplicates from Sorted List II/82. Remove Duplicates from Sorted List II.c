@@ -21,3 +21,28 @@ struct ListNode* deleteDuplicates(struct ListNode* head){
     }
     return head;
 }
+
+//iterative
+struct ListNode* deleteDuplicates(struct ListNode* head){
+    if(!head){
+        return NULL;
+    }
+    struct ListNode *newhead=malloc(sizeof(struct ListNode));
+    newhead->next=NULL;
+    newhead->val=0;
+    newhead->next=head;
+    struct ListNode* pre=newhead;
+    struct ListNode* cur=head;
+    while(cur){
+        while(cur->next && cur->val==cur->next->val){
+            cur=cur->next;
+        }
+        if(pre->next==cur){
+            pre=pre->next;
+        }else{
+            pre->next=cur->next;
+        }
+        cur=cur->next;
+    }
+    return newhead->next;
+}
