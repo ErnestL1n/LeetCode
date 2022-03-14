@@ -24,3 +24,4 @@
 402. Remove K Digits				2.18	stack
 1675. Minimize Deviation in Array		2.19	treeset
 20. Valid Parentheses				3.13	stack
+71. Simplify Path				3.14	stack、string
