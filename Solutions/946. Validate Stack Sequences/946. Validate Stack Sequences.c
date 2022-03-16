@@ -57,3 +57,16 @@ bool validateStackSequences(int* pushed, int pushedSize, int* popped, int popped
     }
     return stk->size==0;
 }
+
+
+//space opt
+bool validateStackSequences(int* pushed, int pushedSize, int* popped, int poppedSize){
+    int i=0,j=0;
+    for(int k=0;k<pushedSize;++k){
+        pushed[i++]=pushed[k];
+        while(i>0 && pushed[i-1]==popped[j]){
+            --i,++j;
+        }
+    }
+    return i==0;
+}
