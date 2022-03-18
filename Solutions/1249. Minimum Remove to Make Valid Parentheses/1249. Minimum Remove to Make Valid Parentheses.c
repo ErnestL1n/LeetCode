@@ -1,3 +1,4 @@
+// MLE
 struct Stack {
   struct Stack *next, *top;
   int val;
@@ -42,7 +43,7 @@ void pop(struct Stack* stk) {
   free(tmp);
 }
 
-char * minRemoveToMakeValid(char * s){
+char *minRemoveToMakeValid(char * s){
     struct Stack* stk = createstack();
     for(int i=0;i<strlen(s);++i){
         if(s[i]=='('){
@@ -60,13 +61,16 @@ char * minRemoveToMakeValid(char * s){
         *(s+stk->top->val)='#';
         pop(stk);
     }
-    char* res=calloc(strlen(s),sizeof(char));
-    for(int i=0,j=0;i<strlen(s);++i){
+    char *res=calloc(0,sizeof(char));
+    int i,j;
+    for(i=0,j=0;i<strlen(s);++i){
         if(s[i]=='#'){
             continue;
         }
-        *(res+j)=s[i];
-        ++j;
+        res=(char*)realloc(res,j+1);
+        res[j++]=s[i];
     }
+    res=(char*)realloc(res,j+1);
+    res[j]='\0';
     return res;
 }
