@@ -29,3 +29,4 @@
 946. Validate Stack Sequences			3.16	stack
 856. Score of Parentheses			3.17	stack
 316. Remove Duplicate Letters			3.18	stack
+895. Maximum Frequency Stack			3.19	stack、hashmap
