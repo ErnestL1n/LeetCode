@@ -2,3 +2,4 @@
 56. Merge Intervals				12.24
 134. Gas Station				1.21
 2178. Maximum Split of Positive Even Integers	2.20
+1007. Minimum Domino Rotations For Equal Row	3.20
