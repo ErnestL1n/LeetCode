@@ -5,6 +5,7 @@
 :point_right: # marks as no python、go  
 :point_right: ! marks as no go  
 :point_right: @ with c solution
+:point_right: G with go solution
 
 No. | Title | Difficulty | Related Topics | Solution | Note
 ---|---|---|---|---|---|
