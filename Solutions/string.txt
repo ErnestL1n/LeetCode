@@ -1,17 +1,18 @@
-151. Reverse Words in a String			10.20
-392. Is Subsequence				10.26
-43. Multiply Strings				11.7
-902. Numbers At Most N Given Digit Set		12.18
-394. Decode String				12.19
-1041. Robot Bounded In Circle			1.9
-67. Add Binary	(String(to Int=>OverFlow))	1.10
-8. String to Integer (atoi)			1.14
-520. Detect Capital				1.24
-438. Find All Anagrams in a String		2.2
-2124. Check if All A's Appears Before All B's	2.8
-171. Excel Sheet Column Number			2.22
-165. Compare Version Numbers(Split)		2.25
-228. Summary Ranges				2.28
-2185. Counting Words With a Given Prefix	3.2
-392. Is Subsequence				3.2
-1249. Minimum Remove to Make Valid Parentheses	3.15
+151. Reverse Words in a String				10.20
+392. Is Subsequence					10.26
+43. Multiply Strings					11.7
+902. Numbers At Most N Given Digit Set			12.18
+394. Decode String					12.19
+1041. Robot Bounded In Circle				1.9
+67. Add Binary	(String(to Int=>OverFlow))		1.10
+8. String to Integer (atoi)				1.14
+520. Detect Capital					1.24
+438. Find All Anagrams in a String			2.2
+2124. Check if All A's Appears Before All B's		2.8
+171. Excel Sheet Column Number				2.22
+165. Compare Version Numbers(Split)			2.25
+228. Summary Ranges					2.28
+2185. Counting Words With a Given Prefix		3.2
+392. Is Subsequence					3.2
+1249. Minimum Remove to Make Valid Parentheses		3.15
+1663. Smallest String With A Given Numeric Value	3.22
