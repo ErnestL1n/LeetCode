@@ -4,3 +4,4 @@
 2178. Maximum Split of Positive Even Integers		2.20
 1007. Minimum Domino Rotations For Equal Row		3.20
 1663. Smallest String With A Given Numeric Value	3.22
+991. Broken Calculator					3.23
