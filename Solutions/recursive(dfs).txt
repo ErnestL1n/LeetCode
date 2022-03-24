@@ -36,3 +36,4 @@
 662. Maximum Width of Binary Tree				2.27
 82. Remove Duplicates from Sorted List II			3.9
 1986. Minimum Number of Work Sessions to Finish the Tasks	3.24
+698. Partition to K Equal Sum Subsets				3.24
