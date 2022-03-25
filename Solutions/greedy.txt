@@ -6,3 +6,4 @@
 1663. Smallest String With A Given Numeric Value	3.22
 991. Broken Calculator					3.23
 881. Boats to Save People				3.24
+1029. Two City Scheduling				3.25
