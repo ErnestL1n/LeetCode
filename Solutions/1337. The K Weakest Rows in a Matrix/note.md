@@ -39,3 +39,19 @@
       ```
 # Go
 [golang sort slices of slice by first element](https://stackoverflow.com/questions/55360091/golang-sort-slices-of-slice-by-first-element)
+```go
+import "sort"
+
+sort.Slice(s, func(i, j int) bool {
+    // edge cases
+    if len(s[i]) == 0 && len(s[j]) == 0 {
+        return false // two empty slices - so one is not less than other i.e. false
+    }
+    if len(s[i]) == 0 || len(s[j]) == 0 {
+        return len(s[i]) == 0 // empty slice listed "first" (change to != 0 to put them last)
+    }
+
+    // both slices len() > 0, so can test this now:
+    return s[i][0] < s[j][0]
+})
+```
