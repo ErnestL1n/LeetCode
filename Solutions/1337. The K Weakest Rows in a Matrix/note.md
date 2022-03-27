@@ -38,7 +38,7 @@
       }
       ```
 # Go
-[golang sort slices of slice by first element](https://stackoverflow.com/questions/55360091/golang-sort-slices-of-slice-by-first-element)
+## [golang sort slices of slice by first element](https://stackoverflow.com/questions/55360091/golang-sort-slices-of-slice-by-first-element)
 ```go
 import "sort"
 
@@ -55,3 +55,5 @@ sort.Slice(s, func(i, j int) bool {
     return s[i][0] < s[j][0]
 })
 ```
+
+## [[Golang] interfaces](https://pjchender.dev/golang/interfaces/)
