@@ -1,9 +1,11 @@
 # :bowtie:LeetCode ![Travis](https://img.shields.io/badge/language-C%2B%2B-red) ![Travis](https://img.shields.io/badge/language-Java-yellow) ![Travis](https://img.shields.io/badge/language-Go-brightgreen) ![Travis](https://img.shields.io/badge/language-Python-blue)
 ###### Clicking with ctrl makes you open in a new tab(Github does not include the target attribute ,even if you use plain HTML,to let a Link open in a new tab)
-:point_right: * marks as only c++  
-:point_right: # marks as no python、go  
-:point_right: ! marks as no go  
-:point_right: G with go solution、@ with c solution
+👉: * marks as only c++\
+👉: # marks as no python、go\  
+👉: ! marks as no go\  
+👉: % with go solution\  
+👉: @ with c solution\
+
 
 
 No. | Title | Difficulty | Related Topics | Solution | Note
@@ -252,7 +254,7 @@ No. | Title | Difficulty | Related Topics | Solution | Note
 1323 | [Maximum 69 Number](https://leetcode.com/problems/maximum-69-number/) | Easy | Math | [Solutions](Solutions/1323.%20Maximum%2069%20Number) | 
 1325* | [Delete Leaves With a Given Value](https://leetcode.com/problems/delete-leaves-with-a-given-value/) | Medium | Tree、Post-Order | [Solutions](Solutions/1325.%20Delete%20Leaves%20With%20a%20Given%20Value) | [Note](Solutions/1325.%20Delete%20Leaves%20With%20a%20Given%20Value/note.md)
 1331# | [Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array/) | Easy | Sort、HashMap | [Solutions](Solutions/1331.%20Rank%20Transform%20of%20an%20Array) | 
-1337* | [The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/) | Easy | Set、Binary Search、Priority_Queue(With custom comparator in c++) | [Solutions](Solutions/1337.%20The%20K%20Weakest%20Rows%20in%20a%20Matrix) | [Note](Solutions/1337.%20The%20K%20Weakest%20Rows%20in%20a%20Matrix/note.md)
+1337% | [The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/) | Easy | Set、Binary Search、Priority_Queue(With custom comparator in c++、go) | [Solutions](Solutions/1337.%20The%20K%20Weakest%20Rows%20in%20a%20Matrix) | [Note](Solutions/1337.%20The%20K%20Weakest%20Rows%20in%20a%20Matrix/note.md)
 1338* | [Reduce Array Size to The Half](https://leetcode.com/problems/reduce-array-size-to-the-half/) | Medium | Count、Sort、MultiSet or Priority_Queue、HashMap | [Solutions](Solutions/1338.%20Reduce%20Array%20Size%20to%20The%20Half) | 
 1339# | [Maximum Product of Splitted Binary Tree](https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/) | Medium | Tree、DFS、Post-Order | [Solutions](Solutions/1339.%20Maximum%20Product%20of%20Splitted%20Binary%20Tree) | [Note](Solutions/1339.%20Maximum%20Product%20of%20Splitted%20Binary%20Tree/note.md)
 1342* | [Number of Steps to Reduce a Number to Zero](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/) | Easy | Bit Manipulation、Math | [Solutions](Solutions/1342.%20Number%20of%20Steps%20to%20Reduce%20a%20Number%20to%20Zero) | 
