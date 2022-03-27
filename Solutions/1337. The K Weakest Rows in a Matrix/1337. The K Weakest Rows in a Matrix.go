@@ -1,4 +1,5 @@
 // sort with 2D slice
+// using sort O(max(mn,nlogn))
 func kWeakestRows(mat [][]int, k int) []int {
     tmp:=make([][]int,len(mat))
     for i,x:=range(mat){
@@ -28,3 +29,5 @@ func kWeakestRows(mat [][]int, k int) []int {
     }
     return res
 }
+
+// priority queue + binary search O(m*(logn+logk))=O(m*log(max(n, k))
