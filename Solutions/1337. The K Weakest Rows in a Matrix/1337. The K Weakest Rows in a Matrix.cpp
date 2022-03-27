@@ -1,3 +1,28 @@
+// using sort O(max(mn,nlogn))
+class Solution {
+public:
+    vector<int> kWeakestRows(vector<vector<int>>& mat, int k) {
+        vector<array<int,2>> tmp(mat.size());
+        for(int i=0;i<mat.size();++i){
+            for(auto& m:mat[i]){
+                if(m==1){
+                    ++tmp[i][0];
+                }
+            }
+            tmp[i][1]=i;
+        }
+        sort(tmp.begin(),tmp.end(),[&](array<int,2>& a,array<int,2>& b){
+            return a[0]==b[0]?a[1]<b[1]:a[0]<b[0];
+        });
+        vector<int> res;
+        int i=0;
+        while(k--){
+            res.push_back(tmp[i++][1]);
+        }
+        return res;
+    }
+};
+
 class Solution {
 public:
     vector<int> kWeakestRows(vector<vector<int>>& mat, int k) {
@@ -15,7 +40,7 @@ public:
 
 
 
-// priority queue + binary search
+// priority queue + binary search O(m*(logn+logk))=O(m*log(max(n, k))
 typedef pair<int,int> pr;
 class Solution {
 public:
