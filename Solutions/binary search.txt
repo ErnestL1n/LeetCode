@@ -11,3 +11,4 @@
 875. Koko Eating Bananas				1.20
 1305. All Elements in Two Binary Search Trees		1.26
 167. Two Sum II - Input Array Is Sorted			3.26
+1337. The K Weakest Rows in a Matrix			3.27
