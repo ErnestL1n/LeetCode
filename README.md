@@ -4,8 +4,7 @@
 👉: # marks as no python、go\
 👉: ! marks as no go\
 👉: % with go solution\
-👉: @ with c solution\
-
+👉: @ with c solution
 
 
 No. | Title | Difficulty | Related Topics | Solution | Note
