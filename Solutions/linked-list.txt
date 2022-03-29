@@ -24,3 +24,4 @@
 2. Add Two Numbers						3.10
 61. Rotate List							3.11
 138. Copy List with Random Pointer				3.12
+287. Find the Duplicate Number					3.29
