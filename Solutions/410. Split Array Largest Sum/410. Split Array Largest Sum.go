@@ -1,29 +1,30 @@
 func splitArray(nums []int, m int) int {
     Max,sum:=0,0
-    for _,num:=range(nums){
-        Max=max(num,Max)
-        sum+=num
+    for _,n:=range(nums){
+        Max=max(Max,n)
+        sum+=n
     }
     if m==1{
         return sum
     }
-    l,r:=Max,sum
-    for l<=r{
-        mid:=(l+r)/2
-        if(valid(nums,mid,m)){
-            r=mid-1
+    lo,hi:=Max,sum
+    for lo<hi{
+        mid:=(lo+hi)/2
+        if count(nums,m,mid){
+            hi=mid
         }else{
-            l=mid+1
+            lo=mid+1
         }
     }
-    return l
+    return lo
 }
-func valid(nums []int,mid,m int) bool {
-    cnt,total:=1,0
-    for _,num:=range(nums){
-        total+=num
-        if total>mid{
-            total=num
+
+func count(nums []int,m,target_sum int) bool{
+    cnt,sum:=1,0
+    for _,n:=range(nums){
+        sum+=n
+        if sum>target_sum{
+            sum=n
             cnt+=1
             if cnt>m{
                 return false
@@ -32,8 +33,9 @@ func valid(nums []int,mid,m int) bool {
     }
     return true
 }
+
 func max(i,j int) int {
-    if(i>j){
+    if i>j{
         return i
     }
     return j
