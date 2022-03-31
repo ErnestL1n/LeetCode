@@ -1,24 +1,22 @@
 class Solution:
     def splitArray(self, nums: List[int], m: int) -> int:
-        def valid(nums,mid,m):
-            cnt,total=1,0
-            for num in nums:
-                total+=num
-                if total>mid:
-                    total=num
+        def count(nums,m,target_sum):
+            cnt,s=1,0
+            for n in nums:
+                s+=n
+                if s>target_sum:
+                    s=n
                     cnt+=1
                     if cnt>m:
                         return False
             return True
-        Max,s=max(nums),sum(nums)
         if m==1:
-            return s
-        l,r=Max,s
-        while l<=r:
-            mid=(l+r)//2
-            if valid(nums,mid,m):
-                r=mid-1
+            return sum(nums)
+        lo,hi=max(nums),sum(nums)
+        while lo<hi:
+            mid=(lo+hi)//2
+            if count(nums,m,mid):
+                hi=mid
             else:
-                l=mid+1
-        return l
-        
+                lo=mid+1
+        return lo
