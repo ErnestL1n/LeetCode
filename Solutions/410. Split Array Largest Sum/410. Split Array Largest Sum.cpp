@@ -1,32 +1,30 @@
 class Solution {
 public:
     int splitArray(vector<int>& nums, int m) {
-        int Max=0,sum=0;
-        for(int num:nums){
-            Max=max(Max,num);
-            sum+=num;
-        }
-        if(m==1)
+        int sum=accumulate(nums.begin(),nums.end(),0),MAX=*max_element(nums.begin(),nums.end());
+        if(m==1){
             return sum;
-        int l=Max,r=sum;
-        while(l<=r){
-            int mid=(l+r)/2;
-            if(valid(nums,mid,m))
-                r=mid-1;
-            else
-                l=mid+1;
         }
-        return l;
+        int lo=MAX,hi=sum;
+        while(lo<hi){
+            int mid=lo+hi>>1;
+            if(count(nums,m,mid)){
+                hi=mid;
+            }else{
+                lo=mid+1;
+            }
+        }
+        return lo;
     }
-    bool valid(vector<int>& nums,int mid,int m){
-        int cnt=1,total=0;
-        for(int num:nums){
-            total+=num;
-            if(total>mid){
-                total=num;
-                ++cnt;
-                if(cnt>m)
+    int count(vector<int>& nums,int m,int target_sum){
+        int cnt=1,sum=0;
+        for(auto& n:nums){
+            sum+=n;
+            if(sum>target_sum){
+                sum=n;
+                if(++cnt>m){
                     return false;
+                }
             }
         }
         return true;
