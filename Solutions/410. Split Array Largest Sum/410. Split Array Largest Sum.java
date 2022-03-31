@@ -1,31 +1,33 @@
 class Solution {
     public int splitArray(int[] nums, int m) {
-        int Max=0,sum=0;
-        for(int num:nums){
-            Max=Math.max(Max,num);
-            sum+=num;
+        int MAX=-1,sum=0;
+        for(int n:nums){
+            MAX=Math.max(MAX,n);
+            sum+=n;
         }
-        if(m==1)
+        if(m==1){
             return sum;
-        int l=Max,r=sum;
-        while(l<=r){
-            int mid=(l+r)/2;
-            if(valid(nums,mid,m))
-                r=mid-1;
-            else
-                l=mid+1;
         }
-        return l;
+        int lo=MAX,hi=sum;
+        while(lo<hi){
+            int mid=(lo+hi)/2;
+            if(count(nums,m,mid)){
+                hi=mid;
+            }else{
+                lo=mid+1;
+            }
+        }
+        return lo;
     }
-    private boolean valid(int[] nums,int mid,int m){
-        int cnt=1,total=0;
-        for(int num:nums){
-            total+=num;
-            if(total>mid){
-                total=num;
-                ++cnt;
-                if(cnt>m)
+    private boolean count(int[] nums,int m,int target_sum){
+        int cnt=1,sum=0;
+        for(int n:nums){
+            sum+=n;
+            if(sum>target_sum){
+                sum=n;
+                if(++cnt>m){
                     return false;
+                }
             }
         }
         return true;
