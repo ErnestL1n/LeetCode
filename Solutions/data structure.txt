@@ -32,3 +32,5 @@
 895. Maximum Frequency Stack			3.19	stack、hashmap
 763. Partition Labels				3.21	string、hashmap、greedy
 2215. Find the Difference of Two Arrays		3.27	hashset
+2206. Divide Array Into Equal Pairs		4.1	hashmap
+2210. Count Hills and Valleys in an Array	4.1	array
