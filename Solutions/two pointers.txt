@@ -9,3 +9,4 @@
 881. Boats to Save People			3.24
 167. Two Sum II - Input Array Is Sorted		3.26
 680. Valid Palindrome II			4.2
+31. Next Permutation				4.3
