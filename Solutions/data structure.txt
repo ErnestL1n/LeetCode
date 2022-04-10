@@ -37,3 +37,4 @@
 1046. Last Stone Weight				4.7	priority_queue
 703. Kth Largest Element in a Stream		4.8	priority_queue
 347. Top K Frequent Elements			4.9	bucket sort
+682. Baseball Game				4.10	stack
