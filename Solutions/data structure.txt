@@ -39,3 +39,4 @@
 347. Top K Frequent Elements			4.9	bucket sort
 682. Baseball Game				4.10	stack
 1260. Shift 2D Grid				4.11	array
+289. Game of Life				4.12	array
