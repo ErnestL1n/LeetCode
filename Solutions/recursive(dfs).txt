@@ -38,3 +38,4 @@
 1986. Minimum Number of Work Sessions to Finish the Tasks	3.24
 698. Partition to K Equal Sum Subsets				3.24
 700. Search in a Binary Search Tree				4.14
+669. Trim a Binary Search Tree					4.15
