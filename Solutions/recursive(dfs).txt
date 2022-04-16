@@ -39,3 +39,4 @@
 698. Partition to K Equal Sum Subsets				3.24
 700. Search in a Binary Search Tree				4.14
 669. Trim a Binary Search Tree					4.15
+538. Convert BST to Greater Tree				4.16
