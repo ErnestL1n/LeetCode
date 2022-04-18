@@ -30,3 +30,30 @@ public:
         return 1+count(root->left)+count(root->right);
     }
 };
+
+
+//DFS in-order recursive
+//time complexity: O(N)
+class Solution {
+public:
+    int cnt,res;
+    int kthSmallest(TreeNode* root, int k) {
+        cnt=k;
+        dfs_inorder(root);
+        return res;
+    }
+    void dfs_inorder(TreeNode* root){
+        if(root->left){
+            dfs_inorder(root->left);
+        }
+        if(--cnt==0){
+            res=root->val;
+            return;
+        }
+        if(root->right){
+            dfs_inorder(root->right);
+        }
+    }
+};
+
+
