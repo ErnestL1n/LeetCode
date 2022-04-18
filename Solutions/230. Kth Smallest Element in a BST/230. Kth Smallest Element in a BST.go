@@ -74,3 +74,28 @@ func kthSmallest(root *TreeNode, k int) int {
     }
     return -1
 }
+
+
+//Follow up: 
+//If the BST is modified often (i.e., we can do insert and delete operations) 
+//and you need to find the kth smallest frequently, how would you optimize?
+
+func kthSmallest(root *TreeNode, k int) int {
+    var count []int
+    dfs(root,&count)
+    return count[k-1]
+}
+
+func dfs(root *TreeNode,count *[]int){
+    if root==nil{
+        return
+    }
+    dfs(root.Left,count)
+    *count=append(*count,root.Val)
+    dfs(root.Right,count)
+}
+
+
+//DFS recursive, stop early when meet kth
+
+
