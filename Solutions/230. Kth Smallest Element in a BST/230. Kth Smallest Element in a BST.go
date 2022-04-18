@@ -54,3 +54,23 @@ func dfs_inorder(root* TreeNode) {
 
 //DFS in-order iterative
 //time complexity: O(N) best
+func kthSmallest(root *TreeNode, k int) int {
+    var stk []*TreeNode
+    for root!=nil{
+        stk=append(stk,root)
+        root=root.Left
+    }
+    for k>0{
+        n:=stk[len(stk)-1];stk=stk[:len(stk)-1]
+        k-=1
+        if k==0{
+            return n.Val
+        }
+        right:=n.Right
+        for right!=nil{
+            stk=append(stk,right)
+            right=right.Left
+        }
+    }
+    return -1
+}
