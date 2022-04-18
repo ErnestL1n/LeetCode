@@ -103,3 +103,30 @@ public:
         dfs(root->right,count);
     }
 };
+
+
+//DFS recursive, stop early when meet kth
+class Solution {
+public:
+    int kthSmallest(TreeNode* root, int k) {
+        vector<int> res;
+        res.push_back(k);
+        findnode(root,res);
+        return res[1];
+    }
+    void findnode(TreeNode* root,vector<int>& res){
+        if(res.size()>1){
+            return;
+        }
+        if(root->left){
+            findnode(root->left,res);
+        }
+        if(--res[0]==0){
+            res.push_back(root->val);
+            return;
+        }
+        if(root->right){
+            findnode(root->right,res);
+        }
+    }
+};
