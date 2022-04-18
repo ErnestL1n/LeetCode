@@ -97,5 +97,29 @@ func dfs(root *TreeNode,count *[]int){
 
 
 //DFS recursive, stop early when meet kth
+//Runtime: 4 ms, faster than 98.78% of Go online submissions for Kth Smallest Element in a BST.
+//Memory Usage: 6.3 MB, less than 99.76% of Go online submissions for Kth Smallest Element in a BST.
+func kthSmallest(root *TreeNode, k int) int {
+    var res []int
+    res=append(res,k)
+    findnode(root,&res)
+    return res[1]
+}
 
+func findnode(root *TreeNode,res *[]int){
+    if len(*res)>1{
+        return
+    }
+    if root.Left!=nil{
+        findnode(root.Left,res)
+    }
+    (*res)[0]-=1
+    if (*res)[0]==0{
+        *res=append(*res,root.Val)
+        return
+    }
+    if root.Right!=nil{
+        findnode(root.Right,res)
+    }
+}
 
