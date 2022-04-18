@@ -81,3 +81,25 @@ public:
         return -1;
     }
 };
+
+
+//Follow up: 
+//If the BST is modified often (i.e., we can do insert and delete operations) 
+//and you need to find the kth smallest frequently, how would you optimize?
+
+class Solution {
+public:
+    int kthSmallest(TreeNode* root, int k) {
+        vector<int> count;
+        dfs(root,count);
+        return count[k-1];
+    }
+    void dfs(TreeNode* root,vector<int>& count){
+        if(!root){
+            return;
+        }
+        dfs(root->left,count);
+        count.push_back(root->val);
+        dfs(root->right,count);
+    }
+};
