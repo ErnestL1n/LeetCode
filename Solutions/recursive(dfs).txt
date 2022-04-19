@@ -42,3 +42,4 @@
 538. Convert BST to Greater Tree				4.16
 897. Increasing Order Search Tree				4.17
 230. Kth Smallest Element in a BST				4.18
+99. Recover Binary Search Tree					4.19
