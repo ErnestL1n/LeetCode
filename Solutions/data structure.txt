@@ -43,3 +43,5 @@
 59. Spiral Matrix II				4.13 	array
 173. Binary Search Tree Iterator		4.20	stack
 705. Design HashSet				4.21	hashset
+706. Design HashMap				4.22	hashmap
+						
