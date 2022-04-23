@@ -1,47 +1,29 @@
 type MyHashMap struct {
-    table []int
+    Table []int
 }
 
 
 func Constructor() MyHashMap {
-    m:=new(MyHashMap)
-    m.table=make([]int,10000,1000001)
-    for i,_:=range(m.table){
-        m.table[i]=-1
+    table:=make([]int,1000001)
+    for i:=0;i<1000001;i+=1{
+        table[i]=-1
     }
-    return *m
+    return MyHashMap{table}
 }
 
 
 func (this *MyHashMap) Put(key int, value int)  {
-    l:=len(this.table)
-    if key>=l{
-        newlen:=2*key
-        if newlen>1000001{
-            newlen=1000001
-        }
-        this.table=this.table[:newlen]
-        for i:=l;i<len(this.table);i+=1{
-            this.table[i]=-1
-        }
-    }
-    this.table[key]=value
+    this.Table[key]=value
 }
 
 
 func (this *MyHashMap) Get(key int) int {
-    if key>=len(this.table){
-        return -1
-    }
-    return this.table[key]
+    return this.Table[key]
 }
 
 
 func (this *MyHashMap) Remove(key int)  {
-    if key>=len(this.table){
-        return
-    }
-    this.table[key]=-1
+    this.Table[key]=-1
 }
 
 
