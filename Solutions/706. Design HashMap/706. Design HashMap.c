@@ -1,33 +1,30 @@
-#define SIZE 100000
+
 
 
 typedef struct {
-    int* table;
+    int* table
 } MyHashMap;
 
-/** Initialize your data structure here. */
 
 MyHashMap* myHashMapCreate() {
     MyHashMap* obj=(MyHashMap*)malloc(sizeof(MyHashMap));
-    obj->table=(int*)malloc(sizeof(int)*SIZE);
-    for(int i=0;i<SIZE;++i)
+    obj->table=(int*)malloc(sizeof(int)*1000001);
+    for(int i=0;i<1000001;++i){
         obj->table[i]=-1;
+    }
     return obj;
 }
 
-/** value will always be non-negative. */
 void myHashMapPut(MyHashMap* obj, int key, int value) {
-  obj->table[key%SIZE]=value;
+    obj->table[key]=value;
 }
 
-/** Returns the value to which the specified key is mapped, or -1 if this map contains no mapping for the key */
 int myHashMapGet(MyHashMap* obj, int key) {
-  return obj->table[key%SIZE];
+    return obj->table[key];
 }
 
-/** Removes the mapping of the specified value key if this map contains a mapping for the key */
 void myHashMapRemove(MyHashMap* obj, int key) {
-  obj->table[key%SIZE]=-1;
+    obj->table[key]=-1;
 }
 
 void myHashMapFree(MyHashMap* obj) {
