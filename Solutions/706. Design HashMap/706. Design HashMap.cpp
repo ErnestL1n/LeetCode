@@ -1,26 +1,20 @@
 class MyHashMap {
 public:
-    int SIZE=1000001;
-    int* table;
-    MyHashMap *hashmap;
+    vector<int> table;
     MyHashMap() {
-        hashmap=(MyHashMap*)malloc(sizeof(MyHashMap));
-        hashmap->table=(int*)malloc(sizeof(int)*SIZE);
-        for(int i=0;i<SIZE;++i){
-            hashmap->table[i]=-1;
-        }
+        table.resize(1000001,-1);
     }
     
     void put(int key, int value) {
-        this->hashmap->table[key]=value;
+        table[key]=value;
     }
     
     int get(int key) {
-        return this->hashmap->table[key];
+        return table[key];
     }
     
     void remove(int key) {
-        this->hashmap->table[key]=-1;
+        table[key]=-1;
     }
 };
 
