@@ -15,34 +15,30 @@ func (h MinHeap) Peek() interface{} {
     return h[0]
 }
 
-func minCostConnectPoints(p [][]int) int {
-    res,n,from,connected:=0,len(p),0,1
-    visited:=make([]bool,n)
+func minCostConnectPoints(points [][]int) int {
+    res,n,from,connected:=0,len(points),0,1
     pq:=&MinHeap{}
+    visited:=make([]bool,n)
     heap.Init(pq)
     for connected<n{
         visited[from]=true
         for i:=0;i<n;i+=1{
-            if(!visited[i]){
-                dis:=Abs(p[from][0]-p[i][0])+Abs(p[from][1]-p[i][1])
-                heap.Push(pq,[2]int{dis,i})
-            }  
+            if visited[i]==false{
+                dist:=Abs(points[i][0]-points[from][0])+Abs(points[i][1]-points[from][1])
+                heap.Push(pq,[2]int{dist,i})
+            }
         }
-        for visited[pq.Peek().([2]int)[1]]{
+        for visited[pq.Peek().([2]int)[1]]==true{
             heap.Pop(pq)
-            // if(pq.Len()==0){
-            //     break
-            // }
         }
-        node:=heap.Pop(pq).([2]int)
-        res+=node[0]
-        from=node[1]
+        res+=pq.Peek().([2]int)[0]
+        from=pq.Peek().([2]int)[1]
         connected+=1
     }
     return res
 }
 
-func Abs(x int)int{
+func Abs(x int) int {
     if x<0{
         return -x
     }
