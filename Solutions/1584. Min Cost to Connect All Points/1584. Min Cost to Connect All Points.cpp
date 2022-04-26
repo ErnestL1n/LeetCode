@@ -1,20 +1,20 @@
 // c++ Prim's with priority queue(min priority queue) implementation   2021.10.20 mod
-#define pr pair<int,int>
 class Solution {
 public:
-    int minCostConnectPoints(vector<vector<int>>& pts) {
-        int res=0,connected=0,n=pts.size(),from=0;
+    int minCostConnectPoints(vector<vector<int>>& points) {
+        int res=0,connected=0,n=points.size(),from=0;
         vector<bool> visited(n);
-        priority_queue<pr,vector<pr>,greater<pr>> pq;
+        priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>>> pq;
         while(++connected<n){
-            visited[from]=true; 
-            for(int j=0;j<n;++j){
-                if(j!=from){            // if(!visited[j]) origin method, but it is not a good thinking process
-                    pq.push({abs(pts[from][0]-pts[j][0])+abs(pts[from][1]-pts[j][1]),j});
+            visited[from]=true;
+            for(int i=0;i<n;++i){
+                if(!visited[i]){
+                    pq.push({abs(points[from][0]-points[i][0])+abs(points[from][1]-points[i][1]),i});
                 }
             }
-            while(visited[pq.top().second])
+            while(visited[pq.top().second]){
                 pq.pop();
+            }
             res+=pq.top().first;
             from=pq.top().second;
             pq.pop();
