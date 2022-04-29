@@ -26,3 +26,30 @@ public:
         return true;
     }
 };
+
+//dfs
+class Solution {
+public:
+    bool isBipartite(vector<vector<int>>& graph) {
+        int n=graph.size();
+        vector<int> colors(n);
+        for(int i=0;i<n;++i){
+            if(colors[i]==0 and !validcolor(graph,colors,1,i)){
+                return false;
+            }
+        }
+        return true;
+    }
+    bool validcolor(vector<vector<int>>& graph,vector<int>& colors,int color,int node){
+        if(colors[node]!=0){
+            return colors[node]==color;
+        }
+        colors[node]=color;
+        for(auto& x:graph[node]){
+            if(!validcolor(graph,colors,-color,x)){
+                return false;
+            }
+        }
+        return true;
+    }
+};
