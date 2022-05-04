@@ -15,3 +15,4 @@
 844. Backspace String Compare			5.1
 905. Sort Array By Parity			5.2
 581. Shortest Unsorted Continuous Subarray	5.3
+1679. Max Number of K-Sum Pairs			5.4
