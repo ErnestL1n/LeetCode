@@ -14,3 +14,30 @@ func maxOperations(nums []int, k int) int {
     }
     return res
 }
+
+// O(N)
+func maxOperations(nums []int, k int) int {
+    um:=make(map[int]int)
+    for _,n:=range nums{
+        um[n]+=1
+    }
+    res:=0
+    for n,cnt:=range um{
+        if k-n==n{
+            res+=cnt/2
+        }else if val,ok:=um[k-n];ok{
+            tmp:=min(cnt,val)
+            res+=tmp
+            um[n]-=tmp
+            um[k-n]-=tmp
+        }
+    }
+    return res
+}
+
+func min(i,j int) int{
+    if i<j{
+        return i
+    }
+    return j
+}
