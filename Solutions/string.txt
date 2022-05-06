@@ -17,3 +17,4 @@
 1249. Minimum Remove to Make Valid Parentheses		3.15
 1663. Smallest String With A Given Numeric Value	3.22
 535. Encode and Decode TinyURL				4.23
+1209. Remove All Adjacent Duplicates in String II	5.6
