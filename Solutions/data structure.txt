@@ -50,3 +50,4 @@
 1202. Smallest String With Swaps		4.27	union-find
 225. Implement Stack using Queues		5.5	stack、queue
 1209. Remove All Adjacent Duplicates in String II	5.6	stack
+456. 132 Pattern					5.7	stack
