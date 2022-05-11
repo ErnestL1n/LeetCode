@@ -46,3 +46,4 @@
 785. Is Graph Bipartite?					4.29
 399. Evaluate Division						4.30
 216. Combination Sum III					5.10
+2265. Count Nodes Equal to Average of Subtree			5.11
