@@ -7,3 +7,4 @@
 662. Maximum Width of Binary Tree			2.27
 785. Is Graph Bipartite?				4.29
 117. Populating Next Right Pointers in Each Node II	5.12
+1302. Deepest Leaves Sum				5.15
