@@ -20,3 +20,4 @@
 1209. Remove All Adjacent Duplicates in String II	5.6
 17. Letter Combinations of a Phone Number		5.9
 2264. Largest 3-Same-Digit Number in String		5.14
+2269. Find the K-Beauty of a Number			5.15
