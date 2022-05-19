@@ -40,3 +40,4 @@
 1359. Count All Valid Pickup and Delivery Options(permutation)	3.6
 1986. Minimum Number of Work Sessions to Finish the Tasks	3.24	
 63. Unique Paths II						3.26
+329. Longest Increasing Path in a Matrix			5.19
