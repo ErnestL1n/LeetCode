@@ -53,3 +53,4 @@
 456. 132 Pattern					5.7	stack
 341. Flatten Nested List Iterator			5.8	stack
 2190. Most Frequent Number Following Key In an Array	5.12	array+count
+2248. Intersection of Multiple Arrays			5.21	array
