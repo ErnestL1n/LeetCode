@@ -49,3 +49,4 @@
 2265. Count Nodes Equal to Average of Subtree			5.11
 1302. Deepest Leaves Sum					5.15
 1192. Critical Connections in a Network				5.18
+647. Palindromic Substrings					5.22
