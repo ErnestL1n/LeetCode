@@ -55,3 +55,4 @@
 2190. Most Frequent Number Following Key In an Array	5.12	array+count
 2248. Intersection of Multiple Arrays			5.21	array
 32. Longest Valid Parentheses				5.24	stack
+2037. Minimum Number of Moves to Seat Everyone		5.26	sort
