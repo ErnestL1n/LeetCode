@@ -18,3 +18,4 @@
 2275. Largest Combination With Bitwise AND Greater Than Zero		5.17
 1342. Number of Steps to Reduce a Number to Zero			5.27
 318. Maximum Product of Word Lengths					5.29
+29. Divide Two Integers							5.30
