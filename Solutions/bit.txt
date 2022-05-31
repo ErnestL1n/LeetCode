@@ -19,3 +19,4 @@
 1342. Number of Steps to Reduce a Number to Zero			5.27
 318. Maximum Product of Word Lengths					5.29
 29. Divide Two Integers							5.30
+1461. Check If a String Contains All Binary Codes of Size K		5.31
