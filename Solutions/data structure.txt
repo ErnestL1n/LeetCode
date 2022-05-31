@@ -57,3 +57,4 @@
 32. Longest Valid Parentheses				5.24	stack
 2037. Minimum Number of Moves to Seat Everyone		5.26	sort
 419. Battleships in a Board				5.28	array
+1461. Check If a String Contains All Binary Codes of Size K	5.31	deque
