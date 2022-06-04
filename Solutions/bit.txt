@@ -21,3 +21,4 @@
 29. Divide Two Integers							5.30
 1461. Check If a String Contains All Binary Codes of Size K		5.31
 1480. Running Sum of 1d Array						6.1
+51. N-Queens								6.4
