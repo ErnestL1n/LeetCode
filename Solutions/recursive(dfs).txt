@@ -51,3 +51,4 @@
 1192. Critical Connections in a Network				5.18
 647. Palindromic Substrings					5.22
 51. N-Queens							6.4
+52. N-Queens II							6.5
