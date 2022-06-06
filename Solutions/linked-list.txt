@@ -26,3 +26,4 @@
 138. Copy List with Random Pointer				3.12
 287. Find the Duplicate Number					3.29
 1721. Swapping Nodes in a Linked List				4.4
+160. Intersection of Two Linked Lists				6.6
