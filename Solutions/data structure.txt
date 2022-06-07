@@ -59,3 +59,4 @@
 419. Battleships in a Board				5.28	array
 1461. Check If a String Contains All Binary Codes of Size K	5.31	deque
 867. Transpose Matrix						6.2	array
+88. Merge Sorted Array						6.7	merge array
