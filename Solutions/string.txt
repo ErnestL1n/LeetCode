@@ -22,3 +22,4 @@
 2264. Largest 3-Same-Digit Number in String		5.14
 2269. Find the K-Beauty of a Number			5.15
 647. Palindromic Substrings				5.22
+1332. Remove Palindromic Subsequences			6.8
