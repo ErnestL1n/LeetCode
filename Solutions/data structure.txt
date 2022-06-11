@@ -61,3 +61,4 @@
 867. Transpose Matrix						6.2	array
 88. Merge Sorted Array						6.7	merge array
 2293. Min Max Game						6.9	array
+1658. Minimum Operations to Reduce X to Zero			6.11	map
