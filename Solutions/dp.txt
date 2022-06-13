@@ -44,3 +44,4 @@
 474. Ones and Zeroes						5.23
 354. Russian Doll Envelopes					5.25
 304. Range Sum Query 2D - Immutable				6.3
+120. Triangle							6.13
