@@ -24,3 +24,4 @@
 647. Palindromic Substrings				5.22
 1332. Remove Palindromic Subsequences			6.8
 2287. Rearrange Characters to Make Target String	6.10
+1048. Longest String Chain				6.15
