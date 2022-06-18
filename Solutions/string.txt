@@ -26,3 +26,4 @@
 2287. Rearrange Characters to Make Target String	6.10
 1048. Longest String Chain				6.15
 2278. Percentage of Letter in String			6.16
+745. Prefix and Suffix Search				6.18
