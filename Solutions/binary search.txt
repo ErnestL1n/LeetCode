@@ -16,3 +16,4 @@
 81. Search in Rotated Sorted Array II			3.28
 74. Search a 2D Matrix					3.30
 354. Russian Doll Envelopes				5.25
+1268. Search Suggestions System				6.19
