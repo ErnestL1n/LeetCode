@@ -28,3 +28,4 @@
 2278. Percentage of Letter in String			6.16
 745. Prefix and Suffix Search				6.18
 820. Short Encoding of Words				6.20
+2309. Greatest English Letter in Upper and Lower Case	6.22
