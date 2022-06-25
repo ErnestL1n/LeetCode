@@ -8,3 +8,4 @@
 881. Boats to Save People				3.24
 1029. Two City Scheduling				3.25
 2169. Count Operations to Obtain Zero			6.21
+665. Non-decreasing Array				6.25
