@@ -29,3 +29,4 @@
 745. Prefix and Suffix Search				6.18
 820. Short Encoding of Words				6.20
 2309. Greatest English Letter in Upper and Lower Case	6.22
+1689. Partitioning Into Minimum Number Of Deci-Binary Numbers	6.27
