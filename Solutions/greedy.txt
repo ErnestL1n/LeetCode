@@ -10,3 +10,4 @@
 2169. Count Operations to Obtain Zero			6.21
 665. Non-decreasing Array				6.25
 1647. Minimum Deletions to Make Character Frequencies Unique	6.28
+406. Queue Reconstruction by Height				6.29 
