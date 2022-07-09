@@ -70,3 +70,4 @@
 1465. Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts	7.2	sort、array
 2303. Calculate Amount Paid in Taxes						7.5	array
 342. Power of Four								7.6	math
+1696. Jump Game VI								7.9	deque
