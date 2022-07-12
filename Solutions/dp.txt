@@ -48,3 +48,4 @@
 583. Delete Operation for Two Strings				6.14
 97. Interleaving String						7.7
 1473. Paint House III						7.8
+473. Matchsticks to Square					7.12
