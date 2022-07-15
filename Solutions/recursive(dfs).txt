@@ -55,3 +55,4 @@
 968. Binary Tree Cameras					6.17
 199. Binary Tree Right Side View				7.11
 105. Construct Binary Tree from Preorder and Inorder Traversal	7.14
+695. Max Area of Island						7.15
