@@ -72,3 +72,4 @@
 342. Power of Four								7.6	math
 1696. Jump Game VI								7.9	deque
 2336. Smallest Number in Infinite Set						7.11	set
+1074. Number of Submatrices That Sum to Target					7.18	map
