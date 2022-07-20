@@ -31,3 +31,4 @@
 2309. Greatest English Letter in Upper and Lower Case	6.22
 1689. Partitioning Into Minimum Number Of Deci-Binary Numbers	6.27
 97. Interleaving String						7.7
+792. Number of Matching Subsequences				7.20
