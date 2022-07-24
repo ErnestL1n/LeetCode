@@ -76,3 +76,4 @@
 118. Pascal's Triangle								7.19	array
 2341. Maximum Number of Pairs in Array						7.21	count
 315. Count of Smaller Numbers After Self					7.23	FenWickTree
+240. Search a 2D Matrix II							7.24	array
