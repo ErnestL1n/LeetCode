@@ -17,3 +17,4 @@
 74. Search a 2D Matrix					3.30
 354. Russian Doll Envelopes				5.25
 1268. Search Suggestions System				6.19
+34. Find First and Last Position of Element in Sorted Array	7.25
