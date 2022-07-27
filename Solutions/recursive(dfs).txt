@@ -57,3 +57,4 @@
 105. Construct Binary Tree from Preorder and Inorder Traversal	7.14
 695. Max Area of Island						7.15
 2331. Evaluate Boolean Binary Tree				7.16
+114. Flatten Binary Tree to Linked List				7.27
