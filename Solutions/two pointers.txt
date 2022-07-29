@@ -18,3 +18,4 @@
 1679. Max Number of K-Sum Pairs			5.4
 27. Remove Element				5.20
 462. Minimum Moves to Equal Array Elements II	6.30
+2315. Count Asterisks				7.29
