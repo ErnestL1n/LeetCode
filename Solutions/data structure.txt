@@ -80,3 +80,4 @@
 2351. First Letter to Appear Twice						7.26	map
 2347. Best Poker Hand								7.28	map
 916. Word Subsets								7.30	map
+2319. Check if Matrix Is X-Matrix						7.31	array
