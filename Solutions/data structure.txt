@@ -81,3 +81,4 @@
 2347. Best Poker Hand								7.28	map
 916. Word Subsets								7.30	map
 2319. Check if Matrix Is X-Matrix						7.31	array
+2357. Make Array Zero by Subtracting Equal Amounts				8.1	array
