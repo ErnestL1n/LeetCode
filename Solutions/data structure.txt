@@ -85,3 +85,4 @@
 2350. Shortest Impossible Sequence of Rolls					8.2	greedy
 729. My Calendar I								8.3	set
 858. Mirror Reflection								8.4	math
+458. Poor Pigs									8.6	math
