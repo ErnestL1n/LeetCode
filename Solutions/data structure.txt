@@ -86,3 +86,4 @@
 729. My Calendar I								8.3	set
 858. Mirror Reflection								8.4	math
 458. Poor Pigs									8.6	math
+2367. Number of Arithmetic Triplets						8.7	array
