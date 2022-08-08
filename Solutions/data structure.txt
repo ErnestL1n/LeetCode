@@ -88,3 +88,4 @@
 458. Poor Pigs									8.6	math
 2367. Number of Arithmetic Triplets						8.7	array
 2363. Merge Similar Items							8.8	map
+2335. Minimum Amount of Time to Fill Cups					8.9	math
