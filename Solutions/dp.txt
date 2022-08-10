@@ -50,3 +50,4 @@
 1473. Paint House III						7.8
 473. Matchsticks to Square					7.12
 629. K Inverse Pairs Array					7.17
+823. Binary Trees With Factors					8.10
