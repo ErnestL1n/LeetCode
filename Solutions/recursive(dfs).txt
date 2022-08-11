@@ -60,3 +60,4 @@
 114. Flatten Binary Tree to Linked List				7.27
 377. Combination Sum IV						8.5
 458. Poor Pigs							8.6
+98. Validate Binary Search Tree					8.11
