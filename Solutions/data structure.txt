@@ -89,3 +89,4 @@
 2367. Number of Arithmetic Triplets						8.7	array
 2363. Merge Similar Items							8.8	map
 2335. Minimum Amount of Time to Fill Cups					8.9	math
+30. Substring with Concatenation of All Words					8.13	map
