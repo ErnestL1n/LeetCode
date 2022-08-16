@@ -51,3 +51,4 @@
 473. Matchsticks to Square					7.12
 629. K Inverse Pairs Array					7.17
 823. Binary Trees With Factors					8.10
+2327. Number of People Aware of a Secret			8.16
