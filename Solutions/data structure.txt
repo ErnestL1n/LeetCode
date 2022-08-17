@@ -91,3 +91,4 @@
 2335. Minimum Amount of Time to Fill Cups					8.9	math
 30. Substring with Concatenation of All Words					8.13	map
 2285. Maximum Total Importance of Roads						8.15	map
+804. Unique Morse Code Words							8.17	map
