@@ -93,3 +93,4 @@
 2285. Maximum Total Importance of Roads						8.15	map
 804. Unique Morse Code Words							8.17	map
 2373. Largest Local Values in a Matrix						8.18	array
+871. Minimum Number of Refueling Stops						8.20	priority queue
