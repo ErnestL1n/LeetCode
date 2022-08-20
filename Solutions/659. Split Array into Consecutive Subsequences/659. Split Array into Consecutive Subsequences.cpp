@@ -1,21 +1,21 @@
-    bool isPossible(vector<int>& A) {
-        unordered_map<int, int> left, end;
-        for (int i: A) {
-            left[i]++;
+class Solution {
+public:
+    int minRefuelStops(int target, int startFuel, vector<vector<int>>& stations) {
+        if(startFuel>=target){
+            return 0;
         }
-        for (int i: A) {
-            if (left[i] == 0) continue;
-            left[i]--;
-            if (end[i - 1] > 0) {   
-                end[i - 1]--;
-                end[i]++;
-            } else if (left[i + 1] > 0 && left[i + 2] > 0) {
-                left[i + 1]--;
-                left[i + 2]--;
-                end[i + 2]++;
-            } else {   
-                return false;
+        priority_queue<int> q;
+        int i=0,n=stations.size(),stops=0,maxD=startFuel;
+        while (maxD<target){
+            while(i<n and stations[i][0]<=maxD){
+                q.push(stations[i++][1]);
             }
+            if(q.size()==0){
+                return -1;
+            }
+            maxD+=q.top();q.pop();
+            ++stops;
         }
-        return true;
+        return stops;
     }
+};
